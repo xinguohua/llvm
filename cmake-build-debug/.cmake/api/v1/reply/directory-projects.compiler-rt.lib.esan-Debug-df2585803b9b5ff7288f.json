@@ -1,0 +1,77 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"add_compiler_rt_runtime",
+			"add_sanitizer_rt_symbols"
+		],
+		"files" : 
+		[
+			"projects/compiler-rt/cmake/Modules/AddCompilerRT.cmake",
+			"projects/compiler-rt/lib/esan/CMakeLists.txt",
+			"projects/compiler-rt/cmake/Modules/SanitizerUtils.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 22,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 263,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 2,
+				"line" : 41,
+				"parent" : 3
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "clang_rt.esan-x86_64",
+			"destination" : "lib/clang/6.0.0/lib/linux",
+			"paths" : 
+			[
+				"lib/clang/6.0.0/lib/linux/libclang_rt.esan-x86_64.a"
+			],
+			"targetId" : "clang_rt.esan-x86_64::@0d20c9ba56cca9c9c6d3",
+			"targetIndex" : 1648,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib/clang/6.0.0/lib/linux",
+			"paths" : 
+			[
+				"cmake-build-debug/lib/clang/6.0.0/lib/linux/libclang_rt.esan-x86_64.a.syms"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "projects/compiler-rt/lib/esan",
+		"source" : "projects/compiler-rt/lib/esan"
+	}
+}

@@ -1,0 +1,119 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_dependencies",
+			"add_compiler_rt_test",
+			"generate_compiler_rt_tests",
+			"add_sanitizer_tests_for_arch"
+		],
+		"files" : 
+		[
+			"projects/compiler-rt/lib/sanitizer_common/tests/CMakeLists.txt",
+			"projects/compiler-rt/cmake/Modules/AddCompilerRT.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 134,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 195,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 147,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 371,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 429,
+				"parent" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 164,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 429,
+				"parent" : 6
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 195,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 147,
+				"parent" : 8
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 371,
+				"parent" : 9
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 429,
+				"parent" : 10
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "TSanitizer-x86_64-Test::@71387dbe268b53050868"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "TSanitizer-x86_64-Test-Nolibc::@71387dbe268b53050868"
+		},
+		{
+			"backtrace" : 11,
+			"id" : "TSanitizer-i386-Test::@71387dbe268b53050868"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Compiler-RT Tests"
+	},
+	"id" : "SanitizerUnitTests::@71387dbe268b53050868",
+	"name" : "SanitizerUnitTests",
+	"paths" : 
+	{
+		"build" : "projects/compiler-rt/lib/sanitizer_common/tests",
+		"source" : "projects/compiler-rt/lib/sanitizer_common/tests"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

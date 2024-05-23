@@ -1,0 +1,53 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"add_clang_library"
+		],
+		"files" : 
+		[
+			"tools/clang/cmake/modules/AddClang.cmake",
+			"tools/clang/lib/CodeGen/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 34,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 99,
+				"parent" : 1
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "clangCodeGen",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libclangCodeGen.a"
+			],
+			"targetId" : "clangCodeGen::@b53206f97688f9d71411",
+			"targetIndex" : 1603,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "tools/clang/lib/CodeGen",
+		"source" : "tools/clang/lib/CodeGen"
+	}
+}

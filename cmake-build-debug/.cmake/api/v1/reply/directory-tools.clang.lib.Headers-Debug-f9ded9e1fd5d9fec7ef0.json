@@ -1,0 +1,166 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"tools/clang/lib/Headers/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 141,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 147,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "clang-headers",
+			"destination" : "lib/clang/6.0.0/include",
+			"paths" : 
+			[
+				"tools/clang/lib/Headers/adxintrin.h",
+				"tools/clang/lib/Headers/altivec.h",
+				"tools/clang/lib/Headers/ammintrin.h",
+				"tools/clang/lib/Headers/arm_acle.h",
+				"tools/clang/lib/Headers/armintr.h",
+				"tools/clang/lib/Headers/arm64intr.h",
+				"tools/clang/lib/Headers/avx2intrin.h",
+				"tools/clang/lib/Headers/avx512bwintrin.h",
+				"tools/clang/lib/Headers/avx512bitalgintrin.h",
+				"tools/clang/lib/Headers/avx512vlbitalgintrin.h",
+				"tools/clang/lib/Headers/avx512cdintrin.h",
+				"tools/clang/lib/Headers/avx512vpopcntdqintrin.h",
+				"tools/clang/lib/Headers/avx512dqintrin.h",
+				"tools/clang/lib/Headers/avx512erintrin.h",
+				"tools/clang/lib/Headers/avx512fintrin.h",
+				"tools/clang/lib/Headers/avx512ifmaintrin.h",
+				"tools/clang/lib/Headers/avx512ifmavlintrin.h",
+				"tools/clang/lib/Headers/avx512pfintrin.h",
+				"tools/clang/lib/Headers/avx512vbmiintrin.h",
+				"tools/clang/lib/Headers/avx512vbmivlintrin.h",
+				"tools/clang/lib/Headers/avx512vbmi2intrin.h",
+				"tools/clang/lib/Headers/avx512vlvbmi2intrin.h",
+				"tools/clang/lib/Headers/avx512vlbwintrin.h",
+				"tools/clang/lib/Headers/avx512vlcdintrin.h",
+				"tools/clang/lib/Headers/avx512vldqintrin.h",
+				"tools/clang/lib/Headers/avx512vlintrin.h",
+				"tools/clang/lib/Headers/avx512vpopcntdqvlintrin.h",
+				"tools/clang/lib/Headers/avx512vnniintrin.h",
+				"tools/clang/lib/Headers/avx512vlvnniintrin.h",
+				"tools/clang/lib/Headers/avxintrin.h",
+				"tools/clang/lib/Headers/bmi2intrin.h",
+				"tools/clang/lib/Headers/bmiintrin.h",
+				"tools/clang/lib/Headers/__clang_cuda_builtin_vars.h",
+				"tools/clang/lib/Headers/__clang_cuda_cmath.h",
+				"tools/clang/lib/Headers/__clang_cuda_complex_builtins.h",
+				"tools/clang/lib/Headers/__clang_cuda_intrinsics.h",
+				"tools/clang/lib/Headers/__clang_cuda_math_forward_declares.h",
+				"tools/clang/lib/Headers/__clang_cuda_runtime_wrapper.h",
+				"tools/clang/lib/Headers/cetintrin.h",
+				"tools/clang/lib/Headers/clzerointrin.h",
+				"tools/clang/lib/Headers/cpuid.h",
+				"tools/clang/lib/Headers/clflushoptintrin.h",
+				"tools/clang/lib/Headers/clwbintrin.h",
+				"tools/clang/lib/Headers/emmintrin.h",
+				"tools/clang/lib/Headers/f16cintrin.h",
+				"tools/clang/lib/Headers/float.h",
+				"tools/clang/lib/Headers/fma4intrin.h",
+				"tools/clang/lib/Headers/fmaintrin.h",
+				"tools/clang/lib/Headers/fxsrintrin.h",
+				"tools/clang/lib/Headers/gfniintrin.h",
+				"tools/clang/lib/Headers/htmintrin.h",
+				"tools/clang/lib/Headers/htmxlintrin.h",
+				"tools/clang/lib/Headers/ia32intrin.h",
+				"tools/clang/lib/Headers/immintrin.h",
+				"tools/clang/lib/Headers/intrin.h",
+				"tools/clang/lib/Headers/inttypes.h",
+				"tools/clang/lib/Headers/iso646.h",
+				"tools/clang/lib/Headers/limits.h",
+				"tools/clang/lib/Headers/lwpintrin.h",
+				"tools/clang/lib/Headers/lzcntintrin.h",
+				"tools/clang/lib/Headers/mm3dnow.h",
+				"tools/clang/lib/Headers/mmintrin.h",
+				"tools/clang/lib/Headers/mm_malloc.h",
+				"tools/clang/lib/Headers/module.modulemap",
+				"tools/clang/lib/Headers/msa.h",
+				"tools/clang/lib/Headers/mwaitxintrin.h",
+				"tools/clang/lib/Headers/nmmintrin.h",
+				"tools/clang/lib/Headers/opencl-c.h",
+				"tools/clang/lib/Headers/pkuintrin.h",
+				"tools/clang/lib/Headers/pmmintrin.h",
+				"tools/clang/lib/Headers/popcntintrin.h",
+				"tools/clang/lib/Headers/prfchwintrin.h",
+				"tools/clang/lib/Headers/rdseedintrin.h",
+				"tools/clang/lib/Headers/rtmintrin.h",
+				"tools/clang/lib/Headers/s390intrin.h",
+				"tools/clang/lib/Headers/shaintrin.h",
+				"tools/clang/lib/Headers/smmintrin.h",
+				"tools/clang/lib/Headers/stdalign.h",
+				"tools/clang/lib/Headers/stdarg.h",
+				"tools/clang/lib/Headers/stdatomic.h",
+				"tools/clang/lib/Headers/stdbool.h",
+				"tools/clang/lib/Headers/stddef.h",
+				"tools/clang/lib/Headers/__stddef_max_align_t.h",
+				"tools/clang/lib/Headers/stdint.h",
+				"tools/clang/lib/Headers/stdnoreturn.h",
+				"tools/clang/lib/Headers/tbmintrin.h",
+				"tools/clang/lib/Headers/tgmath.h",
+				"tools/clang/lib/Headers/tmmintrin.h",
+				"tools/clang/lib/Headers/unwind.h",
+				"tools/clang/lib/Headers/vadefs.h",
+				"tools/clang/lib/Headers/vaesintrin.h",
+				"tools/clang/lib/Headers/varargs.h",
+				"tools/clang/lib/Headers/vecintrin.h",
+				"tools/clang/lib/Headers/vpclmulqdqintrin.h",
+				"tools/clang/lib/Headers/wmmintrin.h",
+				"tools/clang/lib/Headers/__wmmintrin_aes.h",
+				"tools/clang/lib/Headers/__wmmintrin_pclmul.h",
+				"tools/clang/lib/Headers/x86intrin.h",
+				"tools/clang/lib/Headers/xmmintrin.h",
+				"tools/clang/lib/Headers/xopintrin.h",
+				"tools/clang/lib/Headers/xsavecintrin.h",
+				"tools/clang/lib/Headers/xsaveintrin.h",
+				"tools/clang/lib/Headers/xsaveoptintrin.h",
+				"tools/clang/lib/Headers/xsavesintrin.h",
+				"tools/clang/lib/Headers/xtestintrin.h",
+				"cmake-build-debug/tools/clang/lib/Headers/arm_neon.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "clang-headers",
+			"destination" : "lib/clang/6.0.0/include/cuda_wrappers",
+			"paths" : 
+			[
+				"tools/clang/lib/Headers/cuda_wrappers/algorithm",
+				"tools/clang/lib/Headers/cuda_wrappers/complex",
+				"tools/clang/lib/Headers/cuda_wrappers/new"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "tools/clang/lib/Headers",
+		"source" : "tools/clang/lib/Headers"
+	}
+}

@@ -1,0 +1,53 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"add_llvm_library"
+		],
+		"files" : 
+		[
+			"cmake/modules/AddLLVM.cmake",
+			"lib/Target/X86/InstPrinter/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 642,
+				"parent" : 1
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "LLVMX86AsmPrinter",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libLLVMX86AsmPrinter.a"
+			],
+			"targetId" : "LLVMX86AsmPrinter::@a3878aabf08863c9ac18",
+			"targetIndex" : 232,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "lib/Target/X86/InstPrinter",
+		"source" : "lib/Target/X86/InstPrinter"
+	}
+}

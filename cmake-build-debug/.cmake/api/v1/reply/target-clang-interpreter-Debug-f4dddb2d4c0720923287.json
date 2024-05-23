@@ -1,0 +1,1154 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "bin/clang-interpreter"
+		}
+	],
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"add_llvm_executable",
+			"add_clang_executable",
+			"target_link_libraries",
+			"explicit_llvm_config",
+			"llvm_config",
+			"llvm_add_library",
+			"add_llvm_library",
+			"add_llvm_target",
+			"add_clang_library",
+			"add_dependencies",
+			"set_property",
+			"llvm_update_compile_flags",
+			"add_definitions",
+			"include",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"cmake/modules/AddLLVM.cmake",
+			"tools/clang/cmake/modules/AddClang.cmake",
+			"tools/clang/examples/clang-interpreter/CMakeLists.txt",
+			"cmake/modules/LLVM-Config.cmake",
+			"lib/ExecutionEngine/CMakeLists.txt",
+			"lib/Target/X86/CMakeLists.txt",
+			"lib/CodeGen/AsmPrinter/CMakeLists.txt",
+			"lib/Target/X86/MCTargetDesc/CMakeLists.txt",
+			"tools/clang/lib/Frontend/CMakeLists.txt",
+			"tools/clang/lib/CodeGen/CMakeLists.txt",
+			"lib/IRReader/CMakeLists.txt",
+			"lib/Transforms/IPO/CMakeLists.txt",
+			"lib/Target/X86/AsmParser/CMakeLists.txt",
+			"lib/IR/CMakeLists.txt",
+			"lib/Support/CMakeLists.txt",
+			"cmake/modules/HandleLLVMOptions.cmake",
+			"CMakeLists.txt",
+			"cmake/config-ix.cmake",
+			"tools/clang/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 11,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 123,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 722,
+				"parent" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 759,
+				"parent" : 2
+			},
+			{
+				"command" : 4,
+				"file" : 3,
+				"line" : 93,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 105,
+				"parent" : 5
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 771,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 19,
+				"parent" : 0
+			},
+			{
+				"file" : 4
+			},
+			{
+				"command" : 7,
+				"file" : 4,
+				"line" : 3,
+				"parent" : 9
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 607,
+				"parent" : 10
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 552,
+				"parent" : 11
+			},
+			{
+				"file" : 5
+			},
+			{
+				"command" : 8,
+				"file" : 5,
+				"line" : 64,
+				"parent" : 13
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 943,
+				"parent" : 14
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 607,
+				"parent" : 15
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 552,
+				"parent" : 16
+			},
+			{
+				"file" : 6
+			},
+			{
+				"command" : 7,
+				"file" : 6,
+				"line" : 1,
+				"parent" : 18
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 607,
+				"parent" : 19
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 552,
+				"parent" : 20
+			},
+			{
+				"file" : 7
+			},
+			{
+				"command" : 7,
+				"file" : 7,
+				"line" : 1,
+				"parent" : 22
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 607,
+				"parent" : 23
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 552,
+				"parent" : 24
+			},
+			{
+				"file" : 8
+			},
+			{
+				"command" : 9,
+				"file" : 8,
+				"line" : 15,
+				"parent" : 26
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 86,
+				"parent" : 27
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 552,
+				"parent" : 28
+			},
+			{
+				"file" : 9
+			},
+			{
+				"command" : 9,
+				"file" : 9,
+				"line" : 34,
+				"parent" : 30
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 86,
+				"parent" : 31
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 552,
+				"parent" : 32
+			},
+			{
+				"file" : 10
+			},
+			{
+				"command" : 7,
+				"file" : 10,
+				"line" : 1,
+				"parent" : 34
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 607,
+				"parent" : 35
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 552,
+				"parent" : 36
+			},
+			{
+				"file" : 11
+			},
+			{
+				"command" : 7,
+				"file" : 11,
+				"line" : 1,
+				"parent" : 38
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 607,
+				"parent" : 39
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 552,
+				"parent" : 40
+			},
+			{
+				"file" : 12
+			},
+			{
+				"command" : 7,
+				"file" : 12,
+				"line" : 1,
+				"parent" : 42
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 607,
+				"parent" : 43
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 552,
+				"parent" : 44
+			},
+			{
+				"file" : 13
+			},
+			{
+				"command" : 7,
+				"file" : 13,
+				"line" : 5,
+				"parent" : 46
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 607,
+				"parent" : 47
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 552,
+				"parent" : 48
+			},
+			{
+				"file" : 14
+			},
+			{
+				"command" : 7,
+				"file" : 14,
+				"line" : 33,
+				"parent" : 50
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 607,
+				"parent" : 51
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 552,
+				"parent" : 52
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 761,
+				"parent" : 2
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 15,
+				"parent" : 0
+			},
+			{
+				"command" : 12,
+				"file" : 0,
+				"line" : 739,
+				"parent" : 2
+			},
+			{
+				"command" : 11,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 56
+			},
+			{
+				"file" : 16
+			},
+			{
+				"command" : 14,
+				"file" : 16,
+				"line" : 592,
+				"parent" : 58
+			},
+			{
+				"file" : 15,
+				"parent" : 59
+			},
+			{
+				"command" : 13,
+				"file" : 15,
+				"line" : 62,
+				"parent" : 60
+			},
+			{
+				"command" : 14,
+				"file" : 16,
+				"line" : 578,
+				"parent" : 58
+			},
+			{
+				"file" : 17,
+				"parent" : 62
+			},
+			{
+				"command" : 13,
+				"file" : 17,
+				"line" : 283,
+				"parent" : 63
+			},
+			{
+				"command" : 13,
+				"file" : 15,
+				"line" : 706,
+				"parent" : 60
+			},
+			{
+				"command" : 13,
+				"file" : 15,
+				"line" : 707,
+				"parent" : 60
+			},
+			{
+				"command" : 13,
+				"file" : 15,
+				"line" : 708,
+				"parent" : 60
+			},
+			{
+				"file" : 18
+			},
+			{
+				"command" : 15,
+				"file" : 18,
+				"line" : 361,
+				"parent" : 68
+			},
+			{
+				"command" : 15,
+				"file" : 17,
+				"line" : 176,
+				"parent" : 63
+			},
+			{
+				"command" : 15,
+				"file" : 16,
+				"line" : 791,
+				"parent" : 58
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -fPIC -fvisibility-inlines-hidden -Werror=date-time -std=c++11 -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wno-maybe-uninitialized -Wdelete-non-virtual-dtor -Wno-comment -fno-common -Woverloaded-virtual -fno-strict-aliasing -g -fdiagnostics-color=always"
+				},
+				{
+					"fragment" : " -fno-exceptions -fno-rtti"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 57,
+					"define" : "GTEST_HAS_RTTI=0"
+				},
+				{
+					"backtrace" : 61,
+					"define" : "_DEBUG"
+				},
+				{
+					"backtrace" : 64,
+					"define" : "_GNU_SOURCE"
+				},
+				{
+					"backtrace" : 65,
+					"define" : "__STDC_CONSTANT_MACROS"
+				},
+				{
+					"backtrace" : 66,
+					"define" : "__STDC_FORMAT_MACROS"
+				},
+				{
+					"backtrace" : 67,
+					"define" : "__STDC_LIMIT_MACROS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"path" : "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/tools/clang/examples/clang-interpreter"
+				},
+				{
+					"path" : "/home/nsas2020/ufo/llvm-6.0.0/tools/clang/examples/clang-interpreter"
+				},
+				{
+					"backtrace" : 69,
+					"path" : "/home/nsas2020/ufo/llvm-6.0.0/tools/clang/include"
+				},
+				{
+					"backtrace" : 69,
+					"path" : "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/tools/clang/include"
+				},
+				{
+					"backtrace" : 70,
+					"path" : "/usr/include/libxml2"
+				},
+				{
+					"backtrace" : 71,
+					"path" : "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/include"
+				},
+				{
+					"backtrace" : 71,
+					"path" : "/home/nsas2020/ufo/llvm-6.0.0/include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 6,
+			"id" : "LLVMDemangle::@3c7ef39cff93a35ba752"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "LLVMSupport::@928d1708d80fe1f55e59"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "LLVMCore::@fbfd63cd06ffdf52319f"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "LLVMIRReader::@ac4e3735190afd111ee4"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "LLVMCodeGen::@47ff7fadf09d83e77685"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "LLVMSelectionDAG::@340dadeb2ee9280dab5b"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "LLVMAsmPrinter::@d67232685906f6a0d56a"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "LLVMGlobalISel::@b0b139c7448c041fac3c"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "LLVMBinaryFormat::@c9b0ef5de2116d71f170"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "LLVMBitReader::@b3ae57fb53631d19cf66"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "LLVMBitWriter::@70aee8a8db3c4815feff"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "LLVMTransformUtils::@485472be269d97170281"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "LLVMInstrumentation::@f6d078940980c0702113"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "LLVMInstCombine::@c211d204041b3cce8885"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "LLVMScalarOpts::@b500fa7488aca5bdc0a7"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "LLVMipo::@5d30e4426957e039fa79"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "LLVMVectorize::@52cafa3d09b69dbbd840"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "LLVMObjCARCOpts::@86b2f715aa46a88a7897"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "LLVMCoroutines::@9bd322b42193a09d6123"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "LLVMLinker::@82b49a9339256152fd37"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "LLVMAnalysis::@a8ea8fd451b56fad3c5d"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "LLVMLTO::@12256144c3740ab3a240"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "LLVMMC::@9597ad869864cf27958c"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "LLVMMCParser::@d8f04122018374db0703"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "LLVMMCDisassembler::@c2d95e4d4d6a2d139337"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "LLVMObject::@642aa1c006d9cde9317d"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "LLVMOption::@03597dd37d3dc3b95065"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "LLVMDebugInfoMSF::@bb9873363af6a4074de7"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "LLVMDebugInfoCodeView::@841a9fddc0a02ad6b960"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "LLVMExecutionEngine::@35b7e69336794e150a02"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "LLVMMCJIT::@9d1f117c3b91a4b10d5c"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "LLVMRuntimeDyld::@05427d74520b18362f83"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "LLVMTarget::@1f06d56b7c3d624f3727"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "LLVMX86CodeGen::@41ad63a90d842fe9c73e"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "LLVMX86AsmParser::@ca1a8f49c236f98dc8f8"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "LLVMX86Disassembler::@5e212d7184d4492787fb"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "LLVMX86AsmPrinter::@a3878aabf08863c9ac18"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "LLVMX86Desc::@edf9a8e523662514edc3"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "LLVMX86Info::@a8de612b6f281ab57bc8"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "LLVMX86Utils::@15e2b00183ef6d83c52b"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "LLVMAsmParser::@bfe21dd4a58a6f8872f3"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "LLVMProfileData::@b9974079c57e2c563b37"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "LLVMCoverage::@dd6fc37ac91636598d9f"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "LLVMPasses::@e8b1c871ec859dffef08"
+		},
+		{
+			"backtrace" : 54,
+			"id" : "clang-tablegen-targets::@a698e65c49ebca5ab3a1"
+		},
+		{
+			"backtrace" : 55,
+			"id" : "clang-headers::@85dbf821aae81a241c4c"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "clangBasic::@af584f149e490d75c24c"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "clangLex::@d3c561e3b3e9c375248d"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "clangParse::@3da6354c36f009bcf2b2"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "clangAST::@572b5cd4cfc688839176"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "clangSema::@b78f6d003921181e7054"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "clangCodeGen::@b53206f97688f9d71411"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "clangAnalysis::@efd5146c6323474be9b8"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "clangEdit::@ad90dd66c332f8450f8c"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "clangDriver::@7a0ba538446439a30277"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "clangSerialization::@0c0ec4a36076fe2a80b8"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "clangFrontend::@ae9a5840ad140bf270f8"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Clang executables"
+	},
+	"id" : "clang-interpreter::@2c7d89d1213a941190f5",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-fPIC -fvisibility-inlines-hidden -Werror=date-time -std=c++11 -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wno-maybe-uninitialized -Wdelete-non-virtual-dtor -Wno-comment -fno-common -Woverloaded-virtual -fno-strict-aliasing -g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-allow-shlib-undefined    -Wl,-rpath-link,/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/./lib",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,\"\\$$ORIGIN/../lib\"",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "lib/libLLVMCore.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "lib/libLLVMExecutionEngine.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "lib/libLLVMMC.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "lib/libLLVMMCJIT.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "lib/libLLVMOption.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "lib/libLLVMSupport.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "lib/libLLVMX86CodeGen.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "lib/libLLVMX86AsmParser.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "lib/libLLVMX86AsmPrinter.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "lib/libLLVMX86Desc.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "lib/libLLVMX86Disassembler.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "lib/libLLVMX86Info.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "lib/libLLVMX86Utils.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "lib/libclangBasic.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "lib/libclangCodeGen.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "lib/libclangDriver.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "lib/libclangFrontend.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "lib/libLLVMExecutionEngine.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "lib/libLLVMRuntimeDyld.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 17,
+				"fragment" : "lib/libLLVMAsmPrinter.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 21,
+				"fragment" : "lib/libLLVMDebugInfoCodeView.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 21,
+				"fragment" : "lib/libLLVMDebugInfoMSF.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 17,
+				"fragment" : "lib/libLLVMGlobalISel.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 17,
+				"fragment" : "lib/libLLVMSelectionDAG.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "lib/libLLVMX86AsmPrinter.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "lib/libLLVMX86Utils.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 25,
+				"fragment" : "lib/libLLVMMCDisassembler.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "lib/libclangDriver.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "lib/libLLVMOption.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 29,
+				"fragment" : "lib/libclangParse.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 29,
+				"fragment" : "lib/libclangSerialization.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 29,
+				"fragment" : "lib/libclangSema.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 29,
+				"fragment" : "lib/libclangEdit.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 33,
+				"fragment" : "lib/libclangAnalysis.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 33,
+				"fragment" : "lib/libclangAST.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 33,
+				"fragment" : "lib/libclangLex.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "lib/libclangBasic.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 33,
+				"fragment" : "lib/libLLVMCoroutines.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 33,
+				"fragment" : "lib/libLLVMCoverage.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 33,
+				"fragment" : "lib/libLLVMLTO.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 33,
+				"fragment" : "lib/libLLVMObjCARCOpts.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 33,
+				"fragment" : "lib/libLLVMPasses.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 17,
+				"fragment" : "lib/libLLVMCodeGen.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "lib/libLLVMTarget.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 33,
+				"fragment" : "lib/libLLVMipo.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 33,
+				"fragment" : "lib/libLLVMBitWriter.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 33,
+				"fragment" : "lib/libLLVMIRReader.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 37,
+				"fragment" : "lib/libLLVMAsmParser.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 33,
+				"fragment" : "lib/libLLVMLinker.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 33,
+				"fragment" : "lib/libLLVMInstrumentation.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 41,
+				"fragment" : "lib/libLLVMVectorize.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 33,
+				"fragment" : "lib/libLLVMScalarOpts.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 33,
+				"fragment" : "lib/libLLVMInstCombine.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 33,
+				"fragment" : "lib/libLLVMTransformUtils.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 17,
+				"fragment" : "lib/libLLVMAnalysis.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "lib/libLLVMObject.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 45,
+				"fragment" : "lib/libLLVMMCParser.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "lib/libLLVMMC.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 33,
+				"fragment" : "lib/libLLVMBitReader.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 33,
+				"fragment" : "lib/libLLVMProfileData.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "lib/libLLVMCore.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 49,
+				"fragment" : "lib/libLLVMBinaryFormat.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "lib/libLLVMSupport.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 53,
+				"fragment" : "-lz",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 53,
+				"fragment" : "-lrt",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 53,
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 53,
+				"fragment" : "-ltinfo",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 53,
+				"fragment" : "-lm",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 53,
+				"fragment" : "lib/libLLVMDemangle.a",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "clang-interpreter",
+	"nameOnDisk" : "clang-interpreter",
+	"paths" : 
+	{
+		"build" : "tools/clang/examples/clang-interpreter",
+		"source" : "tools/clang/examples/clang-interpreter"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "tools/clang/examples/clang-interpreter/main.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

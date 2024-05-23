@@ -1,0 +1,80 @@
+{
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_compiler_rt_runtime"
+		],
+		"files" : 
+		[
+			"projects/compiler-rt/cmake/Modules/AddCompilerRT.cmake",
+			"projects/compiler-rt/lib/lsan/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 52,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 274,
+				"parent" : 1
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "clang_rt.lsan-x86_64::@230e6c94b488129149f8"
+		}
+	],
+	"id" : "install-clang_rt.lsan-x86_64::@230e6c94b488129149f8",
+	"name" : "install-clang_rt.lsan-x86_64",
+	"paths" : 
+	{
+		"build" : "projects/compiler-rt/lib/lsan",
+		"source" : "projects/compiler-rt/lib/lsan"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/projects/compiler-rt/lib/lsan/CMakeFiles/install-clang_rt.lsan-x86_64",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/projects/compiler-rt/lib/lsan/CMakeFiles/install-clang_rt.lsan-x86_64.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

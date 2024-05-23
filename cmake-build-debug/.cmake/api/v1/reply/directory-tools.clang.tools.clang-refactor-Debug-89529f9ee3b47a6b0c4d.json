@@ -1,0 +1,71 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"add_clang_tool"
+		],
+		"files" : 
+		[
+			"tools/clang/cmake/modules/AddClang.cmake",
+			"tools/clang/tools/clang-refactor/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 6,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 142,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 24,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "clang-refactor",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"bin/clang-refactor"
+			],
+			"targetId" : "clang-refactor::@56a1831bd073321c53a5",
+			"targetIndex" : 1592,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"bin/clang-refactor"
+			],
+			"targetId" : "clang-refactor::@56a1831bd073321c53a5",
+			"targetIndex" : 1592,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "tools/clang/tools/clang-refactor",
+		"source" : "tools/clang/tools/clang-refactor"
+	}
+}

@@ -1,0 +1,88 @@
+{
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_compiler_rt_component",
+			"add_dependencies",
+			"add_compiler_rt_runtime"
+		],
+		"files" : 
+		[
+			"projects/compiler-rt/cmake/Modules/AddCompilerRT.cmake",
+			"projects/compiler-rt/lib/dfsan/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 14,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 88,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 19,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 302,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 31,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 45,
+				"parent" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "clang_rt.dfsan-x86_64::@77dd0385a8675db77729"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "clang_rt.dfsan-x86_64-symbols::@77dd0385a8675db77729"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "dfsan_abilist::@77dd0385a8675db77729"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Compiler-RT Misc"
+	},
+	"id" : "dfsan::@77dd0385a8675db77729",
+	"name" : "dfsan",
+	"paths" : 
+	{
+		"build" : "projects/compiler-rt/lib/dfsan",
+		"source" : "projects/compiler-rt/lib/dfsan"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

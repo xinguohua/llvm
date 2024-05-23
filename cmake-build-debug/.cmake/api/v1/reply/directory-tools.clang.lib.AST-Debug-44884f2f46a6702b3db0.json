@@ -1,0 +1,53 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"add_clang_library"
+		],
+		"files" : 
+		[
+			"tools/clang/cmake/modules/AddClang.cmake",
+			"tools/clang/lib/AST/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 6,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 99,
+				"parent" : 1
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "clangAST",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libclangAST.a"
+			],
+			"targetId" : "clangAST::@572b5cd4cfc688839176",
+			"targetIndex" : 1599,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "tools/clang/lib/AST",
+		"source" : "tools/clang/lib/AST"
+	}
+}

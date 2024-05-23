@@ -1,0 +1,150 @@
+{
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_compiler_rt_test",
+			"generate_compiler_rt_tests",
+			"add_interception_tests_for_arch",
+			"add_custom_command"
+		],
+		"files" : 
+		[
+			"projects/compiler-rt/cmake/Modules/AddCompilerRT.cmake",
+			"projects/compiler-rt/lib/interception/tests/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 111,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 88,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 371,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 425,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 419,
+				"parent" : 3
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "compiler-rt-headers::@2362d0e0e07ab23e22da"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "RTInterception.test.i386::@8887155c21b749dfc056"
+		},
+		{
+			"id" : "clang::@279b2102c71965def067"
+		},
+		{
+			"id" : "gtest::@7b482da229522f2cdda6"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Compiler-RT Tests"
+	},
+	"id" : "TInterception-i386-Test::@8887155c21b749dfc056",
+	"name" : "TInterception-i386-Test",
+	"paths" : 
+	{
+		"build" : "projects/compiler-rt/lib/interception/tests",
+		"source" : "projects/compiler-rt/lib/interception/tests"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				3,
+				4,
+				5,
+				6
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/projects/compiler-rt/lib/interception/tests/CMakeFiles/TInterception-i386-Test",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/projects/compiler-rt/lib/interception/tests/CMakeFiles/TInterception-i386-Test.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/projects/compiler-rt/lib/interception/tests/Interception-i386-Test.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/projects/compiler-rt/lib/interception/tests/INTERCEPTION_TEST_OBJECTS.gtest-all.cc.i386.o.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/projects/compiler-rt/lib/interception/tests/INTERCEPTION_TEST_OBJECTS.interception_linux_test.cc.i386.o.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/projects/compiler-rt/lib/interception/tests/INTERCEPTION_TEST_OBJECTS.interception_test_main.cc.i386.o.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/projects/compiler-rt/lib/interception/tests/INTERCEPTION_TEST_OBJECTS.interception_win_test.cc.i386.o.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

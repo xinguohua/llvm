@@ -1,0 +1,105 @@
+{
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_compiler_rt_runtime",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"projects/compiler-rt/cmake/Modules/AddCompilerRT.cmake",
+			"projects/compiler-rt/lib/profile/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 109,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 213,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 289,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 289,
+				"parent" : 1
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "profile::@e5c3a9dc55ecbc191cbb"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "install-clang_rt.profile-i386-stripped::@e5c3a9dc55ecbc191cbb"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "install-clang_rt.profile-x86_64-stripped::@e5c3a9dc55ecbc191cbb"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Compiler-RT Misc"
+	},
+	"id" : "install-profile-stripped::@e5c3a9dc55ecbc191cbb",
+	"name" : "install-profile-stripped",
+	"paths" : 
+	{
+		"build" : "projects/compiler-rt/lib/profile",
+		"source" : "projects/compiler-rt/lib/profile"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/projects/compiler-rt/lib/profile/CMakeFiles/install-profile-stripped",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/projects/compiler-rt/lib/profile/CMakeFiles/install-profile-stripped.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

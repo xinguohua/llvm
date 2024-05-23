@@ -1,0 +1,93 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"add_compiler_rt_runtime",
+			"add_sanitizer_rt_symbols"
+		],
+		"files" : 
+		[
+			"projects/compiler-rt/cmake/Modules/AddCompilerRT.cmake",
+			"projects/compiler-rt/lib/dfsan/CMakeLists.txt",
+			"projects/compiler-rt/cmake/Modules/SanitizerUtils.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 19,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 263,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 28,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 2,
+				"line" : 41,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 46,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "clang_rt.dfsan-x86_64",
+			"destination" : "lib/clang/6.0.0/lib/linux",
+			"paths" : 
+			[
+				"lib/clang/6.0.0/lib/linux/libclang_rt.dfsan-x86_64.a"
+			],
+			"targetId" : "clang_rt.dfsan-x86_64::@77dd0385a8675db77729",
+			"targetIndex" : 1645,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib/clang/6.0.0/lib/linux",
+			"paths" : 
+			[
+				"cmake-build-debug/lib/clang/6.0.0/lib/linux/libclang_rt.dfsan-x86_64.a.syms"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "lib/clang/6.0.0",
+			"paths" : 
+			[
+				"cmake-build-debug/./lib/clang/6.0.0/dfsan_abilist.txt"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "projects/compiler-rt/lib/dfsan",
+		"source" : "projects/compiler-rt/lib/dfsan"
+	}
+}

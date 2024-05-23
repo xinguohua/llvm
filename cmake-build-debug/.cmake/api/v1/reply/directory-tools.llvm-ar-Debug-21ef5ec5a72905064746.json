@@ -1,0 +1,142 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"add_llvm_tool",
+			"llvm_install_symlink",
+			"add_llvm_tool_symlink"
+		],
+		"files" : 
+		[
+			"cmake/modules/AddLLVM.cmake",
+			"tools/llvm-ar/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 10,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 870,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 17,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 1534,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1451,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 18,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 1534,
+				"parent" : 6
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1451,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 19,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 1534,
+				"parent" : 9
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1451,
+				"parent" : 10
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "llvm-ar",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"bin/llvm-ar"
+			],
+			"targetId" : "llvm-ar::@a02a90250a01112d8191",
+			"targetIndex" : 2241,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "llvm-ranlib",
+			"scriptFile" : "cmake/modules/LLVMInstallSymlink.cmake",
+			"type" : "script"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "llvm-ranlib",
+			"type" : "code"
+		},
+		{
+			"backtrace" : 8,
+			"component" : "llvm-lib",
+			"scriptFile" : "cmake/modules/LLVMInstallSymlink.cmake",
+			"type" : "script"
+		},
+		{
+			"backtrace" : 8,
+			"component" : "llvm-lib",
+			"type" : "code"
+		},
+		{
+			"backtrace" : 11,
+			"component" : "llvm-dlltool",
+			"scriptFile" : "cmake/modules/LLVMInstallSymlink.cmake",
+			"type" : "script"
+		},
+		{
+			"backtrace" : 11,
+			"component" : "llvm-dlltool",
+			"type" : "code"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "tools/llvm-ar",
+		"source" : "tools/llvm-ar"
+	}
+}

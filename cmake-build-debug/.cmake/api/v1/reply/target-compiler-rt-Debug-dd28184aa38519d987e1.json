@@ -1,0 +1,359 @@
+{
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"include",
+			"add_dependencies",
+			"add_compiler_rt_component"
+		],
+		"files" : 
+		[
+			"projects/compiler-rt/cmake/base-config-ix.cmake",
+			"projects/compiler-rt/CMakeLists.txt",
+			"projects/compiler-rt/include/CMakeLists.txt",
+			"projects/compiler-rt/lib/builtins/CMakeLists.txt",
+			"projects/compiler-rt/cmake/Modules/AddCompilerRT.cmake",
+			"projects/compiler-rt/lib/lsan/CMakeLists.txt",
+			"projects/compiler-rt/lib/ubsan/CMakeLists.txt",
+			"projects/compiler-rt/lib/asan/CMakeLists.txt",
+			"projects/compiler-rt/lib/dfsan/CMakeLists.txt",
+			"projects/compiler-rt/lib/msan/CMakeLists.txt",
+			"projects/compiler-rt/lib/tsan/CMakeLists.txt",
+			"projects/compiler-rt/lib/tsan/dd/CMakeLists.txt",
+			"projects/compiler-rt/lib/safestack/CMakeLists.txt",
+			"projects/compiler-rt/lib/cfi/CMakeLists.txt",
+			"projects/compiler-rt/lib/esan/CMakeLists.txt",
+			"projects/compiler-rt/lib/scudo/CMakeLists.txt",
+			"projects/compiler-rt/lib/ubsan_minimal/CMakeLists.txt",
+			"projects/compiler-rt/lib/profile/CMakeLists.txt",
+			"projects/compiler-rt/lib/xray/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 26,
+				"parent" : 0
+			},
+			{
+				"file" : 0,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 12,
+				"parent" : 2
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 43,
+				"parent" : 4
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 556,
+				"parent" : 6
+			},
+			{
+				"file" : 5
+			},
+			{
+				"command" : 3,
+				"file" : 5,
+				"line" : 30,
+				"parent" : 8
+			},
+			{
+				"command" : 2,
+				"file" : 4,
+				"line" : 93,
+				"parent" : 9
+			},
+			{
+				"file" : 6
+			},
+			{
+				"command" : 3,
+				"file" : 6,
+				"line" : 45,
+				"parent" : 11
+			},
+			{
+				"command" : 2,
+				"file" : 4,
+				"line" : 93,
+				"parent" : 12
+			},
+			{
+				"file" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 7,
+				"line" : 112,
+				"parent" : 14
+			},
+			{
+				"command" : 2,
+				"file" : 4,
+				"line" : 93,
+				"parent" : 15
+			},
+			{
+				"file" : 8
+			},
+			{
+				"command" : 3,
+				"file" : 8,
+				"line" : 14,
+				"parent" : 17
+			},
+			{
+				"command" : 2,
+				"file" : 4,
+				"line" : 93,
+				"parent" : 18
+			},
+			{
+				"file" : 9
+			},
+			{
+				"command" : 3,
+				"file" : 9,
+				"line" : 28,
+				"parent" : 20
+			},
+			{
+				"command" : 2,
+				"file" : 4,
+				"line" : 93,
+				"parent" : 21
+			},
+			{
+				"file" : 10
+			},
+			{
+				"command" : 3,
+				"file" : 10,
+				"line" : 118,
+				"parent" : 23
+			},
+			{
+				"command" : 2,
+				"file" : 4,
+				"line" : 93,
+				"parent" : 24
+			},
+			{
+				"file" : 11
+			},
+			{
+				"command" : 2,
+				"file" : 11,
+				"line" : 51,
+				"parent" : 26
+			},
+			{
+				"file" : 12
+			},
+			{
+				"command" : 3,
+				"file" : 12,
+				"line" : 1,
+				"parent" : 28
+			},
+			{
+				"command" : 2,
+				"file" : 4,
+				"line" : 93,
+				"parent" : 29
+			},
+			{
+				"file" : 13
+			},
+			{
+				"command" : 3,
+				"file" : 13,
+				"line" : 1,
+				"parent" : 31
+			},
+			{
+				"command" : 2,
+				"file" : 4,
+				"line" : 93,
+				"parent" : 32
+			},
+			{
+				"file" : 14
+			},
+			{
+				"command" : 3,
+				"file" : 14,
+				"line" : 3,
+				"parent" : 34
+			},
+			{
+				"command" : 2,
+				"file" : 4,
+				"line" : 93,
+				"parent" : 35
+			},
+			{
+				"file" : 15
+			},
+			{
+				"command" : 3,
+				"file" : 15,
+				"line" : 1,
+				"parent" : 37
+			},
+			{
+				"command" : 2,
+				"file" : 4,
+				"line" : 93,
+				"parent" : 38
+			},
+			{
+				"file" : 16
+			},
+			{
+				"command" : 3,
+				"file" : 16,
+				"line" : 16,
+				"parent" : 40
+			},
+			{
+				"command" : 2,
+				"file" : 4,
+				"line" : 93,
+				"parent" : 41
+			},
+			{
+				"file" : 17
+			},
+			{
+				"command" : 3,
+				"file" : 17,
+				"line" : 49,
+				"parent" : 43
+			},
+			{
+				"command" : 2,
+				"file" : 4,
+				"line" : 93,
+				"parent" : 44
+			},
+			{
+				"file" : 18
+			},
+			{
+				"command" : 3,
+				"file" : 18,
+				"line" : 60,
+				"parent" : 46
+			},
+			{
+				"command" : 2,
+				"file" : 4,
+				"line" : 93,
+				"parent" : 47
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "compiler-rt-headers::@2362d0e0e07ab23e22da"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "builtins::@fdaf820d049f7c7afbdd"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "lsan::@230e6c94b488129149f8"
+		},
+		{
+			"backtrace" : 13,
+			"id" : "ubsan::@6f7ab0110c9d2604cac3"
+		},
+		{
+			"backtrace" : 16,
+			"id" : "asan::@25c3ad5d91a874a36ed9"
+		},
+		{
+			"backtrace" : 19,
+			"id" : "dfsan::@77dd0385a8675db77729"
+		},
+		{
+			"backtrace" : 22,
+			"id" : "msan::@5ff0b1e77080cb904fb5"
+		},
+		{
+			"backtrace" : 25,
+			"id" : "tsan::@eb2e153928c6854e71ad"
+		},
+		{
+			"backtrace" : 27,
+			"id" : "dd::@e42eaf451f09ef12b5ec"
+		},
+		{
+			"backtrace" : 30,
+			"id" : "safestack::@e6dc2e2561063817591a"
+		},
+		{
+			"backtrace" : 33,
+			"id" : "cfi::@d0269baa058ecbf7488a"
+		},
+		{
+			"backtrace" : 36,
+			"id" : "esan::@0d20c9ba56cca9c9c6d3"
+		},
+		{
+			"backtrace" : 39,
+			"id" : "scudo::@070895993031c92378e8"
+		},
+		{
+			"backtrace" : 42,
+			"id" : "ubsan-minimal::@0dd097344c5c966c5388"
+		},
+		{
+			"backtrace" : 45,
+			"id" : "profile::@e5c3a9dc55ecbc191cbb"
+		},
+		{
+			"backtrace" : 48,
+			"id" : "xray::@2a10192c9cae601237b9"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Compiler-RT Misc"
+	},
+	"id" : "compiler-rt::@0d7a14317baa1c4b9dc1",
+	"name" : "compiler-rt",
+	"paths" : 
+	{
+		"build" : "projects/compiler-rt",
+		"source" : "projects/compiler-rt"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

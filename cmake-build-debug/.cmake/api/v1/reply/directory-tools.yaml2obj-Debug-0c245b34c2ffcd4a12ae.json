@@ -1,0 +1,53 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"add_llvm_tool"
+		],
+		"files" : 
+		[
+			"cmake/modules/AddLLVM.cmake",
+			"tools/yaml2obj/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 9,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 870,
+				"parent" : 1
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "yaml2obj",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"bin/yaml2obj"
+			],
+			"targetId" : "yaml2obj::@1ace74fd1e5f08965ec9",
+			"targetIndex" : 2318,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "tools/yaml2obj",
+		"source" : "tools/yaml2obj"
+	}
+}

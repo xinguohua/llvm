@@ -1,0 +1,219 @@
+{
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_lit_target",
+			"add_lit_testsuites",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"cmake/modules/AddLLVM.cmake",
+			"tools/clang/test/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 125,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 1385,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1322,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 1333,
+				"parent" : 2
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "FileCheck::@09bac3cf726c1488c914"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "count::@1848ee2bede5a1584fa8"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "not::@7726f5738bf8037ed68b"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "llvm-config::@afa2b000db28441ce85a"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "llvm-lto::@2fda6cc5f4a98f144093"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "llvm-profdata::@bb49f6a0934048e71b3d"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "clang-tblgen::@9d1a7e4b77846bff96c3"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "clang-headers::@85dbf821aae81a241c4c"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "diagtool::@6fcaab4b6a6bb1fbdab7"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "clang::@279b2102c71965def067"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "clang-diff::@636c7d8c043ab220a797"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "clang-format::@0fca8876159cb0bedb6e"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "clang-import-test::@bfe74272e932fc923db5"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "clang-offload-bundler::@75531401fb41b759697b"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "c-index-test::@13ca623d0db5a9379081"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "clang-rename::@cc7e808ddbabd895664b"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "clang-refactor::@56a1831bd073321c53a5"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "arcmt-test::@bf409b4c11d7534a58aa"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "c-arcmt-test::@c31ccb908af62a945bb7"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "clang-check::@bf3d1bc6c6881cd79c3b"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "clang-func-mapping::@5eea8b4365704d429038"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "ClangUnitTests::@e1f11e1ec73888e26d14"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "llc::@b54ea129dc3e8f94840b"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "llvm-bcanalyzer::@c40be07b8d45bb5a8a90"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "llvm-cat::@06466fed4d82d175ffc4"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "llvm-dis::@e82ed11c4685fece42d7"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "llvm-modextract::@b56560e6ba4b1f3f5185"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "llvm-nm::@3d6bf72ef684413f1fda"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "llvm-objdump::@2ec370e9f30813b8b31c"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "llvm-readobj::@494ff1f9bdd8b7c92285"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "llvm-symbolizer::@9bd0ecc701ed4e461dcf"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "opt::@b47735b880bc6d502d77"
+		}
+	],
+	"id" : "check-clang-cxx-dcl.decl-dcl.meaning-dcl.mptr::@da21c69ae702d302b086",
+	"name" : "check-clang-cxx-dcl.decl-dcl.meaning-dcl.mptr",
+	"paths" : 
+	{
+		"build" : "tools/clang/test",
+		"source" : "tools/clang/test"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/tools/clang/test/CMakeFiles/check-clang-cxx-dcl.decl-dcl.meaning-dcl.mptr",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/tools/clang/test/CMakeFiles/check-clang-cxx-dcl.decl-dcl.meaning-dcl.mptr.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

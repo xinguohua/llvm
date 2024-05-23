@@ -1,0 +1,112 @@
+{
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_compiler_rt_component",
+			"add_dependencies",
+			"add_compiler_rt_runtime"
+		],
+		"files" : 
+		[
+			"projects/compiler-rt/cmake/Modules/AddCompilerRT.cmake",
+			"projects/compiler-rt/lib/scudo/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 88,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 41,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 302,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 52,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 302,
+				"parent" : 5
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 60,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 302,
+				"parent" : 7
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "clang_rt.scudo-i386::@070895993031c92378e8"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "clang_rt.scudo-x86_64::@070895993031c92378e8"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "clang_rt.scudo_cxx-i386::@070895993031c92378e8"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "clang_rt.scudo_cxx-x86_64::@070895993031c92378e8"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "clang_rt.scudo-dynamic-i386::@070895993031c92378e8"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "clang_rt.scudo-dynamic-x86_64::@070895993031c92378e8"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Compiler-RT Misc"
+	},
+	"id" : "scudo::@070895993031c92378e8",
+	"name" : "scudo",
+	"paths" : 
+	{
+		"build" : "projects/compiler-rt/lib/scudo",
+		"source" : "projects/compiler-rt/lib/scudo"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

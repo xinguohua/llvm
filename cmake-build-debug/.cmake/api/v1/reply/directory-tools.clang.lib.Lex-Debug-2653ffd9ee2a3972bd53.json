@@ -1,0 +1,53 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"add_clang_library"
+		],
+		"files" : 
+		[
+			"tools/clang/cmake/modules/AddClang.cmake",
+			"tools/clang/lib/Lex/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 5,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 99,
+				"parent" : 1
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "clangLex",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libclangLex.a"
+			],
+			"targetId" : "clangLex::@d3c561e3b3e9c375248d",
+			"targetIndex" : 1613,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "tools/clang/lib/Lex",
+		"source" : "tools/clang/lib/Lex"
+	}
+}

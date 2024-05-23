@@ -1,0 +1,607 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "bin/clang-format"
+		}
+	],
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"add_llvm_executable",
+			"add_clang_executable",
+			"add_clang_tool",
+			"install",
+			"target_link_libraries",
+			"explicit_llvm_config",
+			"llvm_config",
+			"llvm_add_library",
+			"add_clang_library",
+			"add_llvm_library",
+			"add_dependencies",
+			"set_property",
+			"llvm_update_compile_flags",
+			"add_definitions",
+			"include",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"cmake/modules/AddLLVM.cmake",
+			"tools/clang/cmake/modules/AddClang.cmake",
+			"tools/clang/tools/clang-format/CMakeLists.txt",
+			"cmake/modules/LLVM-Config.cmake",
+			"tools/clang/lib/Tooling/Core/CMakeLists.txt",
+			"tools/clang/lib/Format/CMakeLists.txt",
+			"tools/clang/lib/Basic/CMakeLists.txt",
+			"lib/IR/CMakeLists.txt",
+			"lib/Support/CMakeLists.txt",
+			"cmake/modules/HandleLLVMOptions.cmake",
+			"CMakeLists.txt",
+			"cmake/config-ix.cmake",
+			"tools/clang/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 3,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 133,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 123,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 724,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 142,
+				"parent" : 1
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 759,
+				"parent" : 3
+			},
+			{
+				"command" : 6,
+				"file" : 3,
+				"line" : 93,
+				"parent" : 6
+			},
+			{
+				"command" : 5,
+				"file" : 3,
+				"line" : 105,
+				"parent" : 7
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 771,
+				"parent" : 3
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 14,
+				"parent" : 0
+			},
+			{
+				"file" : 4
+			},
+			{
+				"command" : 9,
+				"file" : 4,
+				"line" : 3,
+				"parent" : 11
+			},
+			{
+				"command" : 8,
+				"file" : 1,
+				"line" : 86,
+				"parent" : 12
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 552,
+				"parent" : 13
+			},
+			{
+				"file" : 5
+			},
+			{
+				"command" : 9,
+				"file" : 5,
+				"line" : 3,
+				"parent" : 15
+			},
+			{
+				"command" : 8,
+				"file" : 1,
+				"line" : 86,
+				"parent" : 16
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 552,
+				"parent" : 17
+			},
+			{
+				"file" : 6
+			},
+			{
+				"command" : 9,
+				"file" : 6,
+				"line" : 47,
+				"parent" : 19
+			},
+			{
+				"command" : 8,
+				"file" : 1,
+				"line" : 86,
+				"parent" : 20
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 552,
+				"parent" : 21
+			},
+			{
+				"file" : 7
+			},
+			{
+				"command" : 10,
+				"file" : 7,
+				"line" : 5,
+				"parent" : 23
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 607,
+				"parent" : 24
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 552,
+				"parent" : 25
+			},
+			{
+				"file" : 8
+			},
+			{
+				"command" : 10,
+				"file" : 8,
+				"line" : 33,
+				"parent" : 27
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 607,
+				"parent" : 28
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 552,
+				"parent" : 29
+			},
+			{
+				"command" : 11,
+				"file" : 0,
+				"line" : 761,
+				"parent" : 3
+			},
+			{
+				"command" : 13,
+				"file" : 0,
+				"line" : 739,
+				"parent" : 3
+			},
+			{
+				"command" : 12,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 32
+			},
+			{
+				"file" : 10
+			},
+			{
+				"command" : 15,
+				"file" : 10,
+				"line" : 592,
+				"parent" : 34
+			},
+			{
+				"file" : 9,
+				"parent" : 35
+			},
+			{
+				"command" : 14,
+				"file" : 9,
+				"line" : 62,
+				"parent" : 36
+			},
+			{
+				"command" : 15,
+				"file" : 10,
+				"line" : 578,
+				"parent" : 34
+			},
+			{
+				"file" : 11,
+				"parent" : 38
+			},
+			{
+				"command" : 14,
+				"file" : 11,
+				"line" : 283,
+				"parent" : 39
+			},
+			{
+				"command" : 14,
+				"file" : 9,
+				"line" : 706,
+				"parent" : 36
+			},
+			{
+				"command" : 14,
+				"file" : 9,
+				"line" : 707,
+				"parent" : 36
+			},
+			{
+				"command" : 14,
+				"file" : 9,
+				"line" : 708,
+				"parent" : 36
+			},
+			{
+				"file" : 12
+			},
+			{
+				"command" : 16,
+				"file" : 12,
+				"line" : 361,
+				"parent" : 44
+			},
+			{
+				"command" : 16,
+				"file" : 11,
+				"line" : 176,
+				"parent" : 39
+			},
+			{
+				"command" : 16,
+				"file" : 10,
+				"line" : 791,
+				"parent" : 34
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -fPIC -fvisibility-inlines-hidden -Werror=date-time -std=c++11 -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wno-maybe-uninitialized -Wdelete-non-virtual-dtor -Wno-comment -fno-common -Woverloaded-virtual -fno-strict-aliasing -g -fdiagnostics-color=always"
+				},
+				{
+					"fragment" : " -fno-exceptions -fno-rtti"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 33,
+					"define" : "GTEST_HAS_RTTI=0"
+				},
+				{
+					"backtrace" : 37,
+					"define" : "_DEBUG"
+				},
+				{
+					"backtrace" : 40,
+					"define" : "_GNU_SOURCE"
+				},
+				{
+					"backtrace" : 41,
+					"define" : "__STDC_CONSTANT_MACROS"
+				},
+				{
+					"backtrace" : 42,
+					"define" : "__STDC_FORMAT_MACROS"
+				},
+				{
+					"backtrace" : 43,
+					"define" : "__STDC_LIMIT_MACROS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"path" : "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/tools/clang/tools/clang-format"
+				},
+				{
+					"path" : "/home/nsas2020/ufo/llvm-6.0.0/tools/clang/tools/clang-format"
+				},
+				{
+					"backtrace" : 45,
+					"path" : "/home/nsas2020/ufo/llvm-6.0.0/tools/clang/include"
+				},
+				{
+					"backtrace" : 45,
+					"path" : "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/tools/clang/include"
+				},
+				{
+					"backtrace" : 46,
+					"path" : "/usr/include/libxml2"
+				},
+				{
+					"backtrace" : 47,
+					"path" : "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/include"
+				},
+				{
+					"backtrace" : 47,
+					"path" : "/home/nsas2020/ufo/llvm-6.0.0/include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 8,
+			"id" : "LLVMDemangle::@3c7ef39cff93a35ba752"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "LLVMSupport::@928d1708d80fe1f55e59"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "LLVMCore::@fbfd63cd06ffdf52319f"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "LLVMBinaryFormat::@c9b0ef5de2116d71f170"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "LLVMMC::@9597ad869864cf27958c"
+		},
+		{
+			"backtrace" : 31,
+			"id" : "clang-tablegen-targets::@a698e65c49ebca5ab3a1"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "clangBasic::@af584f149e490d75c24c"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "clangLex::@d3c561e3b3e9c375248d"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "clangAST::@572b5cd4cfc688839176"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "clangRewrite::@ac59a15518014014e11a"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "clangToolingCore::@43e67e3a7fd26cb84d1c"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "clangFormat::@413a1e9ee6c94838d69a"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Clang executables"
+	},
+	"id" : "clang-format::@0fca8876159cb0bedb6e",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 5,
+				"path" : "bin"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-fPIC -fvisibility-inlines-hidden -Werror=date-time -std=c++11 -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wno-maybe-uninitialized -Wdelete-non-virtual-dtor -Wno-comment -fno-common -Woverloaded-virtual -fno-strict-aliasing -g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-allow-shlib-undefined    -Wl,-rpath-link,/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/./lib",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,\"\\$$ORIGIN/../lib\"",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "lib/libLLVMSupport.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "lib/libclangBasic.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "lib/libclangFormat.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "lib/libclangRewrite.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "lib/libclangToolingCore.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "lib/libclangRewrite.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "lib/libclangAST.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 18,
+				"fragment" : "lib/libclangLex.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "lib/libclangBasic.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 22,
+				"fragment" : "lib/libLLVMCore.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "lib/libLLVMBinaryFormat.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 22,
+				"fragment" : "lib/libLLVMMC.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "lib/libLLVMSupport.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 30,
+				"fragment" : "-lz",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 30,
+				"fragment" : "-lrt",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 30,
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 30,
+				"fragment" : "-ltinfo",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 30,
+				"fragment" : "-lm",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 30,
+				"fragment" : "lib/libLLVMDemangle.a",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "clang-format",
+	"nameOnDisk" : "clang-format",
+	"paths" : 
+	{
+		"build" : "tools/clang/tools/clang-format",
+		"source" : "tools/clang/tools/clang-format"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "tools/clang/tools/clang-format/ClangFormat.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

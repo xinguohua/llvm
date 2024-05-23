@@ -1,0 +1,85 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_dependencies",
+			"add_compiler_rt_runtime"
+		],
+		"files" : 
+		[
+			"projects/compiler-rt/lib/stats/CMakeLists.txt",
+			"projects/compiler-rt/cmake/Modules/AddCompilerRT.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 20,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 302,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 32,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 302,
+				"parent" : 4
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "clang_rt.stats-i386::@15c97ce0da8c82972fff"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "clang_rt.stats-x86_64::@15c97ce0da8c82972fff"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "clang_rt.stats_client-i386::@15c97ce0da8c82972fff"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "clang_rt.stats_client-x86_64::@15c97ce0da8c82972fff"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Compiler-RT Misc"
+	},
+	"id" : "stats::@15c97ce0da8c82972fff",
+	"name" : "stats",
+	"paths" : 
+	{
+		"build" : "projects/compiler-rt/lib/stats",
+		"source" : "projects/compiler-rt/lib/stats"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

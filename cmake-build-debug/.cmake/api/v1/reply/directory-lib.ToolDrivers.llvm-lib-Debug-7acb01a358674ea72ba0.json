@@ -1,0 +1,53 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"add_llvm_library"
+		],
+		"files" : 
+		[
+			"cmake/modules/AddLLVM.cmake",
+			"lib/ToolDrivers/llvm-lib/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 5,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 642,
+				"parent" : 1
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "LLVMLibDriver",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libLLVMLibDriver.a"
+			],
+			"targetId" : "LLVMLibDriver::@2a9a25af2b4f6da7313e",
+			"targetIndex" : 173,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "lib/ToolDrivers/llvm-lib",
+		"source" : "lib/ToolDrivers/llvm-lib"
+	}
+}

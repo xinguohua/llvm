@@ -1,0 +1,53 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"add_clang_library"
+		],
+		"files" : 
+		[
+			"tools/clang/cmake/modules/AddClang.cmake",
+			"tools/clang/tools/clang-fuzzer/handle-cxx/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 3,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 99,
+				"parent" : 1
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "clangHandleCXX",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libclangHandleCXX.a"
+			],
+			"targetId" : "clangHandleCXX::@b312087b6e1e4dc896f4",
+			"targetIndex" : 1611,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "tools/clang/tools/clang-fuzzer/handle-cxx",
+		"source" : "tools/clang/tools/clang-fuzzer/handle-cxx"
+	}
+}

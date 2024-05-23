@@ -1,0 +1,73 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_dependencies",
+			"add_compiler_rt_runtime"
+		],
+		"files" : 
+		[
+			"projects/compiler-rt/lib/tsan/dd/CMakeLists.txt",
+			"projects/compiler-rt/cmake/Modules/AddCompilerRT.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 21,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 25,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 302,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 39,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 302,
+				"parent" : 4
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "clang_rt.dd-x86_64::@e42eaf451f09ef12b5ec"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "clang_rt.dyndd-dynamic-x86_64::@e42eaf451f09ef12b5ec"
+		}
+	],
+	"id" : "dd::@e42eaf451f09ef12b5ec",
+	"name" : "dd",
+	"paths" : 
+	{
+		"build" : "projects/compiler-rt/lib/tsan/dd",
+		"source" : "projects/compiler-rt/lib/tsan/dd"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

@@ -1,0 +1,296 @@
+{
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_compiler_rt_test",
+			"generate_compiler_rt_tests",
+			"add_sanitizer_tests_for_arch",
+			"add_custom_command"
+		],
+		"files" : 
+		[
+			"projects/compiler-rt/cmake/Modules/AddCompilerRT.cmake",
+			"projects/compiler-rt/lib/sanitizer_common/tests/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 195,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 147,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 371,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 425,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 419,
+				"parent" : 3
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "compiler-rt-headers::@2362d0e0e07ab23e22da"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "RTSanitizerCommon.test.x86_64::@71387dbe268b53050868"
+		},
+		{
+			"id" : "clang::@279b2102c71965def067"
+		},
+		{
+			"id" : "gtest::@7b482da229522f2cdda6"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Compiler-RT Tests"
+	},
+	"id" : "TSanitizer-x86_64-Test::@71387dbe268b53050868",
+	"name" : "TSanitizer-x86_64-Test",
+	"paths" : 
+	{
+		"build" : "projects/compiler-rt/lib/sanitizer_common/tests",
+		"source" : "projects/compiler-rt/lib/sanitizer_common/tests"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/projects/compiler-rt/lib/sanitizer_common/tests/CMakeFiles/TSanitizer-x86_64-Test",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/projects/compiler-rt/lib/sanitizer_common/tests/CMakeFiles/TSanitizer-x86_64-Test.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/projects/compiler-rt/lib/sanitizer_common/tests/Sanitizer-x86_64-Test.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"path" : "utils/unittest/googletest/src/gtest-all.cc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "projects/compiler-rt/lib/sanitizer_common/tests/sanitizer_allocator_test.cc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "projects/compiler-rt/lib/sanitizer_common/tests/sanitizer_atomic_test.cc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "projects/compiler-rt/lib/sanitizer_common/tests/sanitizer_bitvector_test.cc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "projects/compiler-rt/lib/sanitizer_common/tests/sanitizer_bvgraph_test.cc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "projects/compiler-rt/lib/sanitizer_common/tests/sanitizer_common_test.cc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "projects/compiler-rt/lib/sanitizer_common/tests/sanitizer_deadlock_detector_test.cc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "projects/compiler-rt/lib/sanitizer_common/tests/sanitizer_flags_test.cc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "projects/compiler-rt/lib/sanitizer_common/tests/sanitizer_format_interceptor_test.cc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "projects/compiler-rt/lib/sanitizer_common/tests/sanitizer_ioctl_test.cc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "projects/compiler-rt/lib/sanitizer_common/tests/sanitizer_libc_test.cc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "projects/compiler-rt/lib/sanitizer_common/tests/sanitizer_linux_test.cc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "projects/compiler-rt/lib/sanitizer_common/tests/sanitizer_list_test.cc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "projects/compiler-rt/lib/sanitizer_common/tests/sanitizer_mutex_test.cc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "projects/compiler-rt/lib/sanitizer_common/tests/sanitizer_nolibc_test.cc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "projects/compiler-rt/lib/sanitizer_common/tests/sanitizer_posix_test.cc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "projects/compiler-rt/lib/sanitizer_common/tests/sanitizer_printf_test.cc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "projects/compiler-rt/lib/sanitizer_common/tests/sanitizer_procmaps_test.cc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "projects/compiler-rt/lib/sanitizer_common/tests/sanitizer_quarantine_test.cc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "projects/compiler-rt/lib/sanitizer_common/tests/sanitizer_stackdepot_test.cc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "projects/compiler-rt/lib/sanitizer_common/tests/sanitizer_stacktrace_printer_test.cc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "projects/compiler-rt/lib/sanitizer_common/tests/sanitizer_stacktrace_test.cc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "projects/compiler-rt/lib/sanitizer_common/tests/sanitizer_stoptheworld_test.cc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "projects/compiler-rt/lib/sanitizer_common/tests/sanitizer_suppressions_test.cc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "projects/compiler-rt/lib/sanitizer_common/tests/sanitizer_symbolizer_test.cc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "projects/compiler-rt/lib/sanitizer_common/tests/sanitizer_test_main.cc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "projects/compiler-rt/lib/sanitizer_common/tests/sanitizer_thread_registry_test.cc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "projects/compiler-rt/lib/sanitizer_common/tests/sanitizer_vector_test.cc",
+			"sourceGroupIndex" : 2
+		}
+	],
+	"type" : "UTILITY"
+}

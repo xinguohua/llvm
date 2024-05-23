@@ -1,0 +1,135 @@
+{
+	"backtrace" : 5,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_compiler_rt_test",
+			"generate_compiler_rt_tests",
+			"generate_asan_tests",
+			"add_asan_tests"
+		],
+		"files" : 
+		[
+			"projects/compiler-rt/cmake/Modules/AddCompilerRT.cmake",
+			"projects/compiler-rt/lib/asan/tests/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 269,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 227,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 172,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 371,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 425,
+				"parent" : 4
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "compiler-rt-headers::@2362d0e0e07ab23e22da"
+		},
+		{
+			"id" : "asan::@25c3ad5d91a874a36ed9"
+		},
+		{
+			"id" : "clang::@279b2102c71965def067"
+		},
+		{
+			"id" : "gtest::@7b482da229522f2cdda6"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Compiler-RT Tests"
+	},
+	"id" : "TAsan-x86_64-inline-Benchmark::@54e9ae779f0686d876a9",
+	"name" : "TAsan-x86_64-inline-Benchmark",
+	"paths" : 
+	{
+		"build" : "projects/compiler-rt/lib/asan/tests",
+		"source" : "projects/compiler-rt/lib/asan/tests"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				3,
+				4
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/projects/compiler-rt/lib/asan/tests/CMakeFiles/TAsan-x86_64-inline-Benchmark",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/projects/compiler-rt/lib/asan/tests/CMakeFiles/TAsan-x86_64-inline-Benchmark.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/projects/compiler-rt/lib/asan/tests/default/Asan-x86_64-inline-Benchmark.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/projects/compiler-rt/lib/asan/tests/ASAN_BENCHMARK_OBJECTS.asan_benchmarks_test.cc.x86_64-inline.o.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/projects/compiler-rt/lib/asan/tests/ASAN_BENCHMARK_OBJECTS.gtest-all.cc.x86_64-inline.o.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

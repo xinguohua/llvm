@@ -1,0 +1,77 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_dependencies",
+			"add_compiler_rt_runtime"
+		],
+		"files" : 
+		[
+			"projects/compiler-rt/lib/builtins/CMakeLists.txt",
+			"projects/compiler-rt/cmake/Modules/AddCompilerRT.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 490,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 545,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 302,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 545,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 302,
+				"parent" : 4
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "clang_rt.builtins-i386::@fdaf820d049f7c7afbdd"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "clang_rt.builtins-x86_64::@fdaf820d049f7c7afbdd"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Compiler-RT Misc"
+	},
+	"id" : "builtins::@fdaf820d049f7c7afbdd",
+	"name" : "builtins",
+	"paths" : 
+	{
+		"build" : "projects/compiler-rt/lib/builtins",
+		"source" : "projects/compiler-rt/lib/builtins"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

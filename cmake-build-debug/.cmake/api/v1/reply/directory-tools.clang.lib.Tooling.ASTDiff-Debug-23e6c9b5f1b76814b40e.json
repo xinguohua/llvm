@@ -1,0 +1,53 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"add_clang_library"
+		],
+		"files" : 
+		[
+			"tools/clang/cmake/modules/AddClang.cmake",
+			"tools/clang/lib/Tooling/ASTDiff/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 5,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 99,
+				"parent" : 1
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "clangToolingASTDiff",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libclangToolingASTDiff.a"
+			],
+			"targetId" : "clangToolingASTDiff::@95b0cb8e53a6d958ee0d",
+			"targetIndex" : 1623,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "tools/clang/lib/Tooling/ASTDiff",
+		"source" : "tools/clang/lib/Tooling/ASTDiff"
+	}
+}

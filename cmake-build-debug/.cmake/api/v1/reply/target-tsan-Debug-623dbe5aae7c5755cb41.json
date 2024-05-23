@@ -1,0 +1,73 @@
+{
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_compiler_rt_component",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"projects/compiler-rt/cmake/Modules/AddCompilerRT.cmake",
+			"projects/compiler-rt/lib/tsan/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 118,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 88,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 220,
+				"parent" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "clang_rt.tsan-x86_64::@eb2e153928c6854e71ad"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "clang_rt.tsan_cxx-x86_64::@eb2e153928c6854e71ad"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "clang_rt.tsan-x86_64-symbols::@eb2e153928c6854e71ad"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "clang_rt.tsan_cxx-x86_64-symbols::@eb2e153928c6854e71ad"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Compiler-RT Misc"
+	},
+	"id" : "tsan::@eb2e153928c6854e71ad",
+	"name" : "tsan",
+	"paths" : 
+	{
+		"build" : "projects/compiler-rt/lib/tsan",
+		"source" : "projects/compiler-rt/lib/tsan"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

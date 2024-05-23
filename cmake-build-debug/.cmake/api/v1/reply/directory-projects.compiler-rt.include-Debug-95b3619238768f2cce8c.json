@@ -1,0 +1,72 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"projects/compiler-rt/include/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 47,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 52,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "compiler-rt-headers",
+			"destination" : "lib/clang/6.0.0/include/sanitizer",
+			"paths" : 
+			[
+				"projects/compiler-rt/include/sanitizer/allocator_interface.h",
+				"projects/compiler-rt/include/sanitizer/asan_interface.h",
+				"projects/compiler-rt/include/sanitizer/common_interface_defs.h",
+				"projects/compiler-rt/include/sanitizer/coverage_interface.h",
+				"projects/compiler-rt/include/sanitizer/dfsan_interface.h",
+				"projects/compiler-rt/include/sanitizer/esan_interface.h",
+				"projects/compiler-rt/include/sanitizer/hwasan_interface.h",
+				"projects/compiler-rt/include/sanitizer/linux_syscall_hooks.h",
+				"projects/compiler-rt/include/sanitizer/lsan_interface.h",
+				"projects/compiler-rt/include/sanitizer/msan_interface.h",
+				"projects/compiler-rt/include/sanitizer/scudo_interface.h",
+				"projects/compiler-rt/include/sanitizer/tsan_interface.h",
+				"projects/compiler-rt/include/sanitizer/tsan_interface_atomic.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "compiler-rt-headers",
+			"destination" : "lib/clang/6.0.0/include/xray",
+			"paths" : 
+			[
+				"projects/compiler-rt/include/xray/xray_interface.h",
+				"projects/compiler-rt/include/xray/xray_log_interface.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "projects/compiler-rt/include",
+		"source" : "projects/compiler-rt/include"
+	}
+}

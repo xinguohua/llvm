@@ -1,0 +1,84 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"add_llvm_tool",
+			"llvm_install_symlink",
+			"add_llvm_tool_symlink"
+		],
+		"files" : 
+		[
+			"cmake/modules/AddLLVM.cmake",
+			"tools/llvm-readobj/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 11,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 870,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 25,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 1534,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1451,
+				"parent" : 4
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "llvm-readobj",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"bin/llvm-readobj"
+			],
+			"targetId" : "llvm-readobj::@494ff1f9bdd8b7c92285",
+			"targetIndex" : 2281,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "llvm-readelf",
+			"scriptFile" : "cmake/modules/LLVMInstallSymlink.cmake",
+			"type" : "script"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "llvm-readelf",
+			"type" : "code"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "tools/llvm-readobj",
+		"source" : "tools/llvm-readobj"
+	}
+}

@@ -1,0 +1,53 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"add_llvm_library"
+		],
+		"files" : 
+		[
+			"cmake/modules/AddLLVM.cmake",
+			"lib/Target/PowerPC/Disassembler/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 642,
+				"parent" : 1
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "LLVMPowerPCDisassembler",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libLLVMPowerPCDisassembler.a"
+			],
+			"targetId" : "LLVMPowerPCDisassembler::@66d118c659f92ff7f51a",
+			"targetIndex" : 205,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "lib/Target/PowerPC/Disassembler",
+		"source" : "lib/Target/PowerPC/Disassembler"
+	}
+}

@@ -1,0 +1,45 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"tools/clang/tools/c-index-test/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 56,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "c-index-test",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"bin/c-index-test"
+			],
+			"targetId" : "c-index-test::@13ca623d0db5a9379081",
+			"targetIndex" : 372,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "tools/clang/tools/c-index-test",
+		"source" : "tools/clang/tools/c-index-test"
+	}
+}

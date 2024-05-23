@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "projects/compiler-rt/test/tsan",
+		"source" : "projects/compiler-rt/test/tsan"
+	}
+}

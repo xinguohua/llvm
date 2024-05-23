@@ -1,0 +1,142 @@
+{
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_compiler_rt_test",
+			"generate_compiler_rt_tests",
+			"add_xray_unittest"
+		],
+		"files" : 
+		[
+			"projects/compiler-rt/cmake/Modules/AddCompilerRT.cmake",
+			"projects/compiler-rt/lib/xray/tests/CMakeLists.txt",
+			"projects/compiler-rt/lib/xray/tests/unit/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 3,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 20,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 371,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 425,
+				"parent" : 3
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "compiler-rt-headers::@2362d0e0e07ab23e22da"
+		},
+		{
+			"id" : "xray::@2a10192c9cae601237b9"
+		},
+		{
+			"id" : "clang::@279b2102c71965def067"
+		},
+		{
+			"id" : "llvm-xray::@b99230e25c663edcf66f"
+		},
+		{
+			"id" : "gtest::@7b482da229522f2cdda6"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Compiler-RT Tests"
+	},
+	"id" : "TXRayFDRLoggingTest-x86_64-Test::@1e2ca55e40a185b47293",
+	"name" : "TXRayFDRLoggingTest-x86_64-Test",
+	"paths" : 
+	{
+		"build" : "projects/compiler-rt/lib/xray/tests/unit",
+		"source" : "projects/compiler-rt/lib/xray/tests/unit"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				3,
+				4,
+				5
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/projects/compiler-rt/lib/xray/tests/unit/CMakeFiles/TXRayFDRLoggingTest-x86_64-Test",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/projects/compiler-rt/lib/xray/tests/unit/CMakeFiles/TXRayFDRLoggingTest-x86_64-Test.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/projects/compiler-rt/lib/xray/tests/unit/XRayFDRLoggingTest-x86_64-Test.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"path" : "projects/compiler-rt/lib/xray/tests/unit/fdr_logging_test.cc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "utils/unittest/googletest/src/gtest-all.cc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "projects/compiler-rt/lib/xray/tests/unit/xray_unit_test_main.cc",
+			"sourceGroupIndex" : 2
+		}
+	],
+	"type" : "UTILITY"
+}

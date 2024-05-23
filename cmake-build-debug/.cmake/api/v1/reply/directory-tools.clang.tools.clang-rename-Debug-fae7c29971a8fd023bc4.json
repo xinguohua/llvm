@@ -1,0 +1,85 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"add_clang_tool"
+		],
+		"files" : 
+		[
+			"tools/clang/cmake/modules/AddClang.cmake",
+			"tools/clang/tools/clang-rename/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 6,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 142,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 18,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 21,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "clang-rename",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"bin/clang-rename"
+			],
+			"targetId" : "clang-rename::@cc7e808ddbabd895664b",
+			"targetIndex" : 1593,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "clang-rename",
+			"destination" : "share/clang",
+			"paths" : 
+			[
+				"tools/clang/tools/clang-rename/clang-rename.py"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "clang-rename",
+			"destination" : "share/clang",
+			"paths" : 
+			[
+				"tools/clang/tools/clang-rename/clang-rename.el"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "tools/clang/tools/clang-rename",
+		"source" : "tools/clang/tools/clang-rename"
+	}
+}

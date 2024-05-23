@@ -1,0 +1,39 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target"
+		],
+		"files" : 
+		[
+			"projects/compiler-rt/lib/msan/tests/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 81,
+				"parent" : 0
+			}
+		]
+	},
+	"folder" : 
+	{
+		"name" : "MSan unit tests"
+	},
+	"id" : "MsanUnitTests::@d7ac176b3369693e0154",
+	"name" : "MsanUnitTests",
+	"paths" : 
+	{
+		"build" : "projects/compiler-rt/lib/msan/tests",
+		"source" : "projects/compiler-rt/lib/msan/tests"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

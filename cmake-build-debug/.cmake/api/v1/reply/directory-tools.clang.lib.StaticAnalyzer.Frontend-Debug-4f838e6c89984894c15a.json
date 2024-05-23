@@ -1,0 +1,53 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"add_clang_library"
+		],
+		"files" : 
+		[
+			"tools/clang/cmake/modules/AddClang.cmake",
+			"tools/clang/lib/StaticAnalyzer/Frontend/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 7,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 99,
+				"parent" : 1
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "clangStaticAnalyzerFrontend",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libclangStaticAnalyzerFrontend.a"
+			],
+			"targetId" : "clangStaticAnalyzerFrontend::@6e5c29f2d06c5840ca89",
+			"targetIndex" : 1621,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "tools/clang/lib/StaticAnalyzer/Frontend",
+		"source" : "tools/clang/lib/StaticAnalyzer/Frontend"
+	}
+}

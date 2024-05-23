@@ -1,0 +1,77 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"add_compiler_rt_runtime"
+		],
+		"files" : 
+		[
+			"projects/compiler-rt/cmake/Modules/AddCompilerRT.cmake",
+			"projects/compiler-rt/lib/builtins/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 545,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 263,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 545,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 263,
+				"parent" : 3
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "clang_rt.builtins-i386",
+			"destination" : "lib/clang/6.0.0/lib/linux",
+			"paths" : 
+			[
+				"lib/clang/6.0.0/lib/linux/libclang_rt.builtins-i386.a"
+			],
+			"targetId" : "clang_rt.builtins-i386::@fdaf820d049f7c7afbdd",
+			"targetIndex" : 1638,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "clang_rt.builtins-x86_64",
+			"destination" : "lib/clang/6.0.0/lib/linux",
+			"paths" : 
+			[
+				"lib/clang/6.0.0/lib/linux/libclang_rt.builtins-x86_64.a"
+			],
+			"targetId" : "clang_rt.builtins-x86_64::@fdaf820d049f7c7afbdd",
+			"targetIndex" : 1639,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "projects/compiler-rt/lib/builtins",
+		"source" : "projects/compiler-rt/lib/builtins"
+	}
+}

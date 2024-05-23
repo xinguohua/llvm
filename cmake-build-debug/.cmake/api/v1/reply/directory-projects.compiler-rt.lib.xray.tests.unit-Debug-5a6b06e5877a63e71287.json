@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "projects/compiler-rt/lib/xray/tests/unit",
+		"source" : "projects/compiler-rt/lib/xray/tests/unit"
+	}
+}

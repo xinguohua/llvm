@@ -1,0 +1,879 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "tools/clang/unittests/ASTMatchers/ASTMatchersTests"
+		}
+	],
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"add_llvm_executable",
+			"add_unittest",
+			"add_clang_unittest",
+			"target_link_libraries",
+			"explicit_llvm_config",
+			"llvm_config",
+			"llvm_add_library",
+			"add_llvm_library",
+			"add_clang_library",
+			"add_dependencies",
+			"set_property",
+			"llvm_update_compile_flags",
+			"add_definitions",
+			"include",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"cmake/modules/AddLLVM.cmake",
+			"tools/clang/unittests/CMakeLists.txt",
+			"tools/clang/unittests/ASTMatchers/CMakeLists.txt",
+			"cmake/modules/LLVM-Config.cmake",
+			"utils/unittest/CMakeLists.txt",
+			"tools/clang/cmake/modules/AddClang.cmake",
+			"tools/clang/lib/Frontend/CMakeLists.txt",
+			"tools/clang/lib/Parse/CMakeLists.txt",
+			"tools/clang/lib/Sema/CMakeLists.txt",
+			"tools/clang/lib/Tooling/CMakeLists.txt",
+			"tools/clang/lib/AST/CMakeLists.txt",
+			"tools/clang/lib/Basic/CMakeLists.txt",
+			"lib/Support/CMakeLists.txt",
+			"cmake/modules/HandleLLVMOptions.cmake",
+			"CMakeLists.txt",
+			"cmake/config-ix.cmake",
+			"tools/clang/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 14,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 9,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 1090,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 722,
+				"parent" : 3
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 759,
+				"parent" : 3
+			},
+			{
+				"command" : 5,
+				"file" : 3,
+				"line" : 93,
+				"parent" : 5
+			},
+			{
+				"command" : 4,
+				"file" : 3,
+				"line" : 105,
+				"parent" : 6
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 771,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 1096,
+				"parent" : 2
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 20,
+				"parent" : 0
+			},
+			{
+				"file" : 4
+			},
+			{
+				"command" : 8,
+				"file" : 4,
+				"line" : 53,
+				"parent" : 11
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 607,
+				"parent" : 12
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 552,
+				"parent" : 13
+			},
+			{
+				"file" : 6
+			},
+			{
+				"command" : 9,
+				"file" : 6,
+				"line" : 15,
+				"parent" : 15
+			},
+			{
+				"command" : 7,
+				"file" : 5,
+				"line" : 86,
+				"parent" : 16
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 552,
+				"parent" : 17
+			},
+			{
+				"file" : 7
+			},
+			{
+				"command" : 9,
+				"file" : 7,
+				"line" : 7,
+				"parent" : 19
+			},
+			{
+				"command" : 7,
+				"file" : 5,
+				"line" : 86,
+				"parent" : 20
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 552,
+				"parent" : 21
+			},
+			{
+				"file" : 8
+			},
+			{
+				"command" : 9,
+				"file" : 8,
+				"line" : 10,
+				"parent" : 23
+			},
+			{
+				"command" : 7,
+				"file" : 5,
+				"line" : 86,
+				"parent" : 24
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 552,
+				"parent" : 25
+			},
+			{
+				"file" : 9
+			},
+			{
+				"command" : 9,
+				"file" : 9,
+				"line" : 10,
+				"parent" : 27
+			},
+			{
+				"command" : 7,
+				"file" : 5,
+				"line" : 86,
+				"parent" : 28
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 552,
+				"parent" : 29
+			},
+			{
+				"file" : 10
+			},
+			{
+				"command" : 9,
+				"file" : 10,
+				"line" : 6,
+				"parent" : 31
+			},
+			{
+				"command" : 7,
+				"file" : 5,
+				"line" : 86,
+				"parent" : 32
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 552,
+				"parent" : 33
+			},
+			{
+				"file" : 11
+			},
+			{
+				"command" : 9,
+				"file" : 11,
+				"line" : 47,
+				"parent" : 35
+			},
+			{
+				"command" : 7,
+				"file" : 5,
+				"line" : 86,
+				"parent" : 36
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 552,
+				"parent" : 37
+			},
+			{
+				"file" : 12
+			},
+			{
+				"command" : 8,
+				"file" : 12,
+				"line" : 33,
+				"parent" : 39
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 607,
+				"parent" : 40
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 552,
+				"parent" : 41
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 761,
+				"parent" : 3
+			},
+			{
+				"command" : 12,
+				"file" : 0,
+				"line" : 739,
+				"parent" : 3
+			},
+			{
+				"command" : 11,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 44
+			},
+			{
+				"command" : 13,
+				"file" : 0,
+				"line" : 1071,
+				"parent" : 2
+			},
+			{
+				"command" : 13,
+				"file" : 0,
+				"line" : 1070,
+				"parent" : 2
+			},
+			{
+				"file" : 14
+			},
+			{
+				"command" : 14,
+				"file" : 14,
+				"line" : 592,
+				"parent" : 48
+			},
+			{
+				"file" : 13,
+				"parent" : 49
+			},
+			{
+				"command" : 13,
+				"file" : 13,
+				"line" : 62,
+				"parent" : 50
+			},
+			{
+				"command" : 14,
+				"file" : 14,
+				"line" : 578,
+				"parent" : 48
+			},
+			{
+				"file" : 15,
+				"parent" : 52
+			},
+			{
+				"command" : 13,
+				"file" : 15,
+				"line" : 283,
+				"parent" : 53
+			},
+			{
+				"command" : 13,
+				"file" : 13,
+				"line" : 706,
+				"parent" : 50
+			},
+			{
+				"command" : 13,
+				"file" : 13,
+				"line" : 707,
+				"parent" : 50
+			},
+			{
+				"command" : 13,
+				"file" : 13,
+				"line" : 708,
+				"parent" : 50
+			},
+			{
+				"file" : 16
+			},
+			{
+				"command" : 15,
+				"file" : 16,
+				"line" : 361,
+				"parent" : 58
+			},
+			{
+				"command" : 15,
+				"file" : 15,
+				"line" : 176,
+				"parent" : 53
+			},
+			{
+				"command" : 15,
+				"file" : 14,
+				"line" : 791,
+				"parent" : 48
+			},
+			{
+				"command" : 15,
+				"file" : 0,
+				"line" : 1073,
+				"parent" : 2
+			},
+			{
+				"command" : 15,
+				"file" : 0,
+				"line" : 1074,
+				"parent" : 2
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -fPIC -fvisibility-inlines-hidden -Werror=date-time -std=c++11 -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wno-maybe-uninitialized -Wdelete-non-virtual-dtor -Wno-comment -fno-common -Woverloaded-virtual -fno-strict-aliasing -g -fdiagnostics-color=always"
+				},
+				{
+					"fragment" : " -Wno-variadic-macros -fno-exceptions -fno-rtti"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 45,
+					"define" : "GTEST_HAS_RTTI=0"
+				},
+				{
+					"backtrace" : 46,
+					"define" : "GTEST_HAS_TR1_TUPLE=0"
+				},
+				{
+					"backtrace" : 47,
+					"define" : "GTEST_LANG_CXX11=1"
+				},
+				{
+					"backtrace" : 51,
+					"define" : "_DEBUG"
+				},
+				{
+					"backtrace" : 54,
+					"define" : "_GNU_SOURCE"
+				},
+				{
+					"backtrace" : 55,
+					"define" : "__STDC_CONSTANT_MACROS"
+				},
+				{
+					"backtrace" : 56,
+					"define" : "__STDC_FORMAT_MACROS"
+				},
+				{
+					"backtrace" : 57,
+					"define" : "__STDC_LIMIT_MACROS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"path" : "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/tools/clang/unittests/ASTMatchers"
+				},
+				{
+					"path" : "/home/nsas2020/ufo/llvm-6.0.0/tools/clang/unittests/ASTMatchers"
+				},
+				{
+					"backtrace" : 59,
+					"path" : "/home/nsas2020/ufo/llvm-6.0.0/tools/clang/include"
+				},
+				{
+					"backtrace" : 59,
+					"path" : "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/tools/clang/include"
+				},
+				{
+					"backtrace" : 60,
+					"path" : "/usr/include/libxml2"
+				},
+				{
+					"backtrace" : 61,
+					"path" : "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/include"
+				},
+				{
+					"backtrace" : 61,
+					"path" : "/home/nsas2020/ufo/llvm-6.0.0/include"
+				},
+				{
+					"backtrace" : 62,
+					"path" : "/home/nsas2020/ufo/llvm-6.0.0/utils/unittest/googletest/include"
+				},
+				{
+					"backtrace" : 63,
+					"path" : "/home/nsas2020/ufo/llvm-6.0.0/utils/unittest/googlemock/include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 7,
+			"id" : "LLVMDemangle::@3c7ef39cff93a35ba752"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "LLVMSupport::@928d1708d80fe1f55e59"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "LLVMCore::@fbfd63cd06ffdf52319f"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "LLVMBinaryFormat::@c9b0ef5de2116d71f170"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "LLVMBitReader::@b3ae57fb53631d19cf66"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "LLVMMC::@9597ad869864cf27958c"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "LLVMMCParser::@d8f04122018374db0703"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "LLVMOption::@03597dd37d3dc3b95065"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "LLVMProfileData::@b9974079c57e2c563b37"
+		},
+		{
+			"backtrace" : 43,
+			"id" : "clang-tablegen-targets::@a698e65c49ebca5ab3a1"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "clangBasic::@af584f149e490d75c24c"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "clangLex::@d3c561e3b3e9c375248d"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "clangParse::@3da6354c36f009bcf2b2"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "clangAST::@572b5cd4cfc688839176"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "clangASTMatchers::@f183ba56cffa3f9f5544"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "clangSema::@b78f6d003921181e7054"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "clangAnalysis::@efd5146c6323474be9b8"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "clangEdit::@ad90dd66c332f8450f8c"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "clangRewrite::@ac59a15518014014e11a"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "clangDriver::@7a0ba538446439a30277"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "clangSerialization::@0c0ec4a36076fe2a80b8"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "clangFrontend::@ae9a5840ad140bf270f8"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "clangTooling::@00f11e79f987691e440a"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "clangToolingCore::@43e67e3a7fd26cb84d1c"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "clangFormat::@413a1e9ee6c94838d69a"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "gtest::@7b482da229522f2cdda6"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "gtest_main::@c7c09bc35a39fa14de4e"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Clang tests"
+	},
+	"id" : "ASTMatchersTests::@5fdc16275bb65b023a1f",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-fPIC -fvisibility-inlines-hidden -Werror=date-time -std=c++11 -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wno-maybe-uninitialized -Wdelete-non-virtual-dtor -Wno-comment -fno-common -Woverloaded-virtual -fno-strict-aliasing -g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-allow-shlib-undefined",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "lib/libLLVMSupport.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "lib/libLLVMSupport.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "lib/libgtest_main.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "lib/libgtest.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "lib/libclangAST.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "lib/libclangASTMatchers.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "lib/libclangBasic.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "lib/libclangFrontend.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "lib/libclangTooling.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "lib/libclangASTMatchers.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "lib/libclangFrontend.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 18,
+				"fragment" : "lib/libclangParse.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 22,
+				"fragment" : "lib/libLLVMMCParser.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 18,
+				"fragment" : "lib/libclangSerialization.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 18,
+				"fragment" : "lib/libclangSema.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 18,
+				"fragment" : "lib/libclangEdit.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "lib/libclangAnalysis.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 18,
+				"fragment" : "lib/libLLVMBitReader.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 18,
+				"fragment" : "lib/libLLVMProfileData.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 18,
+				"fragment" : "lib/libclangDriver.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 18,
+				"fragment" : "lib/libLLVMOption.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 30,
+				"fragment" : "lib/libclangFormat.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 30,
+				"fragment" : "lib/libclangToolingCore.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "lib/libclangAST.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 30,
+				"fragment" : "lib/libclangRewrite.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 34,
+				"fragment" : "lib/libclangLex.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "lib/libclangBasic.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 38,
+				"fragment" : "lib/libLLVMCore.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 34,
+				"fragment" : "lib/libLLVMBinaryFormat.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 38,
+				"fragment" : "lib/libLLVMMC.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "lib/libLLVMSupport.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 42,
+				"fragment" : "-lz",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 42,
+				"fragment" : "-lrt",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 42,
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 42,
+				"fragment" : "-ltinfo",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 42,
+				"fragment" : "-lm",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 42,
+				"fragment" : "lib/libLLVMDemangle.a",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "ASTMatchersTests",
+	"nameOnDisk" : "ASTMatchersTests",
+	"paths" : 
+	{
+		"build" : "tools/clang/unittests/ASTMatchers",
+		"source" : "tools/clang/unittests/ASTMatchers"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "tools/clang/unittests/ASTMatchers/ASTMatchersInternalTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "tools/clang/unittests/ASTMatchers/ASTMatchersNodeTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "tools/clang/unittests/ASTMatchers/ASTMatchersNarrowingTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "tools/clang/unittests/ASTMatchers/ASTMatchersTraversalTest.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

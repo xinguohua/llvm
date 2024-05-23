@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "tools/clang/examples/AnnotateFunctions",
+		"source" : "tools/clang/examples/AnnotateFunctions"
+	}
+}

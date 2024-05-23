@@ -1,0 +1,2983 @@
+{
+	"inputs" : 
+	[
+		{
+			"path" : "CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/3.27.0/CMakeSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux-Initialize.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/3.27.0/CMakeCCompiler.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/3.27.0/CMakeCXXCompiler.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/3.27.0/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/UnixPaths.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux-GNU-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux-GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux-GNU-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux-GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "cmake/modules/VersionFromVCS.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CPack.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CPackComponent.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Templates/CPackConfig.cmake.in"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Templates/CPackConfig.cmake.in"
+		},
+		{
+			"path" : "cmake/config-ix.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckIncludeFile.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckIncludeFileCXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckLibraryExists.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckSymbolExists.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckFunctionExists.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckCCompilerFlag.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/Internal/CheckCompilerFlag.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/Internal/CheckFlagCommonConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/TestBigEndian.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckTypeSize.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckIncludeFile.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckIncludeFileCXX.cmake"
+		},
+		{
+			"path" : "cmake/modules/CheckCompilerVersion.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake"
+		},
+		{
+			"path" : "cmake/modules/HandleLLVMStdlib.cmake"
+		},
+		{
+			"path" : "cmake/modules/DetermineGCCCompatible.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckCXXCompilerFlag.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/Internal/CheckCompilerFlag.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindThreads.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckLibraryExists.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckIncludeFile.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindLibXml2.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPkgConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindBacktrace.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakePushCheckState.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckSymbolExists.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"path" : "cmake/modules/CheckAtomic.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckLibraryExists.cmake"
+		},
+		{
+			"path" : "cmake/modules/GetHostTriple.cmake"
+		},
+		{
+			"path" : "cmake/modules/FindOCaml.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"path" : "cmake/modules/AddOCaml.cmake"
+		},
+		{
+			"path" : "cmake/modules/FindOCaml.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"path" : "cmake/modules/HandleLLVMOptions.cmake"
+		},
+		{
+			"path" : "cmake/modules/CheckCompilerVersion.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake"
+		},
+		{
+			"path" : "cmake/modules/HandleLLVMStdlib.cmake"
+		},
+		{
+			"path" : "cmake/modules/DetermineGCCCompatible.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckCCompilerFlag.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckCXXCompilerFlag.cmake"
+		},
+		{
+			"path" : "cmake/modules/CheckLinkerFlag.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckCXXCompilerFlag.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPythonInterp.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/LLVMBuild.cmake"
+		},
+		{
+			"path" : "LLVMBuild.txt"
+		},
+		{
+			"path" : "bindings/LLVMBuild.txt"
+		},
+		{
+			"path" : "docs/LLVMBuild.txt"
+		},
+		{
+			"path" : "examples/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Analysis/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/AsmParser/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Bitcode/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Bitcode/Reader/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Bitcode/Writer/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/CodeGen/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/CodeGen/AsmPrinter/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/CodeGen/SelectionDAG/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/CodeGen/MIRParser/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/CodeGen/GlobalISel/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/DebugInfo/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/DebugInfo/DWARF/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/DebugInfo/MSF/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/DebugInfo/CodeView/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/DebugInfo/PDB/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/DebugInfo/Symbolize/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Demangle/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/ExecutionEngine/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/ExecutionEngine/Interpreter/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/ExecutionEngine/MCJIT/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/ExecutionEngine/RuntimeDyld/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/ExecutionEngine/IntelJITEvents/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/ExecutionEngine/OProfileJIT/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/ExecutionEngine/Orc/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/FuzzMutate/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/LineEditor/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Linker/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/IR/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/IRReader/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/LTO/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/MC/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/MC/MCDisassembler/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/MC/MCParser/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Object/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/BinaryFormat/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/ObjectYAML/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Option/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Passes/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/ProfileData/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/ProfileData/Coverage/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Support/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/TableGen/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/AMDGPU/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/AMDGPU/AsmParser/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/AMDGPU/Disassembler/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/AMDGPU/InstPrinter/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/AMDGPU/MCTargetDesc/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/AMDGPU/TargetInfo/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/AMDGPU/Utils/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/ARC/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/ARC/Disassembler/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/ARC/InstPrinter/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/ARC/MCTargetDesc/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/ARC/TargetInfo/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/ARM/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/ARM/AsmParser/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/ARM/Disassembler/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/ARM/InstPrinter/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/ARM/MCTargetDesc/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/ARM/TargetInfo/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/ARM/Utils/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/AArch64/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/AArch64/AsmParser/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/AArch64/Disassembler/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/AArch64/InstPrinter/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/AArch64/MCTargetDesc/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/AArch64/TargetInfo/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/AArch64/Utils/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/AVR/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/AVR/AsmParser/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/AVR/Disassembler/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/AVR/InstPrinter/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/AVR/MCTargetDesc/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/AVR/TargetInfo/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/BPF/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/BPF/AsmParser/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/BPF/InstPrinter/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/BPF/Disassembler/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/BPF/MCTargetDesc/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/BPF/TargetInfo/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/Lanai/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/Lanai/AsmParser/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/Lanai/Disassembler/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/Lanai/InstPrinter/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/Lanai/MCTargetDesc/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/Lanai/TargetInfo/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/Hexagon/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/Hexagon/AsmParser/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/Hexagon/Disassembler/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/Hexagon/MCTargetDesc/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/Hexagon/TargetInfo/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/MSP430/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/MSP430/InstPrinter/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/MSP430/MCTargetDesc/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/MSP430/TargetInfo/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/NVPTX/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/NVPTX/InstPrinter/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/NVPTX/MCTargetDesc/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/NVPTX/TargetInfo/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/Mips/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/Mips/AsmParser/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/Mips/Disassembler/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/Mips/InstPrinter/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/Mips/MCTargetDesc/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/Mips/TargetInfo/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/Nios2/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/Nios2/InstPrinter/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/Nios2/MCTargetDesc/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/Nios2/TargetInfo/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/PowerPC/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/PowerPC/AsmParser/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/PowerPC/Disassembler/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/PowerPC/InstPrinter/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/PowerPC/MCTargetDesc/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/PowerPC/TargetInfo/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/RISCV/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/RISCV/AsmParser/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/RISCV/Disassembler/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/RISCV/InstPrinter/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/RISCV/TargetInfo/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/RISCV/MCTargetDesc/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/Sparc/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/Sparc/AsmParser/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/Sparc/Disassembler/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/Sparc/InstPrinter/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/Sparc/MCTargetDesc/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/Sparc/TargetInfo/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/SystemZ/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/SystemZ/AsmParser/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/SystemZ/Disassembler/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/SystemZ/InstPrinter/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/SystemZ/MCTargetDesc/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/SystemZ/TargetInfo/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/WebAssembly/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/WebAssembly/Disassembler/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/WebAssembly/InstPrinter/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/WebAssembly/MCTargetDesc/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/WebAssembly/TargetInfo/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/X86/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/X86/AsmParser/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/X86/Disassembler/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/X86/InstPrinter/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/X86/MCTargetDesc/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/X86/TargetInfo/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/X86/Utils/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/XCore/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/XCore/Disassembler/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/XCore/InstPrinter/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/XCore/MCTargetDesc/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Target/XCore/TargetInfo/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Testing/Support/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/ToolDrivers/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/ToolDrivers/llvm-dlltool/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/ToolDrivers/llvm-lib/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Transforms/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Transforms/Coroutines/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Transforms/IPO/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Transforms/InstCombine/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Transforms/Instrumentation/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Transforms/Scalar/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Transforms/Utils/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Transforms/Vectorize/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/Transforms/ObjCARC/LLVMBuild.txt"
+		},
+		{
+			"path" : "lib/WindowsManifest/LLVMBuild.txt"
+		},
+		{
+			"path" : "projects/LLVMBuild.txt"
+		},
+		{
+			"path" : "tools/LLVMBuild.txt"
+		},
+		{
+			"path" : "tools/bugpoint/LLVMBuild.txt"
+		},
+		{
+			"path" : "tools/dsymutil/LLVMBuild.txt"
+		},
+		{
+			"path" : "tools/llc/LLVMBuild.txt"
+		},
+		{
+			"path" : "tools/lli/LLVMBuild.txt"
+		},
+		{
+			"path" : "tools/lli/ChildTarget/LLVMBuild.txt"
+		},
+		{
+			"path" : "tools/llvm-ar/LLVMBuild.txt"
+		},
+		{
+			"path" : "tools/llvm-as/LLVMBuild.txt"
+		},
+		{
+			"path" : "tools/llvm-bcanalyzer/LLVMBuild.txt"
+		},
+		{
+			"path" : "tools/llvm-cat/LLVMBuild.txt"
+		},
+		{
+			"path" : "tools/llvm-cfi-verify/LLVMBuild.txt"
+		},
+		{
+			"path" : "tools/llvm-cov/LLVMBuild.txt"
+		},
+		{
+			"path" : "tools/llvm-cvtres/LLVMBuild.txt"
+		},
+		{
+			"path" : "tools/llvm-diff/LLVMBuild.txt"
+		},
+		{
+			"path" : "tools/llvm-dis/LLVMBuild.txt"
+		},
+		{
+			"path" : "tools/llvm-dwarfdump/LLVMBuild.txt"
+		},
+		{
+			"path" : "tools/llvm-dwp/LLVMBuild.txt"
+		},
+		{
+			"path" : "tools/llvm-extract/LLVMBuild.txt"
+		},
+		{
+			"path" : "tools/llvm-jitlistener/LLVMBuild.txt"
+		},
+		{
+			"path" : "tools/llvm-link/LLVMBuild.txt"
+		},
+		{
+			"path" : "tools/llvm-lto/LLVMBuild.txt"
+		},
+		{
+			"path" : "tools/llvm-mc/LLVMBuild.txt"
+		},
+		{
+			"path" : "tools/llvm-mcmarkup/LLVMBuild.txt"
+		},
+		{
+			"path" : "tools/llvm-modextract/LLVMBuild.txt"
+		},
+		{
+			"path" : "tools/llvm-mt/LLVMBuild.txt"
+		},
+		{
+			"path" : "tools/llvm-nm/LLVMBuild.txt"
+		},
+		{
+			"path" : "tools/llvm-objcopy/LLVMBuild.txt"
+		},
+		{
+			"path" : "tools/llvm-objdump/LLVMBuild.txt"
+		},
+		{
+			"path" : "tools/llvm-pdbutil/LLVMBuild.txt"
+		},
+		{
+			"path" : "tools/llvm-profdata/LLVMBuild.txt"
+		},
+		{
+			"path" : "tools/llvm-rc/LLVMBuild.txt"
+		},
+		{
+			"path" : "tools/llvm-rtdyld/LLVMBuild.txt"
+		},
+		{
+			"path" : "tools/llvm-size/LLVMBuild.txt"
+		},
+		{
+			"path" : "tools/llvm-split/LLVMBuild.txt"
+		},
+		{
+			"path" : "tools/opt/LLVMBuild.txt"
+		},
+		{
+			"path" : "tools/verify-uselistorder/LLVMBuild.txt"
+		},
+		{
+			"path" : "utils/LLVMBuild.txt"
+		},
+		{
+			"path" : "utils/TableGen/LLVMBuild.txt"
+		},
+		{
+			"path" : "utils/unittest/LLVMBuild.txt"
+		},
+		{
+			"path" : "utils/llvm-build/llvm-build"
+		},
+		{
+			"path" : "utils/llvm-build/llvmbuild/__init__.py"
+		},
+		{
+			"path" : "utils/llvm-build/llvmbuild/configutil.py"
+		},
+		{
+			"path" : "utils/llvm-build/llvmbuild/main.py"
+		},
+		{
+			"path" : "utils/llvm-build/llvmbuild/componentinfo.py"
+		},
+		{
+			"path" : "utils/llvm-build/llvmbuild/util.py"
+		},
+		{
+			"path" : "include/llvm/Config/AsmPrinters.def.in"
+		},
+		{
+			"path" : "include/llvm/Config/AsmParsers.def.in"
+		},
+		{
+			"path" : "include/llvm/Config/Disassemblers.def.in"
+		},
+		{
+			"path" : "include/llvm/Config/Targets.def.in"
+		},
+		{
+			"path" : "include/llvm/Config/config.h.cmake"
+		},
+		{
+			"path" : "include/llvm/Config/llvm-config.h.cmake"
+		},
+		{
+			"path" : "include/llvm/Config/abi-breaking.h.cmake"
+		},
+		{
+			"path" : "include/llvm/Support/DataTypes.h.cmake"
+		},
+		{
+			"path" : "llvm.spec.in"
+		},
+		{
+			"path" : "cmake/modules/AddLLVM.cmake"
+		},
+		{
+			"path" : "cmake/modules/LLVMProcessSources.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/AddFileDependencies.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeParseArguments.cmake"
+		},
+		{
+			"path" : "cmake/modules/LLVM-Config.cmake"
+		},
+		{
+			"path" : "cmake/modules/DetermineGCCCompatible.cmake"
+		},
+		{
+			"path" : "cmake/modules/TableGen.cmake"
+		},
+		{
+			"path" : "cmake/modules/LLVMExternalProjectUtils.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/ExternalProject.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/ExternalProject/shared_internal_commands.cmake"
+		},
+		{
+			"path" : "lib/Demangle/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Support/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/TableGen/CMakeLists.txt"
+		},
+		{
+			"path" : "utils/TableGen/CMakeLists.txt"
+		},
+		{
+			"path" : "include/llvm/CMakeLists.txt"
+		},
+		{
+			"path" : "include/llvm/module.modulemap.build"
+		},
+		{
+			"path" : "include/llvm/IR/CMakeLists.txt"
+		},
+		{
+			"path" : "include/llvm/Support/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/IR/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/FuzzMutate/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/IRReader/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/CodeGen/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/CodeGen/SelectionDAG/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/CodeGen/AsmPrinter/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/CodeGen/MIRParser/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/CodeGen/GlobalISel/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/BinaryFormat/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Bitcode/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Bitcode/Reader/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Bitcode/Writer/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Transforms/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Transforms/Utils/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Transforms/Instrumentation/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Transforms/InstCombine/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Transforms/Scalar/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Transforms/IPO/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Transforms/Vectorize/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Transforms/Hello/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Transforms/ObjCARC/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Transforms/Coroutines/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Linker/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Analysis/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/LTO/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/MC/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/MC/MCParser/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/MC/MCDisassembler/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Object/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/ObjectYAML/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Option/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/DebugInfo/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/DebugInfo/DWARF/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/DebugInfo/MSF/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/DebugInfo/CodeView/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/DebugInfo/PDB/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/DebugInfo/Symbolize/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/ExecutionEngine/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/ExecutionEngine/Interpreter/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/ExecutionEngine/MCJIT/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/ExecutionEngine/Orc/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/ExecutionEngine/RuntimeDyld/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/AArch64/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/AArch64/TargetInfo/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/AArch64/AsmParser/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/AArch64/Disassembler/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/AArch64/InstPrinter/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/AArch64/MCTargetDesc/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/AArch64/Utils/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/AMDGPU/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/AMDGPU/AsmParser/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/AMDGPU/InstPrinter/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/AMDGPU/Disassembler/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/AMDGPU/TargetInfo/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/AMDGPU/MCTargetDesc/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/AMDGPU/Utils/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/ARM/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/ARM/TargetInfo/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/ARM/AsmParser/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/ARM/Disassembler/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/ARM/InstPrinter/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/ARM/MCTargetDesc/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/ARM/Utils/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/BPF/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/BPF/AsmParser/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/BPF/Disassembler/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/BPF/InstPrinter/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/BPF/TargetInfo/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/BPF/MCTargetDesc/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/Hexagon/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/Hexagon/AsmParser/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/Hexagon/TargetInfo/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/Hexagon/MCTargetDesc/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/Hexagon/Disassembler/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/Lanai/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/Lanai/AsmParser/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/Lanai/TargetInfo/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/Lanai/MCTargetDesc/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/Lanai/InstPrinter/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/Lanai/Disassembler/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/Mips/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/Mips/InstPrinter/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/Mips/Disassembler/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/Mips/TargetInfo/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/Mips/MCTargetDesc/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/Mips/AsmParser/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/MSP430/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/MSP430/InstPrinter/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/MSP430/TargetInfo/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/MSP430/MCTargetDesc/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/NVPTX/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/NVPTX/TargetInfo/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/NVPTX/InstPrinter/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/NVPTX/MCTargetDesc/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/PowerPC/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/PowerPC/AsmParser/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/PowerPC/Disassembler/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/PowerPC/InstPrinter/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/PowerPC/TargetInfo/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/PowerPC/MCTargetDesc/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/Sparc/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/Sparc/TargetInfo/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/Sparc/MCTargetDesc/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/Sparc/InstPrinter/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/Sparc/AsmParser/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/Sparc/Disassembler/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/SystemZ/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/SystemZ/AsmParser/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/SystemZ/Disassembler/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/SystemZ/InstPrinter/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/SystemZ/TargetInfo/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/SystemZ/MCTargetDesc/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/X86/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/X86/AsmParser/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/X86/Disassembler/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/X86/InstPrinter/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/X86/MCTargetDesc/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/X86/TargetInfo/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/X86/Utils/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/XCore/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/XCore/Disassembler/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/XCore/InstPrinter/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/XCore/TargetInfo/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Target/XCore/MCTargetDesc/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/AsmParser/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/LineEditor/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/ProfileData/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/ProfileData/Coverage/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Passes/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/ToolDrivers/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/ToolDrivers/llvm-dlltool/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/ToolDrivers/llvm-lib/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/XRay/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Testing/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/Testing/Support/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/WindowsManifest/CMakeLists.txt"
+		},
+		{
+			"path" : "utils/FileCheck/CMakeLists.txt"
+		},
+		{
+			"path" : "utils/PerfectShuffle/CMakeLists.txt"
+		},
+		{
+			"path" : "utils/count/CMakeLists.txt"
+		},
+		{
+			"path" : "utils/not/CMakeLists.txt"
+		},
+		{
+			"path" : "utils/yaml-bench/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/cmake/base-config-ix.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckIncludeFile.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake"
+		},
+		{
+			"path" : "projects/compiler-rt/cmake/Modules/CompilerRTUtils.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakePushCheckState.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckSymbolExists.cmake"
+		},
+		{
+			"path" : "projects/compiler-rt/cmake/Modules/HandleCompilerRT.cmake"
+		},
+		{
+			"path" : "projects/compiler-rt/cmake/config-ix.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakePushCheckState.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckCCompilerFlag.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckCXXCompilerFlag.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckLibraryExists.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckSymbolExists.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/TestBigEndian.cmake"
+		},
+		{
+			"path" : "projects/compiler-rt/include/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/lib/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/cmake/Modules/AddCompilerRT.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/ExternalProject.cmake"
+		},
+		{
+			"path" : "projects/compiler-rt/cmake/Modules/CompilerRTUtils.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakePushCheckState.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckSymbolExists.cmake"
+		},
+		{
+			"path" : "projects/compiler-rt/cmake/Modules/SanitizerUtils.cmake"
+		},
+		{
+			"path" : "projects/compiler-rt/lib/sanitizer_common/CMakeLists.txt"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckIncludeFile.cmake"
+		},
+		{
+			"path" : "projects/compiler-rt/lib/sanitizer_common/tests/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/cmake/Modules/CompilerRTCompile.cmake"
+		},
+		{
+			"path" : "projects/compiler-rt/lib/builtins/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/cmake/builtin-config-ix.cmake"
+		},
+		{
+			"path" : "projects/compiler-rt/cmake/Modules/BuiltinTests.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake"
+		},
+		{
+			"path" : "projects/compiler-rt/cmake/Modules/CompilerRTUtils.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakePushCheckState.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckSymbolExists.cmake"
+		},
+		{
+			"path" : "projects/compiler-rt/cmake/Modules/CompilerRTDarwinUtils.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeParseArguments.cmake"
+		},
+		{
+			"path" : "projects/compiler-rt/lib/interception/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/lib/interception/tests/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/cmake/Modules/CompilerRTCompile.cmake"
+		},
+		{
+			"path" : "projects/compiler-rt/lib/stats/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/lib/lsan/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/lib/ubsan/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/lib/asan/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/lib/asan/scripts/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/lib/asan/tests/CMakeLists.txt"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckCXXCompilerFlag.cmake"
+		},
+		{
+			"path" : "projects/compiler-rt/cmake/Modules/CompilerRTCompile.cmake"
+		},
+		{
+			"path" : "projects/compiler-rt/lib/dfsan/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/lib/msan/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/lib/msan/tests/CMakeLists.txt"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckCXXCompilerFlag.cmake"
+		},
+		{
+			"path" : "projects/compiler-rt/cmake/Modules/CompilerRTCompile.cmake"
+		},
+		{
+			"path" : "projects/compiler-rt/cmake/Modules/CompilerRTLink.cmake"
+		},
+		{
+			"path" : "projects/compiler-rt/lib/tsan/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/lib/tsan/tests/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/lib/tsan/tests/rtl/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/lib/tsan/tests/unit/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/lib/tsan/dd/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/lib/safestack/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/lib/cfi/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/lib/esan/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/lib/scudo/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/lib/ubsan_minimal/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/lib/profile/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/lib/xray/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/lib/xray/tests/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/lib/xray/tests/unit/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/lib/fuzzer/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/lib/fuzzer/tests/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/unittests/CMakeLists.txt"
+		},
+		{
+			"path" : "cmake/modules/AddLLVM.cmake"
+		},
+		{
+			"path" : "cmake/modules/LLVMProcessSources.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/AddFileDependencies.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeParseArguments.cmake"
+		},
+		{
+			"path" : "cmake/modules/LLVM-Config.cmake"
+		},
+		{
+			"path" : "cmake/modules/DetermineGCCCompatible.cmake"
+		},
+		{
+			"path" : "projects/compiler-rt/unittests/lit.common.unit.configured.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/CMakeLists.txt"
+		},
+		{
+			"path" : "cmake/modules/AddLLVM.cmake"
+		},
+		{
+			"path" : "cmake/modules/LLVMProcessSources.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/AddFileDependencies.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeParseArguments.cmake"
+		},
+		{
+			"path" : "cmake/modules/LLVM-Config.cmake"
+		},
+		{
+			"path" : "cmake/modules/DetermineGCCCompatible.cmake"
+		},
+		{
+			"path" : "projects/compiler-rt/test/lit.common.configured.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/builtins/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/test/builtins/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/cmake/builtin-config-ix.cmake"
+		},
+		{
+			"path" : "projects/compiler-rt/cmake/Modules/BuiltinTests.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake"
+		},
+		{
+			"path" : "projects/compiler-rt/cmake/Modules/CompilerRTUtils.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakePushCheckState.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckSymbolExists.cmake"
+		},
+		{
+			"path" : "projects/compiler-rt/cmake/Modules/CompilerRTDarwinUtils.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeParseArguments.cmake"
+		},
+		{
+			"path" : "projects/compiler-rt/test/builtins/Unit/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/builtins/Unit/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/interception/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/test/interception/Unit/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/lsan/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/test/lsan/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/lsan/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/lsan/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/lsan/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/ubsan/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/test/ubsan/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/ubsan/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/ubsan/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/ubsan/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/ubsan/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/ubsan/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/cfi/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/test/cfi/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/cfi/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/cfi/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/cfi/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/cfi/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/cfi/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/cfi/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/cfi/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/sanitizer_common/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/test/sanitizer_common/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/sanitizer_common/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/sanitizer_common/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/sanitizer_common/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/sanitizer_common/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/sanitizer_common/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/sanitizer_common/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/sanitizer_common/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/sanitizer_common/Unit/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/fuzzer/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/test/fuzzer/unit/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/fuzzer/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/asan/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/test/asan/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/asan/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/asan/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/asan/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/asan/Unit/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/asan/Unit/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/dfsan/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/test/dfsan/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/msan/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/test/msan/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/tsan/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/test/tsan/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/tsan/Unit/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/safestack/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/test/safestack/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/esan/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/test/esan/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/scudo/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/test/scudo/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/scudo/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/scudo/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/ubsan_minimal/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/test/ubsan_minimal/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/ubsan_minimal/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/profile/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/test/profile/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/profile/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/xray/CMakeLists.txt"
+		},
+		{
+			"path" : "projects/compiler-rt/test/xray/lit.site.cfg.in"
+		},
+		{
+			"path" : "projects/compiler-rt/test/xray/Unit/lit.site.cfg.in"
+		},
+		{
+			"path" : "tools/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/lto/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/gold/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-ar/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-config/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-config/BuildVariables.inc.in"
+		},
+		{
+			"path" : "tools/llvm-lto/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-profdata/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/CMakeLists.txt"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindLibXml2.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPkgConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckIncludeFile.cmake"
+		},
+		{
+			"path" : "tools/clang/include/clang/Basic/Version.inc.in"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeParseArguments.cmake"
+		},
+		{
+			"path" : "tools/clang/cmake/modules/AddClang.cmake"
+		},
+		{
+			"path" : "tools/clang/include/clang/Config/config.h.cmake"
+		},
+		{
+			"path" : "tools/clang/utils/TableGen/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/include/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/include/clang/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/include/clang/AST/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/include/clang/Basic/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/include/clang/Driver/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/include/clang/Parse/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/include/clang/Sema/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/include/clang/Serialization/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/include/clang/StaticAnalyzer/Checkers/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/lib/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/lib/Headers/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/lib/Basic/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/lib/Lex/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/lib/Parse/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/lib/AST/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/lib/ASTMatchers/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/lib/ASTMatchers/Dynamic/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/lib/CrossTU/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/lib/Sema/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/lib/CodeGen/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/lib/Analysis/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/lib/Edit/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/lib/Rewrite/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/lib/ARCMigrate/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/lib/Driver/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/lib/Serialization/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/lib/Frontend/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/lib/Frontend/Rewrite/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/lib/FrontendTool/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/lib/Tooling/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/lib/Tooling/Core/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/lib/Tooling/Refactoring/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/lib/Tooling/ASTDiff/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/lib/Index/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/lib/StaticAnalyzer/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/lib/StaticAnalyzer/Core/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/lib/StaticAnalyzer/Checkers/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/lib/StaticAnalyzer/Frontend/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/lib/Format/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/tools/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/tools/diagtool/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/tools/driver/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/tools/clang-diff/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/tools/clang-format/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/tools/clang-format-vs/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/tools/clang-fuzzer/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/tools/clang-fuzzer/handle-cxx/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/tools/clang-import-test/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/tools/clang-offload-bundler/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/tools/c-index-test/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/tools/clang-rename/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/tools/clang-refactor/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/tools/arcmt-test/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/tools/c-arcmt-test/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/tools/clang-check/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/tools/clang-func-mapping/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/tools/scan-build/CMakeLists.txt"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/GNUInstallDirs.cmake"
+		},
+		{
+			"path" : "tools/clang/tools/scan-view/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/tools/libclang/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/runtime/CMakeLists.txt"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/ExternalProject.cmake"
+		},
+		{
+			"path" : "tools/clang/examples/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/examples/analyzer-plugin/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/examples/clang-interpreter/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/examples/PrintFunctionNames/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/examples/AnnotateFunctions/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/unittests/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/unittests/Basic/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/unittests/Lex/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/unittests/Driver/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/unittests/Analysis/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/unittests/StaticAnalyzer/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/unittests/Frontend/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/unittests/ASTMatchers/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/unittests/ASTMatchers/Dynamic/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/unittests/AST/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/unittests/CrossTU/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/unittests/Tooling/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/unittests/Format/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/unittests/Rewrite/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/unittests/Sema/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/unittests/CodeGen/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/unittests/libclang/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/unittests/Rename/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/test/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/test/lit.site.cfg.py.in"
+		},
+		{
+			"path" : "tools/clang/test/Unit/lit.site.cfg.py.in"
+		},
+		{
+			"path" : "tools/clang/utils/perf-training/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/docs/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/cmake/modules/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/clang/cmake/modules/ClangConfig.cmake.in"
+		},
+		{
+			"path" : "tools/clang/cmake/modules/ClangConfig.cmake.in"
+		},
+		{
+			"path" : "tools/bugpoint/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/bugpoint-passes/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/dsymutil/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llc/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/lli/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/lli/ChildTarget/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-as/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-as-fuzzer/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-bcanalyzer/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-c-test/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-cat/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-cfi-verify/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-cfi-verify/lib/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-cov/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-cvtres/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-cxxdump/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-cxxfilt/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-demangle-fuzzer/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-diff/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-dis/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-dwarfdump/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-dwarfdump/fuzzer/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-dwp/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-extract/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-go/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-isel-fuzzer/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-link/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-lto2/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-mc/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-mc-assemble-fuzzer/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-mc-disassemble-fuzzer/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-mcmarkup/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-modextract/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-mt/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-nm/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-objcopy/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-objdump/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-opt-fuzzer/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-opt-report/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-pdbutil/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-rc/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-readobj/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-rtdyld/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-size/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-special-case-list-fuzzer/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-split/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-stress/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-strings/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-symbolizer/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/llvm-xray/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/msbuild/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/obj2yaml/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/opt/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/opt-viewer/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/sancov/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/sanstats/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/verify-uselistorder/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/xcode-toolchain/CMakeLists.txt"
+		},
+		{
+			"path" : "tools/yaml2obj/CMakeLists.txt"
+		},
+		{
+			"path" : "runtimes/CMakeLists.txt"
+		},
+		{
+			"path" : "cmake/modules/LLVMExternalProjectUtils.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/nsas2020/.cache/JetBrains/RemoteDev/dist/69f6ce9329a28_CLion-233.11799.171/bin/cmake/linux/x64/share/cmake-3.27/Modules/ExternalProject.cmake"
+		},
+		{
+			"path" : "examples/CMakeLists.txt"
+		},
+		{
+			"path" : "examples/BrainF/CMakeLists.txt"
+		},
+		{
+			"path" : "examples/Fibonacci/CMakeLists.txt"
+		},
+		{
+			"path" : "examples/HowToUseJIT/CMakeLists.txt"
+		},
+		{
+			"path" : "examples/Kaleidoscope/CMakeLists.txt"
+		},
+		{
+			"path" : "examples/Kaleidoscope/BuildingAJIT/CMakeLists.txt"
+		},
+		{
+			"path" : "examples/Kaleidoscope/BuildingAJIT/Chapter1/CMakeLists.txt"
+		},
+		{
+			"path" : "examples/Kaleidoscope/BuildingAJIT/Chapter2/CMakeLists.txt"
+		},
+		{
+			"path" : "examples/Kaleidoscope/BuildingAJIT/Chapter3/CMakeLists.txt"
+		},
+		{
+			"path" : "examples/Kaleidoscope/BuildingAJIT/Chapter4/CMakeLists.txt"
+		},
+		{
+			"path" : "examples/Kaleidoscope/BuildingAJIT/Chapter5/CMakeLists.txt"
+		},
+		{
+			"path" : "examples/Kaleidoscope/BuildingAJIT/Chapter5/Server/CMakeLists.txt"
+		},
+		{
+			"path" : "examples/Kaleidoscope/Chapter2/CMakeLists.txt"
+		},
+		{
+			"path" : "examples/Kaleidoscope/Chapter3/CMakeLists.txt"
+		},
+		{
+			"path" : "examples/Kaleidoscope/Chapter4/CMakeLists.txt"
+		},
+		{
+			"path" : "examples/Kaleidoscope/Chapter5/CMakeLists.txt"
+		},
+		{
+			"path" : "examples/Kaleidoscope/Chapter6/CMakeLists.txt"
+		},
+		{
+			"path" : "examples/Kaleidoscope/Chapter7/CMakeLists.txt"
+		},
+		{
+			"path" : "examples/Kaleidoscope/Chapter8/CMakeLists.txt"
+		},
+		{
+			"path" : "examples/Kaleidoscope/Chapter9/CMakeLists.txt"
+		},
+		{
+			"path" : "examples/ModuleMaker/CMakeLists.txt"
+		},
+		{
+			"path" : "examples/ParallelJIT/CMakeLists.txt"
+		},
+		{
+			"path" : "utils/lit/CMakeLists.txt"
+		},
+		{
+			"path" : "utils/lit/tests/lit.site.cfg.in"
+		},
+		{
+			"path" : "test/CMakeLists.txt"
+		},
+		{
+			"path" : "test/lit.site.cfg.py.in"
+		},
+		{
+			"path" : "test/Unit/lit.site.cfg.py.in"
+		},
+		{
+			"path" : "unittests/CMakeLists.txt"
+		},
+		{
+			"path" : "unittests/ADT/CMakeLists.txt"
+		},
+		{
+			"path" : "unittests/Analysis/CMakeLists.txt"
+		},
+		{
+			"path" : "unittests/AsmParser/CMakeLists.txt"
+		},
+		{
+			"path" : "unittests/Bitcode/CMakeLists.txt"
+		},
+		{
+			"path" : "unittests/CodeGen/CMakeLists.txt"
+		},
+		{
+			"path" : "unittests/CodeGen/GlobalISel/CMakeLists.txt"
+		},
+		{
+			"path" : "unittests/DebugInfo/CMakeLists.txt"
+		},
+		{
+			"path" : "unittests/DebugInfo/CodeView/CMakeLists.txt"
+		},
+		{
+			"path" : "unittests/DebugInfo/DWARF/CMakeLists.txt"
+		},
+		{
+			"path" : "unittests/DebugInfo/MSF/CMakeLists.txt"
+		},
+		{
+			"path" : "unittests/DebugInfo/PDB/CMakeLists.txt"
+		},
+		{
+			"path" : "unittests/ExecutionEngine/CMakeLists.txt"
+		},
+		{
+			"path" : "unittests/ExecutionEngine/Orc/CMakeLists.txt"
+		},
+		{
+			"path" : "unittests/ExecutionEngine/MCJIT/CMakeLists.txt"
+		},
+		{
+			"path" : "unittests/FuzzMutate/CMakeLists.txt"
+		},
+		{
+			"path" : "unittests/IR/CMakeLists.txt"
+		},
+		{
+			"path" : "unittests/LineEditor/CMakeLists.txt"
+		},
+		{
+			"path" : "unittests/Linker/CMakeLists.txt"
+		},
+		{
+			"path" : "unittests/MC/CMakeLists.txt"
+		},
+		{
+			"path" : "unittests/MI/CMakeLists.txt"
+		},
+		{
+			"path" : "unittests/Object/CMakeLists.txt"
+		},
+		{
+			"path" : "unittests/BinaryFormat/CMakeLists.txt"
+		},
+		{
+			"path" : "unittests/ObjectYAML/CMakeLists.txt"
+		},
+		{
+			"path" : "unittests/Option/CMakeLists.txt"
+		},
+		{
+			"path" : "unittests/ProfileData/CMakeLists.txt"
+		},
+		{
+			"path" : "unittests/Support/CMakeLists.txt"
+		},
+		{
+			"path" : "unittests/Support/DynamicLibrary/CMakeLists.txt"
+		},
+		{
+			"path" : "unittests/Target/CMakeLists.txt"
+		},
+		{
+			"path" : "unittests/Target/AArch64/CMakeLists.txt"
+		},
+		{
+			"path" : "unittests/Transforms/CMakeLists.txt"
+		},
+		{
+			"path" : "unittests/Transforms/IPO/CMakeLists.txt"
+		},
+		{
+			"path" : "unittests/Transforms/Scalar/CMakeLists.txt"
+		},
+		{
+			"path" : "unittests/Transforms/Utils/CMakeLists.txt"
+		},
+		{
+			"path" : "unittests/XRay/CMakeLists.txt"
+		},
+		{
+			"path" : "unittests/tools/CMakeLists.txt"
+		},
+		{
+			"path" : "unittests/tools/llvm-cfi-verify/CMakeLists.txt"
+		},
+		{
+			"path" : "utils/unittest/CMakeLists.txt"
+		},
+		{
+			"path" : "utils/unittest/UnitTestMain/CMakeLists.txt"
+		},
+		{
+			"path" : "docs/CMakeLists.txt"
+		},
+		{
+			"path" : "cmake/modules/CMakeLists.txt"
+		},
+		{
+			"path" : "cmake/modules/LLVMConfig.cmake.in"
+		},
+		{
+			"path" : "cmake/modules/LLVMConfig.cmake.in"
+		},
+		{
+			"path" : "cmake/modules/LLVMConfigVersion.cmake.in"
+		},
+		{
+			"path" : "utils/llvm-lit/CMakeLists.txt"
+		},
+		{
+			"path" : "utils/llvm-lit/llvm-lit.in"
+		}
+	],
+	"kind" : "cmakeFiles",
+	"paths" : 
+	{
+		"build" : "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug",
+		"source" : "/home/nsas2020/ufo/llvm-6.0.0"
+	},
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}

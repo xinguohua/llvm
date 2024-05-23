@@ -1,0 +1,53 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"add_clang_library"
+		],
+		"files" : 
+		[
+			"tools/clang/cmake/modules/AddClang.cmake",
+			"tools/clang/lib/ASTMatchers/Dynamic/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 12,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 99,
+				"parent" : 1
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "clangDynamicASTMatchers",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libclangDynamicASTMatchers.a"
+			],
+			"targetId" : "clangDynamicASTMatchers::@4473c7eb3c08166b90c9",
+			"targetIndex" : 1606,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "tools/clang/lib/ASTMatchers/Dynamic",
+		"source" : "tools/clang/lib/ASTMatchers/Dynamic"
+	}
+}

@@ -1,0 +1,53 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"add_llvm_tool"
+		],
+		"files" : 
+		[
+			"cmake/modules/AddLLVM.cmake",
+			"tools/sanstats/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 6,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 870,
+				"parent" : 1
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "sanstats",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"bin/sanstats"
+			],
+			"targetId" : "sanstats::@47b1963b474479c81ab3",
+			"targetIndex" : 2305,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "tools/sanstats",
+		"source" : "tools/sanstats"
+	}
+}

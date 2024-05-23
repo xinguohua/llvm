@@ -1,0 +1,53 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"add_llvm_library"
+		],
+		"files" : 
+		[
+			"cmake/modules/AddLLVM.cmake",
+			"lib/Target/SystemZ/AsmParser/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 642,
+				"parent" : 1
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "LLVMSystemZAsmParser",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libLLVMSystemZAsmParser.a"
+			],
+			"targetId" : "LLVMSystemZAsmParser::@350d6a422570fe572e68",
+			"targetIndex" : 219,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "lib/Target/SystemZ/AsmParser",
+		"source" : "lib/Target/SystemZ/AsmParser"
+	}
+}

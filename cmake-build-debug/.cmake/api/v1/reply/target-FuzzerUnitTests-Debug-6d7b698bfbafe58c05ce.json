@@ -1,0 +1,68 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_dependencies",
+			"add_compiler_rt_test",
+			"generate_compiler_rt_tests"
+		],
+		"files" : 
+		[
+			"projects/compiler-rt/lib/fuzzer/tests/CMakeLists.txt",
+			"projects/compiler-rt/cmake/Modules/AddCompilerRT.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 9,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 37,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 371,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 429,
+				"parent" : 3
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "TFuzzer-x86_64-Test::@456dec28c8ec4e6e4359"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Compiler-RT Tests"
+	},
+	"id" : "FuzzerUnitTests::@456dec28c8ec4e6e4359",
+	"name" : "FuzzerUnitTests",
+	"paths" : 
+	{
+		"build" : "projects/compiler-rt/lib/fuzzer/tests",
+		"source" : "projects/compiler-rt/lib/fuzzer/tests"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

@@ -1,0 +1,199 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"tools/clang/cmake/modules/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 58,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 61,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/clang",
+			"exportName" : "ClangTargets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "clangBasic::@af584f149e490d75c24c",
+					"index" : 1602
+				},
+				{
+					"id" : "clangLex::@d3c561e3b3e9c375248d",
+					"index" : 1613
+				},
+				{
+					"id" : "clangParse::@3da6354c36f009bcf2b2",
+					"index" : 1614
+				},
+				{
+					"id" : "clangAST::@572b5cd4cfc688839176",
+					"index" : 1599
+				},
+				{
+					"id" : "clangDynamicASTMatchers::@4473c7eb3c08166b90c9",
+					"index" : 1606
+				},
+				{
+					"id" : "clangASTMatchers::@f183ba56cffa3f9f5544",
+					"index" : 1600
+				},
+				{
+					"id" : "clangCrossTU::@f99b9500197062e1d7bd",
+					"index" : 1604
+				},
+				{
+					"id" : "clangSema::@b78f6d003921181e7054",
+					"index" : 1617
+				},
+				{
+					"id" : "clangCodeGen::@b53206f97688f9d71411",
+					"index" : 1603
+				},
+				{
+					"id" : "clangAnalysis::@efd5146c6323474be9b8",
+					"index" : 1601
+				},
+				{
+					"id" : "clangEdit::@ad90dd66c332f8450f8c",
+					"index" : 1607
+				},
+				{
+					"id" : "clangRewrite::@ac59a15518014014e11a",
+					"index" : 1615
+				},
+				{
+					"id" : "clangARCMigrate::@3ad637393ca8c7f17f05",
+					"index" : 1598
+				},
+				{
+					"id" : "clangDriver::@7a0ba538446439a30277",
+					"index" : 1605
+				},
+				{
+					"id" : "clangSerialization::@0c0ec4a36076fe2a80b8",
+					"index" : 1618
+				},
+				{
+					"id" : "clangRewriteFrontend::@f1f5acd192ac9aacbb9f",
+					"index" : 1616
+				},
+				{
+					"id" : "clangFrontend::@ae9a5840ad140bf270f8",
+					"index" : 1609
+				},
+				{
+					"id" : "clangFrontendTool::@d60598cde9fa23229ffa",
+					"index" : 1610
+				},
+				{
+					"id" : "clangToolingCore::@43e67e3a7fd26cb84d1c",
+					"index" : 1624
+				},
+				{
+					"id" : "clangToolingRefactor::@760839e0789595001984",
+					"index" : 1625
+				},
+				{
+					"id" : "clangToolingASTDiff::@95b0cb8e53a6d958ee0d",
+					"index" : 1623
+				},
+				{
+					"id" : "clangTooling::@00f11e79f987691e440a",
+					"index" : 1622
+				},
+				{
+					"id" : "clangIndex::@38da7e434fb6ca00f24e",
+					"index" : 1612
+				},
+				{
+					"id" : "clangStaticAnalyzerCore::@93f8f2dc8706f9f7d1d9",
+					"index" : 1620
+				},
+				{
+					"id" : "clangStaticAnalyzerCheckers::@68e682e1e37000bcd616",
+					"index" : 1619
+				},
+				{
+					"id" : "clangStaticAnalyzerFrontend::@6e5c29f2d06c5840ca89",
+					"index" : 1621
+				},
+				{
+					"id" : "clangFormat::@413a1e9ee6c94838d69a",
+					"index" : 1608
+				},
+				{
+					"id" : "clang::@279b2102c71965def067",
+					"index" : 1582
+				},
+				{
+					"id" : "clang-format::@0fca8876159cb0bedb6e",
+					"index" : 1585
+				},
+				{
+					"id" : "clangHandleCXX::@b312087b6e1e4dc896f4",
+					"index" : 1611
+				},
+				{
+					"id" : "clang-import-test::@bfe74272e932fc923db5",
+					"index" : 1589
+				},
+				{
+					"id" : "clang-rename::@cc7e808ddbabd895664b",
+					"index" : 1593
+				},
+				{
+					"id" : "clang-refactor::@56a1831bd073321c53a5",
+					"index" : 1592
+				},
+				{
+					"id" : "libclang::@6830e94d7f992248c5e3",
+					"index" : 2233
+				}
+			],
+			"paths" : 
+			[
+				"tools/clang/cmake/modules/CMakeFiles/Export/c1119db3fad74e49663c818a9c468e27/ClangTargets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/clang",
+			"paths" : 
+			[
+				"cmake-build-debug/tools/clang/cmake/modules/CMakeFiles/ClangConfig.cmake"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "tools/clang/cmake/modules",
+		"source" : "tools/clang/cmake/modules"
+	}
+}

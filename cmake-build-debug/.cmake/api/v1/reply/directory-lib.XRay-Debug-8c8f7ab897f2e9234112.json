@@ -1,0 +1,53 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"add_llvm_library"
+		],
+		"files" : 
+		[
+			"cmake/modules/AddLLVM.cmake",
+			"lib/XRay/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 642,
+				"parent" : 1
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "LLVMXRay",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libLLVMXRay.a"
+			],
+			"targetId" : "LLVMXRay::@819c21a7dea3ddb9813c",
+			"targetIndex" : 243,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "lib/XRay",
+		"source" : "lib/XRay"
+	}
+}

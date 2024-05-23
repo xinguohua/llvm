@@ -1,0 +1,103 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_dependencies",
+			"add_compiler_rt_test",
+			"generate_compiler_rt_tests",
+			"add_interception_tests_for_arch"
+		],
+		"files" : 
+		[
+			"projects/compiler-rt/lib/interception/tests/CMakeLists.txt",
+			"projects/compiler-rt/cmake/Modules/AddCompilerRT.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 80,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 111,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 88,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 371,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 429,
+				"parent" : 4
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 111,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 88,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 371,
+				"parent" : 7
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 429,
+				"parent" : 8
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "TInterception-x86_64-Test::@8887155c21b749dfc056"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "TInterception-i386-Test::@8887155c21b749dfc056"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Compiler-RT Tests"
+	},
+	"id" : "InterceptionUnitTests::@8887155c21b749dfc056",
+	"name" : "InterceptionUnitTests",
+	"paths" : 
+	{
+		"build" : "projects/compiler-rt/lib/interception/tests",
+		"source" : "projects/compiler-rt/lib/interception/tests"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

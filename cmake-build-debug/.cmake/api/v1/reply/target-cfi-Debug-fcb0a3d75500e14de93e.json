@@ -1,0 +1,133 @@
+{
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_compiler_rt_component",
+			"add_dependencies",
+			"add_compiler_rt_runtime",
+			"add_compiler_rt_resource_file"
+		],
+		"files" : 
+		[
+			"projects/compiler-rt/cmake/Modules/AddCompilerRT.cmake",
+			"projects/compiler-rt/lib/cfi/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 88,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 17,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 302,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 26,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 302,
+				"parent" : 5
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 17,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 302,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 26,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 302,
+				"parent" : 9
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 39,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 444,
+				"parent" : 11
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "clang_rt.cfi-i386::@d0269baa058ecbf7488a"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "clang_rt.cfi_diag-i386::@d0269baa058ecbf7488a"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "clang_rt.cfi-x86_64::@d0269baa058ecbf7488a"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "clang_rt.cfi_diag-x86_64::@d0269baa058ecbf7488a"
+		},
+		{
+			"backtrace" : 12,
+			"id" : "cfi_blacklist::@d0269baa058ecbf7488a"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Compiler-RT Misc"
+	},
+	"id" : "cfi::@d0269baa058ecbf7488a",
+	"name" : "cfi",
+	"paths" : 
+	{
+		"build" : "projects/compiler-rt/lib/cfi",
+		"source" : "projects/compiler-rt/lib/cfi"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

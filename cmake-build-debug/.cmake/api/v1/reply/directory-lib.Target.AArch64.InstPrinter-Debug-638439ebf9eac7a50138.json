@@ -1,0 +1,53 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"add_llvm_library"
+		],
+		"files" : 
+		[
+			"cmake/modules/AddLLVM.cmake",
+			"lib/Target/AArch64/InstPrinter/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 3,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 642,
+				"parent" : 1
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "LLVMAArch64AsmPrinter",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libLLVMAArch64AsmPrinter.a"
+			],
+			"targetId" : "LLVMAArch64AsmPrinter::@dc8f00395d4aa5f842c9",
+			"targetIndex" : 109,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "lib/Target/AArch64/InstPrinter",
+		"source" : "lib/Target/AArch64/InstPrinter"
+	}
+}

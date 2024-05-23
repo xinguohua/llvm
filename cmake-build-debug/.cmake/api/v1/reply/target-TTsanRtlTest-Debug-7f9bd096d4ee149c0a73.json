@@ -1,0 +1,168 @@
+{
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_compiler_rt_test",
+			"add_tsan_unittest"
+		],
+		"files" : 
+		[
+			"projects/compiler-rt/cmake/Modules/AddCompilerRT.cmake",
+			"projects/compiler-rt/lib/tsan/tests/CMakeLists.txt",
+			"projects/compiler-rt/lib/tsan/tests/rtl/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 17,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 61,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 425,
+				"parent" : 2
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "compiler-rt-headers::@2362d0e0e07ab23e22da"
+		},
+		{
+			"id" : "tsan::@eb2e153928c6854e71ad"
+		},
+		{
+			"id" : "clang::@279b2102c71965def067"
+		},
+		{
+			"id" : "gtest::@7b482da229522f2cdda6"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Compiler-RT Tests"
+	},
+	"id" : "TTsanRtlTest::@4e324156ed3f07b31bb4",
+	"name" : "TTsanRtlTest",
+	"paths" : 
+	{
+		"build" : "projects/compiler-rt/lib/tsan/tests/rtl",
+		"source" : "projects/compiler-rt/lib/tsan/tests/rtl"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/projects/compiler-rt/lib/tsan/tests/rtl/CMakeFiles/TTsanRtlTest",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/projects/compiler-rt/lib/tsan/tests/rtl/CMakeFiles/TTsanRtlTest.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/projects/compiler-rt/lib/tsan/tests/rtl/TsanRtlTest.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"path" : "utils/unittest/googletest/src/gtest-all.cc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "projects/compiler-rt/lib/tsan/tests/rtl/tsan_bench.cc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "projects/compiler-rt/lib/tsan/tests/rtl/tsan_mop.cc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "projects/compiler-rt/lib/tsan/tests/rtl/tsan_mutex.cc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "projects/compiler-rt/lib/tsan/tests/rtl/tsan_posix.cc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "projects/compiler-rt/lib/tsan/tests/rtl/tsan_string.cc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "projects/compiler-rt/lib/tsan/tests/rtl/tsan_test.cc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "projects/compiler-rt/lib/tsan/tests/rtl/tsan_test_util_posix.cc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"path" : "projects/compiler-rt/lib/tsan/tests/rtl/tsan_thread.cc",
+			"sourceGroupIndex" : 2
+		}
+	],
+	"type" : "UTILITY"
+}

@@ -1,0 +1,53 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"add_clang_library"
+		],
+		"files" : 
+		[
+			"tools/clang/cmake/modules/AddClang.cmake",
+			"tools/clang/lib/StaticAnalyzer/Core/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 10,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 99,
+				"parent" : 1
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "clangStaticAnalyzerCore",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libclangStaticAnalyzerCore.a"
+			],
+			"targetId" : "clangStaticAnalyzerCore::@93f8f2dc8706f9f7d1d9",
+			"targetIndex" : 1620,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "tools/clang/lib/StaticAnalyzer/Core",
+		"source" : "tools/clang/lib/StaticAnalyzer/Core"
+	}
+}

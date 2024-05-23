@@ -1,0 +1,53 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"add_llvm_library"
+		],
+		"files" : 
+		[
+			"cmake/modules/AddLLVM.cmake",
+			"lib/Target/MSP430/InstPrinter/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 642,
+				"parent" : 1
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "LLVMMSP430AsmPrinter",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libLLVMMSP430AsmPrinter.a"
+			],
+			"targetId" : "LLVMMSP430AsmPrinter::@362b3d81141d4d33e78a",
+			"targetIndex" : 181,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "lib/Target/MSP430/InstPrinter",
+		"source" : "lib/Target/MSP430/InstPrinter"
+	}
+}

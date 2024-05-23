@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "projects/compiler-rt/test/sanitizer_common",
+		"source" : "projects/compiler-rt/test/sanitizer_common"
+	}
+}

@@ -1,0 +1,201 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"add_compiler_rt_runtime",
+			"add_sanitizer_rt_symbols"
+		],
+		"files" : 
+		[
+			"projects/compiler-rt/cmake/Modules/AddCompilerRT.cmake",
+			"projects/compiler-rt/lib/ubsan/CMakeLists.txt",
+			"projects/compiler-rt/cmake/Modules/SanitizerUtils.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 151,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 263,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 263,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 162,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 263,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 263,
+				"parent" : 4
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 170,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 263,
+				"parent" : 7
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 263,
+				"parent" : 7
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 186,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 2,
+				"line" : 41,
+				"parent" : 10
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 190,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 2,
+				"line" : 41,
+				"parent" : 12
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "clang_rt.ubsan_standalone-i386",
+			"destination" : "lib/clang/6.0.0/lib/linux",
+			"paths" : 
+			[
+				"lib/clang/6.0.0/lib/linux/libclang_rt.ubsan_standalone-i386.a"
+			],
+			"targetId" : "clang_rt.ubsan_standalone-i386::@6f7ab0110c9d2604cac3",
+			"targetIndex" : 1683,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "clang_rt.ubsan_standalone-x86_64",
+			"destination" : "lib/clang/6.0.0/lib/linux",
+			"paths" : 
+			[
+				"lib/clang/6.0.0/lib/linux/libclang_rt.ubsan_standalone-x86_64.a"
+			],
+			"targetId" : "clang_rt.ubsan_standalone-x86_64::@6f7ab0110c9d2604cac3",
+			"targetIndex" : 1684,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "clang_rt.ubsan_standalone_cxx-i386",
+			"destination" : "lib/clang/6.0.0/lib/linux",
+			"paths" : 
+			[
+				"lib/clang/6.0.0/lib/linux/libclang_rt.ubsan_standalone_cxx-i386.a"
+			],
+			"targetId" : "clang_rt.ubsan_standalone_cxx-i386::@6f7ab0110c9d2604cac3",
+			"targetIndex" : 1686,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "clang_rt.ubsan_standalone_cxx-x86_64",
+			"destination" : "lib/clang/6.0.0/lib/linux",
+			"paths" : 
+			[
+				"lib/clang/6.0.0/lib/linux/libclang_rt.ubsan_standalone_cxx-x86_64.a"
+			],
+			"targetId" : "clang_rt.ubsan_standalone_cxx-x86_64::@6f7ab0110c9d2604cac3",
+			"targetIndex" : 1687,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 8,
+			"component" : "clang_rt.ubsan_standalone-dynamic-i386",
+			"destination" : "lib/clang/6.0.0/lib/linux",
+			"paths" : 
+			[
+				"lib/clang/6.0.0/lib/linux/libclang_rt.ubsan_standalone-i386.so"
+			],
+			"targetId" : "clang_rt.ubsan_standalone-dynamic-i386::@6f7ab0110c9d2604cac3",
+			"targetIndex" : 1681,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 9,
+			"component" : "clang_rt.ubsan_standalone-dynamic-x86_64",
+			"destination" : "lib/clang/6.0.0/lib/linux",
+			"paths" : 
+			[
+				"lib/clang/6.0.0/lib/linux/libclang_rt.ubsan_standalone-x86_64.so"
+			],
+			"targetId" : "clang_rt.ubsan_standalone-dynamic-x86_64::@6f7ab0110c9d2604cac3",
+			"targetIndex" : 1682,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 11,
+			"component" : "Unspecified",
+			"destination" : "lib/clang/6.0.0/lib/linux",
+			"paths" : 
+			[
+				"cmake-build-debug/lib/clang/6.0.0/lib/linux/libclang_rt.ubsan_standalone-x86_64.a.syms"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 13,
+			"component" : "Unspecified",
+			"destination" : "lib/clang/6.0.0/lib/linux",
+			"paths" : 
+			[
+				"cmake-build-debug/lib/clang/6.0.0/lib/linux/libclang_rt.ubsan_standalone_cxx-x86_64.a.syms"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "projects/compiler-rt/lib/ubsan",
+		"source" : "projects/compiler-rt/lib/ubsan"
+	}
+}

@@ -1,0 +1,98 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_dependencies",
+			"add_compiler_rt_test",
+			"add_tsan_unittest"
+		],
+		"files" : 
+		[
+			"projects/compiler-rt/lib/tsan/tests/CMakeLists.txt",
+			"projects/compiler-rt/cmake/Modules/AddCompilerRT.cmake",
+			"projects/compiler-rt/lib/tsan/tests/rtl/CMakeLists.txt",
+			"projects/compiler-rt/lib/tsan/tests/unit/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3,
+				"parent" : 0
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 17,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 61,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 429,
+				"parent" : 4
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 12,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 61,
+				"parent" : 7
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 429,
+				"parent" : 8
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "TTsanRtlTest::@4e324156ed3f07b31bb4"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "TTsanUnitTest::@462436bed173b75c6fac"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "TSan unittests"
+	},
+	"id" : "TsanUnitTests::@968b769e0610ad6519f8",
+	"name" : "TsanUnitTests",
+	"paths" : 
+	{
+		"build" : "projects/compiler-rt/lib/tsan/tests",
+		"source" : "projects/compiler-rt/lib/tsan/tests"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

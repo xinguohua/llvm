@@ -1,0 +1,53 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"add_llvm_library"
+		],
+		"files" : 
+		[
+			"cmake/modules/AddLLVM.cmake",
+			"lib/Target/PowerPC/InstPrinter/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 642,
+				"parent" : 1
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "LLVMPowerPCAsmPrinter",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libLLVMPowerPCAsmPrinter.a"
+			],
+			"targetId" : "LLVMPowerPCAsmPrinter::@08b00fddb2094d699ae9",
+			"targetIndex" : 202,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "lib/Target/PowerPC/InstPrinter",
+		"source" : "lib/Target/PowerPC/InstPrinter"
+	}
+}

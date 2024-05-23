@@ -1,0 +1,53 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"add_llvm_tool"
+		],
+		"files" : 
+		[
+			"cmake/modules/AddLLVM.cmake",
+			"tools/llc/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 21,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 870,
+				"parent" : 1
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "llc",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"bin/llc"
+			],
+			"targetId" : "llc::@b54ea129dc3e8f94840b",
+			"targetIndex" : 2237,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "tools/llc",
+		"source" : "tools/llc"
+	}
+}

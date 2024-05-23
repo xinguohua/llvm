@@ -1,0 +1,164 @@
+{
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_lit_target",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"cmake/modules/AddLLVM.cmake",
+			"projects/compiler-rt/test/cfi/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 92,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1322,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 1333,
+				"parent" : 1
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "FileCheck::@09bac3cf726c1488c914"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "count::@1848ee2bede5a1584fa8"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "not::@7726f5738bf8037ed68b"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "compiler-rt-headers::@2362d0e0e07ab23e22da"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "SanitizerLintCheck::@d4d7aa15a1a5539db83e"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "stats::@15c97ce0da8c82972fff"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "ubsan::@6f7ab0110c9d2604cac3"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "cfi::@d0269baa058ecbf7488a"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "profile::@e5c3a9dc55ecbc191cbb"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-config::@afa2b000db28441ce85a"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "clang-headers::@85dbf821aae81a241c4c"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "clang::@279b2102c71965def067"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-nm::@3d6bf72ef684413f1fda"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-objdump::@2ec370e9f30813b8b31c"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-readobj::@494ff1f9bdd8b7c92285"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-symbolizer::@9bd0ecc701ed4e461dcf"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "opt::@b47735b880bc6d502d77"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "sancov::@4ee969c693d02f5dd93d"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "sanstats::@47b1963b474479c81ab3"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Compiler-RT Misc"
+	},
+	"id" : "check-cfi-and-supported::@2033d89c6a670611fbe8",
+	"name" : "check-cfi-and-supported",
+	"paths" : 
+	{
+		"build" : "projects/compiler-rt/test/cfi",
+		"source" : "projects/compiler-rt/test/cfi"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/projects/compiler-rt/test/cfi/CMakeFiles/check-cfi-and-supported",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/projects/compiler-rt/test/cfi/CMakeFiles/check-cfi-and-supported.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

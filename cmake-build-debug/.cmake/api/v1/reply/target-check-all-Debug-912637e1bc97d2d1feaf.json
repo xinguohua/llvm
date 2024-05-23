@@ -1,0 +1,504 @@
+{
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_lit_target",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"cmake/modules/AddLLVM.cmake",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 919,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1322,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 1333,
+				"parent" : 1
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "llvm-tblgen::@dca47d54282c16282dfc"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "LLVMHello::@48ed1eff02c32f32e24c"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "FileCheck::@09bac3cf726c1488c914"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "count::@1848ee2bede5a1584fa8"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "not::@7726f5738bf8037ed68b"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "yaml-bench::@06142ef5857392f719d8"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "compiler-rt-headers::@2362d0e0e07ab23e22da"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "SanitizerLintCheck::@d4d7aa15a1a5539db83e"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "SanitizerUnitTests::@71387dbe268b53050868"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "builtins::@fdaf820d049f7c7afbdd"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "InterceptionUnitTests::@8887155c21b749dfc056"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "stats::@15c97ce0da8c82972fff"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "lsan::@230e6c94b488129149f8"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "ubsan::@6f7ab0110c9d2604cac3"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "asan::@25c3ad5d91a874a36ed9"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "AsanUnitTests::@54e9ae779f0686d876a9"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "AsanDynamicUnitTests::@54e9ae779f0686d876a9"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "dfsan::@77dd0385a8675db77729"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "msan::@5ff0b1e77080cb904fb5"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "tsan::@eb2e153928c6854e71ad"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "GotsanRuntimeCheck::@eb2e153928c6854e71ad"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "TsanUnitTests::@968b769e0610ad6519f8"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "safestack::@e6dc2e2561063817591a"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "cfi::@d0269baa058ecbf7488a"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "esan::@0d20c9ba56cca9c9c6d3"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "scudo::@070895993031c92378e8"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "ubsan-minimal::@0dd097344c5c966c5388"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "profile::@e5c3a9dc55ecbc191cbb"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "xray::@2a10192c9cae601237b9"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "XRayUnitTests::@8a15d4b37ad50849d460"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "LTO::@3fb5455b32bc8f99179a"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-ar::@a02a90250a01112d8191"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-ranlib::@a02a90250a01112d8191"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-lib::@a02a90250a01112d8191"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-dlltool::@a02a90250a01112d8191"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-config::@afa2b000db28441ce85a"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-lto::@2fda6cc5f4a98f144093"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-profdata::@bb49f6a0934048e71b3d"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "clang-tblgen::@9d1a7e4b77846bff96c3"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "clang-headers::@85dbf821aae81a241c4c"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "diagtool::@6fcaab4b6a6bb1fbdab7"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "clang::@279b2102c71965def067"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "clang-diff::@636c7d8c043ab220a797"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "clang-format::@0fca8876159cb0bedb6e"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "clang-import-test::@bfe74272e932fc923db5"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "clang-offload-bundler::@75531401fb41b759697b"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "c-index-test::@13ca623d0db5a9379081"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "clang-rename::@cc7e808ddbabd895664b"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "clang-refactor::@56a1831bd073321c53a5"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "arcmt-test::@bf409b4c11d7534a58aa"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "c-arcmt-test::@c31ccb908af62a945bb7"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "clang-check::@bf3d1bc6c6881cd79c3b"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "clang-func-mapping::@5eea8b4365704d429038"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "ClangUnitTests::@e1f11e1ec73888e26d14"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "bugpoint::@f1e370f4ef88400614e7"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "BugpointPasses::@380fe6bbc961daa8046c"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-dsymutil::@d49f51e8ab9f6f7fdf63"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llc::@b54ea129dc3e8f94840b"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "lli::@2c1c1711deab6220250d"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "lli-child-target::@f4eed7f402be02f25c07"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-as::@3f5e325e8785346a85b0"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-bcanalyzer::@c40be07b8d45bb5a8a90"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-c-test::@a9c6dda1503c02054e70"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-cat::@06466fed4d82d175ffc4"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-cfi-verify::@0c7f4e331da5e84dc6a1"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-cov::@d1aec6e4d96adb2837c3"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-cvtres::@af1c6319e2f67c32f127"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-cxxdump::@03fbd5a508c4d1e7a35a"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-cxxfilt::@bcca90acc22e84a8507b"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-diff::@fd34261daabde5c6824b"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-dis::@e82ed11c4685fece42d7"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-dwarfdump::@4378988d344ec17d8888"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-dwp::@bc14e92b68d0cf274c48"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-extract::@b3d161fd63f7862d829b"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-go::@34a5405ef37f271b4488"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-isel-fuzzer::@b23c290f38024c2f5706"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-link::@5ef286a2456f2d7c9c68"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-lto2::@b8b968d7aca817467d99"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-mc::@12a84803523344ac5eb4"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-mcmarkup::@32f1fa61c7df72f2ba8e"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-modextract::@b56560e6ba4b1f3f5185"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-mt::@adbdeb1f631d08310caf"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-nm::@3d6bf72ef684413f1fda"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-objcopy::@c5905f69fadc0487d333"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-objdump::@2ec370e9f30813b8b31c"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-opt-fuzzer::@d3b942035fe2fa0f7126"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-opt-report::@53f83fd03e39973a9bdb"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-pdbutil::@4ced02ea63bc958057d1"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-rc::@1ad94799de99ec593d82"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-readobj::@494ff1f9bdd8b7c92285"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-readelf::@494ff1f9bdd8b7c92285"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-rtdyld::@8a005c53316fa30b9c43"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-size::@93d4a29e3604b672a128"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-split::@56526a2fde6a01cc3ef7"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-strings::@7e96d91f5e562e54689c"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-symbolizer::@9bd0ecc701ed4e461dcf"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "llvm-xray::@b99230e25c663edcf66f"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "obj2yaml::@76a428f7542aff350637"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "opt::@b47735b880bc6d502d77"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "sancov::@4ee969c693d02f5dd93d"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "sanstats::@47b1963b474479c81ab3"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "verify-uselistorder::@93a28c78e3d6d1ed1ef5"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "yaml2obj::@1ace74fd1e5f08965ec9"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "prepare-check-lit::@fb63d72e6a9009fd8010"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "UnitTests::@42060a6318a19e21b55a"
+		}
+	],
+	"id" : "check-all::@6890427a1f51a3e7e1df",
+	"name" : "check-all",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/check-all",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/check-all.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

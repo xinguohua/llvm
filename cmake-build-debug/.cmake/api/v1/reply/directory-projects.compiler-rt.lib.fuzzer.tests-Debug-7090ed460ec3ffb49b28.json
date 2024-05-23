@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "projects/compiler-rt/lib/fuzzer/tests",
+		"source" : "projects/compiler-rt/lib/fuzzer/tests"
+	}
+}

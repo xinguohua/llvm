@@ -1,0 +1,353 @@
+{
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"include",
+			"add_dependencies",
+			"add_compiler_rt_runtime"
+		],
+		"files" : 
+		[
+			"projects/compiler-rt/cmake/base-config-ix.cmake",
+			"projects/compiler-rt/CMakeLists.txt",
+			"projects/compiler-rt/cmake/Modules/AddCompilerRT.cmake",
+			"projects/compiler-rt/lib/builtins/CMakeLists.txt",
+			"projects/compiler-rt/lib/stats/CMakeLists.txt",
+			"projects/compiler-rt/lib/lsan/CMakeLists.txt",
+			"projects/compiler-rt/lib/ubsan/CMakeLists.txt",
+			"projects/compiler-rt/lib/asan/CMakeLists.txt",
+			"projects/compiler-rt/lib/dfsan/CMakeLists.txt",
+			"projects/compiler-rt/lib/msan/CMakeLists.txt",
+			"projects/compiler-rt/lib/tsan/dd/CMakeLists.txt",
+			"projects/compiler-rt/lib/safestack/CMakeLists.txt",
+			"projects/compiler-rt/lib/cfi/CMakeLists.txt",
+			"projects/compiler-rt/lib/scudo/CMakeLists.txt",
+			"projects/compiler-rt/lib/ubsan_minimal/CMakeLists.txt",
+			"projects/compiler-rt/lib/profile/CMakeLists.txt",
+			"projects/compiler-rt/lib/xray/CMakeLists.txt",
+			"projects/compiler-rt/lib/fuzzer/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 26,
+				"parent" : 0
+			},
+			{
+				"file" : 0,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 14,
+				"parent" : 2
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 545,
+				"parent" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 224,
+				"parent" : 5
+			},
+			{
+				"file" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 4,
+				"line" : 20,
+				"parent" : 7
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 224,
+				"parent" : 8
+			},
+			{
+				"file" : 5
+			},
+			{
+				"command" : 3,
+				"file" : 5,
+				"line" : 52,
+				"parent" : 10
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 224,
+				"parent" : 11
+			},
+			{
+				"file" : 6
+			},
+			{
+				"command" : 3,
+				"file" : 6,
+				"line" : 151,
+				"parent" : 13
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 224,
+				"parent" : 14
+			},
+			{
+				"file" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 7,
+				"line" : 144,
+				"parent" : 16
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 224,
+				"parent" : 17
+			},
+			{
+				"file" : 8
+			},
+			{
+				"command" : 3,
+				"file" : 8,
+				"line" : 19,
+				"parent" : 19
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 224,
+				"parent" : 20
+			},
+			{
+				"file" : 9
+			},
+			{
+				"command" : 3,
+				"file" : 9,
+				"line" : 31,
+				"parent" : 22
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 224,
+				"parent" : 23
+			},
+			{
+				"file" : 10
+			},
+			{
+				"command" : 3,
+				"file" : 10,
+				"line" : 25,
+				"parent" : 25
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 224,
+				"parent" : 26
+			},
+			{
+				"file" : 11
+			},
+			{
+				"command" : 3,
+				"file" : 11,
+				"line" : 24,
+				"parent" : 28
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 224,
+				"parent" : 29
+			},
+			{
+				"file" : 12
+			},
+			{
+				"command" : 3,
+				"file" : 12,
+				"line" : 17,
+				"parent" : 31
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 224,
+				"parent" : 32
+			},
+			{
+				"file" : 13
+			},
+			{
+				"command" : 3,
+				"file" : 13,
+				"line" : 41,
+				"parent" : 34
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 224,
+				"parent" : 35
+			},
+			{
+				"file" : 14
+			},
+			{
+				"command" : 3,
+				"file" : 14,
+				"line" : 29,
+				"parent" : 37
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 224,
+				"parent" : 38
+			},
+			{
+				"file" : 15
+			},
+			{
+				"command" : 3,
+				"file" : 15,
+				"line" : 109,
+				"parent" : 40
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 224,
+				"parent" : 41
+			},
+			{
+				"file" : 16
+			},
+			{
+				"command" : 3,
+				"file" : 16,
+				"line" : 101,
+				"parent" : 43
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 224,
+				"parent" : 44
+			},
+			{
+				"file" : 17
+			},
+			{
+				"command" : 3,
+				"file" : 17,
+				"line" : 62,
+				"parent" : 46
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 224,
+				"parent" : 47
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 6,
+			"id" : "install-builtins-stripped::@fdaf820d049f7c7afbdd"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "install-stats-stripped::@15c97ce0da8c82972fff"
+		},
+		{
+			"backtrace" : 12,
+			"id" : "install-lsan-stripped::@230e6c94b488129149f8"
+		},
+		{
+			"backtrace" : 15,
+			"id" : "install-ubsan-stripped::@6f7ab0110c9d2604cac3"
+		},
+		{
+			"backtrace" : 18,
+			"id" : "install-asan-stripped::@25c3ad5d91a874a36ed9"
+		},
+		{
+			"backtrace" : 21,
+			"id" : "install-dfsan-stripped::@77dd0385a8675db77729"
+		},
+		{
+			"backtrace" : 24,
+			"id" : "install-msan-stripped::@5ff0b1e77080cb904fb5"
+		},
+		{
+			"backtrace" : 27,
+			"id" : "install-dd-stripped::@e42eaf451f09ef12b5ec"
+		},
+		{
+			"backtrace" : 30,
+			"id" : "install-safestack-stripped::@e6dc2e2561063817591a"
+		},
+		{
+			"backtrace" : 33,
+			"id" : "install-cfi-stripped::@d0269baa058ecbf7488a"
+		},
+		{
+			"backtrace" : 36,
+			"id" : "install-scudo-stripped::@070895993031c92378e8"
+		},
+		{
+			"backtrace" : 39,
+			"id" : "install-ubsan-minimal-stripped::@0dd097344c5c966c5388"
+		},
+		{
+			"backtrace" : 42,
+			"id" : "install-profile-stripped::@e5c3a9dc55ecbc191cbb"
+		},
+		{
+			"backtrace" : 45,
+			"id" : "install-xray-stripped::@2a10192c9cae601237b9"
+		},
+		{
+			"backtrace" : 48,
+			"id" : "install-fuzzer-stripped::@751ee23e9a0f571ea99b"
+		}
+	],
+	"id" : "install-compiler-rt-stripped::@0d7a14317baa1c4b9dc1",
+	"name" : "install-compiler-rt-stripped",
+	"paths" : 
+	{
+		"build" : "projects/compiler-rt",
+		"source" : "projects/compiler-rt"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

@@ -1,0 +1,155 @@
+{
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_lit_target",
+			"add_lit_testsuite",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"cmake/modules/AddLLVM.cmake",
+			"projects/compiler-rt/test/scudo/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 38,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 1354,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1322,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 1333,
+				"parent" : 2
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "FileCheck::@09bac3cf726c1488c914"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "count::@1848ee2bede5a1584fa8"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "not::@7726f5738bf8037ed68b"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "compiler-rt-headers::@2362d0e0e07ab23e22da"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "SanitizerLintCheck::@d4d7aa15a1a5539db83e"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "scudo::@070895993031c92378e8"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "profile::@e5c3a9dc55ecbc191cbb"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "llvm-config::@afa2b000db28441ce85a"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "clang-headers::@85dbf821aae81a241c4c"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "clang::@279b2102c71965def067"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "llvm-nm::@3d6bf72ef684413f1fda"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "llvm-objdump::@2ec370e9f30813b8b31c"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "llvm-readobj::@494ff1f9bdd8b7c92285"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "llvm-symbolizer::@9bd0ecc701ed4e461dcf"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "sancov::@4ee969c693d02f5dd93d"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Compiler-RT Misc"
+	},
+	"id" : "check-scudo::@a67d6e79a0df86985960",
+	"name" : "check-scudo",
+	"paths" : 
+	{
+		"build" : "projects/compiler-rt/test/scudo",
+		"source" : "projects/compiler-rt/test/scudo"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/projects/compiler-rt/test/scudo/CMakeFiles/check-scudo",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/projects/compiler-rt/test/scudo/CMakeFiles/check-scudo.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

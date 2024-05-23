@@ -1,0 +1,137 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"add_compiler_rt_runtime",
+			"add_sanitizer_rt_symbols"
+		],
+		"files" : 
+		[
+			"projects/compiler-rt/cmake/Modules/AddCompilerRT.cmake",
+			"projects/compiler-rt/lib/ubsan_minimal/CMakeLists.txt",
+			"projects/compiler-rt/cmake/Modules/SanitizerUtils.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 29,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 263,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 263,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 37,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 263,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 263,
+				"parent" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 50,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 2,
+				"line" : 41,
+				"parent" : 7
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "clang_rt.ubsan_minimal-i386",
+			"destination" : "lib/clang/6.0.0/lib/linux",
+			"paths" : 
+			[
+				"lib/clang/6.0.0/lib/linux/libclang_rt.ubsan_minimal-i386.a"
+			],
+			"targetId" : "clang_rt.ubsan_minimal-i386::@0dd097344c5c966c5388",
+			"targetIndex" : 1678,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "clang_rt.ubsan_minimal-x86_64",
+			"destination" : "lib/clang/6.0.0/lib/linux",
+			"paths" : 
+			[
+				"lib/clang/6.0.0/lib/linux/libclang_rt.ubsan_minimal-x86_64.a"
+			],
+			"targetId" : "clang_rt.ubsan_minimal-x86_64::@0dd097344c5c966c5388",
+			"targetIndex" : 1679,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "clang_rt.ubsan_minimal-dynamic-i386",
+			"destination" : "lib/clang/6.0.0/lib/linux",
+			"paths" : 
+			[
+				"lib/clang/6.0.0/lib/linux/libclang_rt.ubsan_minimal-i386.so"
+			],
+			"targetId" : "clang_rt.ubsan_minimal-dynamic-i386::@0dd097344c5c966c5388",
+			"targetIndex" : 1676,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "clang_rt.ubsan_minimal-dynamic-x86_64",
+			"destination" : "lib/clang/6.0.0/lib/linux",
+			"paths" : 
+			[
+				"lib/clang/6.0.0/lib/linux/libclang_rt.ubsan_minimal-x86_64.so"
+			],
+			"targetId" : "clang_rt.ubsan_minimal-dynamic-x86_64::@0dd097344c5c966c5388",
+			"targetIndex" : 1677,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 8,
+			"component" : "Unspecified",
+			"destination" : "lib/clang/6.0.0/lib/linux",
+			"paths" : 
+			[
+				"cmake-build-debug/lib/clang/6.0.0/lib/linux/libclang_rt.ubsan_minimal-x86_64.a.syms"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "projects/compiler-rt/lib/ubsan_minimal",
+		"source" : "projects/compiler-rt/lib/ubsan_minimal"
+	}
+}

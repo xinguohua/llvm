@@ -1,0 +1,110 @@
+{
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_compiler_rt_component",
+			"add_dependencies",
+			"add_compiler_rt_runtime",
+			"add_sanitizer_rt_symbols"
+		],
+		"files" : 
+		[
+			"projects/compiler-rt/cmake/Modules/AddCompilerRT.cmake",
+			"projects/compiler-rt/lib/ubsan_minimal/CMakeLists.txt",
+			"projects/compiler-rt/cmake/Modules/SanitizerUtils.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 88,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 37,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 302,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 29,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 302,
+				"parent" : 5
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 50,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 44,
+				"parent" : 7
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "clang_rt.ubsan_minimal-dynamic-i386::@0dd097344c5c966c5388"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "clang_rt.ubsan_minimal-i386::@0dd097344c5c966c5388"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "clang_rt.ubsan_minimal-x86_64::@0dd097344c5c966c5388"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "clang_rt.ubsan_minimal-dynamic-x86_64::@0dd097344c5c966c5388"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "clang_rt.ubsan_minimal-x86_64-symbols::@0dd097344c5c966c5388"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Compiler-RT Misc"
+	},
+	"id" : "ubsan-minimal::@0dd097344c5c966c5388",
+	"name" : "ubsan-minimal",
+	"paths" : 
+	{
+		"build" : "projects/compiler-rt/lib/ubsan_minimal",
+		"source" : "projects/compiler-rt/lib/ubsan_minimal"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

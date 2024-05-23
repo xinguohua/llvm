@@ -1,0 +1,157 @@
+{
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_compiler_rt_runtime",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"projects/compiler-rt/cmake/Modules/AddCompilerRT.cmake",
+			"projects/compiler-rt/lib/scudo/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 41,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 208,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 288,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 288,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 52,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 288,
+				"parent" : 5
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 288,
+				"parent" : 5
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 60,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 288,
+				"parent" : 8
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 288,
+				"parent" : 8
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "scudo::@070895993031c92378e8"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "install-clang_rt.scudo-i386::@070895993031c92378e8"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "install-clang_rt.scudo-x86_64::@070895993031c92378e8"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "install-clang_rt.scudo_cxx-i386::@070895993031c92378e8"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "install-clang_rt.scudo_cxx-x86_64::@070895993031c92378e8"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "install-clang_rt.scudo-dynamic-i386::@070895993031c92378e8"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "install-clang_rt.scudo-dynamic-x86_64::@070895993031c92378e8"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Compiler-RT Misc"
+	},
+	"id" : "install-scudo::@070895993031c92378e8",
+	"name" : "install-scudo",
+	"paths" : 
+	{
+		"build" : "projects/compiler-rt/lib/scudo",
+		"source" : "projects/compiler-rt/lib/scudo"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/projects/compiler-rt/lib/scudo/CMakeFiles/install-scudo",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/projects/compiler-rt/lib/scudo/CMakeFiles/install-scudo.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}
