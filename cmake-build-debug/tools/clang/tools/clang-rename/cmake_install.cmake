@@ -1,4 +1,4 @@
-# Install script for directory: /home/nsas2020/ufo/llvm-6.0.0/tools/clang/tools/clang-rename
+# Install script for directory: /home/nsas2020/fuzz/llvm-6.0.0/tools/clang/tools/clang-rename
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,7 +43,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "clang-rename" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/clang-rename")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/clang-rename")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/clang-rename" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/clang-rename")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -53,10 +53,10 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "clang-rename" OR NOT CMAKE_INSTALL_COMPONEN
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "clang-rename" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/clang" TYPE PROGRAM FILES "/home/nsas2020/ufo/llvm-6.0.0/tools/clang/tools/clang-rename/clang-rename.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/clang" TYPE PROGRAM FILES "/home/nsas2020/fuzz/llvm-6.0.0/tools/clang/tools/clang-rename/clang-rename.py")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "clang-rename" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/clang" TYPE PROGRAM FILES "/home/nsas2020/ufo/llvm-6.0.0/tools/clang/tools/clang-rename/clang-rename.el")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/clang" TYPE PROGRAM FILES "/home/nsas2020/fuzz/llvm-6.0.0/tools/clang/tools/clang-rename/clang-rename.el")
 endif()
 

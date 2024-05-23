@@ -1,4 +1,4 @@
-# Install script for directory: /home/nsas2020/ufo/llvm-6.0.0/tools/verify-uselistorder
+# Install script for directory: /home/nsas2020/fuzz/llvm-6.0.0/tools/verify-uselistorder
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,7 +43,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "verify-uselistorder" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/verify-uselistorder")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/verify-uselistorder")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/verify-uselistorder" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/verify-uselistorder")
     if(CMAKE_INSTALL_DO_STRIP)

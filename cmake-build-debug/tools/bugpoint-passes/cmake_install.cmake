@@ -1,4 +1,4 @@
-# Install script for directory: /home/nsas2020/ufo/llvm-6.0.0/tools/bugpoint-passes
+# Install script for directory: /home/nsas2020/fuzz/llvm-6.0.0/tools/bugpoint-passes
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,7 +43,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE MODULE FILES "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/BugpointPasses.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE MODULE FILES "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/BugpointPasses.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/BugpointPasses.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/BugpointPasses.so")
     if(CMAKE_INSTALL_DO_STRIP)

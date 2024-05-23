@@ -1,4 +1,4 @@
-# Install script for directory: /home/nsas2020/ufo/llvm-6.0.0/lib/Target
+# Install script for directory: /home/nsas2020/fuzz/llvm-6.0.0/lib/Target
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,25 +43,25 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "LLVMTarget" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMTarget.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMTarget.a")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/Target/AArch64/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/Target/AMDGPU/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/Target/ARM/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/Target/BPF/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/Target/Hexagon/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/Target/Lanai/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/Target/Mips/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/Target/MSP430/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/Target/NVPTX/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/Target/PowerPC/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/Target/Sparc/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/Target/SystemZ/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/Target/X86/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/Target/XCore/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/Target/AArch64/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/Target/AMDGPU/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/Target/ARM/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/Target/BPF/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/Target/Hexagon/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/Target/Lanai/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/Target/Mips/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/Target/MSP430/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/Target/NVPTX/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/Target/PowerPC/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/Target/Sparc/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/Target/SystemZ/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/Target/X86/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/Target/XCore/cmake_install.cmake")
 
 endif()
 

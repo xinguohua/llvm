@@ -1,4 +1,4 @@
-# Install script for directory: /home/nsas2020/ufo/llvm-6.0.0/tools/clang/include/clang
+# Install script for directory: /home/nsas2020/fuzz/llvm-6.0.0/tools/clang/include/clang
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,13 +44,13 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/tools/clang/include/clang/AST/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/tools/clang/include/clang/Basic/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/tools/clang/include/clang/Driver/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/tools/clang/include/clang/Parse/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/tools/clang/include/clang/Sema/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/tools/clang/include/clang/Serialization/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/tools/clang/include/clang/StaticAnalyzer/Checkers/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/tools/clang/include/clang/AST/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/tools/clang/include/clang/Basic/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/tools/clang/include/clang/Driver/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/tools/clang/include/clang/Parse/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/tools/clang/include/clang/Sema/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/tools/clang/include/clang/Serialization/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/tools/clang/include/clang/StaticAnalyzer/Checkers/cmake_install.cmake")
 
 endif()
 

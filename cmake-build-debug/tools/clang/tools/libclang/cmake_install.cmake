@@ -1,4 +1,4 @@
-# Install script for directory: /home/nsas2020/ufo/llvm-6.0.0/tools/clang/tools/libclang
+# Install script for directory: /home/nsas2020/fuzz/llvm-6.0.0/tools/clang/tools/libclang
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,8 +44,8 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "libclang" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES
-    "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libclang.so.6.0"
-    "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libclang.so.6"
+    "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libclang.so.6.0"
+    "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libclang.so.6"
     )
   foreach(file
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libclang.so.6.0"
@@ -61,10 +61,10 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "libclang" OR NOT CMAKE_INSTALL_COMPONENT)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "libclang" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libclang.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libclang.so")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "libclang-headers" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/nsas2020/ufo/llvm-6.0.0/tools/clang/tools/libclang/../../include/clang-c" FILES_MATCHING REGEX "/[^/]*\\.h$" REGEX "/\\.svn$" EXCLUDE)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/nsas2020/fuzz/llvm-6.0.0/tools/clang/tools/libclang/../../include/clang-c" FILES_MATCHING REGEX "/[^/]*\\.h$" REGEX "/\\.svn$" EXCLUDE)
 endif()
 

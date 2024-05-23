@@ -1,4 +1,4 @@
-# Install script for directory: /home/nsas2020/ufo/llvm-6.0.0/lib/DebugInfo
+# Install script for directory: /home/nsas2020/fuzz/llvm-6.0.0/lib/DebugInfo
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,11 +44,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/DebugInfo/DWARF/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/DebugInfo/MSF/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/DebugInfo/CodeView/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/DebugInfo/PDB/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/DebugInfo/Symbolize/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/DebugInfo/DWARF/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/DebugInfo/MSF/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/DebugInfo/CodeView/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/DebugInfo/PDB/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/DebugInfo/Symbolize/cmake_install.cmake")
 
 endif()
 

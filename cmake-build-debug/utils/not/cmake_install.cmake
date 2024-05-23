@@ -1,4 +1,4 @@
-# Install script for directory: /home/nsas2020/ufo/llvm-6.0.0/utils/not
+# Install script for directory: /home/nsas2020/fuzz/llvm-6.0.0/utils/not
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

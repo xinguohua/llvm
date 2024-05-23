@@ -2,10 +2,10 @@
 
 
 # LLVM_BUILD_* values available only from LLVM build tree.
-set(LLVM_BUILD_BINARY_DIR "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug")
-set(LLVM_BUILD_LIBRARY_DIR "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/./lib")
-set(LLVM_BUILD_MAIN_INCLUDE_DIR "/home/nsas2020/ufo/llvm-6.0.0/include")
-set(LLVM_BUILD_MAIN_SRC_DIR "/home/nsas2020/ufo/llvm-6.0.0")
+set(LLVM_BUILD_BINARY_DIR "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug")
+set(LLVM_BUILD_LIBRARY_DIR "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/./lib")
+set(LLVM_BUILD_MAIN_INCLUDE_DIR "/home/nsas2020/fuzz/llvm-6.0.0/include")
+set(LLVM_BUILD_MAIN_SRC_DIR "/home/nsas2020/fuzz/llvm-6.0.0")
 
 
 set(LLVM_VERSION_MAJOR 6)
@@ -200,26 +200,26 @@ set(LLVM_ON_WIN32 0)
 
 set(LLVM_LIBDIR_SUFFIX )
 
-set(LLVM_INCLUDE_DIRS "/home/nsas2020/ufo/llvm-6.0.0/include;/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/include")
-set(LLVM_LIBRARY_DIRS "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/./lib")
+set(LLVM_INCLUDE_DIRS "/home/nsas2020/fuzz/llvm-6.0.0/include;/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/include")
+set(LLVM_LIBRARY_DIRS "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/./lib")
 
 # These variables are duplicated, but they must match the LLVM variables of the
 # same name. The variables ending in "S" could some day become lists, and are
 # preserved for convention and compatibility.
-set(LLVM_INCLUDE_DIR "/home/nsas2020/ufo/llvm-6.0.0/include;/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/include")
-set(LLVM_LIBRARY_DIR "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/./lib")
+set(LLVM_INCLUDE_DIR "/home/nsas2020/fuzz/llvm-6.0.0/include;/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/include")
+set(LLVM_LIBRARY_DIR "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/./lib")
 
 set(LLVM_DEFINITIONS "-D_GNU_SOURCE -D_DEBUG -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS")
-set(LLVM_CMAKE_DIR "/home/nsas2020/ufo/llvm-6.0.0/cmake/modules")
-set(LLVM_BINARY_DIR "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug")
-set(LLVM_TOOLS_BINARY_DIR "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/./bin")
+set(LLVM_CMAKE_DIR "/home/nsas2020/fuzz/llvm-6.0.0/cmake/modules")
+set(LLVM_BINARY_DIR "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug")
+set(LLVM_TOOLS_BINARY_DIR "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/./bin")
 set(LLVM_TOOLS_INSTALL_DIR "bin")
 set(LLVM_HAVE_OPT_VIEWER_MODULES 0)
 
 if(NOT TARGET LLVMSupport)
   set(LLVM_EXPORTED_TARGETS "LLVMDemangle;LLVMSupport;LLVMTableGen;llvm-tblgen;LLVMCore;LLVMFuzzMutate;LLVMIRReader;LLVMCodeGen;LLVMSelectionDAG;LLVMAsmPrinter;LLVMMIRParser;LLVMGlobalISel;LLVMBinaryFormat;LLVMBitReader;LLVMBitWriter;LLVMTransformUtils;LLVMInstrumentation;LLVMInstCombine;LLVMScalarOpts;LLVMipo;LLVMVectorize;LLVMHello;LLVMObjCARCOpts;LLVMCoroutines;LLVMLinker;LLVMAnalysis;LLVMLTO;LLVMMC;LLVMMCParser;LLVMMCDisassembler;LLVMObject;LLVMObjectYAML;LLVMOption;LLVMDebugInfoDWARF;LLVMDebugInfoMSF;LLVMDebugInfoCodeView;LLVMDebugInfoPDB;LLVMSymbolize;LLVMExecutionEngine;LLVMInterpreter;LLVMMCJIT;LLVMOrcJIT;LLVMRuntimeDyld;LLVMTarget;LLVMAArch64CodeGen;LLVMAArch64Info;LLVMAArch64AsmParser;LLVMAArch64Disassembler;LLVMAArch64AsmPrinter;LLVMAArch64Desc;LLVMAArch64Utils;LLVMAMDGPUCodeGen;LLVMAMDGPUAsmParser;LLVMAMDGPUAsmPrinter;LLVMAMDGPUDisassembler;LLVMAMDGPUInfo;LLVMAMDGPUDesc;LLVMAMDGPUUtils;LLVMARMCodeGen;LLVMARMInfo;LLVMARMAsmParser;LLVMARMDisassembler;LLVMARMAsmPrinter;LLVMARMDesc;LLVMARMUtils;LLVMBPFCodeGen;LLVMBPFAsmParser;LLVMBPFDisassembler;LLVMBPFAsmPrinter;LLVMBPFInfo;LLVMBPFDesc;LLVMHexagonCodeGen;LLVMHexagonAsmParser;LLVMHexagonInfo;LLVMHexagonDesc;LLVMHexagonDisassembler;LLVMLanaiCodeGen;LLVMLanaiAsmParser;LLVMLanaiInfo;LLVMLanaiDesc;LLVMLanaiAsmPrinter;LLVMLanaiDisassembler;LLVMMipsCodeGen;LLVMMipsAsmPrinter;LLVMMipsDisassembler;LLVMMipsInfo;LLVMMipsDesc;LLVMMipsAsmParser;LLVMMSP430CodeGen;LLVMMSP430AsmPrinter;LLVMMSP430Info;LLVMMSP430Desc;LLVMNVPTXCodeGen;LLVMNVPTXInfo;LLVMNVPTXAsmPrinter;LLVMNVPTXDesc;LLVMPowerPCCodeGen;LLVMPowerPCAsmParser;LLVMPowerPCDisassembler;LLVMPowerPCAsmPrinter;LLVMPowerPCInfo;LLVMPowerPCDesc;LLVMSparcCodeGen;LLVMSparcInfo;LLVMSparcDesc;LLVMSparcAsmPrinter;LLVMSparcAsmParser;LLVMSparcDisassembler;LLVMSystemZCodeGen;LLVMSystemZAsmParser;LLVMSystemZDisassembler;LLVMSystemZAsmPrinter;LLVMSystemZInfo;LLVMSystemZDesc;LLVMX86CodeGen;LLVMX86AsmParser;LLVMX86Disassembler;LLVMX86AsmPrinter;LLVMX86Desc;LLVMX86Info;LLVMX86Utils;LLVMXCoreCodeGen;LLVMXCoreDisassembler;LLVMXCoreAsmPrinter;LLVMXCoreInfo;LLVMXCoreDesc;LLVMAsmParser;LLVMLineEditor;LLVMProfileData;LLVMCoverage;LLVMPasses;LLVMDlltoolDriver;LLVMLibDriver;LLVMXRay;LLVMWindowsManifest;LTO;llvm-ar;llvm-config;llvm-lto;llvm-profdata;clang-tblgen;bugpoint;BugpointPasses;llvm-dsymutil;llc;lli;llvm-as;llvm-bcanalyzer;llvm-c-test;llvm-cat;llvm-cfi-verify;llvm-cov;llvm-cvtres;llvm-cxxdump;llvm-cxxfilt;llvm-diff;llvm-dis;llvm-dwarfdump;llvm-dwp;llvm-extract;llvm-link;llvm-lto2;llvm-mc;llvm-mcmarkup;llvm-modextract;llvm-mt;llvm-nm;llvm-objcopy;llvm-objdump;llvm-opt-report;llvm-pdbutil;llvm-rc;llvm-readobj;llvm-rtdyld;llvm-size;llvm-split;llvm-stress;llvm-strings;llvm-symbolizer;llvm-xray;obj2yaml;opt;sancov;sanstats;verify-uselistorder;yaml2obj;LLVMTestingSupport;gtest;gtest_main")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/cmake/llvm/LLVMExports.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/cmake/llvm/LLVMBuildTreeOnlyTargets.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/cmake/llvm/LLVMExports.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/cmake/llvm/LLVMBuildTreeOnlyTargets.cmake")
 endif()
 
 # By creating intrinsics_gen here, subprojects that depend on LLVM's

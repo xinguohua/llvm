@@ -1,4 +1,4 @@
-# Install script for directory: /home/nsas2020/ufo/llvm-6.0.0
+# Install script for directory: /home/nsas2020/fuzz/llvm-6.0.0
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,39 +44,39 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "llvm-headers" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES
-    "/home/nsas2020/ufo/llvm-6.0.0/include/llvm"
-    "/home/nsas2020/ufo/llvm-6.0.0/include/llvm-c"
+    "/home/nsas2020/fuzz/llvm-6.0.0/include/llvm"
+    "/home/nsas2020/fuzz/llvm-6.0.0/include/llvm-c"
     FILES_MATCHING REGEX "/[^/]*\\.def$" REGEX "/[^/]*\\.h$" REGEX "/[^/]*\\.td$" REGEX "/[^/]*\\.inc$" REGEX "/LICENSE\\.TXT$" REGEX "/\\.svn$" EXCLUDE)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "llvm-headers" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/include/llvm" FILES_MATCHING REGEX "/[^/]*\\.def$" REGEX "/[^/]*\\.h$" REGEX "/[^/]*\\.gen$" REGEX "/[^/]*\\.inc$" REGEX "/CMakeFiles$" EXCLUDE REGEX "/config\\.h$" EXCLUDE REGEX "/\\.svn$" EXCLUDE)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/include/llvm" FILES_MATCHING REGEX "/[^/]*\\.def$" REGEX "/[^/]*\\.h$" REGEX "/[^/]*\\.gen$" REGEX "/[^/]*\\.inc$" REGEX "/CMakeFiles$" EXCLUDE REGEX "/config\\.h$" EXCLUDE REGEX "/\\.svn$" EXCLUDE)
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/Demangle/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/Support/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/TableGen/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/utils/TableGen/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/include/llvm/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/utils/FileCheck/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/utils/PerfectShuffle/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/utils/count/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/utils/not/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/utils/yaml-bench/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/projects/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/tools/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/runtimes/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/examples/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/utils/lit/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/test/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/unittests/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/utils/unittest/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/docs/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/cmake/modules/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/utils/llvm-lit/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/Demangle/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/Support/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/TableGen/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/utils/TableGen/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/include/llvm/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/utils/FileCheck/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/utils/PerfectShuffle/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/utils/count/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/utils/not/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/utils/yaml-bench/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/projects/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/tools/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/runtimes/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/examples/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/utils/lit/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/test/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/unittests/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/utils/unittest/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/docs/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/cmake/modules/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/utils/llvm-lit/cmake_install.cmake")
 
 endif()
 
@@ -88,5 +88,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

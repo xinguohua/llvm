@@ -1,4 +1,4 @@
-# Install script for directory: /home/nsas2020/ufo/llvm-6.0.0/unittests/Transforms
+# Install script for directory: /home/nsas2020/fuzz/llvm-6.0.0/unittests/Transforms
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,9 +44,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/unittests/Transforms/IPO/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/unittests/Transforms/Scalar/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/unittests/Transforms/Utils/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/unittests/Transforms/IPO/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/unittests/Transforms/Scalar/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/unittests/Transforms/Utils/cmake_install.cmake")
 
 endif()
 

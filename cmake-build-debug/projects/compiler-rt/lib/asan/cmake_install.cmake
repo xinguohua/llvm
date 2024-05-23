@@ -1,4 +1,4 @@
-# Install script for directory: /home/nsas2020/ufo/llvm-6.0.0/projects/compiler-rt/lib/asan
+# Install script for directory: /home/nsas2020/fuzz/llvm-6.0.0/projects/compiler-rt/lib/asan
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,27 +43,27 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "clang_rt.asan-i386" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/clang/6.0.0/lib/linux" TYPE STATIC_LIBRARY FILES "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/clang/6.0.0/lib/linux/libclang_rt.asan-i386.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/clang/6.0.0/lib/linux" TYPE STATIC_LIBRARY FILES "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/clang/6.0.0/lib/linux/libclang_rt.asan-i386.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "clang_rt.asan-x86_64" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/clang/6.0.0/lib/linux" TYPE STATIC_LIBRARY FILES "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/clang/6.0.0/lib/linux/libclang_rt.asan-x86_64.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/clang/6.0.0/lib/linux" TYPE STATIC_LIBRARY FILES "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/clang/6.0.0/lib/linux/libclang_rt.asan-x86_64.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "clang_rt.asan_cxx-i386" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/clang/6.0.0/lib/linux" TYPE STATIC_LIBRARY FILES "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/clang/6.0.0/lib/linux/libclang_rt.asan_cxx-i386.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/clang/6.0.0/lib/linux" TYPE STATIC_LIBRARY FILES "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/clang/6.0.0/lib/linux/libclang_rt.asan_cxx-i386.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "clang_rt.asan_cxx-x86_64" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/clang/6.0.0/lib/linux" TYPE STATIC_LIBRARY FILES "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/clang/6.0.0/lib/linux/libclang_rt.asan_cxx-x86_64.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/clang/6.0.0/lib/linux" TYPE STATIC_LIBRARY FILES "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/clang/6.0.0/lib/linux/libclang_rt.asan_cxx-x86_64.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "clang_rt.asan-preinit-i386" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/clang/6.0.0/lib/linux" TYPE STATIC_LIBRARY FILES "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/clang/6.0.0/lib/linux/libclang_rt.asan-preinit-i386.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/clang/6.0.0/lib/linux" TYPE STATIC_LIBRARY FILES "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/clang/6.0.0/lib/linux/libclang_rt.asan-preinit-i386.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "clang_rt.asan-preinit-x86_64" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/clang/6.0.0/lib/linux" TYPE STATIC_LIBRARY FILES "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/clang/6.0.0/lib/linux/libclang_rt.asan-preinit-x86_64.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/clang/6.0.0/lib/linux" TYPE STATIC_LIBRARY FILES "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/clang/6.0.0/lib/linux/libclang_rt.asan-preinit-x86_64.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "clang_rt.asan-dynamic-i386" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -73,7 +73,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "clang_rt.asan-dynamic-i386" OR NOT CMAKE_IN
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/clang/6.0.0/lib/linux/libclang_rt.asan-i386.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/clang/6.0.0/lib/linux" TYPE SHARED_LIBRARY FILES "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/clang/6.0.0/lib/linux/libclang_rt.asan-i386.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/clang/6.0.0/lib/linux" TYPE SHARED_LIBRARY FILES "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/clang/6.0.0/lib/linux/libclang_rt.asan-i386.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/clang/6.0.0/lib/linux/libclang_rt.asan-i386.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/clang/6.0.0/lib/linux/libclang_rt.asan-i386.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -92,7 +92,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "clang_rt.asan-dynamic-x86_64" OR NOT CMAKE_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/clang/6.0.0/lib/linux/libclang_rt.asan-x86_64.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/clang/6.0.0/lib/linux" TYPE SHARED_LIBRARY FILES "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/clang/6.0.0/lib/linux/libclang_rt.asan-x86_64.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/clang/6.0.0/lib/linux" TYPE SHARED_LIBRARY FILES "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/clang/6.0.0/lib/linux/libclang_rt.asan-x86_64.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/clang/6.0.0/lib/linux/libclang_rt.asan-x86_64.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/clang/6.0.0/lib/linux/libclang_rt.asan-x86_64.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -105,21 +105,21 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "clang_rt.asan-dynamic-x86_64" OR NOT CMAKE_
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/clang/6.0.0/lib/linux" TYPE FILE FILES "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/clang/6.0.0/lib/linux/libclang_rt.asan_cxx-x86_64.a.syms")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/clang/6.0.0/lib/linux" TYPE FILE FILES "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/clang/6.0.0/lib/linux/libclang_rt.asan_cxx-x86_64.a.syms")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/clang/6.0.0/lib/linux" TYPE FILE FILES "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/clang/6.0.0/lib/linux/libclang_rt.asan-x86_64.a.syms")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/clang/6.0.0/lib/linux" TYPE FILE FILES "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/clang/6.0.0/lib/linux/libclang_rt.asan-x86_64.a.syms")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "asan" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/clang/6.0.0" TYPE FILE FILES "/home/nsas2020/ufo/llvm-6.0.0/projects/compiler-rt/lib/asan/asan_blacklist.txt")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/clang/6.0.0" TYPE FILE FILES "/home/nsas2020/fuzz/llvm-6.0.0/projects/compiler-rt/lib/asan/asan_blacklist.txt")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/lib/asan/scripts/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/lib/asan/tests/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/lib/asan/scripts/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/lib/asan/tests/cmake_install.cmake")
 
 endif()
 

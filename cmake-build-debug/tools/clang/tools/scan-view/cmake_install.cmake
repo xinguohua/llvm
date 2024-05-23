@@ -1,4 +1,4 @@
-# Install script for directory: /home/nsas2020/ufo/llvm-6.0.0/tools/clang/tools/scan-view
+# Install script for directory: /home/nsas2020/fuzz/llvm-6.0.0/tools/clang/tools/scan-view
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,30 +43,30 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM FILES "/home/nsas2020/ufo/llvm-6.0.0/tools/clang/tools/scan-view/bin/scan-view")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM FILES "/home/nsas2020/fuzz/llvm-6.0.0/tools/clang/tools/scan-view/bin/scan-view")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/scan-view" TYPE FILE FILES "/home/nsas2020/ufo/llvm-6.0.0/tools/clang/tools/scan-view/share/ScanView.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/scan-view" TYPE FILE FILES "/home/nsas2020/fuzz/llvm-6.0.0/tools/clang/tools/scan-view/share/ScanView.py")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/scan-view" TYPE FILE FILES "/home/nsas2020/ufo/llvm-6.0.0/tools/clang/tools/scan-view/share/Reporter.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/scan-view" TYPE FILE FILES "/home/nsas2020/fuzz/llvm-6.0.0/tools/clang/tools/scan-view/share/Reporter.py")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/scan-view" TYPE FILE FILES "/home/nsas2020/ufo/llvm-6.0.0/tools/clang/tools/scan-view/share/startfile.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/scan-view" TYPE FILE FILES "/home/nsas2020/fuzz/llvm-6.0.0/tools/clang/tools/scan-view/share/startfile.py")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/scan-view" TYPE FILE FILES "/home/nsas2020/ufo/llvm-6.0.0/tools/clang/tools/scan-view/share/FileRadar.scpt")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/scan-view" TYPE FILE FILES "/home/nsas2020/fuzz/llvm-6.0.0/tools/clang/tools/scan-view/share/FileRadar.scpt")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/scan-view" TYPE FILE FILES "/home/nsas2020/ufo/llvm-6.0.0/tools/clang/tools/scan-view/share/GetRadarVersion.scpt")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/scan-view" TYPE FILE FILES "/home/nsas2020/fuzz/llvm-6.0.0/tools/clang/tools/scan-view/share/GetRadarVersion.scpt")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/scan-view" TYPE FILE FILES "/home/nsas2020/ufo/llvm-6.0.0/tools/clang/tools/scan-view/share/bugcatcher.ico")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/scan-view" TYPE FILE FILES "/home/nsas2020/fuzz/llvm-6.0.0/tools/clang/tools/scan-view/share/bugcatcher.ico")
 endif()
 

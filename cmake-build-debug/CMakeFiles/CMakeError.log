@@ -1,5 +1,5 @@
 Testing compiler for supporting FLAGS-fxray-instrument:
-Command: /usr/bin/cc;;;;-fPIC;-Werror=date-time;-Wall;-W;-Wno-unused-parameter;-Wwrite-strings;-Wno-missing-field-initializers;-pedantic;-Wno-long-long;-Wno-comment;-Wall;-Wno-unused-parameter;-fxray-instrument;-o;/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/CMakeFiles/test.o;-c;/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/CMakeFiles/src.c
+Command: /usr/bin/cc;;;;-fPIC;-Werror=date-time;-Wall;-W;-Wno-unused-parameter;-Wwrite-strings;-Wno-missing-field-initializers;-pedantic;-Wno-long-long;-Wno-comment;-Wall;-Wno-unused-parameter;-fxray-instrument;-o;/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/CMakeFiles/test.o;-c;/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/CMakeFiles/src.c
 
 cc: error: unrecognized command line option ‘-fxray-instrument’
 

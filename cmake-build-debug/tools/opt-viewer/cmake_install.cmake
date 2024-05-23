@@ -1,4 +1,4 @@
-# Install script for directory: /home/nsas2020/ufo/llvm-6.0.0/tools/opt-viewer
+# Install script for directory: /home/nsas2020/fuzz/llvm-6.0.0/tools/opt-viewer
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,26 +43,26 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "opt-viewer" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/opt-viewer" TYPE PROGRAM FILES "/home/nsas2020/ufo/llvm-6.0.0/tools/opt-viewer/opt-diff.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/opt-viewer" TYPE PROGRAM FILES "/home/nsas2020/fuzz/llvm-6.0.0/tools/opt-viewer/opt-diff.py")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "opt-viewer" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/opt-viewer" TYPE PROGRAM FILES "/home/nsas2020/ufo/llvm-6.0.0/tools/opt-viewer/opt-stats.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/opt-viewer" TYPE PROGRAM FILES "/home/nsas2020/fuzz/llvm-6.0.0/tools/opt-viewer/opt-stats.py")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "opt-viewer" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/opt-viewer" TYPE PROGRAM FILES "/home/nsas2020/ufo/llvm-6.0.0/tools/opt-viewer/opt-viewer.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/opt-viewer" TYPE PROGRAM FILES "/home/nsas2020/fuzz/llvm-6.0.0/tools/opt-viewer/opt-viewer.py")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "opt-viewer" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/opt-viewer" TYPE PROGRAM FILES "/home/nsas2020/ufo/llvm-6.0.0/tools/opt-viewer/optpmap.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/opt-viewer" TYPE PROGRAM FILES "/home/nsas2020/fuzz/llvm-6.0.0/tools/opt-viewer/optpmap.py")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "opt-viewer" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/opt-viewer" TYPE PROGRAM FILES "/home/nsas2020/ufo/llvm-6.0.0/tools/opt-viewer/optrecord.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/opt-viewer" TYPE PROGRAM FILES "/home/nsas2020/fuzz/llvm-6.0.0/tools/opt-viewer/optrecord.py")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "opt-viewer" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/opt-viewer" TYPE PROGRAM FILES "/home/nsas2020/ufo/llvm-6.0.0/tools/opt-viewer/style.css")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/opt-viewer" TYPE PROGRAM FILES "/home/nsas2020/fuzz/llvm-6.0.0/tools/opt-viewer/style.css")
 endif()
 

@@ -265,232 +265,232 @@ add_library(libclang SHARED IMPORTED)
 set_property(TARGET clangBasic APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(clangBasic PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libclangBasic.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libclangBasic.a"
   )
 
 # Import target "clangLex" for configuration "Debug"
 set_property(TARGET clangLex APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(clangLex PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libclangLex.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libclangLex.a"
   )
 
 # Import target "clangParse" for configuration "Debug"
 set_property(TARGET clangParse APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(clangParse PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libclangParse.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libclangParse.a"
   )
 
 # Import target "clangAST" for configuration "Debug"
 set_property(TARGET clangAST APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(clangAST PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libclangAST.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libclangAST.a"
   )
 
 # Import target "clangDynamicASTMatchers" for configuration "Debug"
 set_property(TARGET clangDynamicASTMatchers APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(clangDynamicASTMatchers PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libclangDynamicASTMatchers.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libclangDynamicASTMatchers.a"
   )
 
 # Import target "clangASTMatchers" for configuration "Debug"
 set_property(TARGET clangASTMatchers APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(clangASTMatchers PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libclangASTMatchers.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libclangASTMatchers.a"
   )
 
 # Import target "clangCrossTU" for configuration "Debug"
 set_property(TARGET clangCrossTU APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(clangCrossTU PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libclangCrossTU.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libclangCrossTU.a"
   )
 
 # Import target "clangSema" for configuration "Debug"
 set_property(TARGET clangSema APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(clangSema PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libclangSema.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libclangSema.a"
   )
 
 # Import target "clangCodeGen" for configuration "Debug"
 set_property(TARGET clangCodeGen APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(clangCodeGen PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libclangCodeGen.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libclangCodeGen.a"
   )
 
 # Import target "clangAnalysis" for configuration "Debug"
 set_property(TARGET clangAnalysis APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(clangAnalysis PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libclangAnalysis.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libclangAnalysis.a"
   )
 
 # Import target "clangEdit" for configuration "Debug"
 set_property(TARGET clangEdit APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(clangEdit PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libclangEdit.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libclangEdit.a"
   )
 
 # Import target "clangRewrite" for configuration "Debug"
 set_property(TARGET clangRewrite APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(clangRewrite PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libclangRewrite.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libclangRewrite.a"
   )
 
 # Import target "clangARCMigrate" for configuration "Debug"
 set_property(TARGET clangARCMigrate APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(clangARCMigrate PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libclangARCMigrate.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libclangARCMigrate.a"
   )
 
 # Import target "clangDriver" for configuration "Debug"
 set_property(TARGET clangDriver APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(clangDriver PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libclangDriver.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libclangDriver.a"
   )
 
 # Import target "clangSerialization" for configuration "Debug"
 set_property(TARGET clangSerialization APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(clangSerialization PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libclangSerialization.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libclangSerialization.a"
   )
 
 # Import target "clangRewriteFrontend" for configuration "Debug"
 set_property(TARGET clangRewriteFrontend APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(clangRewriteFrontend PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libclangRewriteFrontend.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libclangRewriteFrontend.a"
   )
 
 # Import target "clangFrontend" for configuration "Debug"
 set_property(TARGET clangFrontend APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(clangFrontend PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libclangFrontend.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libclangFrontend.a"
   )
 
 # Import target "clangFrontendTool" for configuration "Debug"
 set_property(TARGET clangFrontendTool APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(clangFrontendTool PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libclangFrontendTool.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libclangFrontendTool.a"
   )
 
 # Import target "clangToolingCore" for configuration "Debug"
 set_property(TARGET clangToolingCore APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(clangToolingCore PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libclangToolingCore.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libclangToolingCore.a"
   )
 
 # Import target "clangToolingRefactor" for configuration "Debug"
 set_property(TARGET clangToolingRefactor APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(clangToolingRefactor PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libclangToolingRefactor.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libclangToolingRefactor.a"
   )
 
 # Import target "clangToolingASTDiff" for configuration "Debug"
 set_property(TARGET clangToolingASTDiff APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(clangToolingASTDiff PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libclangToolingASTDiff.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libclangToolingASTDiff.a"
   )
 
 # Import target "clangTooling" for configuration "Debug"
 set_property(TARGET clangTooling APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(clangTooling PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libclangTooling.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libclangTooling.a"
   )
 
 # Import target "clangIndex" for configuration "Debug"
 set_property(TARGET clangIndex APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(clangIndex PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libclangIndex.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libclangIndex.a"
   )
 
 # Import target "clangStaticAnalyzerCore" for configuration "Debug"
 set_property(TARGET clangStaticAnalyzerCore APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(clangStaticAnalyzerCore PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libclangStaticAnalyzerCore.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libclangStaticAnalyzerCore.a"
   )
 
 # Import target "clangStaticAnalyzerCheckers" for configuration "Debug"
 set_property(TARGET clangStaticAnalyzerCheckers APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(clangStaticAnalyzerCheckers PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libclangStaticAnalyzerCheckers.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libclangStaticAnalyzerCheckers.a"
   )
 
 # Import target "clangStaticAnalyzerFrontend" for configuration "Debug"
 set_property(TARGET clangStaticAnalyzerFrontend APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(clangStaticAnalyzerFrontend PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libclangStaticAnalyzerFrontend.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libclangStaticAnalyzerFrontend.a"
   )
 
 # Import target "clangFormat" for configuration "Debug"
 set_property(TARGET clangFormat APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(clangFormat PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libclangFormat.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libclangFormat.a"
   )
 
 # Import target "clang" for configuration "Debug"
 set_property(TARGET clang APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(clang PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/clang-6.0"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/clang-6.0"
   )
 
 # Import target "clang-format" for configuration "Debug"
 set_property(TARGET clang-format APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(clang-format PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/clang-format"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/clang-format"
   )
 
 # Import target "clangHandleCXX" for configuration "Debug"
 set_property(TARGET clangHandleCXX APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(clangHandleCXX PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libclangHandleCXX.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libclangHandleCXX.a"
   )
 
 # Import target "clang-import-test" for configuration "Debug"
 set_property(TARGET clang-import-test APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(clang-import-test PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/clang-import-test"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/clang-import-test"
   )
 
 # Import target "clang-rename" for configuration "Debug"
 set_property(TARGET clang-rename APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(clang-rename PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/clang-rename"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/clang-rename"
   )
 
 # Import target "clang-refactor" for configuration "Debug"
 set_property(TARGET clang-refactor APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(clang-refactor PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/clang-refactor"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/clang-refactor"
   )
 
 # Import target "libclang" for configuration "Debug"
 set_property(TARGET libclang APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(libclang PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libclang.so.6.0"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libclang.so.6.0"
   IMPORTED_SONAME_DEBUG "libclang.so.6"
   )
 

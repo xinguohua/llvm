@@ -1,4 +1,4 @@
-# Install script for directory: /home/nsas2020/ufo/llvm-6.0.0/examples/Kaleidoscope/BuildingAJIT
+# Install script for directory: /home/nsas2020/fuzz/llvm-6.0.0/examples/Kaleidoscope/BuildingAJIT
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,11 +44,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/examples/Kaleidoscope/BuildingAJIT/Chapter1/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/examples/Kaleidoscope/BuildingAJIT/Chapter2/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/examples/Kaleidoscope/BuildingAJIT/Chapter3/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/examples/Kaleidoscope/BuildingAJIT/Chapter4/cmake_install.cmake")
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/examples/Kaleidoscope/BuildingAJIT/Chapter5/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/examples/Kaleidoscope/BuildingAJIT/Chapter1/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/examples/Kaleidoscope/BuildingAJIT/Chapter2/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/examples/Kaleidoscope/BuildingAJIT/Chapter3/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/examples/Kaleidoscope/BuildingAJIT/Chapter4/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/examples/Kaleidoscope/BuildingAJIT/Chapter5/cmake_install.cmake")
 
 endif()
 

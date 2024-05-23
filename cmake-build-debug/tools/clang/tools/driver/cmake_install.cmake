@@ -1,4 +1,4 @@
-# Install script for directory: /home/nsas2020/ufo/llvm-6.0.0/tools/clang/tools/driver
+# Install script for directory: /home/nsas2020/fuzz/llvm-6.0.0/tools/clang/tools/driver
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,8 +44,8 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "clang" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES
-    "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/clang-6.0"
-    "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/clang"
+    "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/clang-6.0"
+    "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/clang"
     )
   foreach(file
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/clang-6.0"
@@ -61,7 +61,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "clang" OR NOT CMAKE_INSTALL_COMPONENT)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "clang" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake/modules/LLVMInstallSymlink.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake/modules/LLVMInstallSymlink.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "clang" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -69,7 +69,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "clang" OR NOT CMAKE_INSTALL_COMPONENT)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "clang" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake/modules/LLVMInstallSymlink.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake/modules/LLVMInstallSymlink.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "clang" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -77,7 +77,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "clang" OR NOT CMAKE_INSTALL_COMPONENT)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "clang" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake/modules/LLVMInstallSymlink.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake/modules/LLVMInstallSymlink.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "clang" OR NOT CMAKE_INSTALL_COMPONENT)

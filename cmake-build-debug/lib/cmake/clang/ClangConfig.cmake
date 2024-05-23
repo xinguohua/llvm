@@ -3,14 +3,14 @@
 
 
 find_package(LLVM REQUIRED CONFIG
-             HINTS "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/cmake/llvm")
+             HINTS "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/cmake/llvm")
 
 set(CLANG_EXPORTED_TARGETS "clangBasic;clangLex;clangParse;clangAST;clangDynamicASTMatchers;clangASTMatchers;clangCrossTU;clangSema;clangCodeGen;clangAnalysis;clangEdit;clangRewrite;clangARCMigrate;clangDriver;clangSerialization;clangRewriteFrontend;clangFrontend;clangFrontendTool;clangToolingCore;clangToolingRefactor;clangToolingASTDiff;clangTooling;clangIndex;clangStaticAnalyzerCore;clangStaticAnalyzerCheckers;clangStaticAnalyzerFrontend;clangFormat;clang;clang-format;clangHandleCXX;clang-import-test;clang-rename;clang-refactor;libclang")
-set(CLANG_CMAKE_DIR "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/cmake/clang")
-set(CLANG_INCLUDE_DIRS "/home/nsas2020/ufo/llvm-6.0.0/tools/clang/include;/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/tools/clang/include")
+set(CLANG_CMAKE_DIR "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/cmake/clang")
+set(CLANG_INCLUDE_DIRS "/home/nsas2020/fuzz/llvm-6.0.0/tools/clang/include;/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/tools/clang/include")
 
 # Provide all our library targets to users.
-include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/cmake/clang/ClangTargets.cmake")
+include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/cmake/clang/ClangTargets.cmake")
 
 # By creating clang-tablegen-targets here, subprojects that depend on Clang's
 # tablegen-generated headers can always depend on this target whether building

@@ -1,4 +1,4 @@
-# Install script for directory: /home/nsas2020/ufo/llvm-6.0.0/tools/llvm-ar
+# Install script for directory: /home/nsas2020/fuzz/llvm-6.0.0/tools/llvm-ar
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,7 +43,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "llvm-ar" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/llvm-ar")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/llvm-ar")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/llvm-ar" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/llvm-ar")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -53,7 +53,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "llvm-ar" OR NOT CMAKE_INSTALL_COMPONENT)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "llvm-ranlib" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake/modules/LLVMInstallSymlink.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake/modules/LLVMInstallSymlink.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "llvm-ranlib" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -61,7 +61,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "llvm-ranlib" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "llvm-lib" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake/modules/LLVMInstallSymlink.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake/modules/LLVMInstallSymlink.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "llvm-lib" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -69,7 +69,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "llvm-lib" OR NOT CMAKE_INSTALL_COMPONENT)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "llvm-dlltool" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake/modules/LLVMInstallSymlink.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake/modules/LLVMInstallSymlink.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "llvm-dlltool" OR NOT CMAKE_INSTALL_COMPONENT)

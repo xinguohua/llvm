@@ -1,4 +1,4 @@
-# Install script for directory: /home/nsas2020/ufo/llvm-6.0.0/examples/ModuleMaker
+# Install script for directory: /home/nsas2020/fuzz/llvm-6.0.0/examples/ModuleMaker
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -1141,153 +1141,153 @@ add_executable(yaml2obj IMPORTED)
 set_property(TARGET LLVMDemangle APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMDemangle PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMDemangle.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMDemangle.a"
   )
 
 # Import target "LLVMSupport" for configuration "Debug"
 set_property(TARGET LLVMSupport APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMSupport PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "C;CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMSupport.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMSupport.a"
   )
 
 # Import target "LLVMTableGen" for configuration "Debug"
 set_property(TARGET LLVMTableGen APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMTableGen PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMTableGen.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMTableGen.a"
   )
 
 # Import target "llvm-tblgen" for configuration "Debug"
 set_property(TARGET llvm-tblgen APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-tblgen PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/llvm-tblgen"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/llvm-tblgen"
   )
 
 # Import target "LLVMCore" for configuration "Debug"
 set_property(TARGET LLVMCore APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMCore PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMCore.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMCore.a"
   )
 
 # Import target "LLVMFuzzMutate" for configuration "Debug"
 set_property(TARGET LLVMFuzzMutate APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMFuzzMutate PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMFuzzMutate.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMFuzzMutate.a"
   )
 
 # Import target "LLVMIRReader" for configuration "Debug"
 set_property(TARGET LLVMIRReader APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMIRReader PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMIRReader.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMIRReader.a"
   )
 
 # Import target "LLVMCodeGen" for configuration "Debug"
 set_property(TARGET LLVMCodeGen APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMCodeGen PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMCodeGen.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMCodeGen.a"
   )
 
 # Import target "LLVMSelectionDAG" for configuration "Debug"
 set_property(TARGET LLVMSelectionDAG APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMSelectionDAG PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMSelectionDAG.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMSelectionDAG.a"
   )
 
 # Import target "LLVMAsmPrinter" for configuration "Debug"
 set_property(TARGET LLVMAsmPrinter APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMAsmPrinter PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMAsmPrinter.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMAsmPrinter.a"
   )
 
 # Import target "LLVMMIRParser" for configuration "Debug"
 set_property(TARGET LLVMMIRParser APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMMIRParser PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMMIRParser.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMMIRParser.a"
   )
 
 # Import target "LLVMGlobalISel" for configuration "Debug"
 set_property(TARGET LLVMGlobalISel APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMGlobalISel PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMGlobalISel.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMGlobalISel.a"
   )
 
 # Import target "LLVMBinaryFormat" for configuration "Debug"
 set_property(TARGET LLVMBinaryFormat APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMBinaryFormat PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMBinaryFormat.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMBinaryFormat.a"
   )
 
 # Import target "LLVMBitReader" for configuration "Debug"
 set_property(TARGET LLVMBitReader APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMBitReader PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMBitReader.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMBitReader.a"
   )
 
 # Import target "LLVMBitWriter" for configuration "Debug"
 set_property(TARGET LLVMBitWriter APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMBitWriter PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMBitWriter.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMBitWriter.a"
   )
 
 # Import target "LLVMTransformUtils" for configuration "Debug"
 set_property(TARGET LLVMTransformUtils APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMTransformUtils PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMTransformUtils.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMTransformUtils.a"
   )
 
 # Import target "LLVMInstrumentation" for configuration "Debug"
 set_property(TARGET LLVMInstrumentation APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMInstrumentation PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMInstrumentation.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMInstrumentation.a"
   )
 
 # Import target "LLVMInstCombine" for configuration "Debug"
 set_property(TARGET LLVMInstCombine APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMInstCombine PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMInstCombine.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMInstCombine.a"
   )
 
 # Import target "LLVMScalarOpts" for configuration "Debug"
 set_property(TARGET LLVMScalarOpts APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMScalarOpts PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMScalarOpts.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMScalarOpts.a"
   )
 
 # Import target "LLVMipo" for configuration "Debug"
 set_property(TARGET LLVMipo APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMipo PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMipo.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMipo.a"
   )
 
 # Import target "LLVMVectorize" for configuration "Debug"
 set_property(TARGET LLVMVectorize APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMVectorize PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMVectorize.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMVectorize.a"
   )
 
 # Import target "LLVMHello" for configuration "Debug"
 set_property(TARGET LLVMHello APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMHello PROPERTIES
   IMPORTED_COMMON_LANGUAGE_RUNTIME_DEBUG ""
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/LLVMHello.so"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/LLVMHello.so"
   IMPORTED_NO_SONAME_DEBUG "TRUE"
   )
 
@@ -1295,1100 +1295,1100 @@ set_target_properties(LLVMHello PROPERTIES
 set_property(TARGET LLVMObjCARCOpts APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMObjCARCOpts PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMObjCARCOpts.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMObjCARCOpts.a"
   )
 
 # Import target "LLVMCoroutines" for configuration "Debug"
 set_property(TARGET LLVMCoroutines APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMCoroutines PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMCoroutines.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMCoroutines.a"
   )
 
 # Import target "LLVMLinker" for configuration "Debug"
 set_property(TARGET LLVMLinker APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMLinker PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMLinker.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMLinker.a"
   )
 
 # Import target "LLVMAnalysis" for configuration "Debug"
 set_property(TARGET LLVMAnalysis APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMAnalysis PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMAnalysis.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMAnalysis.a"
   )
 
 # Import target "LLVMLTO" for configuration "Debug"
 set_property(TARGET LLVMLTO APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMLTO PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMLTO.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMLTO.a"
   )
 
 # Import target "LLVMMC" for configuration "Debug"
 set_property(TARGET LLVMMC APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMMC PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMMC.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMMC.a"
   )
 
 # Import target "LLVMMCParser" for configuration "Debug"
 set_property(TARGET LLVMMCParser APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMMCParser PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMMCParser.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMMCParser.a"
   )
 
 # Import target "LLVMMCDisassembler" for configuration "Debug"
 set_property(TARGET LLVMMCDisassembler APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMMCDisassembler PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMMCDisassembler.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMMCDisassembler.a"
   )
 
 # Import target "LLVMObject" for configuration "Debug"
 set_property(TARGET LLVMObject APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMObject PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMObject.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMObject.a"
   )
 
 # Import target "LLVMObjectYAML" for configuration "Debug"
 set_property(TARGET LLVMObjectYAML APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMObjectYAML PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMObjectYAML.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMObjectYAML.a"
   )
 
 # Import target "LLVMOption" for configuration "Debug"
 set_property(TARGET LLVMOption APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMOption PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMOption.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMOption.a"
   )
 
 # Import target "LLVMDebugInfoDWARF" for configuration "Debug"
 set_property(TARGET LLVMDebugInfoDWARF APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMDebugInfoDWARF PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMDebugInfoDWARF.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMDebugInfoDWARF.a"
   )
 
 # Import target "LLVMDebugInfoMSF" for configuration "Debug"
 set_property(TARGET LLVMDebugInfoMSF APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMDebugInfoMSF PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMDebugInfoMSF.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMDebugInfoMSF.a"
   )
 
 # Import target "LLVMDebugInfoCodeView" for configuration "Debug"
 set_property(TARGET LLVMDebugInfoCodeView APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMDebugInfoCodeView PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMDebugInfoCodeView.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMDebugInfoCodeView.a"
   )
 
 # Import target "LLVMDebugInfoPDB" for configuration "Debug"
 set_property(TARGET LLVMDebugInfoPDB APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMDebugInfoPDB PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMDebugInfoPDB.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMDebugInfoPDB.a"
   )
 
 # Import target "LLVMSymbolize" for configuration "Debug"
 set_property(TARGET LLVMSymbolize APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMSymbolize PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMSymbolize.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMSymbolize.a"
   )
 
 # Import target "LLVMExecutionEngine" for configuration "Debug"
 set_property(TARGET LLVMExecutionEngine APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMExecutionEngine PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMExecutionEngine.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMExecutionEngine.a"
   )
 
 # Import target "LLVMInterpreter" for configuration "Debug"
 set_property(TARGET LLVMInterpreter APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMInterpreter PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMInterpreter.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMInterpreter.a"
   )
 
 # Import target "LLVMMCJIT" for configuration "Debug"
 set_property(TARGET LLVMMCJIT APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMMCJIT PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMMCJIT.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMMCJIT.a"
   )
 
 # Import target "LLVMOrcJIT" for configuration "Debug"
 set_property(TARGET LLVMOrcJIT APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMOrcJIT PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMOrcJIT.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMOrcJIT.a"
   )
 
 # Import target "LLVMRuntimeDyld" for configuration "Debug"
 set_property(TARGET LLVMRuntimeDyld APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMRuntimeDyld PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMRuntimeDyld.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMRuntimeDyld.a"
   )
 
 # Import target "LLVMTarget" for configuration "Debug"
 set_property(TARGET LLVMTarget APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMTarget PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMTarget.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMTarget.a"
   )
 
 # Import target "LLVMAArch64CodeGen" for configuration "Debug"
 set_property(TARGET LLVMAArch64CodeGen APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMAArch64CodeGen PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMAArch64CodeGen.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMAArch64CodeGen.a"
   )
 
 # Import target "LLVMAArch64Info" for configuration "Debug"
 set_property(TARGET LLVMAArch64Info APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMAArch64Info PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMAArch64Info.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMAArch64Info.a"
   )
 
 # Import target "LLVMAArch64AsmParser" for configuration "Debug"
 set_property(TARGET LLVMAArch64AsmParser APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMAArch64AsmParser PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMAArch64AsmParser.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMAArch64AsmParser.a"
   )
 
 # Import target "LLVMAArch64Disassembler" for configuration "Debug"
 set_property(TARGET LLVMAArch64Disassembler APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMAArch64Disassembler PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMAArch64Disassembler.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMAArch64Disassembler.a"
   )
 
 # Import target "LLVMAArch64AsmPrinter" for configuration "Debug"
 set_property(TARGET LLVMAArch64AsmPrinter APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMAArch64AsmPrinter PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMAArch64AsmPrinter.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMAArch64AsmPrinter.a"
   )
 
 # Import target "LLVMAArch64Desc" for configuration "Debug"
 set_property(TARGET LLVMAArch64Desc APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMAArch64Desc PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMAArch64Desc.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMAArch64Desc.a"
   )
 
 # Import target "LLVMAArch64Utils" for configuration "Debug"
 set_property(TARGET LLVMAArch64Utils APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMAArch64Utils PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMAArch64Utils.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMAArch64Utils.a"
   )
 
 # Import target "LLVMAMDGPUCodeGen" for configuration "Debug"
 set_property(TARGET LLVMAMDGPUCodeGen APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMAMDGPUCodeGen PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMAMDGPUCodeGen.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMAMDGPUCodeGen.a"
   )
 
 # Import target "LLVMAMDGPUAsmParser" for configuration "Debug"
 set_property(TARGET LLVMAMDGPUAsmParser APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMAMDGPUAsmParser PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMAMDGPUAsmParser.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMAMDGPUAsmParser.a"
   )
 
 # Import target "LLVMAMDGPUAsmPrinter" for configuration "Debug"
 set_property(TARGET LLVMAMDGPUAsmPrinter APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMAMDGPUAsmPrinter PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMAMDGPUAsmPrinter.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMAMDGPUAsmPrinter.a"
   )
 
 # Import target "LLVMAMDGPUDisassembler" for configuration "Debug"
 set_property(TARGET LLVMAMDGPUDisassembler APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMAMDGPUDisassembler PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMAMDGPUDisassembler.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMAMDGPUDisassembler.a"
   )
 
 # Import target "LLVMAMDGPUInfo" for configuration "Debug"
 set_property(TARGET LLVMAMDGPUInfo APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMAMDGPUInfo PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMAMDGPUInfo.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMAMDGPUInfo.a"
   )
 
 # Import target "LLVMAMDGPUDesc" for configuration "Debug"
 set_property(TARGET LLVMAMDGPUDesc APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMAMDGPUDesc PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMAMDGPUDesc.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMAMDGPUDesc.a"
   )
 
 # Import target "LLVMAMDGPUUtils" for configuration "Debug"
 set_property(TARGET LLVMAMDGPUUtils APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMAMDGPUUtils PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMAMDGPUUtils.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMAMDGPUUtils.a"
   )
 
 # Import target "LLVMARMCodeGen" for configuration "Debug"
 set_property(TARGET LLVMARMCodeGen APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMARMCodeGen PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMARMCodeGen.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMARMCodeGen.a"
   )
 
 # Import target "LLVMARMInfo" for configuration "Debug"
 set_property(TARGET LLVMARMInfo APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMARMInfo PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMARMInfo.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMARMInfo.a"
   )
 
 # Import target "LLVMARMAsmParser" for configuration "Debug"
 set_property(TARGET LLVMARMAsmParser APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMARMAsmParser PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMARMAsmParser.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMARMAsmParser.a"
   )
 
 # Import target "LLVMARMDisassembler" for configuration "Debug"
 set_property(TARGET LLVMARMDisassembler APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMARMDisassembler PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMARMDisassembler.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMARMDisassembler.a"
   )
 
 # Import target "LLVMARMAsmPrinter" for configuration "Debug"
 set_property(TARGET LLVMARMAsmPrinter APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMARMAsmPrinter PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMARMAsmPrinter.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMARMAsmPrinter.a"
   )
 
 # Import target "LLVMARMDesc" for configuration "Debug"
 set_property(TARGET LLVMARMDesc APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMARMDesc PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMARMDesc.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMARMDesc.a"
   )
 
 # Import target "LLVMARMUtils" for configuration "Debug"
 set_property(TARGET LLVMARMUtils APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMARMUtils PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMARMUtils.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMARMUtils.a"
   )
 
 # Import target "LLVMBPFCodeGen" for configuration "Debug"
 set_property(TARGET LLVMBPFCodeGen APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMBPFCodeGen PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMBPFCodeGen.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMBPFCodeGen.a"
   )
 
 # Import target "LLVMBPFAsmParser" for configuration "Debug"
 set_property(TARGET LLVMBPFAsmParser APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMBPFAsmParser PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMBPFAsmParser.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMBPFAsmParser.a"
   )
 
 # Import target "LLVMBPFDisassembler" for configuration "Debug"
 set_property(TARGET LLVMBPFDisassembler APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMBPFDisassembler PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMBPFDisassembler.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMBPFDisassembler.a"
   )
 
 # Import target "LLVMBPFAsmPrinter" for configuration "Debug"
 set_property(TARGET LLVMBPFAsmPrinter APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMBPFAsmPrinter PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMBPFAsmPrinter.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMBPFAsmPrinter.a"
   )
 
 # Import target "LLVMBPFInfo" for configuration "Debug"
 set_property(TARGET LLVMBPFInfo APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMBPFInfo PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMBPFInfo.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMBPFInfo.a"
   )
 
 # Import target "LLVMBPFDesc" for configuration "Debug"
 set_property(TARGET LLVMBPFDesc APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMBPFDesc PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMBPFDesc.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMBPFDesc.a"
   )
 
 # Import target "LLVMHexagonCodeGen" for configuration "Debug"
 set_property(TARGET LLVMHexagonCodeGen APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMHexagonCodeGen PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMHexagonCodeGen.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMHexagonCodeGen.a"
   )
 
 # Import target "LLVMHexagonAsmParser" for configuration "Debug"
 set_property(TARGET LLVMHexagonAsmParser APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMHexagonAsmParser PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMHexagonAsmParser.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMHexagonAsmParser.a"
   )
 
 # Import target "LLVMHexagonInfo" for configuration "Debug"
 set_property(TARGET LLVMHexagonInfo APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMHexagonInfo PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMHexagonInfo.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMHexagonInfo.a"
   )
 
 # Import target "LLVMHexagonDesc" for configuration "Debug"
 set_property(TARGET LLVMHexagonDesc APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMHexagonDesc PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMHexagonDesc.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMHexagonDesc.a"
   )
 
 # Import target "LLVMHexagonDisassembler" for configuration "Debug"
 set_property(TARGET LLVMHexagonDisassembler APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMHexagonDisassembler PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMHexagonDisassembler.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMHexagonDisassembler.a"
   )
 
 # Import target "LLVMLanaiCodeGen" for configuration "Debug"
 set_property(TARGET LLVMLanaiCodeGen APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMLanaiCodeGen PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMLanaiCodeGen.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMLanaiCodeGen.a"
   )
 
 # Import target "LLVMLanaiAsmParser" for configuration "Debug"
 set_property(TARGET LLVMLanaiAsmParser APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMLanaiAsmParser PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMLanaiAsmParser.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMLanaiAsmParser.a"
   )
 
 # Import target "LLVMLanaiInfo" for configuration "Debug"
 set_property(TARGET LLVMLanaiInfo APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMLanaiInfo PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMLanaiInfo.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMLanaiInfo.a"
   )
 
 # Import target "LLVMLanaiDesc" for configuration "Debug"
 set_property(TARGET LLVMLanaiDesc APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMLanaiDesc PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMLanaiDesc.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMLanaiDesc.a"
   )
 
 # Import target "LLVMLanaiAsmPrinter" for configuration "Debug"
 set_property(TARGET LLVMLanaiAsmPrinter APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMLanaiAsmPrinter PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMLanaiAsmPrinter.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMLanaiAsmPrinter.a"
   )
 
 # Import target "LLVMLanaiDisassembler" for configuration "Debug"
 set_property(TARGET LLVMLanaiDisassembler APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMLanaiDisassembler PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMLanaiDisassembler.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMLanaiDisassembler.a"
   )
 
 # Import target "LLVMMipsCodeGen" for configuration "Debug"
 set_property(TARGET LLVMMipsCodeGen APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMMipsCodeGen PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMMipsCodeGen.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMMipsCodeGen.a"
   )
 
 # Import target "LLVMMipsAsmPrinter" for configuration "Debug"
 set_property(TARGET LLVMMipsAsmPrinter APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMMipsAsmPrinter PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMMipsAsmPrinter.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMMipsAsmPrinter.a"
   )
 
 # Import target "LLVMMipsDisassembler" for configuration "Debug"
 set_property(TARGET LLVMMipsDisassembler APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMMipsDisassembler PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMMipsDisassembler.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMMipsDisassembler.a"
   )
 
 # Import target "LLVMMipsInfo" for configuration "Debug"
 set_property(TARGET LLVMMipsInfo APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMMipsInfo PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMMipsInfo.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMMipsInfo.a"
   )
 
 # Import target "LLVMMipsDesc" for configuration "Debug"
 set_property(TARGET LLVMMipsDesc APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMMipsDesc PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMMipsDesc.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMMipsDesc.a"
   )
 
 # Import target "LLVMMipsAsmParser" for configuration "Debug"
 set_property(TARGET LLVMMipsAsmParser APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMMipsAsmParser PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMMipsAsmParser.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMMipsAsmParser.a"
   )
 
 # Import target "LLVMMSP430CodeGen" for configuration "Debug"
 set_property(TARGET LLVMMSP430CodeGen APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMMSP430CodeGen PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMMSP430CodeGen.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMMSP430CodeGen.a"
   )
 
 # Import target "LLVMMSP430AsmPrinter" for configuration "Debug"
 set_property(TARGET LLVMMSP430AsmPrinter APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMMSP430AsmPrinter PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMMSP430AsmPrinter.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMMSP430AsmPrinter.a"
   )
 
 # Import target "LLVMMSP430Info" for configuration "Debug"
 set_property(TARGET LLVMMSP430Info APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMMSP430Info PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMMSP430Info.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMMSP430Info.a"
   )
 
 # Import target "LLVMMSP430Desc" for configuration "Debug"
 set_property(TARGET LLVMMSP430Desc APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMMSP430Desc PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMMSP430Desc.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMMSP430Desc.a"
   )
 
 # Import target "LLVMNVPTXCodeGen" for configuration "Debug"
 set_property(TARGET LLVMNVPTXCodeGen APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMNVPTXCodeGen PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMNVPTXCodeGen.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMNVPTXCodeGen.a"
   )
 
 # Import target "LLVMNVPTXInfo" for configuration "Debug"
 set_property(TARGET LLVMNVPTXInfo APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMNVPTXInfo PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMNVPTXInfo.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMNVPTXInfo.a"
   )
 
 # Import target "LLVMNVPTXAsmPrinter" for configuration "Debug"
 set_property(TARGET LLVMNVPTXAsmPrinter APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMNVPTXAsmPrinter PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMNVPTXAsmPrinter.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMNVPTXAsmPrinter.a"
   )
 
 # Import target "LLVMNVPTXDesc" for configuration "Debug"
 set_property(TARGET LLVMNVPTXDesc APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMNVPTXDesc PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMNVPTXDesc.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMNVPTXDesc.a"
   )
 
 # Import target "LLVMPowerPCCodeGen" for configuration "Debug"
 set_property(TARGET LLVMPowerPCCodeGen APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMPowerPCCodeGen PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMPowerPCCodeGen.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMPowerPCCodeGen.a"
   )
 
 # Import target "LLVMPowerPCAsmParser" for configuration "Debug"
 set_property(TARGET LLVMPowerPCAsmParser APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMPowerPCAsmParser PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMPowerPCAsmParser.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMPowerPCAsmParser.a"
   )
 
 # Import target "LLVMPowerPCDisassembler" for configuration "Debug"
 set_property(TARGET LLVMPowerPCDisassembler APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMPowerPCDisassembler PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMPowerPCDisassembler.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMPowerPCDisassembler.a"
   )
 
 # Import target "LLVMPowerPCAsmPrinter" for configuration "Debug"
 set_property(TARGET LLVMPowerPCAsmPrinter APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMPowerPCAsmPrinter PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMPowerPCAsmPrinter.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMPowerPCAsmPrinter.a"
   )
 
 # Import target "LLVMPowerPCInfo" for configuration "Debug"
 set_property(TARGET LLVMPowerPCInfo APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMPowerPCInfo PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMPowerPCInfo.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMPowerPCInfo.a"
   )
 
 # Import target "LLVMPowerPCDesc" for configuration "Debug"
 set_property(TARGET LLVMPowerPCDesc APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMPowerPCDesc PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMPowerPCDesc.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMPowerPCDesc.a"
   )
 
 # Import target "LLVMSparcCodeGen" for configuration "Debug"
 set_property(TARGET LLVMSparcCodeGen APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMSparcCodeGen PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMSparcCodeGen.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMSparcCodeGen.a"
   )
 
 # Import target "LLVMSparcInfo" for configuration "Debug"
 set_property(TARGET LLVMSparcInfo APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMSparcInfo PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMSparcInfo.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMSparcInfo.a"
   )
 
 # Import target "LLVMSparcDesc" for configuration "Debug"
 set_property(TARGET LLVMSparcDesc APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMSparcDesc PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMSparcDesc.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMSparcDesc.a"
   )
 
 # Import target "LLVMSparcAsmPrinter" for configuration "Debug"
 set_property(TARGET LLVMSparcAsmPrinter APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMSparcAsmPrinter PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMSparcAsmPrinter.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMSparcAsmPrinter.a"
   )
 
 # Import target "LLVMSparcAsmParser" for configuration "Debug"
 set_property(TARGET LLVMSparcAsmParser APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMSparcAsmParser PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMSparcAsmParser.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMSparcAsmParser.a"
   )
 
 # Import target "LLVMSparcDisassembler" for configuration "Debug"
 set_property(TARGET LLVMSparcDisassembler APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMSparcDisassembler PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMSparcDisassembler.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMSparcDisassembler.a"
   )
 
 # Import target "LLVMSystemZCodeGen" for configuration "Debug"
 set_property(TARGET LLVMSystemZCodeGen APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMSystemZCodeGen PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMSystemZCodeGen.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMSystemZCodeGen.a"
   )
 
 # Import target "LLVMSystemZAsmParser" for configuration "Debug"
 set_property(TARGET LLVMSystemZAsmParser APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMSystemZAsmParser PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMSystemZAsmParser.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMSystemZAsmParser.a"
   )
 
 # Import target "LLVMSystemZDisassembler" for configuration "Debug"
 set_property(TARGET LLVMSystemZDisassembler APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMSystemZDisassembler PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMSystemZDisassembler.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMSystemZDisassembler.a"
   )
 
 # Import target "LLVMSystemZAsmPrinter" for configuration "Debug"
 set_property(TARGET LLVMSystemZAsmPrinter APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMSystemZAsmPrinter PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMSystemZAsmPrinter.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMSystemZAsmPrinter.a"
   )
 
 # Import target "LLVMSystemZInfo" for configuration "Debug"
 set_property(TARGET LLVMSystemZInfo APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMSystemZInfo PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMSystemZInfo.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMSystemZInfo.a"
   )
 
 # Import target "LLVMSystemZDesc" for configuration "Debug"
 set_property(TARGET LLVMSystemZDesc APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMSystemZDesc PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMSystemZDesc.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMSystemZDesc.a"
   )
 
 # Import target "LLVMX86CodeGen" for configuration "Debug"
 set_property(TARGET LLVMX86CodeGen APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMX86CodeGen PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMX86CodeGen.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMX86CodeGen.a"
   )
 
 # Import target "LLVMX86AsmParser" for configuration "Debug"
 set_property(TARGET LLVMX86AsmParser APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMX86AsmParser PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMX86AsmParser.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMX86AsmParser.a"
   )
 
 # Import target "LLVMX86Disassembler" for configuration "Debug"
 set_property(TARGET LLVMX86Disassembler APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMX86Disassembler PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMX86Disassembler.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMX86Disassembler.a"
   )
 
 # Import target "LLVMX86AsmPrinter" for configuration "Debug"
 set_property(TARGET LLVMX86AsmPrinter APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMX86AsmPrinter PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMX86AsmPrinter.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMX86AsmPrinter.a"
   )
 
 # Import target "LLVMX86Desc" for configuration "Debug"
 set_property(TARGET LLVMX86Desc APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMX86Desc PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMX86Desc.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMX86Desc.a"
   )
 
 # Import target "LLVMX86Info" for configuration "Debug"
 set_property(TARGET LLVMX86Info APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMX86Info PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMX86Info.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMX86Info.a"
   )
 
 # Import target "LLVMX86Utils" for configuration "Debug"
 set_property(TARGET LLVMX86Utils APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMX86Utils PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMX86Utils.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMX86Utils.a"
   )
 
 # Import target "LLVMXCoreCodeGen" for configuration "Debug"
 set_property(TARGET LLVMXCoreCodeGen APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMXCoreCodeGen PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMXCoreCodeGen.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMXCoreCodeGen.a"
   )
 
 # Import target "LLVMXCoreDisassembler" for configuration "Debug"
 set_property(TARGET LLVMXCoreDisassembler APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMXCoreDisassembler PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMXCoreDisassembler.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMXCoreDisassembler.a"
   )
 
 # Import target "LLVMXCoreAsmPrinter" for configuration "Debug"
 set_property(TARGET LLVMXCoreAsmPrinter APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMXCoreAsmPrinter PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMXCoreAsmPrinter.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMXCoreAsmPrinter.a"
   )
 
 # Import target "LLVMXCoreInfo" for configuration "Debug"
 set_property(TARGET LLVMXCoreInfo APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMXCoreInfo PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMXCoreInfo.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMXCoreInfo.a"
   )
 
 # Import target "LLVMXCoreDesc" for configuration "Debug"
 set_property(TARGET LLVMXCoreDesc APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMXCoreDesc PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMXCoreDesc.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMXCoreDesc.a"
   )
 
 # Import target "LLVMAsmParser" for configuration "Debug"
 set_property(TARGET LLVMAsmParser APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMAsmParser PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMAsmParser.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMAsmParser.a"
   )
 
 # Import target "LLVMLineEditor" for configuration "Debug"
 set_property(TARGET LLVMLineEditor APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMLineEditor PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMLineEditor.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMLineEditor.a"
   )
 
 # Import target "LLVMProfileData" for configuration "Debug"
 set_property(TARGET LLVMProfileData APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMProfileData PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMProfileData.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMProfileData.a"
   )
 
 # Import target "LLVMCoverage" for configuration "Debug"
 set_property(TARGET LLVMCoverage APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMCoverage PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMCoverage.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMCoverage.a"
   )
 
 # Import target "LLVMPasses" for configuration "Debug"
 set_property(TARGET LLVMPasses APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMPasses PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMPasses.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMPasses.a"
   )
 
 # Import target "LLVMDlltoolDriver" for configuration "Debug"
 set_property(TARGET LLVMDlltoolDriver APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMDlltoolDriver PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMDlltoolDriver.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMDlltoolDriver.a"
   )
 
 # Import target "LLVMLibDriver" for configuration "Debug"
 set_property(TARGET LLVMLibDriver APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMLibDriver PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMLibDriver.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMLibDriver.a"
   )
 
 # Import target "LLVMXRay" for configuration "Debug"
 set_property(TARGET LLVMXRay APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMXRay PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMXRay.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMXRay.a"
   )
 
 # Import target "LLVMWindowsManifest" for configuration "Debug"
 set_property(TARGET LLVMWindowsManifest APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMWindowsManifest PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMWindowsManifest.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMWindowsManifest.a"
   )
 
 # Import target "LTO" for configuration "Debug"
 set_property(TARGET LTO APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LTO PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLTO.so.6.0.0"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLTO.so.6.0.0"
   IMPORTED_SONAME_DEBUG "libLTO.so.6"
   )
 
 # Import target "llvm-ar" for configuration "Debug"
 set_property(TARGET llvm-ar APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-ar PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/llvm-ar"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/llvm-ar"
   )
 
 # Import target "llvm-config" for configuration "Debug"
 set_property(TARGET llvm-config APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-config PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/llvm-config"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/llvm-config"
   )
 
 # Import target "llvm-lto" for configuration "Debug"
 set_property(TARGET llvm-lto APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-lto PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/llvm-lto"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/llvm-lto"
   )
 
 # Import target "llvm-profdata" for configuration "Debug"
 set_property(TARGET llvm-profdata APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-profdata PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/llvm-profdata"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/llvm-profdata"
   )
 
 # Import target "clang-tblgen" for configuration "Debug"
 set_property(TARGET clang-tblgen APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(clang-tblgen PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/clang-tblgen"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/clang-tblgen"
   )
 
 # Import target "bugpoint" for configuration "Debug"
 set_property(TARGET bugpoint APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(bugpoint PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/bugpoint"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/bugpoint"
   )
 
 # Import target "BugpointPasses" for configuration "Debug"
 set_property(TARGET BugpointPasses APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(BugpointPasses PROPERTIES
   IMPORTED_COMMON_LANGUAGE_RUNTIME_DEBUG ""
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/BugpointPasses.so"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/BugpointPasses.so"
   IMPORTED_NO_SONAME_DEBUG "TRUE"
   )
 
 # Import target "llvm-dsymutil" for configuration "Debug"
 set_property(TARGET llvm-dsymutil APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-dsymutil PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/llvm-dsymutil"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/llvm-dsymutil"
   )
 
 # Import target "llc" for configuration "Debug"
 set_property(TARGET llc APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llc PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/llc"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/llc"
   )
 
 # Import target "lli" for configuration "Debug"
 set_property(TARGET lli APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(lli PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/lli"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/lli"
   )
 
 # Import target "llvm-as" for configuration "Debug"
 set_property(TARGET llvm-as APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-as PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/llvm-as"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/llvm-as"
   )
 
 # Import target "llvm-bcanalyzer" for configuration "Debug"
 set_property(TARGET llvm-bcanalyzer APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-bcanalyzer PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/llvm-bcanalyzer"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/llvm-bcanalyzer"
   )
 
 # Import target "llvm-c-test" for configuration "Debug"
 set_property(TARGET llvm-c-test APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-c-test PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/llvm-c-test"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/llvm-c-test"
   )
 
 # Import target "llvm-cat" for configuration "Debug"
 set_property(TARGET llvm-cat APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-cat PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/llvm-cat"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/llvm-cat"
   )
 
 # Import target "llvm-cfi-verify" for configuration "Debug"
 set_property(TARGET llvm-cfi-verify APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-cfi-verify PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/llvm-cfi-verify"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/llvm-cfi-verify"
   )
 
 # Import target "llvm-cov" for configuration "Debug"
 set_property(TARGET llvm-cov APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-cov PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/llvm-cov"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/llvm-cov"
   )
 
 # Import target "llvm-cvtres" for configuration "Debug"
 set_property(TARGET llvm-cvtres APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-cvtres PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/llvm-cvtres"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/llvm-cvtres"
   )
 
 # Import target "llvm-cxxdump" for configuration "Debug"
 set_property(TARGET llvm-cxxdump APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-cxxdump PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/llvm-cxxdump"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/llvm-cxxdump"
   )
 
 # Import target "llvm-cxxfilt" for configuration "Debug"
 set_property(TARGET llvm-cxxfilt APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-cxxfilt PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/llvm-cxxfilt"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/llvm-cxxfilt"
   )
 
 # Import target "llvm-diff" for configuration "Debug"
 set_property(TARGET llvm-diff APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-diff PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/llvm-diff"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/llvm-diff"
   )
 
 # Import target "llvm-dis" for configuration "Debug"
 set_property(TARGET llvm-dis APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-dis PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/llvm-dis"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/llvm-dis"
   )
 
 # Import target "llvm-dwarfdump" for configuration "Debug"
 set_property(TARGET llvm-dwarfdump APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-dwarfdump PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/llvm-dwarfdump"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/llvm-dwarfdump"
   )
 
 # Import target "llvm-dwp" for configuration "Debug"
 set_property(TARGET llvm-dwp APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-dwp PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/llvm-dwp"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/llvm-dwp"
   )
 
 # Import target "llvm-extract" for configuration "Debug"
 set_property(TARGET llvm-extract APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-extract PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/llvm-extract"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/llvm-extract"
   )
 
 # Import target "llvm-link" for configuration "Debug"
 set_property(TARGET llvm-link APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-link PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/llvm-link"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/llvm-link"
   )
 
 # Import target "llvm-lto2" for configuration "Debug"
 set_property(TARGET llvm-lto2 APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-lto2 PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/llvm-lto2"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/llvm-lto2"
   )
 
 # Import target "llvm-mc" for configuration "Debug"
 set_property(TARGET llvm-mc APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-mc PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/llvm-mc"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/llvm-mc"
   )
 
 # Import target "llvm-mcmarkup" for configuration "Debug"
 set_property(TARGET llvm-mcmarkup APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-mcmarkup PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/llvm-mcmarkup"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/llvm-mcmarkup"
   )
 
 # Import target "llvm-modextract" for configuration "Debug"
 set_property(TARGET llvm-modextract APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-modextract PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/llvm-modextract"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/llvm-modextract"
   )
 
 # Import target "llvm-mt" for configuration "Debug"
 set_property(TARGET llvm-mt APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-mt PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/llvm-mt"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/llvm-mt"
   )
 
 # Import target "llvm-nm" for configuration "Debug"
 set_property(TARGET llvm-nm APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-nm PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/llvm-nm"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/llvm-nm"
   )
 
 # Import target "llvm-objcopy" for configuration "Debug"
 set_property(TARGET llvm-objcopy APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-objcopy PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/llvm-objcopy"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/llvm-objcopy"
   )
 
 # Import target "llvm-objdump" for configuration "Debug"
 set_property(TARGET llvm-objdump APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-objdump PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/llvm-objdump"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/llvm-objdump"
   )
 
 # Import target "llvm-opt-report" for configuration "Debug"
 set_property(TARGET llvm-opt-report APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-opt-report PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/llvm-opt-report"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/llvm-opt-report"
   )
 
 # Import target "llvm-pdbutil" for configuration "Debug"
 set_property(TARGET llvm-pdbutil APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-pdbutil PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/llvm-pdbutil"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/llvm-pdbutil"
   )
 
 # Import target "llvm-rc" for configuration "Debug"
 set_property(TARGET llvm-rc APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-rc PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/llvm-rc"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/llvm-rc"
   )
 
 # Import target "llvm-readobj" for configuration "Debug"
 set_property(TARGET llvm-readobj APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-readobj PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/llvm-readobj"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/llvm-readobj"
   )
 
 # Import target "llvm-rtdyld" for configuration "Debug"
 set_property(TARGET llvm-rtdyld APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-rtdyld PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/llvm-rtdyld"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/llvm-rtdyld"
   )
 
 # Import target "llvm-size" for configuration "Debug"
 set_property(TARGET llvm-size APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-size PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/llvm-size"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/llvm-size"
   )
 
 # Import target "llvm-split" for configuration "Debug"
 set_property(TARGET llvm-split APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-split PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/llvm-split"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/llvm-split"
   )
 
 # Import target "llvm-stress" for configuration "Debug"
 set_property(TARGET llvm-stress APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-stress PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/llvm-stress"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/llvm-stress"
   )
 
 # Import target "llvm-strings" for configuration "Debug"
 set_property(TARGET llvm-strings APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-strings PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/llvm-strings"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/llvm-strings"
   )
 
 # Import target "llvm-symbolizer" for configuration "Debug"
 set_property(TARGET llvm-symbolizer APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-symbolizer PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/llvm-symbolizer"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/llvm-symbolizer"
   )
 
 # Import target "llvm-xray" for configuration "Debug"
 set_property(TARGET llvm-xray APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-xray PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/llvm-xray"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/llvm-xray"
   )
 
 # Import target "obj2yaml" for configuration "Debug"
 set_property(TARGET obj2yaml APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(obj2yaml PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/obj2yaml"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/obj2yaml"
   )
 
 # Import target "opt" for configuration "Debug"
 set_property(TARGET opt APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(opt PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/opt"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/opt"
   )
 
 # Import target "sancov" for configuration "Debug"
 set_property(TARGET sancov APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(sancov PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/sancov"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/sancov"
   )
 
 # Import target "sanstats" for configuration "Debug"
 set_property(TARGET sanstats APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(sanstats PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/sanstats"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/sanstats"
   )
 
 # Import target "verify-uselistorder" for configuration "Debug"
 set_property(TARGET verify-uselistorder APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(verify-uselistorder PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/verify-uselistorder"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/verify-uselistorder"
   )
 
 # Import target "yaml2obj" for configuration "Debug"
 set_property(TARGET yaml2obj APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(yaml2obj PROPERTIES
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/yaml2obj"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/yaml2obj"
   )
 
 # This file does not depend on other imported targets which have

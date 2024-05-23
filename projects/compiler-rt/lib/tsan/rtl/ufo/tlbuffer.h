@@ -31,7 +31,6 @@ struct TLBuffer {
   u32 size_;
   u32 capacity_;
   int trace_fd_;
-  int all_trace_fd_;
   u64 last_fe; // last e_count_ value at function entry, used to eliminate empty calls
 
   // useless, info saved to thrbegin
@@ -95,43 +94,7 @@ struct TLBuffer {
     this->e_counter_++;
   }
 
-#pragma GCC diagnostic ignored "-Wcast-qual"
-  template <typename E, u32 SZ = sizeof(E)>
-  __HOT_CODE ALWAYS_INLINE void put_all_event(const E &event) {
-    if (trace_fd_ < 0) return;  // JEFF
 
-#ifndef BUF_EVENT_ON
-    if (internal_write(trace_fd_, &event, SZ) < 0) {
-      fprintf(
-          stderr,
-          "size:%llu  this %p  error: unable to put_event to file fd: %d.\n",
-          sizeof(E), this, trace_fd_);
-    }
-    return;
-#else
-    if (UNLIKELY(buf_ == nullptr)) {
-      open_buf();
-      int tid = this - G_BUF_BASE;
-      open_file(tid);
-    } else if (UNLIKELY(size_ + SZ >= capacity_)) {
-      flush();
-    }
-    Byte *pdata = (Byte *)(&event);
-    Byte *pbuf = buf_ + size_;
-
-    // write index (8 byte)
-    *pbuf = *pdata;
-    u32 offset = 1;
-
-    while (offset < SZ) {
-      *((u16 *)(pbuf + offset)) = *((u16 *)(pdata + offset));
-      offset += 2;
-    }
-    size_ += offset;
-#endif
-
-    this->e_counter_++;
-  }
 
 #pragma GCC diagnostic warning "-Wcast-qual"
 };

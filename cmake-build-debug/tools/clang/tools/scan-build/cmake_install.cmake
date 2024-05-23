@@ -1,4 +1,4 @@
-# Install script for directory: /home/nsas2020/ufo/llvm-6.0.0/tools/clang/tools/scan-build
+# Install script for directory: /home/nsas2020/fuzz/llvm-6.0.0/tools/clang/tools/scan-build
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,26 +43,26 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM FILES "/home/nsas2020/ufo/llvm-6.0.0/tools/clang/tools/scan-build/bin/scan-build")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM FILES "/home/nsas2020/fuzz/llvm-6.0.0/tools/clang/tools/scan-build/bin/scan-build")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/libexec" TYPE PROGRAM FILES "/home/nsas2020/ufo/llvm-6.0.0/tools/clang/tools/scan-build/libexec/ccc-analyzer")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/libexec" TYPE PROGRAM FILES "/home/nsas2020/fuzz/llvm-6.0.0/tools/clang/tools/scan-build/libexec/ccc-analyzer")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/libexec" TYPE PROGRAM FILES "/home/nsas2020/ufo/llvm-6.0.0/tools/clang/tools/scan-build/libexec/c++-analyzer")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/libexec" TYPE PROGRAM FILES "/home/nsas2020/fuzz/llvm-6.0.0/tools/clang/tools/scan-build/libexec/c++-analyzer")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/man/man1" TYPE PROGRAM FILES "/home/nsas2020/ufo/llvm-6.0.0/tools/clang/tools/scan-build/man/scan-build.1")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/man/man1" TYPE PROGRAM FILES "/home/nsas2020/fuzz/llvm-6.0.0/tools/clang/tools/scan-build/man/scan-build.1")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/scan-build" TYPE FILE FILES "/home/nsas2020/ufo/llvm-6.0.0/tools/clang/tools/scan-build/share/scan-build/scanview.css")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/scan-build" TYPE FILE FILES "/home/nsas2020/fuzz/llvm-6.0.0/tools/clang/tools/scan-build/share/scan-build/scanview.css")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/scan-build" TYPE FILE FILES "/home/nsas2020/ufo/llvm-6.0.0/tools/clang/tools/scan-build/share/scan-build/sorttable.js")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/scan-build" TYPE FILE FILES "/home/nsas2020/fuzz/llvm-6.0.0/tools/clang/tools/scan-build/share/scan-build/sorttable.js")
 endif()
 

@@ -16,8 +16,8 @@
 //
 //===----------------------------------------------------------------------===//
 
-#define LLVM_SRC_ROOT "/home/nsas2020/ufo/llvm-6.0.0"
-#define LLVM_OBJ_ROOT "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug"
+#define LLVM_SRC_ROOT "/home/nsas2020/fuzz/llvm-6.0.0"
+#define LLVM_OBJ_ROOT "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug"
 #define LLVM_CPPFLAGS "  -D_GNU_SOURCE -D_DEBUG -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS"
 #define LLVM_CFLAGS " -fPIC -Werror=date-time -Wall -W -Wno-unused-parameter -Wwrite-strings -Wno-missing-field-initializers -pedantic -Wno-long-long -Wno-comment -g -D_GNU_SOURCE -D_DEBUG -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS"
 #define LLVM_LDFLAGS ""

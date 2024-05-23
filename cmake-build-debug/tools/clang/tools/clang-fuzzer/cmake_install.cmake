@@ -1,4 +1,4 @@
-# Install script for directory: /home/nsas2020/ufo/llvm-6.0.0/tools/clang/tools/clang-fuzzer
+# Install script for directory: /home/nsas2020/fuzz/llvm-6.0.0/tools/clang/tools/clang-fuzzer
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/tools/clang/tools/clang-fuzzer/handle-cxx/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/tools/clang/tools/clang-fuzzer/handle-cxx/cmake_install.cmake")
 
 endif()
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/nsas2020/ufo/llvm-6.0.0/projects/compiler-rt/lib/interception
+# Install script for directory: /home/nsas2020/fuzz/llvm-6.0.0/projects/compiler-rt/lib/interception
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/lib/interception/tests/cmake_install.cmake")
+  include("/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/lib/interception/tests/cmake_install.cmake")
 
 endif()
 

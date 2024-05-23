@@ -13,8 +13,8 @@ def map_config(source_dir, site_config):
     config_map[source_dir] = site_config
 
 # Variables configured at build time.
-llvm_source_root = "/home/nsas2020/ufo/llvm-6.0.0"
-llvm_obj_root = "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug"
+llvm_source_root = "/home/nsas2020/fuzz/llvm-6.0.0"
+llvm_obj_root = "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug"
 
 # Make sure we can find the lit package.
 sys.path.insert(0, os.path.join(llvm_source_root, 'utils', 'lit'))
@@ -24,38 +24,38 @@ sys.path.insert(0, os.path.join(llvm_source_root, 'utils', 'lit'))
 builtin_parameters = { 'build_mode' : "." }
 
 
-map_config('/home/nsas2020/ufo/llvm-6.0.0/projects/compiler-rt/test/builtins/lit.cfg', '/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/builtins/lit.site.cfg')
-map_config('/home/nsas2020/ufo/llvm-6.0.0/projects/compiler-rt/test/builtins/Unit/lit.cfg', '/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/builtins/Unit/I386LinuxConfig/lit.site.cfg')
-map_config('/home/nsas2020/ufo/llvm-6.0.0/projects/compiler-rt/test/builtins/Unit/lit.cfg', '/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/builtins/Unit/X86_64LinuxConfig/lit.site.cfg')
-map_config('/home/nsas2020/ufo/llvm-6.0.0/projects/compiler-rt/test/cfi/lit.cfg', '/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/cfi/Standalone-i386/lit.site.cfg')
-map_config('/home/nsas2020/ufo/llvm-6.0.0/projects/compiler-rt/test/cfi/lit.cfg', '/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/cfi/Devirt-i386/lit.site.cfg')
-map_config('/home/nsas2020/ufo/llvm-6.0.0/projects/compiler-rt/test/cfi/lit.cfg', '/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/cfi/Standalone-thinlto-i386/lit.site.cfg')
-map_config('/home/nsas2020/ufo/llvm-6.0.0/projects/compiler-rt/test/cfi/lit.cfg', '/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/cfi/Devirt-thinlto-i386/lit.site.cfg')
-map_config('/home/nsas2020/ufo/llvm-6.0.0/projects/compiler-rt/test/cfi/lit.cfg', '/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/cfi/Standalone-x86_64/lit.site.cfg')
-map_config('/home/nsas2020/ufo/llvm-6.0.0/projects/compiler-rt/test/cfi/lit.cfg', '/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/cfi/Devirt-x86_64/lit.site.cfg')
-map_config('/home/nsas2020/ufo/llvm-6.0.0/projects/compiler-rt/test/cfi/lit.cfg', '/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/cfi/Standalone-thinlto-x86_64/lit.site.cfg')
-map_config('/home/nsas2020/ufo/llvm-6.0.0/projects/compiler-rt/test/cfi/lit.cfg', '/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/cfi/Devirt-thinlto-x86_64/lit.site.cfg')
-map_config('/home/nsas2020/ufo/llvm-6.0.0/projects/compiler-rt/test/fuzzer/lit.cfg', '/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/fuzzer/X86_64LinuxConfig/lit.site.cfg')
-map_config('/home/nsas2020/ufo/llvm-6.0.0/projects/compiler-rt/test/asan/lit.cfg', '/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/asan/I386LinuxConfig/lit.site.cfg')
-map_config('/home/nsas2020/ufo/llvm-6.0.0/projects/compiler-rt/test/asan/lit.cfg', '/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/asan/I386LinuxDynamicConfig/lit.site.cfg')
-map_config('/home/nsas2020/ufo/llvm-6.0.0/projects/compiler-rt/test/asan/lit.cfg', '/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/asan/X86_64LinuxConfig/lit.site.cfg')
-map_config('/home/nsas2020/ufo/llvm-6.0.0/projects/compiler-rt/test/asan/lit.cfg', '/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/asan/X86_64LinuxDynamicConfig/lit.site.cfg')
-map_config('/home/nsas2020/ufo/llvm-6.0.0/projects/compiler-rt/test/dfsan/lit.cfg', '/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/dfsan/X86_64Config/lit.site.cfg')
-map_config('/home/nsas2020/ufo/llvm-6.0.0/projects/compiler-rt/test/msan/lit.cfg', '/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/msan/X86_64/lit.site.cfg')
-map_config('/home/nsas2020/ufo/llvm-6.0.0/projects/compiler-rt/test/tsan/lit.cfg', '/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/tsan/X86_64Config/lit.site.cfg')
-map_config('/home/nsas2020/ufo/llvm-6.0.0/projects/compiler-rt/test/safestack/lit.cfg', '/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/safestack/lit.site.cfg')
-map_config('/home/nsas2020/ufo/llvm-6.0.0/projects/compiler-rt/test/esan/lit.cfg', '/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/esan/X86_64Config/lit.site.cfg')
-map_config('/home/nsas2020/ufo/llvm-6.0.0/projects/compiler-rt/test/scudo/lit.cfg', '/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/scudo/lit.site.cfg')
-map_config('/home/nsas2020/ufo/llvm-6.0.0/projects/compiler-rt/test/scudo/lit.cfg', '/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/scudo/I386LinuxConfig/lit.site.cfg')
-map_config('/home/nsas2020/ufo/llvm-6.0.0/projects/compiler-rt/test/scudo/lit.cfg', '/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/scudo/X86_64LinuxConfig/lit.site.cfg')
-map_config('/home/nsas2020/ufo/llvm-6.0.0/projects/compiler-rt/test/profile/lit.cfg', '/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/profile/Profile-i386/lit.site.cfg')
-map_config('/home/nsas2020/ufo/llvm-6.0.0/projects/compiler-rt/test/profile/lit.cfg', '/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/profile/Profile-x86_64/lit.site.cfg')
-map_config('/home/nsas2020/ufo/llvm-6.0.0/projects/compiler-rt/test/xray/lit.cfg', '/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/xray/X86_64LinuxConfig/lit.site.cfg')
-map_config('/home/nsas2020/ufo/llvm-6.0.0/tools/clang/test/lit.cfg.py', '/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/tools/clang/test/lit.site.cfg.py')
-map_config('/home/nsas2020/ufo/llvm-6.0.0/tools/clang/test/Unit/lit.cfg.py', '/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/tools/clang/test/Unit/lit.site.cfg.py')
-map_config('/home/nsas2020/ufo/llvm-6.0.0/utils/lit/tests/lit.cfg', '/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/utils/lit/lit.site.cfg')
-map_config('/home/nsas2020/ufo/llvm-6.0.0/test/lit.cfg.py', '/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/test/lit.site.cfg.py')
-map_config('/home/nsas2020/ufo/llvm-6.0.0/test/Unit/lit.cfg.py', '/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/test/Unit/lit.site.cfg.py')
+map_config('/home/nsas2020/fuzz/llvm-6.0.0/projects/compiler-rt/test/builtins/lit.cfg', '/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/builtins/lit.site.cfg')
+map_config('/home/nsas2020/fuzz/llvm-6.0.0/projects/compiler-rt/test/builtins/Unit/lit.cfg', '/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/builtins/Unit/I386LinuxConfig/lit.site.cfg')
+map_config('/home/nsas2020/fuzz/llvm-6.0.0/projects/compiler-rt/test/builtins/Unit/lit.cfg', '/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/builtins/Unit/X86_64LinuxConfig/lit.site.cfg')
+map_config('/home/nsas2020/fuzz/llvm-6.0.0/projects/compiler-rt/test/cfi/lit.cfg', '/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/cfi/Standalone-i386/lit.site.cfg')
+map_config('/home/nsas2020/fuzz/llvm-6.0.0/projects/compiler-rt/test/cfi/lit.cfg', '/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/cfi/Devirt-i386/lit.site.cfg')
+map_config('/home/nsas2020/fuzz/llvm-6.0.0/projects/compiler-rt/test/cfi/lit.cfg', '/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/cfi/Standalone-thinlto-i386/lit.site.cfg')
+map_config('/home/nsas2020/fuzz/llvm-6.0.0/projects/compiler-rt/test/cfi/lit.cfg', '/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/cfi/Devirt-thinlto-i386/lit.site.cfg')
+map_config('/home/nsas2020/fuzz/llvm-6.0.0/projects/compiler-rt/test/cfi/lit.cfg', '/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/cfi/Standalone-x86_64/lit.site.cfg')
+map_config('/home/nsas2020/fuzz/llvm-6.0.0/projects/compiler-rt/test/cfi/lit.cfg', '/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/cfi/Devirt-x86_64/lit.site.cfg')
+map_config('/home/nsas2020/fuzz/llvm-6.0.0/projects/compiler-rt/test/cfi/lit.cfg', '/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/cfi/Standalone-thinlto-x86_64/lit.site.cfg')
+map_config('/home/nsas2020/fuzz/llvm-6.0.0/projects/compiler-rt/test/cfi/lit.cfg', '/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/cfi/Devirt-thinlto-x86_64/lit.site.cfg')
+map_config('/home/nsas2020/fuzz/llvm-6.0.0/projects/compiler-rt/test/fuzzer/lit.cfg', '/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/fuzzer/X86_64LinuxConfig/lit.site.cfg')
+map_config('/home/nsas2020/fuzz/llvm-6.0.0/projects/compiler-rt/test/asan/lit.cfg', '/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/asan/I386LinuxConfig/lit.site.cfg')
+map_config('/home/nsas2020/fuzz/llvm-6.0.0/projects/compiler-rt/test/asan/lit.cfg', '/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/asan/I386LinuxDynamicConfig/lit.site.cfg')
+map_config('/home/nsas2020/fuzz/llvm-6.0.0/projects/compiler-rt/test/asan/lit.cfg', '/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/asan/X86_64LinuxConfig/lit.site.cfg')
+map_config('/home/nsas2020/fuzz/llvm-6.0.0/projects/compiler-rt/test/asan/lit.cfg', '/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/asan/X86_64LinuxDynamicConfig/lit.site.cfg')
+map_config('/home/nsas2020/fuzz/llvm-6.0.0/projects/compiler-rt/test/dfsan/lit.cfg', '/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/dfsan/X86_64Config/lit.site.cfg')
+map_config('/home/nsas2020/fuzz/llvm-6.0.0/projects/compiler-rt/test/msan/lit.cfg', '/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/msan/X86_64/lit.site.cfg')
+map_config('/home/nsas2020/fuzz/llvm-6.0.0/projects/compiler-rt/test/tsan/lit.cfg', '/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/tsan/X86_64Config/lit.site.cfg')
+map_config('/home/nsas2020/fuzz/llvm-6.0.0/projects/compiler-rt/test/safestack/lit.cfg', '/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/safestack/lit.site.cfg')
+map_config('/home/nsas2020/fuzz/llvm-6.0.0/projects/compiler-rt/test/esan/lit.cfg', '/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/esan/X86_64Config/lit.site.cfg')
+map_config('/home/nsas2020/fuzz/llvm-6.0.0/projects/compiler-rt/test/scudo/lit.cfg', '/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/scudo/lit.site.cfg')
+map_config('/home/nsas2020/fuzz/llvm-6.0.0/projects/compiler-rt/test/scudo/lit.cfg', '/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/scudo/I386LinuxConfig/lit.site.cfg')
+map_config('/home/nsas2020/fuzz/llvm-6.0.0/projects/compiler-rt/test/scudo/lit.cfg', '/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/scudo/X86_64LinuxConfig/lit.site.cfg')
+map_config('/home/nsas2020/fuzz/llvm-6.0.0/projects/compiler-rt/test/profile/lit.cfg', '/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/profile/Profile-i386/lit.site.cfg')
+map_config('/home/nsas2020/fuzz/llvm-6.0.0/projects/compiler-rt/test/profile/lit.cfg', '/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/profile/Profile-x86_64/lit.site.cfg')
+map_config('/home/nsas2020/fuzz/llvm-6.0.0/projects/compiler-rt/test/xray/lit.cfg', '/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/projects/compiler-rt/test/xray/X86_64LinuxConfig/lit.site.cfg')
+map_config('/home/nsas2020/fuzz/llvm-6.0.0/tools/clang/test/lit.cfg.py', '/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/tools/clang/test/lit.site.cfg.py')
+map_config('/home/nsas2020/fuzz/llvm-6.0.0/tools/clang/test/Unit/lit.cfg.py', '/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/tools/clang/test/Unit/lit.site.cfg.py')
+map_config('/home/nsas2020/fuzz/llvm-6.0.0/utils/lit/tests/lit.cfg', '/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/utils/lit/lit.site.cfg')
+map_config('/home/nsas2020/fuzz/llvm-6.0.0/test/lit.cfg.py', '/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/test/lit.site.cfg.py')
+map_config('/home/nsas2020/fuzz/llvm-6.0.0/test/Unit/lit.cfg.py', '/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/test/Unit/lit.site.cfg.py')
 
 builtin_parameters['config_map'] = config_map
 

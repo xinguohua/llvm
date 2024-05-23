@@ -81,7 +81,6 @@ void TLBuffer::init() {
   size_ = 0;
   capacity_ = 0,
   trace_fd_ = -1,
-  all_trace_fd_ = -1,
   e_counter_ = 0;
 
   tls_height = -1;

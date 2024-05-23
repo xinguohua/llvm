@@ -1,4 +1,4 @@
-# Install script for directory: /home/nsas2020/ufo/llvm-6.0.0/unittests/DebugInfo/MSF
+# Install script for directory: /home/nsas2020/fuzz/llvm-6.0.0/unittests/DebugInfo/MSF
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

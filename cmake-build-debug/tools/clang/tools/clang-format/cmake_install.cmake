@@ -1,4 +1,4 @@
-# Install script for directory: /home/nsas2020/ufo/llvm-6.0.0/tools/clang/tools/clang-format
+# Install script for directory: /home/nsas2020/fuzz/llvm-6.0.0/tools/clang/tools/clang-format
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,7 +43,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "clang-format" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/bin/clang-format")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/bin/clang-format")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/clang-format" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/clang-format")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -53,26 +53,26 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "clang-format" OR NOT CMAKE_INSTALL_COMPONEN
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "clang-format" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/clang" TYPE PROGRAM FILES "/home/nsas2020/ufo/llvm-6.0.0/tools/clang/tools/clang-format/clang-format-bbedit.applescript")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/clang" TYPE PROGRAM FILES "/home/nsas2020/fuzz/llvm-6.0.0/tools/clang/tools/clang-format/clang-format-bbedit.applescript")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "clang-format" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/clang" TYPE PROGRAM FILES "/home/nsas2020/ufo/llvm-6.0.0/tools/clang/tools/clang-format/clang-format-diff.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/clang" TYPE PROGRAM FILES "/home/nsas2020/fuzz/llvm-6.0.0/tools/clang/tools/clang-format/clang-format-diff.py")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "clang-format" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/clang" TYPE PROGRAM FILES "/home/nsas2020/ufo/llvm-6.0.0/tools/clang/tools/clang-format/clang-format-sublime.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/clang" TYPE PROGRAM FILES "/home/nsas2020/fuzz/llvm-6.0.0/tools/clang/tools/clang-format/clang-format-sublime.py")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "clang-format" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/clang" TYPE PROGRAM FILES "/home/nsas2020/ufo/llvm-6.0.0/tools/clang/tools/clang-format/clang-format.el")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/clang" TYPE PROGRAM FILES "/home/nsas2020/fuzz/llvm-6.0.0/tools/clang/tools/clang-format/clang-format.el")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "clang-format" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/clang" TYPE PROGRAM FILES "/home/nsas2020/ufo/llvm-6.0.0/tools/clang/tools/clang-format/clang-format.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/clang" TYPE PROGRAM FILES "/home/nsas2020/fuzz/llvm-6.0.0/tools/clang/tools/clang-format/clang-format.py")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "clang-format" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM FILES "/home/nsas2020/ufo/llvm-6.0.0/tools/clang/tools/clang-format/git-clang-format")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM FILES "/home/nsas2020/fuzz/llvm-6.0.0/tools/clang/tools/clang-format/git-clang-format")
 endif()
 

@@ -71,21 +71,21 @@ set_target_properties(gtest_main PROPERTIES
 set_property(TARGET LLVMTestingSupport APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMTestingSupport PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libLLVMTestingSupport.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libLLVMTestingSupport.a"
   )
 
 # Import target "gtest" for configuration "Debug"
 set_property(TARGET gtest APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(gtest PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libgtest.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libgtest.a"
   )
 
 # Import target "gtest_main" for configuration "Debug"
 set_property(TARGET gtest_main APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(gtest_main PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/nsas2020/ufo/llvm-6.0.0/cmake-build-debug/lib/libgtest_main.a"
+  IMPORTED_LOCATION_DEBUG "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/lib/libgtest_main.a"
   )
 
 # Make sure the targets which have been exported in some other
