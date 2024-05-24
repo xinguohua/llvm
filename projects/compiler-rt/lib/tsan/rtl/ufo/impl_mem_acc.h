@@ -72,7 +72,7 @@ void impl_mem_acc(ThreadState *thr, uptr pc, uptr addr, int kAccessSizeLog, bool
 //  } else if (UNLIKELY(buf.size_ + sizeof(MemAccEvent) + acc_len >= buf.capacity_)) {
 //    buf.flush();
 //  }
-  buf.put_event(MemAccEvent(type_idx, (u64)addr, (u64)pc));
+  buf.put_event(MemAccEvent(type_idx, (u64)addr, (u64)pc, (u64)(__sync_fetch_and_add(&uctx->order, 1))));
   Byte *ptr = (Byte *) addr;
   for (int i = 0; i < acc_len; ++i) {
     *(buf.buf_ + buf.size_ + i) = *(ptr + i);
@@ -117,7 +117,7 @@ void impl_mem_acc_nv(ThreadState *thr, uptr pc, uptr addr, int kAccessSizeLog, b
 //  } else if (UNLIKELY(buf.size_ + sizeof(MemAccEvent) >= buf.capacity_)) {
 //    buf.flush();
 //  }
-  buf.put_event(MemAccEvent(type_idx, (u64)addr, (u64)pc));
+  buf.put_event(MemAccEvent(type_idx, (u64)addr, (u64)pc, (u64)(__sync_fetch_and_add(&uctx->order, 1))));
   return;
 #endif
 }
@@ -182,7 +182,7 @@ void ns_mem_acc(ThreadState *thr, uptr pc, uptr addr, int kAccessSizeLog, bool i
   } else if (UNLIKELY(buf.size_ + sizeof(MemAccEvent) + acc_len >= buf.capacity_)) {
     buf.flush();
   }
-  buf.put_event(MemAccEvent(type_idx, (u64)addr, (u64)pc));
+  buf.put_event(MemAccEvent(type_idx, (u64)addr, (u64)pc, (u64)(__sync_fetch_and_add(&uctx->order, 1))));
   Byte *ptr = (Byte *) addr;
   for (int i = 0; i < acc_len; ++i) {
     *(buf.buf_ + buf.size_ + i) = *(ptr + i);
@@ -244,7 +244,7 @@ void ns_mem_acc_nv(ThreadState *thr, uptr pc, uptr addr, int kAccessSizeLog, boo
 //  } else if (UNLIKELY(buf.size_ + sizeof(MemAccEvent) >= buf.capacity_)) {
 //    buf.flush();
 //  }
-  buf.put_event(MemAccEvent(type_idx, (u64)addr, (u64)pc));
+  buf.put_event(MemAccEvent(type_idx, (u64)addr, (u64)pc, (u64)(__sync_fetch_and_add(&uctx->order, 1))));
 #endif
 }
 
@@ -273,7 +273,7 @@ void impl_mem_range_acc(__tsan::ThreadState *thr, uptr pc, uptr addr, uptr size,
   if (is_write) {
     type_idx = EventType::MemRangeWrite;
   }
-  uctx->tlbufs[tid].put_event(MemRangeAccEvent(type_idx, (u64)addr, (u64)pc, (u32)size));
+  uctx->tlbufs[tid].put_event(MemRangeAccEvent(type_idx, (u64)addr, (u64)pc, (u32)size, (u64)(__sync_fetch_and_add(&uctx->order, 1))));
 }
 
 // no stack
@@ -317,6 +317,6 @@ void ns_mem_range_acc(__tsan::ThreadState *thr, uptr pc, uptr addr, uptr size, b
   }
 //  u64 _idx = __sync_add_and_fetch(&uctx->e_count, 1);
 
-  buf.put_event(MemRangeAccEvent(type_idx, (u64)addr, (u64)pc, (u32)size));
+  buf.put_event(MemRangeAccEvent(type_idx, (u64)addr, (u64)pc, (u32)size, (u64)(__sync_fetch_and_add(&uctx->order, 1))));
 }
 

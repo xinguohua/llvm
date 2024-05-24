@@ -83,6 +83,8 @@ public:
   u64 time_started;
 
   TLBuffer *tlbufs;
+
+  volatile u64 order = 0;
   // logical time for mem_acc(r/w, range r/w), lock, alloc/dealloc
   // these 5 type of events are synced,
   volatile u64 e_count;

@@ -406,7 +406,7 @@ void UFOContext::init_start() {
     __sanitizer::GetThreadStackAndTls(false,
                                       (uptr *) &stk_addr, &stk_size,
                                       (uptr *) &tls_addr, &tls_size);
-    ThreadBeginEvent be(u16(0), u64(0), u32(0));
+    ThreadBeginEvent be(u16(0), u64(0), u32(0), (u64)(__sync_fetch_and_add(&uctx->order, 1)));
     be.stk_addr = (u64) stk_addr;
     be.stk_size = (u32) stk_size;
     be.tls_addr = (u64) tls_addr;

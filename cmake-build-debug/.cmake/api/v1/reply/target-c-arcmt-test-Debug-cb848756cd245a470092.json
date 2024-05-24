@@ -1,0 +1,307 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "bin/c-arcmt-test"
+		}
+	],
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"add_llvm_executable",
+			"add_clang_executable",
+			"target_link_libraries",
+			"add_dependencies",
+			"set_property",
+			"llvm_update_compile_flags",
+			"add_definitions",
+			"include",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"cmake/modules/AddLLVM.cmake",
+			"tools/clang/cmake/modules/AddClang.cmake",
+			"tools/clang/tools/c-arcmt-test/CMakeLists.txt",
+			"cmake/modules/HandleLLVMOptions.cmake",
+			"CMakeLists.txt",
+			"cmake/config-ix.cmake",
+			"tools/clang/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 123,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 724,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 771,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 11,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 761,
+				"parent" : 2
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 739,
+				"parent" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 7
+			},
+			{
+				"file" : 4
+			},
+			{
+				"command" : 8,
+				"file" : 4,
+				"line" : 592,
+				"parent" : 9
+			},
+			{
+				"file" : 3,
+				"parent" : 10
+			},
+			{
+				"command" : 7,
+				"file" : 3,
+				"line" : 62,
+				"parent" : 11
+			},
+			{
+				"command" : 8,
+				"file" : 4,
+				"line" : 578,
+				"parent" : 9
+			},
+			{
+				"file" : 5,
+				"parent" : 13
+			},
+			{
+				"command" : 7,
+				"file" : 5,
+				"line" : 283,
+				"parent" : 14
+			},
+			{
+				"command" : 7,
+				"file" : 3,
+				"line" : 706,
+				"parent" : 11
+			},
+			{
+				"command" : 7,
+				"file" : 3,
+				"line" : 707,
+				"parent" : 11
+			},
+			{
+				"command" : 7,
+				"file" : 3,
+				"line" : 708,
+				"parent" : 11
+			},
+			{
+				"file" : 6
+			},
+			{
+				"command" : 9,
+				"file" : 6,
+				"line" : 361,
+				"parent" : 19
+			},
+			{
+				"command" : 9,
+				"file" : 5,
+				"line" : 176,
+				"parent" : 14
+			},
+			{
+				"command" : 9,
+				"file" : 4,
+				"line" : 791,
+				"parent" : 9
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -fPIC -Werror=date-time -Wall -W -Wno-unused-parameter -Wwrite-strings -Wno-missing-field-initializers -pedantic -Wno-long-long -Wno-comment -g -fdiagnostics-color=always"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 8,
+					"define" : "GTEST_HAS_RTTI=0"
+				},
+				{
+					"backtrace" : 12,
+					"define" : "_DEBUG"
+				},
+				{
+					"backtrace" : 15,
+					"define" : "_GNU_SOURCE"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "__STDC_CONSTANT_MACROS"
+				},
+				{
+					"backtrace" : 17,
+					"define" : "__STDC_FORMAT_MACROS"
+				},
+				{
+					"backtrace" : 18,
+					"define" : "__STDC_LIMIT_MACROS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"path" : "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/tools/clang/tools/c-arcmt-test"
+				},
+				{
+					"path" : "/home/nsas2020/fuzz/llvm-6.0.0/tools/clang/tools/c-arcmt-test"
+				},
+				{
+					"backtrace" : 20,
+					"path" : "/home/nsas2020/fuzz/llvm-6.0.0/tools/clang/include"
+				},
+				{
+					"backtrace" : 20,
+					"path" : "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/tools/clang/include"
+				},
+				{
+					"backtrace" : 21,
+					"path" : "/usr/include/libxml2"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/include"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/home/nsas2020/fuzz/llvm-6.0.0/include"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 6,
+			"id" : "clang-tablegen-targets::@a698e65c49ebca5ab3a1"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "libclang::@6830e94d7f992248c5e3"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Clang executables"
+	},
+	"id" : "c-arcmt-test::@c31ccb908af62a945bb7",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-fPIC -fvisibility-inlines-hidden -Werror=date-time -std=c++11 -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wno-maybe-uninitialized -Wdelete-non-virtual-dtor -Wno-comment -fno-common -Woverloaded-virtual -fno-strict-aliasing -g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-allow-shlib-undefined    -Wl,-rpath-link,/home/nsas2020/fuzz/llvm-6.0.0/cmake-build-debug/./lib",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,\"\\$$ORIGIN/../lib\"",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "lib/libclang.so.6.0",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "c-arcmt-test",
+	"nameOnDisk" : "c-arcmt-test",
+	"paths" : 
+	{
+		"build" : "tools/clang/tools/c-arcmt-test",
+		"source" : "tools/clang/tools/c-arcmt-test"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "tools/clang/tools/c-arcmt-test/c-arcmt-test.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

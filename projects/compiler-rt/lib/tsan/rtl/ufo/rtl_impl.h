@@ -52,7 +52,7 @@ void impl_mtx_lock(__tsan::ThreadState *thr, uptr pc, u64 mutex_id) {
   DPrintf3("UFO>>> #%d lock  mutex id:%llu    pc:%p\r\n", tid, mutex_id, pc);
   _reset_read(tid, mutex_id);
 //  u64 _idx = __sync_add_and_fetch(&uctx->e_count, 1);
-  uctx->tlbufs[tid].put_event(LockEvent((u64)mutex_id, pc));
+  uctx->tlbufs[tid].put_event(LockEvent((u64)mutex_id, pc, (u64)(__sync_fetch_and_add(&uctx->order, 1))));
 }
 
 void impl_mtx_unlock(__tsan::ThreadState *thr, uptr pc, u64 mutex_id) {
@@ -61,7 +61,7 @@ void impl_mtx_unlock(__tsan::ThreadState *thr, uptr pc, u64 mutex_id) {
   DPrintf3("UFO>>> #%d unlock mutex %llu    pc:%p\r\n", tid, mutex_id, pc);
   auto& buf = uctx->tlbufs[tid];
   _reset_read(tid, mutex_id);
-  buf.put_event(UnlockEvent((u64)mutex_id, (u64)pc));
+  buf.put_event(UnlockEvent((u64)mutex_id, (u64)pc, (u64)(__sync_fetch_and_add(&uctx->order, 1))));
 }
 
 void impl_rd_lock(__tsan::ThreadState *thr, uptr pc, u64 mutex_id) {
@@ -84,7 +84,7 @@ void impl_cond_wait(__tsan::ThreadState* thr, uptr pc, u64 addr_cond, u64 addr_m
     
       u64 _idx = __sync_add_and_fetch(&uctx->e_count, 1);
 
-    uctx->tlbufs[tid].put_event(ThrCondWaitEvent(_idx,addr_cond,addr_mtx, pc));//JEFF wait
+    uctx->tlbufs[tid].put_event(ThrCondWaitEvent(_idx,addr_cond,addr_mtx, pc, (u64)(__sync_fetch_and_add(&uctx->order, 1))));//JEFF wait
  
 }
 
@@ -95,7 +95,7 @@ void impl_cond_signal(__tsan::ThreadState* thr, uptr pc, u64 addr_cond) {
     
     u64 _idx = __sync_add_and_fetch(&uctx->e_count, 1);
 
-    uctx->tlbufs[tid].put_event(ThrCondSignalEvent(_idx,addr_cond,pc));//JEFF signal
+    uctx->tlbufs[tid].put_event(ThrCondSignalEvent(_idx,addr_cond,pc, (u64)(__sync_fetch_and_add(&uctx->order, 1))));//JEFF signal
 
 }
 
@@ -106,7 +106,7 @@ void impl_cond_broadcast(__tsan::ThreadState* thr, uptr pc, u64 addr_cond) {
     
     u64 _idx = __sync_add_and_fetch(&uctx->e_count, 1);
 
-    uctx->tlbufs[tid].put_event(ThrCondBCEvent(_idx,addr_cond,pc));//JEFF signal
+    uctx->tlbufs[tid].put_event(ThrCondBCEvent(_idx,addr_cond,pc, (u64)(__sync_fetch_and_add(&uctx->order, 1))));//JEFF signal
 
 }
 
@@ -124,7 +124,7 @@ void *impl_alloc(ThreadState *thr, uptr pc, void *addr_left, uptr size) {
   MC_STAT(thr, c_alloc)
   auto& buf = uctx->tlbufs[tid];
 //  u64 _idx = __sync_add_and_fetch(&uctx->e_count, 1);
-  buf.put_event(AllocEvent((u64)addr_left, (u64)pc, (u32)size));
+  buf.put_event(AllocEvent((u64)addr_left, (u64)pc, (u32)size, (u64)(__sync_fetch_and_add(&uctx->order, 1))));
   return addr_left;
 }
 
@@ -150,7 +150,7 @@ void impl_dealloc(ThreadState *thr, uptr pc, void *addr, uptr size) {
 //    }
 //  }
 //  u64 _idx = __sync_add_and_fetch(&uctx->e_count, 1);
-  buf.put_event(DeallocEvent((u64)addr, (u64)pc, (u32)size));
+  buf.put_event(DeallocEvent((u64)addr, (u64)pc, (u32)size, (u64)(__sync_fetch_and_add(&uctx->order, 1))));
 }
 
 #pragma GCC diagnostic ignored "-Wunused-function"
@@ -189,7 +189,7 @@ void impl_thread_created(int tid_parent, int tid_kid, uptr pc) {
     
     u64 _idx = __sync_add_and_fetch(&uctx->e_count, 1);
 
-  buf_pa.put_event(CreateThreadEvent(_idx,(TidType) tid_kid, et, (u64)pc));
+  buf_pa.put_event(CreateThreadEvent(_idx,(TidType) tid_kid, et, (u64)pc,  (u64)(__sync_fetch_and_add(&uctx->order, 1))));
 
   auto &buf_kid = uctx->tlbufs[tid_kid];
   if (UNLIKELY(buf_kid.buf_ != nullptr && buf_kid.size_ > 0)) {
@@ -200,7 +200,7 @@ void impl_thread_created(int tid_parent, int tid_kid, uptr pc) {
     buf_kid.open_file(tid_kid);
   }
 
-  buf_kid.put_event(ThreadBeginEvent((TidType) tid_parent, (u64)pc, et));
+  buf_kid.put_event(ThreadBeginEvent((TidType) tid_parent, (u64)pc, et, (u64)(__sync_fetch_and_add(&uctx->order, 1))));
 }
 
 // rewrite begin event
@@ -234,7 +234,7 @@ void impl_thread_join(int tid_main, int tid_joiner, uptr pc) {
     
       u64 _idx = __sync_add_and_fetch(&uctx->e_count, 1);
 
-  uctx->tlbufs[tid_main].put_event(JoinThreadEvent(_idx,(TidType) tid_joiner, et, (u64)pc));
+  uctx->tlbufs[tid_main].put_event(JoinThreadEvent(_idx,(TidType) tid_joiner, et, (u64)pc, (u64)(__sync_fetch_and_add(&uctx->order, 1))));
 
 //  auto &buf_kid = uctx->tlbufs[tid_joiner];
 //  buf_kid.put_event(ThreadEndEvent((TidType) tid_main, et));
@@ -247,7 +247,7 @@ void impl_thread_join(int tid_main, int tid_joiner, uptr pc) {
         u32 et = (u32)(uctx->get_time_ms() - uctx->time_started);
         
         auto &buf_kid = uctx->tlbufs[thr->tid];
-        buf_kid.put_event(ThreadEndEvent((TidType) 0, et));
+        buf_kid.put_event(ThreadEndEvent((TidType) 0, et, (u64)(__sync_fetch_and_add(&uctx->order, 1))));
           buf_kid.finish(); //JEFF
         //buf_kid.release_all();
     }
@@ -258,7 +258,7 @@ void impl_enter_func(ThreadState *thr, uptr pc) {
   int tid = thr->tid;
   MC_STAT(thr, c_func_call)
   auto& buf = uctx->tlbufs[tid];
-  buf.put_event(FuncEntryEvent((u64)pc));
+  buf.put_event(FuncEntryEvent((u64)pc, (u64)(__sync_fetch_and_add(&uctx->order, 1))));
   buf.last_fe = buf.e_counter_;
     
     
@@ -280,7 +280,7 @@ void impl_exit_func(ThreadState *thr) {
       return;
     }
   }
-  buf.put_event(FuncExitEvent());
+  buf.put_event(FuncExitEvent((u64)(__sync_fetch_and_add(&uctx->order, 1))));
 }
 
 
@@ -288,7 +288,7 @@ void impl_ptr_prop(__tsan::ThreadState *thr, uptr pc, uptr addr_src, uptr addr_d
   DPrintf3("UFO>>>#%d  ptr prop  pc:%p  %p ==> %p \r\n", thr->tid, pc, addr_src, addr_dest);
   int tid = thr->tid;
   MC_STAT(thr, c_ptr_prop)
-  uctx->tlbufs[tid].put_event(PtrAssignEvent((u64)addr_src, (u64)addr_dest));
+  uctx->tlbufs[tid].put_event(PtrAssignEvent((u64)addr_src, (u64)addr_dest, (u64)(__sync_fetch_and_add(&uctx->order, 1))));
 }
 
 
@@ -296,7 +296,7 @@ void impl_ptr_deref(__tsan::ThreadState *thr, uptr pc, uptr addr_ptr) {
   DPrintf3("UFO>>>#%d  ptr de-ref  pc:%p  %p \r\n", thr->tid, pc, addr_ptr);
   int tid = thr->tid;
 //  MC_STAT(thr, c_ptr_prop)
-  uctx->tlbufs[tid].put_event(PtrDeRefEvent((u64)addr_ptr));
+  uctx->tlbufs[tid].put_event(PtrDeRefEvent((u64)addr_ptr, (u64)(__sync_fetch_and_add(&uctx->order, 1))));
 }
 
 #include "impl_mem_acc.h"

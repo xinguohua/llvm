@@ -61,14 +61,16 @@ PACKED_STRUCT(AllocEvent) {
   u64 addr : 48;
   u64 pc : 48;
   u32 size;
+  u64 order : 48;
 
   ALWAYS_INLINE
-  explicit AllocEvent(u64 ad, u64 p, u32 d)
+  explicit AllocEvent(u64 ad, u64 p, u32 d, u64 o)
       : addr(ad),
         pc(p),
-        size(d) {}
+        size(d),
+        order(o){}
 };
-static_assert(sizeof(AllocEvent) == 17, "compact struct (align 8) not supported, please use clang 3.8.1");
+static_assert(sizeof(AllocEvent) == 23, "compact struct (align 8) not supported, please use clang 3.8.1");
 
 // 8 + 48 + 48 + 32 -> 126 //JEFF
 PACKED_STRUCT(DeallocEvent) {
@@ -78,14 +80,16 @@ PACKED_STRUCT(DeallocEvent) {
   u64 addr : 48;
   u64 pc : 48;
   u32 size;//JEFF
+  u64 order : 48;
 
   ALWAYS_INLINE
-  explicit DeallocEvent(u64 h, u64 ip, u32 d)
+  explicit DeallocEvent(u64 h, u64 ip, u32 d, u64 o)
       : addr(h),
         pc(ip),
-        size(d) {}
+        size(d),
+        order(o){}
 };
-static_assert(sizeof(DeallocEvent) == 17, "compact struct (align 8) not supported, please use clang 3.8.1");
+static_assert(sizeof(DeallocEvent) == 23, "compact struct (align 8) not supported, please use clang 3.8.1");
 
 
 // 8 + 48 + 48 -> 104
@@ -95,13 +99,16 @@ PACKED_STRUCT(LockEvent) {
 //  u64 idx: 48;
   u64 mutexId : 48;
   u64 pc : 48;
+  u64 order : 48;
+
 
   ALWAYS_INLINE
-  explicit LockEvent(u64 h, u64 p)
+  explicit LockEvent(u64 h, u64 p, u64 o)
       : mutexId(h),
-        pc(p)    {}
+        pc(p),
+        order(o){}
 };
-static_assert(sizeof(LockEvent) == 13, "compact struct (align 8) not supported, please use clang 3.8.1");
+static_assert(sizeof(LockEvent) == 19, "compact struct (align 8) not supported, please use clang 3.8.1");
 
 // 8 + 48 +48 -> 104
 PACKED_STRUCT(UnlockEvent) {
@@ -109,13 +116,15 @@ PACKED_STRUCT(UnlockEvent) {
   const u8 type_index = TYPE_INDEX;
   u64 mutexId : 48;
   u64 pc : 48;
+  u64 order : 48;
 
   ALWAYS_INLINE
-  explicit UnlockEvent(u64 h, u64 ip)
+  explicit UnlockEvent(u64 h, u64 ip, u64 o)
       : mutexId(h),
-        pc(ip)  { }
+        pc(ip),
+        order(o){ }
 };
-static_assert(sizeof(UnlockEvent) == 13, "compact struct (align 8) not supported, please use clang 3.8.1");
+static_assert(sizeof(UnlockEvent) == 19, "compact struct (align 8) not supported, please use clang 3.8.1");
 
 
 PACKED_STRUCT(ThrCondWaitEvent) {
@@ -125,13 +134,15 @@ PACKED_STRUCT(ThrCondWaitEvent) {
   u64 cond: 48;
   u64 mtx: 48;
   u64 pc: 48;
-  explicit ThrCondWaitEvent(u64 i, u64 c, u64 m, u64 p)
+  u64 order : 48;
+  explicit ThrCondWaitEvent(u64 i, u64 c, u64 m, u64 p, u64 o)
       : idx(i),
         cond(c),
         mtx(m),
-        pc(p)   {}
+        pc(p),
+        order(o){}
 };
-static_assert(sizeof(ThrCondWaitEvent) == 25, "compact struct (align 8) not supported, please use clang 3.8.1");
+static_assert(sizeof(ThrCondWaitEvent) == 31, "compact struct (align 8) not supported, please use clang 3.8.1");
 
 PACKED_STRUCT(ThrCondSignalEvent) {
   static const u8 TYPE_INDEX = EventType::ThrCondSignal;
@@ -139,12 +150,14 @@ PACKED_STRUCT(ThrCondSignalEvent) {
   u64 idx: 48;
   u64 cond: 48;
   u64 pc: 48;
-  explicit ThrCondSignalEvent(u64 i, u64 c, u64 p)
+  u64 order : 48;
+  explicit ThrCondSignalEvent(u64 i, u64 c, u64 p, u64 o)
     : idx(i),
     cond(c),
-        pc(p)   {}
+    pc(p),
+    order(o){}
 };
-static_assert(sizeof(ThrCondSignalEvent) == 19, "compact struct (align 8) not supported, please use clang 3.8.1");
+static_assert(sizeof(ThrCondSignalEvent) == 25, "compact struct (align 8) not supported, please use clang 3.8.1");
 
 PACKED_STRUCT(ThrCondBCEvent) {
   static const u8 TYPE_INDEX = EventType::ThrCondSignal;
@@ -152,12 +165,14 @@ PACKED_STRUCT(ThrCondBCEvent) {
     u64 idx: 48;
   u64 cond: 48;
   u64 pc: 48;
-  explicit ThrCondBCEvent(u64 i, u64 c, u64 p)
+  u64 order : 48;
+  explicit ThrCondBCEvent(u64 i, u64 c, u64 p, u64 o)
     : idx(i),
     cond(c),
-        pc(p)   {}
+        pc(p),
+     order(o){}
 };
-static_assert(sizeof(ThrCondBCEvent) == 19, "compact struct (align 8) not supported, please use clang 3.8.1");
+static_assert(sizeof(ThrCondBCEvent) == 25, "compact struct (align 8) not supported, please use clang 3.8.1");
 
 
 // 8 + 48 + 48 + 32 = 126
@@ -167,15 +182,16 @@ PACKED_STRUCT(MemRangeAccEvent) {
   u64 addr : 48;
   u64 pc : 48;
   u32 size;
-
+  u64 order : 48;
   ALWAYS_INLINE
-  explicit MemRangeAccEvent(u8 ty_idx, u64 adr, u64 ip, u32 sz)
+  explicit MemRangeAccEvent(u8 ty_idx, u64 adr, u64 ip, u32 sz, u64 o)
       : type_index(ty_idx),
         addr(adr),
         pc(ip),
-        size(sz)  {}
+        size(sz),
+        order(o){}
 };
-static_assert(sizeof(MemRangeAccEvent) == 17, "compact struct (align 8) not supported, please use clang 3.8.1");
+static_assert(sizeof(MemRangeAccEvent) == 23, "compact struct (align 8) not supported, please use clang 3.8.1");
 
 
 //8 + 48 + 48 -> 104 + ???
@@ -183,14 +199,16 @@ PACKED_STRUCT(MemAccEvent) {
   const u8 type_index;
   u64 addr : 48;
   u64 pc : 48;
+  u64 order : 48;
 
   ALWAYS_INLINE
-  explicit MemAccEvent(u8 ty_idx, u64 h, u64 ip)
+  explicit MemAccEvent(u8 ty_idx, u64 h, u64 ip, u64 o)
       : type_index(ty_idx),
         addr(h),
-        pc(ip)    {}
+        pc(ip),
+        order(o){}
 };
-static_assert(sizeof(MemAccEvent) == 13, "compact struct (align 8) not supported, please use clang 3.8.1");
+static_assert(sizeof(MemAccEvent) == 19, "compact struct (align 8) not supported, please use clang 3.8.1");
 
 //8 + 16 + 48 + 32 -> 104
 PACKED_STRUCT(CreateThreadEvent) {
@@ -200,15 +218,18 @@ PACKED_STRUCT(CreateThreadEvent) {
     TidType tid_kid;
   u32 e_time; // time elapsed since program start (stored in header)
   u64 pc : 48;
+  u64 order : 48;
+
 
   ALWAYS_INLINE
-  explicit CreateThreadEvent(u64 i,TidType tk, u32 t, u64 ip)
+  explicit CreateThreadEvent(u64 i,TidType tk, u32 t, u64 ip, u64 o)
       : idx(i),
         tid_kid(tk),
         e_time(t),
-        pc(ip)    { }
+        pc(ip),
+        order(o){ }
 };
-static_assert(sizeof(CreateThreadEvent) == 19, "compact struct (align 8) not supported, please use clang 3.8.1");
+static_assert(sizeof(CreateThreadEvent) == 25, "compact struct (align 8) not supported, please use clang 3.8.1");
 
 //8 + 16 + 48 + 32 + (48+32+48+32)-> 33
 PACKED_STRUCT(ThreadBeginEvent) {
@@ -221,18 +242,21 @@ PACKED_STRUCT(ThreadBeginEvent) {
   u32 stk_size;
   u64 tls_addr: 48;
   u32 tls_size;
+  u64 order : 48;
+
 
   ALWAYS_INLINE
-  explicit ThreadBeginEvent(TidType tp, u64 p, u32 t)
+  explicit ThreadBeginEvent(TidType tp, u64 p, u32 t, u64 o)
       : tid_parent(tp),
         pc(p),
         e_time(t),
         stk_addr(0),
         stk_size(0),
         tls_addr(0),
-        tls_size(0) { }
+        tls_size(0),
+        order(o){ }
 };
-static_assert(sizeof(ThreadBeginEvent) == 33, "compact struct (align 8) not supported, please use clang 3.8.1");
+static_assert(sizeof(ThreadBeginEvent) == 39, "compact struct (align 8) not supported, please use clang 3.8.1");
 
 
 //8 +  16 + 32 + 48 -> 104
@@ -243,15 +267,18 @@ PACKED_STRUCT(JoinThreadEvent) {
     TidType tid_joiner;
   u32 e_time; // time elapsed since program start (stored in header)
   u64 pc : 48;
+  u64 order : 48;
+
 
   ALWAYS_INLINE
-  explicit JoinThreadEvent(u64 i,TidType tk, u32 time, u64 ip)
+  explicit JoinThreadEvent(u64 i,TidType tk, u32 time, u64 ip, u64 o)
       : idx(i),
         tid_joiner(tk),
         e_time(time),
-        pc(ip)      { }
+        pc(ip),
+        order(o){ }
 };
-static_assert(sizeof(JoinThreadEvent) == 19, "compact struct (align 8) not supported, please use clang 3.8.1");
+static_assert(sizeof(JoinThreadEvent) == 25, "compact struct (align 8) not supported, please use clang 3.8.1");
 
 
 //(8 +  16 + 32 -> 56
@@ -260,13 +287,15 @@ PACKED_STRUCT(ThreadEndEvent) {
   const u8 type_index = TYPE_INDEX;
   TidType tid_parent;
   u32 e_time; // time elapsed since program start (stored in header)
+  u64 order : 48;
 
   ALWAYS_INLINE
-  explicit ThreadEndEvent(TidType tp, u32 t)
+  explicit ThreadEndEvent(TidType tp, u32 t, u64 o)
       : tid_parent(tp),
-        e_time(t)     { }
+        e_time(t),
+        order(o)     { }
 };
-static_assert(sizeof(ThreadEndEvent) == 7, "compact struct (align 8) not supported, please use clang 3.8.1");
+static_assert(sizeof(ThreadEndEvent) == 13, "compact struct (align 8) not supported, please use clang 3.8.1");
 
 
 PACKED_STRUCT(PtrAssignEvent) {
@@ -274,24 +303,29 @@ PACKED_STRUCT(PtrAssignEvent) {
   const u8 type_index = TYPE_INDEX;
   u64 ptr_l: 48;
   u64 ptr_r: 48;
+  u64 order : 48;
+
 
   ALWAYS_INLINE
-  explicit PtrAssignEvent(u64 pl, u64 pr)
+  explicit PtrAssignEvent(u64 pl, u64 pr, u64 o)
       : ptr_l(pl),
-        ptr_r(pr) { }
+        ptr_r(pr),
+        order(o){ }
 };
-static_assert(sizeof(PtrAssignEvent) == 13, "compact struct (align 8) not supported, please use clang 3.8.1");
+static_assert(sizeof(PtrAssignEvent) == 19, "compact struct (align 8) not supported, please use clang 3.8.1");
 
 PACKED_STRUCT(PtrDeRefEvent) {
   static const u8 TYPE_INDEX = EventType::PtrDeRef;
   const u8 type_index = TYPE_INDEX;
   u64 ptr_addr: 48;
+  u64 order : 48;
 
   ALWAYS_INLINE
-  explicit PtrDeRefEvent(u64 pa)
-      : ptr_addr(pa) {}
+  explicit PtrDeRefEvent(u64 pa, u64 o)
+      : ptr_addr(pa),
+        order(o) {}
 };
-static_assert(sizeof(PtrDeRefEvent) == 7, "compact struct (align 8) not supported, please use clang 3.8.1");
+static_assert(sizeof(PtrDeRefEvent) == 13, "compact struct (align 8) not supported, please use clang 3.8.1");
 
 PACKED_STRUCT(UFOHeader) {
   static const u8 TYPE_INDEX = EventType::TLHeader;
@@ -313,18 +347,23 @@ PACKED_STRUCT(FuncEntryEvent) {
   static const u8 TYPE_INDEX = EventType::EnterFunc;
   const u8 type_index = TYPE_INDEX;
   u64 caller_pc : 48;
-
+  u64 order : 48;
   ALWAYS_INLINE
-  explicit FuncEntryEvent(u64 pc)
-      :  caller_pc(pc) {}
+  explicit FuncEntryEvent(u64 pc , u64 o)
+      :  caller_pc(pc),
+        order(o){}
 };
-static_assert(sizeof(FuncEntryEvent) == 7, "compact struct (align 8) not supported, please use clang 3.8.1");
+static_assert(sizeof(FuncEntryEvent) == 13, "compact struct (align 8) not supported, please use clang 3.8.1");
 
 PACKED_STRUCT(FuncExitEvent) {
   static const u8 TYPE_INDEX = EventType::ExitFunc;
   const u8 type_index = TYPE_INDEX;
+  u64 order : 48;
+
+  explicit FuncExitEvent(u64 o)
+      :order(o){}
 };
-static_assert(sizeof(FuncExitEvent) == 1, "compact struct (align 8) not supported, please use clang 3.8.1");
+static_assert(sizeof(FuncExitEvent) == 7, "compact struct (align 8) not supported, please use clang 3.8.1");
 
 PACKED_STRUCT(UFOPkt) {
   static const u8 TYPE_INDEX = EventType::InfoPacket;
