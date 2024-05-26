@@ -23,10 +23,10 @@ if (is_write) {\
 __HOT_CODE
 void impl_mem_acc(ThreadState *thr, uptr pc, uptr addr, int kAccessSizeLog, bool is_write) {
   if (is_write) {
-    DPrintf3("UFO>>> #%d write %d bytes to %p  val:%p   pc:%p\r\n",
+    DPrintf5("impl_mem_accUFO>>> #%d write %d bytes to %p  val:%p   pc:%p\r\n",
             thr->tid, (1 << kAccessSizeLog), addr, __read_addr(addr, kAccessSizeLog), pc);
   } else {
-    DPrintf3("UFO>>> #%d read %d bytes from %p val:%p   pc:%p\r\n",
+    DPrintf5("impl_mem_accUFO>>> #%d read %d bytes from %p val:%p   pc:%p\r\n",
             thr->tid, (1 << kAccessSizeLog), addr, __read_addr(addr, kAccessSizeLog), pc);
   }
     
@@ -58,7 +58,7 @@ void impl_mem_acc(ThreadState *thr, uptr pc, uptr addr, int kAccessSizeLog, bool
 #ifndef BUF_EVENT_ON
     
   int fd = uctx->tlbufs[tid].trace_fd_;
-  MemAccEvent _e(type_idx, _idx, (u64)addr, (u64)pc);
+  MemAccEvent _e(type_idx, (u64)addr, (u64)pc, (u64)(__sync_fetch_and_add(&uctx->order, 1));
   internal_write(fd, &_e, sizeof(MemAccEvent));
   const int acc_len = 1 << kAccessSizeLog;
   internal_write(fd, addr, acc_len)
@@ -85,10 +85,10 @@ void impl_mem_acc(ThreadState *thr, uptr pc, uptr addr, int kAccessSizeLog, bool
 __HOT_CODE
 void impl_mem_acc_nv(ThreadState *thr, uptr pc, uptr addr, int kAccessSizeLog, bool is_write) {
   if (is_write) {
-    DPrintf3("UFO>>> #%d write %d bytes to %p  val:%p   pc:%p\r\n",
+    DPrintf4("impl_mem_acc_nvUFO>>> #%d write %d bytes to %p  val:%p   pc:%p\r\n",
             thr->tid, (1 << kAccessSizeLog), addr, __read_addr(addr, kAccessSizeLog), pc);
   } else {
-    DPrintf3("UFO>>> #%d read %d bytes from %p val:%p   pc:%p\r\n",
+    DPrintf4("impl_mem_acc_nvUFO>>> #%d read %d bytes from %p val:%p   pc:%p\r\n",
             thr->tid, (1 << kAccessSizeLog), addr, __read_addr(addr, kAccessSizeLog), pc);
   }
 
@@ -144,13 +144,13 @@ void ns_mem_acc(ThreadState *thr, uptr pc, uptr addr, int kAccessSizeLog, bool i
     return;
   }
 
-//  if (is_write) {
-//    DPrintf3("UFO>>> #%d write %d bytes to %p  val:%p   pc:%p\r\n",
-//            thr->tid, (1 << kAccessSizeLog), addr, __read_addr(addr, kAccessSizeLog), pc);
-//  } else {
-//    DPrintf3("UFO>>> #%d read %d bytes from %p val:%p   pc:%p\r\n",
-//            thr->tid, (1 << kAccessSizeLog), addr, __read_addr(addr, kAccessSizeLog), pc);
-//  }
+  if (is_write) {
+    DPrintf5("UFO>>> #%d write %d bytes to %p  val:%p   pc:%p\r\n",
+            thr->tid, (1 << kAccessSizeLog), addr, __read_addr(addr, kAccessSizeLog), pc);
+  } else {
+    DPrintf5("UFO>>> #%d read %d bytes from %p val:%p   pc:%p\r\n",
+            thr->tid, (1 << kAccessSizeLog), addr, __read_addr(addr, kAccessSizeLog), pc);
+  }
 
   u8 type_idx = EventType::MemRead;
   if (is_write) {
@@ -163,7 +163,7 @@ void ns_mem_acc(ThreadState *thr, uptr pc, uptr addr, int kAccessSizeLog, bool i
 
 #ifndef BUF_EVENT_ON
   int fd = uctx->tlbufs[tid].trace_fd_;
-  MemAccEvent _e(type_idx, _idx, (u64)addr, (u64)pc);
+  MemAccEvent _e(type_idx, (u64)addr, (u64)pc,  (u64)(__sync_fetch_and_add(&uctx->order, 1));
   internal_write(fd, &_e, sizeof(MemAccEvent));
   const int acc_len = 1 << kAccessSizeLog;
   internal_write(fd, addr, acc_len);

@@ -2340,11 +2340,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0dfd0955-631a-49f2-996b-b3dbfdc2efba" name="Changes" comment="Changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/compiler-rt/lib/tsan/rtl/tsan_rtl.h" beforeDir="false" afterPath="$PROJECT_DIR$/projects/compiler-rt/lib/tsan/rtl/tsan_rtl.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/compiler-rt/lib/tsan/rtl/ufo/impl_mem_acc.h" beforeDir="false" afterPath="$PROJECT_DIR$/projects/compiler-rt/lib/tsan/rtl/ufo/impl_mem_acc.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/compiler-rt/lib/tsan/rtl/ufo/rtl_impl.h" beforeDir="false" afterPath="$PROJECT_DIR$/projects/compiler-rt/lib/tsan/rtl/ufo/rtl_impl.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/compiler-rt/lib/tsan/rtl/ufo/ufo.cc" beforeDir="false" afterPath="$PROJECT_DIR$/projects/compiler-rt/lib/tsan/rtl/ufo/ufo.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/compiler-rt/lib/tsan/rtl/ufo/ufo.h" beforeDir="false" afterPath="$PROJECT_DIR$/projects/compiler-rt/lib/tsan/rtl/ufo/ufo.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/compiler-rt/lib/tsan/rtl/ufo/ufo_interface.h" beforeDir="false" afterPath="$PROJECT_DIR$/projects/compiler-rt/lib/tsan/rtl/ufo/ufo_interface.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -2354,6 +2351,9 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file:///usr/lib/gcc/x86_64-linux-gnu/9/include/stdatomic.h" root0="SKIP_INSPECTION" />
   </component>
   <component name="OCResolveContextSettings">
     <option name="configuration" value="0-Debug-clang_rt.tsan-x86_64" />
@@ -2401,8 +2401,8 @@
       <window_info id="Pull Requests" show_stripe_button="false" />
       <window_info id="Learn" show_stripe_button="false" />
       <window_info id="DFA" show_stripe_button="false" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5010549" weight="0.26765046" />
-      <window_info active="true" id="Commit" order="1" visible="true" weight="0.26765046" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5010549" visible="true" weight="0.26765046" />
+      <window_info id="Commit" order="1" weight="0.26765046" />
       <window_info id="Structure" order="2" sideWeight="0.49894515" side_tool="true" weight="0.33015046" />
       <window_info anchor="bottom" id="CMake" weight="0.6041666" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
@@ -2412,11 +2412,11 @@
       <window_info anchor="bottom" id="Messages" weight="0.49675924" />
       <window_info anchor="bottom" id="File Transfer" show_stripe_button="false" />
       <window_info anchor="bottom" id="Vcpkg" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Find" visible="true" weight="0.45694447" />
+      <window_info anchor="bottom" id="Find" visible="true" weight="0.4199074" />
       <window_info anchor="bottom" id="clangd" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="0" weight="0.52361107" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.36037365" />
       <window_info anchor="bottom" id="Problems View" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.29351032" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.36037365" />
       <window_info anchor="bottom" id="Services" order="3" />
       <window_info anchor="right" id="Notifications" order="0" weight="0.20283565" />
       <window_info anchor="right" id="AIAssistant" order="1" weight="0.33015046" />
@@ -16422,6 +16422,17 @@
     <isAutomaticCheckingOnLaunch value="false" />
     <isAutomaticFoundErrors value="true" />
     <isAutomaticReloadCMake value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>

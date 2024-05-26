@@ -694,7 +694,10 @@ void PrintMatchedBenignRaces();
 #else
 # define DPrintf3(...)
 #endif
-    
+
+# define DPrintf5 Printf
+
+
 #if defined(TSAN_DEBUG_OUTPUT) && TSAN_DEBUG_OUTPUT >= 1
 # define DPrintf Printf
 #else
