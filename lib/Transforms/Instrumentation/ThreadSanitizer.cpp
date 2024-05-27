@@ -486,7 +486,8 @@ bool ThreadSanitizer::runOnFunction(Function &F) {
 
 bool ThreadSanitizer::instrumentLoadOrStore(Instruction *I,
                                             const DataLayout &DL) {
-  IRBuilder<> IRB(I);
+  //IRBuilder<> IRB(I);
+  IRBuilder<> IRB(I->getNextNode());
   bool IsWrite = isa<StoreInst>(*I);
   Value *Addr = IsWrite
       ? cast<StoreInst>(I)->getPointerOperand()

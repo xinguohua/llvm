@@ -2340,8 +2340,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0dfd0955-631a-49f2-996b-b3dbfdc2efba" name="Changes" comment="Changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/compiler-rt/lib/tsan/rtl/tsan_rtl.h" beforeDir="false" afterPath="$PROJECT_DIR$/projects/compiler-rt/lib/tsan/rtl/tsan_rtl.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/compiler-rt/lib/tsan/rtl/ufo/impl_mem_acc.h" beforeDir="false" afterPath="$PROJECT_DIR$/projects/compiler-rt/lib/tsan/rtl/ufo/impl_mem_acc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Transforms/Instrumentation/ThreadSanitizer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Transforms/Instrumentation/ThreadSanitizer.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -2416,7 +2415,7 @@
       <window_info anchor="bottom" id="clangd" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.36037365" />
       <window_info anchor="bottom" id="Problems View" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.36037365" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.4199074" />
       <window_info anchor="bottom" id="Services" order="3" />
       <window_info anchor="right" id="Notifications" order="0" weight="0.20283565" />
       <window_info anchor="right" id="AIAssistant" order="1" weight="0.33015046" />
