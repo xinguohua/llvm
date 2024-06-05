@@ -259,13 +259,14 @@ template<typename T>
 static void AtomicStore(ThreadState *thr, uptr pc, volatile T *a, T v,
     morder mo) {
   CHECK(IsStoreOrder(mo));
-  MemoryWriteAtomic(thr, pc, (uptr)a, SizeLog<T>());
   // This fast-path is critical for performance.
   // Assume the access is atomic.
   // Strictly saying even relaxed store cuts off release sequence,
   // so must reset the clock.
   if (!IsReleaseOrder(mo)) {
     NoTsanAtomicStore(a, v, mo);
+    DPrintf5("IsReleaseOrder store>>> #%d addr val:%p   pc:%p\r\n", a, v);
+    MemoryWriteAtomic(thr, pc, (uptr)a, SizeLog<T>());
     return;
   }
   __sync_synchronize();
@@ -275,12 +276,13 @@ static void AtomicStore(ThreadState *thr, uptr pc, volatile T *a, T v,
   TraceAddEvent(thr, thr->fast_state, EventTypeMop, 0);
   ReleaseStoreImpl(thr, pc, &s->clock);
   NoTsanAtomicStore(a, v, mo);
+  DPrintf5("UFO>>>NoTsanAtomicStore>>> #%d addr val:%p   pc:%p\r\n", a, v);
+  MemoryWriteAtomic(thr, pc, (uptr)a, SizeLog<T>());
   s->mtx.Unlock();
 }
 
 template<typename T, T (*F)(volatile T *v, T op)>
 static T AtomicRMW(ThreadState *thr, uptr pc, volatile T *a, T v, morder mo) {
-  MemoryWriteAtomic(thr, pc, (uptr)a, SizeLog<T>());
   SyncVar *s = 0;
   if (mo != mo_relaxed) {
     s = ctx->metamap.GetOrCreateAndLock(thr, pc, (uptr)a, true);
@@ -295,6 +297,7 @@ static T AtomicRMW(ThreadState *thr, uptr pc, volatile T *a, T v, morder mo) {
       AcquireImpl(thr, pc, &s->clock);
   }
   v = F(a, v);
+  MemoryWriteAtomic(thr, pc, (uptr)a, SizeLog<T>());
   if (s)
     s->mtx.Unlock();
   return v;
@@ -404,7 +407,6 @@ template<typename T>
 static bool AtomicCAS(ThreadState *thr, uptr pc,
     volatile T *a, T *c, T v, morder mo, morder fmo) {
   (void)fmo;  // Unused because llvm does not pass it yet.
-  MemoryWriteAtomic(thr, pc, (uptr)a, SizeLog<T>());
   SyncVar *s = 0;
   bool write_lock = mo != mo_acquire && mo != mo_consume;
   if (mo != mo_relaxed) {
@@ -427,6 +429,7 @@ static bool AtomicCAS(ThreadState *thr, uptr pc,
     else
       s->mtx.ReadUnlock();
   }
+  MemoryWriteAtomic(thr, pc, (uptr)a, SizeLog<T>());
   if (pr == cc)
     return true;
   *c = pr;
