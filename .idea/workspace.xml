@@ -2338,8 +2338,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0dfd0955-631a-49f2-996b-b3dbfdc2efba" name="Changes" comment="Changes">
+    <list default="true" id="0dfd0955-631a-49f2-996b-b3dbfdc2efba" name="Changes" comment="修改顺序">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/.uuid.LCK" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/.uuid.NEW" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Transforms/Instrumentation/ThreadSanitizer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Transforms/Instrumentation/ThreadSanitizer.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -2400,8 +2403,8 @@
       <window_info id="Pull Requests" show_stripe_button="false" />
       <window_info id="Learn" show_stripe_button="false" />
       <window_info id="DFA" show_stripe_button="false" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5010549" visible="true" weight="0.26765046" />
-      <window_info id="Commit" order="1" weight="0.26765046" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5010549" weight="0.26765046" />
+      <window_info active="true" id="Commit" order="1" visible="true" weight="0.26765046" />
       <window_info id="Structure" order="2" sideWeight="0.49894515" side_tool="true" weight="0.33015046" />
       <window_info anchor="bottom" id="CMake" weight="0.6041666" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
@@ -2411,11 +2414,11 @@
       <window_info anchor="bottom" id="Messages" weight="0.49675924" />
       <window_info anchor="bottom" id="File Transfer" show_stripe_button="false" />
       <window_info anchor="bottom" id="Vcpkg" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Find" visible="true" weight="0.4199074" />
+      <window_info anchor="bottom" id="Find" visible="true" weight="0.45416665" />
       <window_info anchor="bottom" id="clangd" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="0" weight="0.36037365" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.45416665" />
       <window_info anchor="bottom" id="Problems View" order="1" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.4199074" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.4199074" />
       <window_info anchor="bottom" id="Services" order="3" />
       <window_info anchor="right" id="Notifications" order="0" weight="0.20283565" />
       <window_info anchor="right" id="AIAssistant" order="1" weight="0.33015046" />
@@ -16411,7 +16414,17 @@
       <workItem from="1716451056509" duration="689000" />
       <workItem from="1716465964047" duration="96000" />
       <workItem from="1716466190056" duration="9000" />
+      <workItem from="1717551111852" duration="6766000" />
     </task>
+    <task id="LOCAL-00001" summary="修改顺序">
+      <option name="closed" value="true" />
+      <created>1716776469687</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1716776469687</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -16437,6 +16450,8 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
+    <MESSAGE value="修改顺序" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改顺序" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

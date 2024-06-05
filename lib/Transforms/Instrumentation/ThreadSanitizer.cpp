@@ -596,7 +596,8 @@ bool ThreadSanitizer::instrumentMemIntrinsic(Instruction *I) {
 // http://www.hpl.hp.com/personal/Hans_Boehm/c++mm/
 
 bool ThreadSanitizer::instrumentAtomic(Instruction *I, const DataLayout &DL) {
-  IRBuilder<> IRB(I);
+  //IRBuilder<> IRB(I);
+  IRBuilder<> IRB(I->getNextNode());
   if (LoadInst *LI = dyn_cast<LoadInst>(I)) {
     Value *Addr = LI->getPointerOperand();
     int Idx = getMemoryAccessFuncIndex(Addr, DL);
