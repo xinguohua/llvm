@@ -41,21 +41,44 @@ SANITIZER_INTERFACE_ATTRIBUTE void __tsan_read4(void *addr);
 SANITIZER_INTERFACE_ATTRIBUTE void __tsan_read8(void *addr);
 SANITIZER_INTERFACE_ATTRIBUTE void __tsan_read16(void *addr);
 
+SANITIZER_INTERFACE_ATTRIBUTE void __tsan_line_read1(void *addr, unsigned int line, const char *file);
+SANITIZER_INTERFACE_ATTRIBUTE void __tsan_line_read2(void *addr, unsigned int line, const char *file);
+SANITIZER_INTERFACE_ATTRIBUTE void __tsan_line_read4(void *addr, unsigned int line, const char *file);
+SANITIZER_INTERFACE_ATTRIBUTE void __tsan_line_read8(void *addr, unsigned int line, const char *file);
+SANITIZER_INTERFACE_ATTRIBUTE void __tsan_line_read16(void *addr, unsigned int line, const char *file);
+
 SANITIZER_INTERFACE_ATTRIBUTE void __tsan_write1(void *addr);
 SANITIZER_INTERFACE_ATTRIBUTE void __tsan_write2(void *addr);
 SANITIZER_INTERFACE_ATTRIBUTE void __tsan_write4(void *addr);
 SANITIZER_INTERFACE_ATTRIBUTE void __tsan_write8(void *addr);
 SANITIZER_INTERFACE_ATTRIBUTE void __tsan_write16(void *addr);
 
+
+SANITIZER_INTERFACE_ATTRIBUTE void __tsan_line_write1(void *addr, unsigned int line, const char *file);
+SANITIZER_INTERFACE_ATTRIBUTE void __tsan_line_write2(void *addr, unsigned int line, const char *file);
+SANITIZER_INTERFACE_ATTRIBUTE void __tsan_line_write4(void *addr, unsigned int line, const char *file);
+SANITIZER_INTERFACE_ATTRIBUTE void __tsan_line_write8(void *addr, unsigned int line, const char *file);
+SANITIZER_INTERFACE_ATTRIBUTE void __tsan_line_write16(void *addr, unsigned int line, const char *file);
+
 SANITIZER_INTERFACE_ATTRIBUTE void __tsan_unaligned_read2(const void *addr);
 SANITIZER_INTERFACE_ATTRIBUTE void __tsan_unaligned_read4(const void *addr);
 SANITIZER_INTERFACE_ATTRIBUTE void __tsan_unaligned_read8(const void *addr);
 SANITIZER_INTERFACE_ATTRIBUTE void __tsan_unaligned_read16(const void *addr);
 
+SANITIZER_INTERFACE_ATTRIBUTE void __tsan_line_unaligned_read2(const void *addr, unsigned int line, const char *file);
+SANITIZER_INTERFACE_ATTRIBUTE void __tsan_line_unaligned_read4(const void *addr, unsigned int line, const char *file);
+SANITIZER_INTERFACE_ATTRIBUTE void __tsan_line_unaligned_read8(const void *addr, unsigned int line, const char *file);
+SANITIZER_INTERFACE_ATTRIBUTE void __tsan_line_unaligned_read16(const void *addr, unsigned int line, const char *file);
+
 SANITIZER_INTERFACE_ATTRIBUTE void __tsan_unaligned_write2(void *addr);
 SANITIZER_INTERFACE_ATTRIBUTE void __tsan_unaligned_write4(void *addr);
 SANITIZER_INTERFACE_ATTRIBUTE void __tsan_unaligned_write8(void *addr);
 SANITIZER_INTERFACE_ATTRIBUTE void __tsan_unaligned_write16(void *addr);
+
+SANITIZER_INTERFACE_ATTRIBUTE void __tsan_line_unaligned_write2(void *addr, unsigned int line, const char *file);
+SANITIZER_INTERFACE_ATTRIBUTE void __tsan_line_unaligned_write4(void *addr, unsigned int line, const char *file);
+SANITIZER_INTERFACE_ATTRIBUTE void __tsan_line_unaligned_write8(void *addr, unsigned int line, const char *file);
+SANITIZER_INTERFACE_ATTRIBUTE void __tsan_line_unaligned_write16(void *addr, unsigned int line, const char *file);
 
 SANITIZER_INTERFACE_ATTRIBUTE void __tsan_read1_pc(void *addr, void *pc);
 SANITIZER_INTERFACE_ATTRIBUTE void __tsan_read2_pc(void *addr, void *pc);
@@ -214,6 +237,19 @@ a128 __tsan_atomic128_load(const volatile a128 *a, morder mo);
 #endif
 
 SANITIZER_INTERFACE_ATTRIBUTE
+a8 __tsan_line_atomic8_load(const volatile a8 *a, morder mo, unsigned int line, const char *file);
+SANITIZER_INTERFACE_ATTRIBUTE
+a16 __tsan_line_atomic16_load(const volatile a16 *a, morder mo, unsigned int line, const char *file);
+SANITIZER_INTERFACE_ATTRIBUTE
+a32 __tsan_line_atomic32_load(const volatile a32 *a, morder mo, unsigned int line, const char *file);
+SANITIZER_INTERFACE_ATTRIBUTE
+a64 __tsan_line_atomic64_load(const volatile a64 *a, morder mo, unsigned int line, const char *file);
+#if __TSAN_HAS_INT128
+SANITIZER_INTERFACE_ATTRIBUTE
+a128 __tsan_line_atomic128_load(const volatile a128 *a, morder mo, unsigned int line, const char *file);
+#endif
+
+SANITIZER_INTERFACE_ATTRIBUTE
 void __tsan_atomic8_store(volatile a8 *a, a8 v, morder mo);
 SANITIZER_INTERFACE_ATTRIBUTE
 void __tsan_atomic16_store(volatile a16 *a, a16 v, morder mo);
@@ -224,6 +260,20 @@ void __tsan_atomic64_store(volatile a64 *a, a64 v, morder mo);
 #if __TSAN_HAS_INT128
 SANITIZER_INTERFACE_ATTRIBUTE
 void __tsan_atomic128_store(volatile a128 *a, a128 v, morder mo);
+#endif
+
+
+SANITIZER_INTERFACE_ATTRIBUTE
+void __tsan_line_atomic8_store(volatile a8 *a, a8 v, morder mo, unsigned int line, const char *file);
+SANITIZER_INTERFACE_ATTRIBUTE
+void __tsan_line_atomic16_store(volatile a16 *a, a16 v, morder mo, unsigned int line, const char *file);
+SANITIZER_INTERFACE_ATTRIBUTE
+void __tsan_line_atomic32_store(volatile a32 *a, a32 v, morder mo, unsigned int line, const char *file);
+SANITIZER_INTERFACE_ATTRIBUTE
+void __tsan_line_atomic64_store(volatile a64 *a, a64 v, morder mo, unsigned int line, const char *file);
+#if __TSAN_HAS_INT128
+SANITIZER_INTERFACE_ATTRIBUTE
+void __tsan_line_atomic128_store(volatile a128 *a, a128 v, morder mo, unsigned int line, const char *file);
 #endif
 
 SANITIZER_INTERFACE_ATTRIBUTE

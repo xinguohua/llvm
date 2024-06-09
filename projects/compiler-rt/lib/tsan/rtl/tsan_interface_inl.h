@@ -34,6 +34,22 @@ void __tsan_read8(void *addr) {
   MemoryRead(cur_thread(), CALLERPC, (uptr)addr, kSizeLog8);
 }
 
+void __tsan_line_read1(void *addr, unsigned int line, const char *file){
+  MemoryReadLine(cur_thread(), CALLERPC, (uptr)addr, kSizeLog1, (u32)line, (char *)file);
+}
+
+void __tsan_line_read2(void *addr, unsigned int line, const char *file){
+  MemoryReadLine(cur_thread(), CALLERPC, (uptr)addr, kSizeLog1, (u32)line, (char *)file);
+}
+
+void __tsan_line_read4(void *addr, unsigned int line, const char *file){
+  MemoryReadLine(cur_thread(), CALLERPC, (uptr)addr, kSizeLog1, (u32)line, (char *)file);
+}
+
+void __tsan_line_read8(void *addr, unsigned int line, const char *file){
+  MemoryReadLine(cur_thread(), CALLERPC, (uptr)addr, kSizeLog1, (u32)line, (char *)file);
+}
+
 void __tsan_write1(void *addr) {
   MemoryWrite(cur_thread(), CALLERPC, (uptr)addr, kSizeLog1);
 }
@@ -50,6 +66,21 @@ void __tsan_write8(void *addr) {
   MemoryWrite(cur_thread(), CALLERPC, (uptr)addr, kSizeLog8);
 }
 
+void __tsan_line_write1(void *addr, unsigned int line, const char *file) {
+  MemoryWriteLine(cur_thread(), CALLERPC, (uptr)addr, kSizeLog1, (u32)line, (char *)file);
+}
+
+void __tsan_line_write2(void *addr, unsigned int line, const char *file) {
+  MemoryWriteLine(cur_thread(), CALLERPC, (uptr)addr, kSizeLog2, (u32)line, (char *)file);
+}
+
+void __tsan_line_write4(void *addr, unsigned int line, const char *file) {
+  MemoryWriteLine(cur_thread(), CALLERPC, (uptr)addr, kSizeLog4, (u32)line, (char *)file);
+}
+
+void __tsan_line_write8(void *addr, unsigned int line, const char *file) {
+  MemoryWriteLine(cur_thread(), CALLERPC, (uptr)addr, kSizeLog8, (u32)line, (char *)file);
+}
 void __tsan_read1_pc(void *addr, void *pc) {
   MemoryRead(cur_thread(), (uptr)pc, (uptr)addr, kSizeLog1);
 }
@@ -87,6 +118,7 @@ void __tsan_vptr_update(void **vptr_p, void *new_val) {
   if (*vptr_p != new_val) {
     ThreadState *thr = cur_thread();
     thr->is_vptr_access = true;
+    DPrintf5("11111");
     MemoryWrite(thr, CALLERPC, (uptr)vptr_p, kSizeLog8);
     thr->is_vptr_access = false;
   }

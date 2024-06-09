@@ -723,6 +723,9 @@ void OnUserFree(ThreadState *thr, uptr pc, uptr p, bool write);
 
 void MemoryAccess(ThreadState *thr, uptr pc, uptr addr,
     int kAccessSizeLog, bool kAccessIsWrite, bool kIsAtomic);
+void MemoryAccessLine(ThreadState *thr, uptr pc, uptr addr,
+                  int kAccessSizeLog, bool kAccessIsWrite, bool kIsAtomic, u32 line, char *file);
+
 void MemoryAccessImpl(ThreadState *thr, uptr addr,
     int kAccessSizeLog, bool kAccessIsWrite, bool kIsAtomic,
     u64 *shadow_mem, Shadow cur);
@@ -732,6 +735,8 @@ void MemoryAccessRangeStep(ThreadState *thr, uptr pc, uptr addr,
     uptr size, uptr step, bool is_write);
 void UnalignedMemoryAccess(ThreadState *thr, uptr pc, uptr addr,
     int size, bool kAccessIsWrite, bool kIsAtomic);
+void UnalignedMemoryAccessLine(ThreadState *thr, uptr pc, uptr addr,
+                           int size, bool kAccessIsWrite, bool kIsAtomic, u32 line, char *file);
 
 const int kSizeLog1 = 0;
 const int kSizeLog2 = 1;
@@ -740,22 +745,48 @@ const int kSizeLog8 = 3;
 
 void ALWAYS_INLINE MemoryRead(ThreadState *thr, uptr pc,
                                      uptr addr, int kAccessSizeLog) {
+  DPrintf5("MemoryReadAccessUFO>>> #%d read addr:%p   pc:%p\r\n", thr->tid, addr, pc);
   MemoryAccess(thr, pc, addr, kAccessSizeLog, false, false);
+}
+
+void ALWAYS_INLINE MemoryReadLine(ThreadState *thr, uptr pc,
+                              uptr addr, int kAccessSizeLog, u32 line, char* file) {
+  MemoryAccessLine(thr, pc, addr, kAccessSizeLog, false, false, line, file);
 }
 
 void ALWAYS_INLINE MemoryWrite(ThreadState *thr, uptr pc,
                                       uptr addr, int kAccessSizeLog) {
+  DPrintf5("MemoryWriteUFO>>> #%d write %d bytes to addr:%p   pc:%p\r\n", thr->tid, (1 << kAccessSizeLog), addr, pc);
   MemoryAccess(thr, pc, addr, kAccessSizeLog, true, false);
+}
+
+void ALWAYS_INLINE MemoryWriteLine(ThreadState *thr, uptr pc,
+                               uptr addr, int kAccessSizeLog, u32 line, char* file) {
+  MemoryAccessLine(thr, pc, addr, kAccessSizeLog, true, false, line, file);
 }
 
 void ALWAYS_INLINE MemoryReadAtomic(ThreadState *thr, uptr pc,
                                            uptr addr, int kAccessSizeLog) {
+  DPrintf5("MemoryReadAtomicUFO>>> #%d  addr:%p   pc:%p\r\n", thr, addr, pc);
   MemoryAccess(thr, pc, addr, kAccessSizeLog, false, true);
+}
+
+void ALWAYS_INLINE MemoryReadAtomicLine(ThreadState *thr, uptr pc,
+                                    uptr addr, int kAccessSizeLog, u32 line, char* file) {
+  DPrintf5("MemoryReadAtomicLineUFO>>> #%d  addr:%p   pc:%p\r\n", thr, addr, pc);
+  MemoryAccessLine(thr, pc, addr, kAccessSizeLog, false, true, line, file);
 }
 
 void ALWAYS_INLINE MemoryWriteAtomic(ThreadState *thr, uptr pc,
                                             uptr addr, int kAccessSizeLog) {
+  DPrintf5("MemoryWriteAtomicUFO>>> #%d write addr:%p   pc:%p\r\n", thr, addr, pc);
   MemoryAccess(thr, pc, addr, kAccessSizeLog, true, true);
+}
+
+void ALWAYS_INLINE MemoryWriteAtomicLine(ThreadState *thr, uptr pc,
+                                     uptr addr, int kAccessSizeLog, u32 line, char* file) {
+  DPrintf5("MemoryWriteAtomicLineUFO>>> #%d write addr:%p   pc:%p\r\n", thr, addr, pc);
+  MemoryAccessLine(thr, pc, addr, kAccessSizeLog, true, true, line, file);
 }
 
 void MemoryResetRange(ThreadState *thr, uptr pc, uptr addr, uptr size);

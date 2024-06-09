@@ -46,6 +46,8 @@
 #include "llvm/Transforms/Utils/EscapeEnumerator.h"
 #include "llvm/Transforms/Utils/Local.h"
 #include "llvm/Transforms/Utils/ModuleUtils.h"
+#include "llvm/IR/DebugInfoMetadata.h"
+
 
 using namespace llvm;
 
@@ -129,6 +131,14 @@ struct ThreadSanitizer : public FunctionPass {
   Function *TsanVptrLoad;
   Function *MemmoveFn, *MemcpyFn, *MemsetFn;
   Function *TsanCtorFunction;
+  //=================================
+  Function *TsanWriteLine[kNumberOfAccessSizes];
+  Function *TsanReadLine[kNumberOfAccessSizes];
+  Function *TsanUnalignedReadLine[kNumberOfAccessSizes];
+  Function *TsanUnalignedWriteLine[kNumberOfAccessSizes];
+  Function *TsanAtomicLineLoad[kNumberOfAccessSizes];
+  Function *TsanAtomicLineStore[kNumberOfAccessSizes];
+
 };
 }  // namespace
 
@@ -177,19 +187,38 @@ void ThreadSanitizer::initializeCallbacks(Module &M) {
     TsanRead[i] = checkSanitizerInterfaceFunction(M.getOrInsertFunction(
         ReadName, Attr, IRB.getVoidTy(), IRB.getInt8PtrTy()));
 
+    SmallString<32> ReadLineName("__tsan_line_read" + ByteSizeStr);
+    TsanReadLine[i] = checkSanitizerInterfaceFunction(M.getOrInsertFunction(
+        ReadLineName, Attr, IRB.getVoidTy(), IRB.getInt8PtrTy(), IRB.getInt32Ty(), IRB.getInt8PtrTy()));
+
+
     SmallString<32> WriteName("__tsan_write" + ByteSizeStr);
     TsanWrite[i] = checkSanitizerInterfaceFunction(M.getOrInsertFunction(
         WriteName, Attr, IRB.getVoidTy(), IRB.getInt8PtrTy()));
+
+    SmallString<32> WriteLineName("__tsan_line_write" + ByteSizeStr);
+    TsanWriteLine[i] = checkSanitizerInterfaceFunction(M.getOrInsertFunction(
+        WriteLineName, Attr, IRB.getVoidTy(), IRB.getInt8PtrTy(), IRB.getInt32Ty(), IRB.getInt8PtrTy()));
 
     SmallString<64> UnalignedReadName("__tsan_unaligned_read" + ByteSizeStr);
     TsanUnalignedRead[i] =
         checkSanitizerInterfaceFunction(M.getOrInsertFunction(
             UnalignedReadName, Attr, IRB.getVoidTy(), IRB.getInt8PtrTy()));
 
+    SmallString<64> UnalignedLineReadName("__tsan_line_unaligned_read" + ByteSizeStr);
+    TsanUnalignedReadLine[i] =
+        checkSanitizerInterfaceFunction(M.getOrInsertFunction(
+            UnalignedLineReadName, Attr, IRB.getVoidTy(), IRB.getInt8PtrTy(), IRB.getInt32Ty(), IRB.getInt8PtrTy()));
+
     SmallString<64> UnalignedWriteName("__tsan_unaligned_write" + ByteSizeStr);
     TsanUnalignedWrite[i] =
         checkSanitizerInterfaceFunction(M.getOrInsertFunction(
             UnalignedWriteName, Attr, IRB.getVoidTy(), IRB.getInt8PtrTy()));
+
+    SmallString<64> UnalignedLineWriteName("__tsan_line_unaligned_write" + ByteSizeStr);
+    TsanUnalignedWriteLine[i] =
+        checkSanitizerInterfaceFunction(M.getOrInsertFunction(
+            UnalignedLineWriteName, Attr, IRB.getVoidTy(), IRB.getInt8PtrTy(), IRB.getInt32Ty(), IRB.getInt8PtrTy()));
 
     Type *Ty = Type::getIntNTy(M.getContext(), BitSize);
     Type *PtrTy = Ty->getPointerTo();
@@ -200,6 +229,14 @@ void ThreadSanitizer::initializeCallbacks(Module &M) {
     SmallString<32> AtomicStoreName("__tsan_atomic" + BitSizeStr + "_store");
     TsanAtomicStore[i] = checkSanitizerInterfaceFunction(M.getOrInsertFunction(
         AtomicStoreName, Attr, IRB.getVoidTy(), PtrTy, Ty, OrdTy));
+
+    SmallString<32> AtomicLoadLineName("__tsan_line_atomic" + BitSizeStr + "_load");
+    TsanAtomicLineLoad[i] = checkSanitizerInterfaceFunction(
+        M.getOrInsertFunction(AtomicLoadLineName, Attr, Ty, PtrTy, OrdTy, IRB.getInt32Ty(), IRB.getInt8PtrTy()));
+
+    SmallString<32> AtomicStoreLineName("__tsan_line_atomic" + BitSizeStr + "_store");
+    TsanAtomicLineStore[i] = checkSanitizerInterfaceFunction(M.getOrInsertFunction(
+        AtomicStoreLineName, Attr, IRB.getVoidTy(), PtrTy, Ty, OrdTy, IRB.getInt32Ty(), IRB.getInt8PtrTy()));
 
     for (int op = AtomicRMWInst::FIRST_BINOP;
         op <= AtomicRMWInst::LAST_BINOP; ++op) {
@@ -484,8 +521,37 @@ bool ThreadSanitizer::runOnFunction(Function &F) {
   return Res;
 }
 
+void extractFilename(StringRef path, char* filename) {
+  // 找到最后一个斜杠的位置
+  size_t last_slash = path.find_last_of('/');
+  if (last_slash != StringRef::npos) {
+    // 取得文件名部分
+    StringRef file_part = path.substr(last_slash + 1);
+    // 复制文件名部分到目标数组
+    strncpy(filename, file_part.data(), 9);
+  } else {
+    // 如果没有斜杠，整个路径就是文件名
+    strncpy(filename, path.data(), 9);
+  }
+  // 确保字符串以空字符结尾
+  filename[9] = '\0';
+}
+
 bool ThreadSanitizer::instrumentLoadOrStore(Instruction *I,
                                             const DataLayout &DL) {
+  unsigned line = 0;
+  char filename[10];
+  if (DebugLoc debugLoc = I->getDebugLoc()) {
+    line = debugLoc.getLine();
+    if (MDNode *ScopeNode = debugLoc.getScope()) {
+      if (auto *Scope = dyn_cast<DIScope>(ScopeNode)) {
+        StringRef file = Scope->getFilename();
+        extractFilename(file, filename);
+        outs() << "Line: " << line  << "\n";
+        outs() << "File: " << file << "\n";
+      }
+    }
+  }
   //IRBuilder<> IRB(I);
   IRBuilder<> IRB(I->getNextNode());
   bool IsWrite = isa<StoreInst>(*I);
@@ -532,11 +598,29 @@ bool ThreadSanitizer::instrumentLoadOrStore(Instruction *I,
   Type *OrigTy = cast<PointerType>(Addr->getType())->getElementType();
   const uint32_t TypeSize = DL.getTypeStoreSizeInBits(OrigTy);
   Value *OnAccessFunc = nullptr;
-  if (Alignment == 0 || Alignment >= 8 || (Alignment % (TypeSize / 8)) == 0)
-    OnAccessFunc = IsWrite ? TsanWrite[Idx] : TsanRead[Idx];
-  else
-    OnAccessFunc = IsWrite ? TsanUnalignedWrite[Idx] : TsanUnalignedRead[Idx];
-  IRB.CreateCall(OnAccessFunc, IRB.CreatePointerCast(Addr, IRB.getInt8PtrTy()));
+  bool lineFlag = false;
+  if (Alignment == 0 || Alignment >= 8 || (Alignment % (TypeSize / 8)) == 0) {
+    //    OnAccessFunc = IsWrite ? TsanWrite[Idx] : TsanRead[Idx];
+    OnAccessFunc = IsWrite ? TsanWriteLine[Idx] : TsanReadLine[Idx];
+    lineFlag = true;
+  } else {
+    //    OnAccessFunc = IsWrite ? TsanUnalignedWrite[Idx] :
+    //    TsanUnalignedRead[Idx];
+    OnAccessFunc = IsWrite ? TsanUnalignedWriteLine[Idx] : TsanUnalignedReadLine[Idx];
+    lineFlag = true;
+  }
+  if (lineFlag) {
+    LLVMContext &Context = IRB.getContext();
+    Value *LineValue = ConstantInt::get(Type::getInt32Ty(Context), line);
+    Value *FilenamePtr = IRB.CreateGlobalStringPtr(filename, "filename");
+    IRB.CreateCall(OnAccessFunc,
+                   {IRB.CreatePointerCast(Addr, IRB.getInt8PtrTy()), LineValue,
+                    FilenamePtr});
+  } else {
+    IRB.CreateCall(OnAccessFunc,
+                   IRB.CreatePointerCast(Addr, IRB.getInt8PtrTy()));
+
+  }
   if (IsWrite) NumInstrumentedWrites++;
   else         NumInstrumentedReads++;
   return true;
@@ -597,6 +681,22 @@ bool ThreadSanitizer::instrumentMemIntrinsic(Instruction *I) {
 
 bool ThreadSanitizer::instrumentAtomic(Instruction *I, const DataLayout &DL) {
   IRBuilder<> IRB(I);
+  unsigned line = 0;
+  char filename[10];
+  if (DebugLoc debugLoc = I->getDebugLoc()) {
+    line = debugLoc.getLine();
+    if (MDNode *ScopeNode = debugLoc.getScope()) {
+      if (auto *Scope = dyn_cast<DIScope>(ScopeNode)) {
+        StringRef file = Scope->getFilename();
+        extractFilename(file, filename);
+        outs() << "Line: " << line  << "\n";
+        outs() << "File: " << file << "\n";
+      }
+    }
+  }
+  LLVMContext &Context = IRB.getContext();
+  Value *LineValue = ConstantInt::get(Type::getInt32Ty(Context), line);
+  Value *FilenamePtr = IRB.CreateGlobalStringPtr(filename, "filename");
   if (LoadInst *LI = dyn_cast<LoadInst>(I)) {
     Value *Addr = LI->getPointerOperand();
     int Idx = getMemoryAccessFuncIndex(Addr, DL);
@@ -607,9 +707,11 @@ bool ThreadSanitizer::instrumentAtomic(Instruction *I, const DataLayout &DL) {
     Type *Ty = Type::getIntNTy(IRB.getContext(), BitSize);
     Type *PtrTy = Ty->getPointerTo();
     Value *Args[] = {IRB.CreatePointerCast(Addr, PtrTy),
-                     createOrdering(&IRB, LI->getOrdering())};
+                     createOrdering(&IRB, LI->getOrdering()),
+                     LineValue,
+                     FilenamePtr};
     Type *OrigTy = cast<PointerType>(Addr->getType())->getElementType();
-    Value *C = IRB.CreateCall(TsanAtomicLoad[Idx], Args);
+    Value *C = IRB.CreateCall(TsanAtomicLineLoad[Idx], Args);
     Value *Cast = IRB.CreateBitOrPointerCast(C, OrigTy);
     I->replaceAllUsesWith(Cast);
   } else if (StoreInst *SI = dyn_cast<StoreInst>(I)) {
@@ -623,8 +725,10 @@ bool ThreadSanitizer::instrumentAtomic(Instruction *I, const DataLayout &DL) {
     Type *PtrTy = Ty->getPointerTo();
     Value *Args[] = {IRB.CreatePointerCast(Addr, PtrTy),
                      IRB.CreateBitOrPointerCast(SI->getValueOperand(), Ty),
-                     createOrdering(&IRB, SI->getOrdering())};
-    CallInst *C = CallInst::Create(TsanAtomicStore[Idx], Args);
+                     createOrdering(&IRB, SI->getOrdering()),
+                     LineValue,
+                     FilenamePtr};
+    CallInst *C = CallInst::Create(TsanAtomicLineStore[Idx], Args);
     ReplaceInstWithInst(I, C);
   } else if (AtomicRMWInst *RMWI = dyn_cast<AtomicRMWInst>(I)) {
     Value *Addr = RMWI->getPointerOperand();

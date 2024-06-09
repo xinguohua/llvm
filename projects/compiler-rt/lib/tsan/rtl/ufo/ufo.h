@@ -44,6 +44,8 @@ typedef void (*FPCondWait)(__tsan::ThreadState* thr, uptr pc, u64 addr_cond, u64
 typedef void (*FPCondSignal)(__tsan::ThreadState* thr, uptr pc, u64 addr_cond);
 
 typedef void (*FPMemAcc)(__tsan::ThreadState *thr, uptr pc, uptr addr, int kAccessSizeLog, bool is_write);
+typedef void (*FPMemAccLine)(__tsan::ThreadState *thr, uptr pc, uptr addr, int kAccessSizeLog, bool is_write, u32 line, char *file);
+
 typedef void (*FPMemRangeAcc)(__tsan::ThreadState *thr, uptr pc, uptr addr, uptr size, bool is_write);
 typedef void (*FPFuncEnter)(__tsan::ThreadState *thr, uptr pc);
 typedef void (*FPFuncExit)(__tsan::ThreadState *thr);
@@ -145,6 +147,7 @@ public:
   static FPMtxLock        fn_rw_unlock;
 
   static FPMemAcc         fn_mem_acc;
+  static FPMemAccLine     fn_mem_acc_line;
   static FPMemRangeAcc    fn_mem_range_acc;
   static FPFuncEnter      fn_enter_func;
   static FPFuncExit       fn_exit_func;

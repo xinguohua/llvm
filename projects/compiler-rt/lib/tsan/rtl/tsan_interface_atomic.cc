@@ -219,6 +219,19 @@ static a128 NoTsanAtomicLoad(const volatile a128 *a, morder mo) {
 }
 #endif
 
+
+template<typename T>
+static T NoTsanAtomicLineLoad(const volatile T *a, morder mo, unsigned int line, const char *file) {
+  return atomic_load(to_atomic(a), to_mo(mo));
+}
+
+#if __TSAN_HAS_INT128 && !SANITIZER_GO
+static a128 NoTsanAtomicLineLoad(const volatile a128 *a, morder mo, unsigned int line, const char *file) {
+  SpinMutexLock lock(&mutex128);
+  return *a;
+}
+#endif
+
 template<typename T>
 static T AtomicLoad(ThreadState *thr, uptr pc, const volatile T *a, morder mo) {
   CHECK(IsLoadOrder(mo));
@@ -242,6 +255,31 @@ static T AtomicLoad(ThreadState *thr, uptr pc, const volatile T *a, morder mo) {
   MemoryReadAtomic(thr, pc, (uptr)a, SizeLog<T>());
   return v;
 }
+
+template<typename T>
+static T AtomicLineLoad(ThreadState *thr, uptr pc, const volatile T *a, morder mo, unsigned int line, const char *file) {
+  CHECK(IsLoadOrder(mo));
+  // This fast-path is critical for performance.
+  // Assume the access is atomic.
+  if (!IsAcquireOrder(mo)) {
+    MemoryReadAtomicLine(thr, pc, (uptr)a, SizeLog<T>(), (u32)line, (char *)file);
+    return NoTsanAtomicLoad(a, mo);
+  }
+  // Don't create sync object if it does not exist yet. For example, an atomic
+  // pointer is initialized to nullptr and then periodically acquire-loaded.
+  T v = NoTsanAtomicLoad(a, mo);
+  SyncVar *s = ctx->metamap.GetIfExistsAndLock((uptr)a, false);
+  if (s) {
+    AcquireImpl(thr, pc, &s->clock);
+    // Re-read under sync mutex because we need a consistent snapshot
+    // of the value and the clock we acquire.
+    v = NoTsanAtomicLoad(a, mo);
+    s->mtx.ReadUnlock();
+  }
+  MemoryReadAtomicLine(thr, pc, (uptr)a, SizeLog<T>(), (u32)line, (char *)file);
+  return v;
+}
+
 
 template<typename T>
 static void NoTsanAtomicStore(volatile T *a, T v, morder mo) {
@@ -276,8 +314,46 @@ static void AtomicStore(ThreadState *thr, uptr pc, volatile T *a, T v,
   TraceAddEvent(thr, thr->fast_state, EventTypeMop, 0);
   ReleaseStoreImpl(thr, pc, &s->clock);
   NoTsanAtomicStore(a, v, mo);
-  DPrintf5("UFO>>>NoTsanAtomicStore>>> #%d addr val:%p   pc:%p\r\n", a, v);
+  DPrintf5("UFO>>>AtomicStore>>> #%d addr val:%p   pc:%p\r\n", a, v);
   MemoryWriteAtomic(thr, pc, (uptr)a, SizeLog<T>());
+  s->mtx.Unlock();
+}
+
+template<typename T>
+static void NoTsanAtomicLineStore(volatile T *a, T v, morder mo, unsigned int line, const char *file) {
+  atomic_store(to_atomic(a), v, to_mo(mo));
+}
+
+#if __TSAN_HAS_INT128 && !SANITIZER_GO
+static void NoTsanAtomicLineStore(volatile a128 *a, a128 v, morder mo, unsigned int line, const char *file) {
+  SpinMutexLock lock(&mutex128);
+  *a = v;
+}
+#endif
+
+template<typename T>
+static void AtomicLineStore(ThreadState *thr, uptr pc, volatile T *a, T v,
+                        morder mo, unsigned int line, const char *file) {
+  CHECK(IsStoreOrder(mo));
+  // This fast-path is critical for performance.
+  // Assume the access is atomic.
+  // Strictly saying even relaxed store cuts off release sequence,
+  // so must reset the clock.
+  if (!IsReleaseOrder(mo)) {
+    NoTsanAtomicStore(a, v, mo);
+    DPrintf5("IsReleaseOrder store>>> #%d addr val:%p   pc:%p\r\n", a, v);
+    MemoryWriteAtomicLine(thr, pc, (uptr)a, SizeLog<T>(),(u32)line, (char *)file);
+    return;
+  }
+  __sync_synchronize();
+  SyncVar *s = ctx->metamap.GetOrCreateAndLock(thr, pc, (uptr)a, true);
+  thr->fast_state.IncrementEpoch();
+  // Can't increment epoch w/o writing to the trace as well.
+  TraceAddEvent(thr, thr->fast_state, EventTypeMop, 0);
+  ReleaseStoreImpl(thr, pc, &s->clock);
+  NoTsanAtomicStore(a, v, mo);
+  DPrintf5("UFO>>>AtomicLineStore>>> #%d addr val:%p   pc:%p\r\n", a, v);
+  MemoryWriteAtomicLine(thr, pc, (uptr)a, SizeLog<T>(),(u32)line, (char *)file);
   s->mtx.Unlock();
 }
 
@@ -475,6 +551,20 @@ static morder convert_morder(morder mo) {
   // but we don't model the difference.
   return (morder)(mo & 0x7fff);
 }
+#define SCOPED_ATOMIC_LINE(func, ...) \
+    ThreadState *const thr = cur_thread(); \
+    if (thr->ignore_sync || thr->ignore_interceptors) { \
+      ProcessPendingSignals(thr); \
+      return NoTsanAtomicLine##func(__VA_ARGS__); \
+    } \
+    const uptr callpc = (uptr)__builtin_return_address(0); \
+    uptr pc = StackTrace::GetCurrentPc(); \
+    mo = convert_morder(mo); \
+    AtomicStatInc(thr, sizeof(*a), mo, StatAtomic##func); \
+    ScopedAtomic sa(thr, callpc, a, mo, __func__); \
+    return AtomicLine##func(thr, pc, __VA_ARGS__);          \
+
+
 
 #define SCOPED_ATOMIC(func, ...) \
     ThreadState *const thr = cur_thread(); \
@@ -487,7 +577,7 @@ static morder convert_morder(morder mo) {
     mo = convert_morder(mo); \
     AtomicStatInc(thr, sizeof(*a), mo, StatAtomic##func); \
     ScopedAtomic sa(thr, callpc, a, mo, __func__); \
-    return Atomic##func(thr, pc, __VA_ARGS__); \
+    return Atomic##func(thr, pc, __VA_ARGS__);          \
 /**/
 
 class ScopedAtomic {
@@ -550,6 +640,34 @@ a128 __tsan_atomic128_load(const volatile a128 *a, morder mo) {
 }
 #endif
 
+
+SANITIZER_INTERFACE_ATTRIBUTE
+a8 __tsan_line_atomic8_load(const volatile a8 *a, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(Load, a, mo, line, file);
+}
+
+SANITIZER_INTERFACE_ATTRIBUTE
+a16 __tsan_line__atomic16_load(const volatile a16 *a, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(Load, a, mo, line, file);
+}
+
+SANITIZER_INTERFACE_ATTRIBUTE
+a32 __tsan_line__atomic32_load(const volatile a32 *a, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(Load, a, mo, line, file);
+}
+
+SANITIZER_INTERFACE_ATTRIBUTE
+a64 __tsan_line__atomic64_load(const volatile a64 *a, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(Load, a, mo, line, file);
+}
+
+#if __TSAN_HAS_INT128
+SANITIZER_INTERFACE_ATTRIBUTE
+a128 __tsan_line_atomic128_load(const volatile a128 *a, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(Load, a, mo, line, file);
+}
+#endif
+
 SANITIZER_INTERFACE_ATTRIBUTE
 void __tsan_atomic8_store(volatile a8 *a, a8 v, morder mo) {
   SCOPED_ATOMIC(Store, a, v, mo);
@@ -576,6 +694,35 @@ void __tsan_atomic128_store(volatile a128 *a, a128 v, morder mo) {
   SCOPED_ATOMIC(Store, a, v, mo);
 }
 #endif
+
+SANITIZER_INTERFACE_ATTRIBUTE
+void __tsan_line_atomic8_store(volatile a8 *a, a8 v, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(Store, a, v, mo, line, file);
+}
+
+SANITIZER_INTERFACE_ATTRIBUTE
+void __tsan_line_atomic16_store(volatile a16 *a, a16 v, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(Store, a, v, mo, line, file);
+}
+
+SANITIZER_INTERFACE_ATTRIBUTE
+void __tsan_line_atomic32_store(volatile a32 *a, a32 v, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(Store, a, v, mo, line, file);
+}
+
+SANITIZER_INTERFACE_ATTRIBUTE
+void __tsan_line_atomic64_store(volatile a64 *a, a64 v, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(Store, a, v, mo, line, file);
+}
+
+#if __TSAN_HAS_INT128
+SANITIZER_INTERFACE_ATTRIBUTE
+void __tsan_line_atomic128_store(volatile a128 *a, a128 v, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(Store, a, v, mo, line, file);
+}
+#endif
+
+
 
 SANITIZER_INTERFACE_ATTRIBUTE
 a8 __tsan_atomic8_exchange(volatile a8 *a, a8 v, morder mo) {

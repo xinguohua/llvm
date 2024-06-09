@@ -34,6 +34,8 @@ DPrintf3("#%d: in UFO nop_dealloc doing nothing\n", thr->tid);
 
 void nop_mem_acc(ThreadState *thr, uptr pc, uptr addr, int kAccessSizeLog, bool is_write) {}
 
+void nop_mem_acc_line(ThreadState *thr, uptr pc, uptr addr, int kAccessSizeLog, bool is_write, u32 line, char *file) {}
+
 // 7
 // 8 + (13 + 48) + 32 = 104
 void nop_mem_range_acc(__tsan::ThreadState *thr, uptr pc, uptr addr, uptr size, bool is_write) {}

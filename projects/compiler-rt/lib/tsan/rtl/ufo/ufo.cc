@@ -72,6 +72,7 @@ FPCondSignal UFOContext::fn_cond_signal = &nop_cond_signal;
 FPCondSignal UFOContext::fn_cond_bc = &nop_cond_broadcast;
 
 FPMemAcc UFOContext::fn_mem_acc = &nop_mem_acc;
+FPMemAccLine UFOContext::fn_mem_acc_line = &nop_mem_acc_line;
 FPMemRangeAcc UFOContext::fn_mem_range_acc = &nop_mem_range_acc;
 
 FPFuncEnter UFOContext::fn_enter_func = &nop_enter_func;
@@ -130,16 +131,22 @@ void UFOContext::start_trace() {
     fn_mem_range_acc = &impl_mem_range_acc;
     if (no_data_value) {
       fn_mem_acc = &impl_mem_acc_nv;
+      fn_mem_acc_line = &impl_mem_acc_line_nv;
+
     } else {
       fn_mem_acc = &impl_mem_acc;
+      fn_mem_acc_line = &impl_mem_acc_line;
     }
   } else {
     this->no_stack = true;
     fn_mem_range_acc = &ns_mem_range_acc;
     if (no_data_value) {
       fn_mem_acc = &ns_mem_acc_nv;
+      fn_mem_acc_line = &ns_mem_acc_nv_line;
     } else {
       fn_mem_acc = &ns_mem_acc;
+      fn_mem_acc_line = &ns_mem_acc_line;
+
     }
   }
   DPrintf("UFO>>>start tracing\r\n");
@@ -164,6 +171,7 @@ void UFOContext::stop_trace() {
   fn_cond_bc = &nop_cond_broadcast;
 
   fn_mem_acc = &nop_mem_acc;
+  fn_mem_acc_line = &nop_mem_acc_line;
   fn_mem_range_acc = &nop_mem_range_acc;
   fn_enter_func = &nop_enter_func;
   fn_exit_func = &nop_exit_func;

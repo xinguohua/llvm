@@ -184,6 +184,11 @@ void on_mem_acc(ThreadState *thr, uptr pc, uptr addr, int kAccessSizeLog, volati
 }
 
 __HOT_CODE
+void on_mem_acc_line(ThreadState *thr, uptr pc, uptr addr, int kAccessSizeLog, volatile bool is_write, u32 line, char *file) {
+  (*UFOContext::fn_mem_acc_line)(thr, pc, addr, kAccessSizeLog, is_write, line ,file);
+}
+
+__HOT_CODE
 void on_mem_range_acc(__tsan::ThreadState *thr, uptr pc, uptr addr, uptr size, volatile bool is_write) {
   (*UFOContext::fn_mem_range_acc)(thr, pc, addr, size, is_write);
 }

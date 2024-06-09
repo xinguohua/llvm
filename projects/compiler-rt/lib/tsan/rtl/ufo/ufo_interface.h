@@ -194,21 +194,46 @@ PACKED_STRUCT(MemRangeAccEvent) {
 static_assert(sizeof(MemRangeAccEvent) == 23, "compact struct (align 8) not supported, please use clang 3.8.1");
 
 
+inline void my_strncpy(char *dest, const char *src, int n) {
+  int i;
+  if (src == 0) {
+    if (n > 0) {
+      dest[0] = '\0';
+    }
+    return;
+  }
+  // 复制最多 n-1 个字符
+  for (i = 0; i < n - 1 && src[i] != '\0'; i++) {
+    dest[i] = src[i];
+  }
+
+  // 如果src的长度小于n-1, 在目标字符串的末尾添加 '\0'
+  if (i < n) {
+    dest[i] = '\0';
+  }
+
+  // 如果 src 的长度大于等于 n-1, 在目标字符串的末尾添加 '\0'
+  else if (i == n - 1) {
+    dest[n - 1] = '\0';
+  }
+}
+
 //8 + 48 + 48 -> 104 + ???
 PACKED_STRUCT(MemAccEvent) {
   const u8 type_index;
   u64 addr : 48;
   u64 pc : 48;
   u64 order : 48;
+  u32 line : 32;
+  char file[10];
 
   ALWAYS_INLINE
-  explicit MemAccEvent(u8 ty_idx, u64 h, u64 ip, u64 o)
-      : type_index(ty_idx),
-        addr(h),
-        pc(ip),
-        order(o){}
+  explicit MemAccEvent(u8 ty_idx, u64 h, u64 ip, u64 o, u64 l, char *f)
+      : type_index(ty_idx), addr(h), pc(ip), order(o), line(l) {
+    my_strncpy(file, f, sizeof(file));
+  }
 };
-static_assert(sizeof(MemAccEvent) == 19, "compact struct (align 8) not supported, please use clang 3.8.1");
+static_assert(sizeof(MemAccEvent) == 33, "compact struct (align 8) not supported, please use clang 3.8.1");
 
 //8 + 16 + 48 + 32 -> 104
 PACKED_STRUCT(CreateThreadEvent) {
@@ -412,6 +437,8 @@ void on_cond_broadcast(__tsan::ThreadState* thr, uptr pc, u64 addr_cond);
 //void MemoryAccess(ThreadState *thr, uptr pc, uptr addr,
 //                  int kAccessSizeLog, bool kAccessIsWrite, bool kIsAtomic) {
 void on_mem_acc(__tsan::ThreadState *thr, uptr pc, uptr addr, int kAccessSizeLog, bool is_write);
+void on_mem_acc_line(__tsan::ThreadState *thr, uptr pc, uptr addr, int kAccessSizeLog, bool is_write, u32 line, char *file);
+
 void on_mem_range_acc(__tsan::ThreadState *thr, uptr pc, uptr addr, uptr size, bool is_write);
 
 void enter_func(__tsan::ThreadState *thr, uptr pc);

@@ -40,10 +40,21 @@ void __tsan_read16(void *addr) {
   MemoryRead(cur_thread(), CALLERPC, (uptr)addr + 8, kSizeLog8);
 }
 
+void __tsan_line_read16(void *addr, unsigned int line, const char *file) {
+  MemoryReadLine(cur_thread(), CALLERPC, (uptr)addr, kSizeLog8, (u32)line, (char *)file);
+  MemoryReadLine(cur_thread(), CALLERPC, (uptr)addr + 8, kSizeLog8, (u32)line, (char *)file);
+}
+
 void __tsan_write16(void *addr) {
   MemoryWrite(cur_thread(), CALLERPC, (uptr)addr, kSizeLog8);
   MemoryWrite(cur_thread(), CALLERPC, (uptr)addr + 8, kSizeLog8);
 }
+
+void __tsan_line_write16(void *addr, unsigned int line, const char *file) {
+  MemoryWriteLine(cur_thread(), CALLERPC, (uptr)addr, kSizeLog8, (u32)line, (char *)file);
+  MemoryWriteLine(cur_thread(), CALLERPC, (uptr)addr + 8, kSizeLog8, (u32)line, (char *)file);
+}
+
 
 void __tsan_read16_pc(void *addr, void *pc) {
   MemoryRead(cur_thread(), (uptr)pc, (uptr)addr, kSizeLog8);
@@ -73,6 +84,22 @@ void __tsan_unaligned_read16(const void *addr) {
   UnalignedMemoryAccess(cur_thread(), CALLERPC, (uptr)addr, 16, false, false);
 }
 
+void __tsan_line_unaligned_read2(const void *addr, unsigned int line, const char *file) {
+  UnalignedMemoryAccessLine(cur_thread(), CALLERPC, (uptr)addr, 2, false, false, (u32)line, (char *)file);
+}
+
+void __tsan_line_unaligned_read4(const void *addr, unsigned int line, const char *file) {
+  UnalignedMemoryAccessLine(cur_thread(), CALLERPC, (uptr)addr, 4, false, false, (u32)line, (char *)file);
+}
+
+void __tsan_line_unaligned_read8(const void *addr, unsigned int line, const char *file) {
+  UnalignedMemoryAccessLine(cur_thread(), CALLERPC, (uptr)addr, 8, false, false, (u32)line, (char *)file);
+}
+
+void __tsan_line_unaligned_read16(const void *addr, unsigned int line, const char *file) {
+  UnalignedMemoryAccessLine(cur_thread(), CALLERPC, (uptr)addr, 16, false, false, (u32)line, (char *)file);
+}
+
 void __tsan_unaligned_write2(void *addr) {
   UnalignedMemoryAccess(cur_thread(), CALLERPC, (uptr)addr, 2, true, false);
 }
@@ -88,6 +115,23 @@ void __tsan_unaligned_write8(void *addr) {
 void __tsan_unaligned_write16(void *addr) {
   UnalignedMemoryAccess(cur_thread(), CALLERPC, (uptr)addr, 16, true, false);
 }
+
+void __tsan_line_unaligned_write2(void *addr, unsigned int line, const char *file) {
+  UnalignedMemoryAccessLine(cur_thread(), CALLERPC, (uptr)addr, 2, true, false, (u32)line, (char *)file);
+}
+
+void __tsan_line_unaligned_write4(void *addr, unsigned int line, const char *file) {
+  UnalignedMemoryAccessLine(cur_thread(), CALLERPC, (uptr)addr, 4, true, false, (u32)line, (char *)file);
+}
+
+void __tsan_line_unaligned_write8(void *addr, unsigned int line, const char *file) {
+  UnalignedMemoryAccessLine(cur_thread(), CALLERPC, (uptr)addr, 8, true, false, (u32)line, (char *)file);
+}
+
+void __tsan_line_unaligned_write16(void *addr, unsigned int line, const char *file) {
+  UnalignedMemoryAccessLine(cur_thread(), CALLERPC, (uptr)addr, 16, true, false, (u32)line, (char *)file);
+}
+
 
 // __sanitizer_unaligned_load/store are for user instrumentation.
 

@@ -681,7 +681,30 @@ void UnalignedMemoryAccess(ThreadState *thr, uptr pc, uptr addr,
       size1 = 2;
       kAccessSizeLog = kSizeLog2;
     }
+    DPrintf5("UnalignedMemoryAccessUFO>>> #%d write %d bytes to addr:%p   pc:%p\r\n", thr->tid, (1 << kAccessSizeLog), addr, pc);
     MemoryAccess(thr, pc, addr, kAccessSizeLog, kAccessIsWrite, kIsAtomic);
+    addr += size1;
+    size -= size1;
+  }
+}
+
+
+void UnalignedMemoryAccessLine(ThreadState *thr, uptr pc, uptr addr,
+                           int size, bool kAccessIsWrite, bool kIsAtomic,  u32 line, char *file) {
+  while (size) {
+    int size1 = 1;
+    int kAccessSizeLog = kSizeLog1;
+    if (size >= 8 && (addr & ~7) == ((addr + 7) & ~7)) {
+      size1 = 8;
+      kAccessSizeLog = kSizeLog8;
+    } else if (size >= 4 && (addr & ~7) == ((addr + 3) & ~7)) {
+      size1 = 4;
+      kAccessSizeLog = kSizeLog4;
+    } else if (size >= 2 && (addr & ~7) == ((addr + 1) & ~7)) {
+      size1 = 2;
+      kAccessSizeLog = kSizeLog2;
+    }
+    MemoryAccessLine(thr, pc, addr, kAccessSizeLog, kAccessIsWrite, kIsAtomic, line, file);
     addr += size1;
     size -= size1;
   }
@@ -777,75 +800,17 @@ bool ContainsSameAccess(u64 *s, u64 a, u64 sync_epoch, bool is_write) {
 ALWAYS_INLINE USED
 void MemoryAccess(ThreadState *thr, uptr pc, uptr addr,
     int kAccessSizeLog, bool kAccessIsWrite, bool kIsAtomic) {
-    
     aser::ufo::on_mem_acc(thr,pc,addr,kAccessSizeLog,kAccessIsWrite);//JEFF memory read/write
     return;//JEFF FASTER
-    
-    
-    
-    
-    
-    
-  u64 *shadow_mem = (u64*)MemToShadow(addr);
-  DPrintf2("#%d: MemoryAccess: @%p %p size=%d"
-      " is_write=%d shadow_mem=%p {%zx, %zx, %zx, %zx}\n",
-      (int)thr->fast_state.tid(), (void*)pc, (void*)addr,
-      (int)(1 << kAccessSizeLog), kAccessIsWrite, shadow_mem,
-      (uptr)shadow_mem[0], (uptr)shadow_mem[1],
-      (uptr)shadow_mem[2], (uptr)shadow_mem[3]);
-#if SANITIZER_DEBUG
-  if (!IsAppMem(addr)) {
-    Printf("Access to non app mem %zx\n", addr);
-    DCHECK(IsAppMem(addr));
-  }
-  if (!IsShadowMem((uptr)shadow_mem)) {
-    Printf("Bad shadow addr %p (%zx)\n", shadow_mem, addr);
-    DCHECK(IsShadowMem((uptr)shadow_mem));
-  }
-#endif
+}
 
-  if (!SANITIZER_GO && *shadow_mem == kShadowRodata) {
-    // Access to .rodata section, no races here.
-    // Measurements show that it can be 10-20% of all memory accesses.
-    StatInc(thr, StatMop);
-    StatInc(thr, kAccessIsWrite ? StatMopWrite : StatMopRead);
-    StatInc(thr, (StatType)(StatMop1 + kAccessSizeLog));
-    StatInc(thr, StatMopRodata);
-    return;
-  }
 
-  FastState fast_state = thr->fast_state;
-  if (fast_state.GetIgnoreBit()) {
-    StatInc(thr, StatMop);
-    StatInc(thr, kAccessIsWrite ? StatMopWrite : StatMopRead);
-    StatInc(thr, (StatType)(StatMop1 + kAccessSizeLog));
-    StatInc(thr, StatMopIgnored);
-    return;
-  }
+ALWAYS_INLINE USED
+    void MemoryAccessLine(ThreadState *thr, uptr pc, uptr addr,
+                 int kAccessSizeLog, bool kAccessIsWrite, bool kIsAtomic, u32 line, char* file) {
 
-  Shadow cur(fast_state);
-  cur.SetAddr0AndSizeLog(addr & 7, kAccessSizeLog);
-  cur.SetWrite(kAccessIsWrite);
-  cur.SetAtomic(kIsAtomic);
-
-  if (LIKELY(ContainsSameAccess(shadow_mem, cur.raw(),
-      thr->fast_synch_epoch, kAccessIsWrite))) {
-    StatInc(thr, StatMop);
-    StatInc(thr, kAccessIsWrite ? StatMopWrite : StatMopRead);
-    StatInc(thr, (StatType)(StatMop1 + kAccessSizeLog));
-    StatInc(thr, StatMopSame);
-    return;
-  }
-
-  if (kCollectHistory) {
-    fast_state.IncrementEpoch();
-    thr->fast_state = fast_state;
-    TraceAddEvent(thr, fast_state, EventTypeMop, pc);
-    cur.IncrementEpoch();
-  }
-
-  MemoryAccessImpl1(thr, addr, kAccessSizeLog, kAccessIsWrite, kIsAtomic,
-      shadow_mem, cur);
+  aser::ufo::on_mem_acc_line(thr,pc,addr,kAccessSizeLog,kAccessIsWrite, line, file);//JEFF memory read/write
+  return;
 }
 
 // Called by MemoryAccessRange in tsan_rtl_thread.cc
