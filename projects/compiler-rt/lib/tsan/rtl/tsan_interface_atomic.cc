@@ -572,9 +572,33 @@ static bool NoTsanAtomicCAS(volatile a128 *a, a128 *c, a128 v,
 }
 #endif
 
+
+template<typename T>
+static bool NoTsanAtomicLineCAS(volatile T *a, T *c, T v, morder mo, morder fmo, unsigned int line, const char *file) {
+  return atomic_compare_exchange_strong(to_atomic(a), c, v, to_mo(mo));
+}
+
+#if __TSAN_HAS_INT128
+static bool NoTsanAtomicLineCAS(volatile a128 *a, a128 *c, a128 v,
+                            morder mo, morder fmo, unsigned int line, const char *file) {
+  a128 old = *c;
+  a128 cur = func_cas(a, old, v);
+  if (cur == old)
+    return true;
+  *c = cur;
+  return false;
+}
+#endif
+
 template<typename T>
 static T NoTsanAtomicCAS(volatile T *a, T c, T v, morder mo, morder fmo) {
   NoTsanAtomicCAS(a, &c, v, mo, fmo);
+  return c;
+}
+
+template<typename T>
+static T NoTsanAtomicLineCAS(volatile T *a, T c, T v, morder mo, morder fmo, unsigned int line, const char *file) {
+  NoTsanAtomicLineCAS(a, &c, v, mo, fmo, line, file);
   return c;
 }
 
@@ -611,10 +635,51 @@ static bool AtomicCAS(ThreadState *thr, uptr pc,
   return false;
 }
 
+
+template<typename T>
+static bool AtomicLineCAS(ThreadState *thr, uptr pc,
+                      volatile T *a, T *c, T v, morder mo, morder fmo, unsigned int line, const char *file) {
+  (void)fmo;  // Unused because llvm does not pass it yet.
+  SyncVar *s = 0;
+  bool write_lock = mo != mo_acquire && mo != mo_consume;
+  if (mo != mo_relaxed) {
+    s = ctx->metamap.GetOrCreateAndLock(thr, pc, (uptr)a, write_lock);
+    thr->fast_state.IncrementEpoch();
+    // Can't increment epoch w/o writing to the trace as well.
+    TraceAddEvent(thr, thr->fast_state, EventTypeMop, 0);
+    if (IsAcqRelOrder(mo))
+      AcquireReleaseImpl(thr, pc, &s->clock);
+    else if (IsReleaseOrder(mo))
+      ReleaseImpl(thr, pc, &s->clock);
+    else if (IsAcquireOrder(mo))
+      AcquireImpl(thr, pc, &s->clock);
+  }
+  T cc = *c;
+  T pr = func_cas(a, cc, v);
+  if (s) {
+    if (write_lock)
+      s->mtx.Unlock();
+    else
+      s->mtx.ReadUnlock();
+  }
+  MemoryWriteAtomicLine(thr, pc, (uptr)a, SizeLog<T>(), (u32)line, (char*)file);
+  if (pr == cc)
+    return true;
+  *c = pr;
+  return false;
+}
+
 template<typename T>
 static T AtomicCAS(ThreadState *thr, uptr pc,
     volatile T *a, T c, T v, morder mo, morder fmo) {
   AtomicCAS(thr, pc, a, &c, v, mo, fmo);
+  return c;
+}
+
+template<typename T>
+static T AtomicLineCAS(ThreadState *thr, uptr pc,
+                   volatile T *a, T c, T v, morder mo, morder fmo, unsigned int line, const char *file) {
+  AtomicLineCAS(thr, pc, a, &c, v, mo, fmo, line, file);
   return c;
 }
 
@@ -1297,6 +1362,39 @@ a128 __tsan_atomic128_compare_exchange_val(volatile a128 *a, a128 c, a128 v,
   SCOPED_ATOMIC(CAS, a, c, v, mo, fmo);
 }
 #endif
+
+SANITIZER_INTERFACE_ATTRIBUTE
+a8 __tsan_line_atomic8_compare_exchange_val(volatile a8 *a, a8 c, a8 v,
+                                       morder mo, morder fmo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(CAS, a, c, v, mo, fmo, line, file);
+}
+
+SANITIZER_INTERFACE_ATTRIBUTE
+a16 __tsan_line_atomic16_compare_exchange_val(volatile a16 *a, a16 c, a16 v,
+                                         morder mo, morder fmo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(CAS, a, c, v, mo, fmo, line, file);
+}
+
+SANITIZER_INTERFACE_ATTRIBUTE
+a32 __tsan_line_atomic32_compare_exchange_val(volatile a32 *a, a32 c, a32 v,
+                                         morder mo, morder fmo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(CAS, a, c, v, mo, fmo, line, file);
+}
+
+SANITIZER_INTERFACE_ATTRIBUTE
+a64 __tsan_line_atomic64_compare_exchange_val(volatile a64 *a, a64 c, a64 v,
+                                         morder mo, morder fmo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(CAS, a, c, v, mo, fmo, line, file);
+}
+
+#if __TSAN_HAS_INT128
+SANITIZER_INTERFACE_ATTRIBUTE
+a128 __tsan_line_atomic128_compare_exchange_val(volatile a128 *a, a128 c, a128 v,
+                                           morder mo, morder fmo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(CAS, a, c, v, mo, fmo, line, file);
+}
+#endif
+
 
 SANITIZER_INTERFACE_ATTRIBUTE
 void __tsan_atomic_thread_fence(morder mo) {

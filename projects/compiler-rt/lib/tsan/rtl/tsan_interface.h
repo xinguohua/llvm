@@ -422,6 +422,24 @@ a128 __tsan_atomic128_compare_exchange_val(volatile a128 *a, a128 c, a128 v,
 #endif
 
 SANITIZER_INTERFACE_ATTRIBUTE
+a8 __tsan_line_atomic8_compare_exchange_val(volatile a8 *a, a8 c, a8 v, morder mo,
+                                       morder fmo, unsigned int line, const char *file);
+SANITIZER_INTERFACE_ATTRIBUTE
+a16 __tsan_line_atomic16_compare_exchange_val(volatile a16 *a, a16 c, a16 v,
+                                         morder mo, morder fmo, unsigned int line, const char *file);
+SANITIZER_INTERFACE_ATTRIBUTE
+a32 __tsan_line_atomic32_compare_exchange_val(volatile a32 *a, a32 c, a32 v,
+                                         morder mo, morder fmo, unsigned int line, const char *file);
+SANITIZER_INTERFACE_ATTRIBUTE
+a64 __tsan_line_atomic64_compare_exchange_val(volatile a64 *a, a64 c, a64 v,
+                                         morder mo, morder fmo, unsigned int line, const char *file);
+#if __TSAN_HAS_INT128
+SANITIZER_INTERFACE_ATTRIBUTE
+a128 __tsan_line_atomic128_compare_exchange_val(volatile a128 *a, a128 c, a128 v,
+                                           morder mo, morder fmo, unsigned int line, const char *file);
+#endif
+
+SANITIZER_INTERFACE_ATTRIBUTE
 void __tsan_atomic_thread_fence(morder mo);
 SANITIZER_INTERFACE_ATTRIBUTE
 void __tsan_atomic_signal_fence(morder mo);

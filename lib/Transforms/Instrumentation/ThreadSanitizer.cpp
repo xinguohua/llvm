@@ -294,6 +294,11 @@ void ThreadSanitizer::initializeCallbacks(Module &M) {
                                   "_compare_exchange_val");
     TsanAtomicCAS[i] = checkSanitizerInterfaceFunction(M.getOrInsertFunction(
         AtomicCASName, Attr, Ty, PtrTy, Ty, Ty, OrdTy, OrdTy));
+
+    SmallString<32> AtomicCASLineName("__tsan_line_atomic" + BitSizeStr +
+                                  "_compare_exchange_val");
+    TsanAtomicLineCAS[i] = checkSanitizerInterfaceFunction(M.getOrInsertFunction(
+        AtomicCASLineName, Attr, Ty, PtrTy, Ty, Ty, OrdTy, OrdTy, IRB.getInt32Ty(), IRB.getInt8PtrTy()));
   }
   TsanVptrUpdate = checkSanitizerInterfaceFunction(
       M.getOrInsertFunction("__tsan_vptr_update", Attr, IRB.getVoidTy(),
@@ -794,8 +799,11 @@ bool ThreadSanitizer::instrumentAtomic(Instruction *I, const DataLayout &DL) {
                      CmpOperand,
                      NewOperand,
                      createOrdering(&IRB, CASI->getSuccessOrdering()),
-                     createOrdering(&IRB, CASI->getFailureOrdering())};
-    CallInst *C = IRB.CreateCall(TsanAtomicCAS[Idx], Args);
+                     createOrdering(&IRB, CASI->getFailureOrdering()),
+                     LineValue,
+                     FilenamePtr};
+//    CallInst *C = IRB.CreateCall(TsanAtomicCAS[Idx], Args);
+    CallInst *C = IRB.CreateCall(TsanAtomicLineCAS[Idx], Args);
     Value *Success = IRB.CreateICmpEQ(C, CmpOperand);
     Value *OldVal = C;
     Type *OrigOldValTy = CASI->getNewValOperand()->getType();
