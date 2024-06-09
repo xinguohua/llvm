@@ -379,6 +379,28 @@ static T AtomicRMW(ThreadState *thr, uptr pc, volatile T *a, T v, morder mo) {
   return v;
 }
 
+template<typename T, T (*F)(volatile T *v, T op)>
+static T AtomicLineRMW(ThreadState *thr, uptr pc, volatile T *a, T v, morder mo, unsigned int line, const char *file) {
+  SyncVar *s = 0;
+  if (mo != mo_relaxed) {
+    s = ctx->metamap.GetOrCreateAndLock(thr, pc, (uptr)a, true);
+    thr->fast_state.IncrementEpoch();
+    // Can't increment epoch w/o writing to the trace as well.
+    TraceAddEvent(thr, thr->fast_state, EventTypeMop, 0);
+    if (IsAcqRelOrder(mo))
+      AcquireReleaseImpl(thr, pc, &s->clock);
+    else if (IsReleaseOrder(mo))
+      ReleaseImpl(thr, pc, &s->clock);
+    else if (IsAcquireOrder(mo))
+      AcquireImpl(thr, pc, &s->clock);
+  }
+  v = F(a, v);
+  MemoryWriteAtomicLine(thr, pc, (uptr)a, SizeLog<T>(), (u32)line, (char *)file);
+  if (s)
+    s->mtx.Unlock();
+  return v;
+}
+
 template<typename T>
 static T NoTsanAtomicExchange(volatile T *a, T v, morder mo) {
   return func_xchg(a, v);
@@ -454,6 +476,83 @@ template<typename T>
 static T AtomicFetchNand(ThreadState *thr, uptr pc, volatile T *a, T v,
     morder mo) {
   return AtomicRMW<T, func_nand>(thr, pc, a, v, mo);
+}
+
+template<typename T>
+static T NoTsanAtomicLineExchange(volatile T *a, T v, morder mo, unsigned int line, const char *file) {
+  return func_xchg(a, v);
+}
+
+template<typename T>
+static T NoTsanAtomicLineFetchAdd(volatile T *a, T v, morder mo, unsigned int line, const char *file) {
+  return func_add(a, v);
+}
+
+template<typename T>
+static T NoTsanAtomicLineFetchSub(volatile T *a, T v, morder mo, unsigned int line, const char *file) {
+  return func_sub(a, v);
+}
+
+template<typename T>
+static T NoTsanAtomicLineFetchAnd(volatile T *a, T v, morder mo, unsigned int line, const char *file) {
+  return func_and(a, v);
+}
+
+template<typename T>
+static T NoTsanAtomicLineFetchOr(volatile T *a, T v, morder mo, unsigned int line, const char *file) {
+  return func_or(a, v);
+}
+
+template<typename T>
+static T NoTsanAtomicLineFetchXor(volatile T *a, T v, morder mo, unsigned int line, const char *file) {
+  return func_xor(a, v);
+}
+
+template<typename T>
+static T NoTsanAtomicLineFetchNand(volatile T *a, T v, morder mo, unsigned int line, const char *file) {
+  return func_nand(a, v);
+}
+
+template<typename T>
+static T AtomicLineExchange(ThreadState *thr, uptr pc, volatile T *a, T v,
+                        morder mo, unsigned int line, const char *file) {
+  return AtomicLineRMW<T, func_xchg>(thr, pc, a, v, mo, line, file);
+}
+
+template<typename T>
+static T AtomicLineFetchAdd(ThreadState *thr, uptr pc, volatile T *a, T v,
+                        morder mo, unsigned int line, const char *file) {
+  return AtomicLineRMW<T, func_add>(thr, pc, a, v, mo, line, file);
+}
+
+template<typename T>
+static T AtomicLineFetchSub(ThreadState *thr, uptr pc, volatile T *a, T v,
+                        morder mo, unsigned int line, const char *file) {
+  return AtomicLineRMW<T, func_sub>(thr, pc, a, v, mo, line, file);
+}
+
+template<typename T>
+static T AtomicLineFetchAnd(ThreadState *thr, uptr pc, volatile T *a, T v,
+                        morder mo, unsigned int line, const char *file) {
+  return AtomicLineRMW<T, func_and>(thr, pc, a, v, mo, line, file);
+}
+
+template<typename T>
+static T AtomicLineFetchOr(ThreadState *thr, uptr pc, volatile T *a, T v,
+                       morder mo, unsigned int line, const char *file) {
+  return AtomicLineRMW<T, func_or>(thr, pc, a, v, mo, line, file);
+}
+
+template<typename T>
+static T AtomicLineFetchXor(ThreadState *thr, uptr pc, volatile T *a, T v,
+                        morder mo, unsigned int line, const char *file) {
+  return AtomicLineRMW<T, func_xor>(thr, pc, a, v, mo, line, file);
+}
+
+template<typename T>
+static T AtomicLineFetchNand(ThreadState *thr, uptr pc, volatile T *a, T v,
+                         morder mo, unsigned int line, const char *file) {
+  return AtomicLineRMW<T, func_nand>(thr, pc, a, v, mo, line, file);
 }
 
 template<typename T>
@@ -910,6 +1009,196 @@ a64 __tsan_atomic64_fetch_nand(volatile a64 *a, a64 v, morder mo) {
 SANITIZER_INTERFACE_ATTRIBUTE
 a128 __tsan_atomic128_fetch_nand(volatile a128 *a, a128 v, morder mo) {
   SCOPED_ATOMIC(FetchNand, a, v, mo);
+}
+#endif
+
+
+SANITIZER_INTERFACE_ATTRIBUTE
+a8 __tsan_line_atomic8_exchange(volatile a8 *a, a8 v, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(Exchange, a, v, mo, line, file);
+}
+
+SANITIZER_INTERFACE_ATTRIBUTE
+a16 __tsan_line_atomic16_exchange(volatile a16 *a, a16 v, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(Exchange, a, v, mo, line, file);
+}
+
+SANITIZER_INTERFACE_ATTRIBUTE
+a32 __tsan_line_atomic32_exchange(volatile a32 *a, a32 v, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(Exchange, a, v, mo, line, file);
+}
+
+SANITIZER_INTERFACE_ATTRIBUTE
+a64 __tsan_line_atomic64_exchange(volatile a64 *a, a64 v, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(Exchange, a, v, mo, line, file);
+}
+
+#if __TSAN_HAS_INT128
+SANITIZER_INTERFACE_ATTRIBUTE
+a128 __tsan_line_atomic128_exchange(volatile a128 *a, a128 v, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(Exchange, a, v, mo, line, file);
+}
+#endif
+
+SANITIZER_INTERFACE_ATTRIBUTE
+a8 __tsan_line_atomic8_fetch_add(volatile a8 *a, a8 v, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(FetchAdd, a, v, mo, line, file);
+}
+
+SANITIZER_INTERFACE_ATTRIBUTE
+a16 __tsan_line_atomic16_fetch_add(volatile a16 *a, a16 v, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(FetchAdd, a, v, mo, line, file);
+}
+
+SANITIZER_INTERFACE_ATTRIBUTE
+a32 __tsan_line_atomic32_fetch_add(volatile a32 *a, a32 v, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(FetchAdd, a, v, mo, line, file);
+}
+
+SANITIZER_INTERFACE_ATTRIBUTE
+a64 __tsan_line_atomic64_fetch_add(volatile a64 *a, a64 v, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(FetchAdd, a, v, mo, line, file);
+}
+
+#if __TSAN_HAS_INT128
+SANITIZER_INTERFACE_ATTRIBUTE
+a128 __tsan_line_atomic128_fetch_add(volatile a128 *a, a128 v, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(FetchAdd, a, v, mo, line, file);
+}
+#endif
+
+SANITIZER_INTERFACE_ATTRIBUTE
+a8 __tsan_line_atomic8_fetch_sub(volatile a8 *a, a8 v, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(FetchSub, a, v, mo, line, file);
+}
+
+SANITIZER_INTERFACE_ATTRIBUTE
+a16 __tsan_line_atomic16_fetch_sub(volatile a16 *a, a16 v, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(FetchSub, a, v, mo, line, file);
+}
+
+SANITIZER_INTERFACE_ATTRIBUTE
+a32 __tsan_line_atomic32_fetch_sub(volatile a32 *a, a32 v, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(FetchSub, a, v, mo, line, file);
+}
+
+SANITIZER_INTERFACE_ATTRIBUTE
+a64 __tsan_line_atomic64_fetch_sub(volatile a64 *a, a64 v, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(FetchSub, a, v, mo, line, file);
+}
+
+#if __TSAN_HAS_INT128
+SANITIZER_INTERFACE_ATTRIBUTE
+a128 __tsan_line_atomic128_fetch_sub(volatile a128 *a, a128 v, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(FetchSub, a, v, mo, line, file);
+}
+#endif
+
+SANITIZER_INTERFACE_ATTRIBUTE
+a8 __tsan_line_atomic8_fetch_and(volatile a8 *a, a8 v, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(FetchAnd, a, v, mo, line, file);
+}
+
+SANITIZER_INTERFACE_ATTRIBUTE
+a16 __tsan_line_atomic16_fetch_and(volatile a16 *a, a16 v, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(FetchAnd, a, v, mo, line, file);
+}
+
+SANITIZER_INTERFACE_ATTRIBUTE
+a32 __tsan_line_atomic32_fetch_and(volatile a32 *a, a32 v, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(FetchAnd, a, v, mo, line, file);
+}
+
+SANITIZER_INTERFACE_ATTRIBUTE
+a64 __tsan_line_atomic64_fetch_and(volatile a64 *a, a64 v, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(FetchAnd, a, v, mo, line, file);
+}
+
+#if __TSAN_HAS_INT128
+SANITIZER_INTERFACE_ATTRIBUTE
+a128 __tsan_line_atomic128_fetch_and(volatile a128 *a, a128 v, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(FetchAnd, a, v, mo, line, file);
+}
+#endif
+
+SANITIZER_INTERFACE_ATTRIBUTE
+a8 __tsan_line_atomic8_fetch_or(volatile a8 *a, a8 v, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(FetchOr, a, v, mo, line, file);
+}
+
+SANITIZER_INTERFACE_ATTRIBUTE
+a16 __tsan_line_atomic16_fetch_or(volatile a16 *a, a16 v, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(FetchOr, a, v, mo, line, file);
+}
+
+SANITIZER_INTERFACE_ATTRIBUTE
+a32 __tsan_line_atomic32_fetch_or(volatile a32 *a, a32 v, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(FetchOr, a, v, mo, line, file);
+}
+
+SANITIZER_INTERFACE_ATTRIBUTE
+a64 __tsan_line_atomic64_fetch_or(volatile a64 *a, a64 v, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(FetchOr, a, v, mo, line, file);
+}
+
+#if __TSAN_HAS_INT128
+SANITIZER_INTERFACE_ATTRIBUTE
+a128 __tsan_line_atomic128_fetch_or(volatile a128 *a, a128 v, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(FetchOr, a, v, mo, line, file);
+}
+#endif
+
+SANITIZER_INTERFACE_ATTRIBUTE
+a8 __tsan_line_atomic8_fetch_xor(volatile a8 *a, a8 v, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(FetchXor, a, v, mo, line, file);
+}
+
+SANITIZER_INTERFACE_ATTRIBUTE
+a16 __tsan_line_atomic16_fetch_xor(volatile a16 *a, a16 v, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(FetchXor, a, v, mo, line, file);
+}
+
+SANITIZER_INTERFACE_ATTRIBUTE
+a32 __tsan_line_atomic32_fetch_xor(volatile a32 *a, a32 v, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(FetchXor, a, v, mo, line, file);
+}
+
+SANITIZER_INTERFACE_ATTRIBUTE
+a64 __tsan_line_atomic64_fetch_xor(volatile a64 *a, a64 v, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(FetchXor, a, v, mo, line, file);
+}
+
+#if __TSAN_HAS_INT128
+SANITIZER_INTERFACE_ATTRIBUTE
+a128 __tsan_line_atomic128_fetch_xor(volatile a128 *a, a128 v, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(FetchXor, a, v, mo, line, file);
+}
+#endif
+
+SANITIZER_INTERFACE_ATTRIBUTE
+a8 __tsan_line_atomic8_fetch_nand(volatile a8 *a, a8 v, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(FetchNand, a, v, mo, line, file);
+}
+
+SANITIZER_INTERFACE_ATTRIBUTE
+a16 __tsan_line_atomic16_fetch_nand(volatile a16 *a, a16 v, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(FetchNand, a, v, mo, line, file);
+}
+
+SANITIZER_INTERFACE_ATTRIBUTE
+a32 __tsan_line_atomic32_fetch_nand(volatile a32 *a, a32 v, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(FetchNand, a, v, mo, line, file);
+}
+
+SANITIZER_INTERFACE_ATTRIBUTE
+a64 __tsan_line_atomic64_fetch_nand(volatile a64 *a, a64 v, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(FetchNand, a, v, mo, line, file);
+}
+
+#if __TSAN_HAS_INT128
+SANITIZER_INTERFACE_ATTRIBUTE
+a128 __tsan_line_atomic128_fetch_nand(volatile a128 *a, a128 v, morder mo, unsigned int line, const char *file) {
+  SCOPED_ATOMIC_LINE(FetchNand, a, v, mo, line, file);
 }
 #endif
 

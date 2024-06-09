@@ -138,6 +138,8 @@ struct ThreadSanitizer : public FunctionPass {
   Function *TsanUnalignedWriteLine[kNumberOfAccessSizes];
   Function *TsanAtomicLineLoad[kNumberOfAccessSizes];
   Function *TsanAtomicLineStore[kNumberOfAccessSizes];
+  Function *TsanAtomicLineRMW[AtomicRMWInst::LAST_BINOP + 1][kNumberOfAccessSizes];
+  Function *TsanAtomicLineCAS[kNumberOfAccessSizes];
 
 };
 }  // namespace
@@ -261,6 +263,31 @@ void ThreadSanitizer::initializeCallbacks(Module &M) {
       SmallString<32> RMWName("__tsan_atomic" + itostr(BitSize) + NamePart);
       TsanAtomicRMW[op][i] = checkSanitizerInterfaceFunction(
           M.getOrInsertFunction(RMWName, Attr, Ty, PtrTy, Ty, OrdTy));
+    }
+
+    for (int op = AtomicRMWInst::FIRST_BINOP;
+         op <= AtomicRMWInst::LAST_BINOP; ++op) {
+      TsanAtomicLineRMW[op][i] = nullptr;
+      const char *NamePart = nullptr;
+      if (op == AtomicRMWInst::Xchg)
+        NamePart = "_exchange";
+      else if (op == AtomicRMWInst::Add)
+        NamePart = "_fetch_add";
+      else if (op == AtomicRMWInst::Sub)
+        NamePart = "_fetch_sub";
+      else if (op == AtomicRMWInst::And)
+        NamePart = "_fetch_and";
+      else if (op == AtomicRMWInst::Or)
+        NamePart = "_fetch_or";
+      else if (op == AtomicRMWInst::Xor)
+        NamePart = "_fetch_xor";
+      else if (op == AtomicRMWInst::Nand)
+        NamePart = "_fetch_nand";
+      else
+        continue;
+      SmallString<32> RMWNLineame("__tsan_line_atomic" + itostr(BitSize) + NamePart);
+      TsanAtomicRMW[op][i] = checkSanitizerInterfaceFunction(
+          M.getOrInsertFunction(RMWNLineame, Attr, Ty, PtrTy, Ty, OrdTy, IRB.getInt32Ty(), IRB.getInt8PtrTy()));
     }
 
     SmallString<32> AtomicCASName("__tsan_atomic" + BitSizeStr +
@@ -735,7 +762,8 @@ bool ThreadSanitizer::instrumentAtomic(Instruction *I, const DataLayout &DL) {
     int Idx = getMemoryAccessFuncIndex(Addr, DL);
     if (Idx < 0)
       return false;
-    Function *F = TsanAtomicRMW[RMWI->getOperation()][Idx];
+//    Function *F = TsanAtomicRMW[RMWI->getOperation()][Idx];
+    Function *F = TsanAtomicLineRMW[RMWI->getOperation()][Idx];
     if (!F)
       return false;
     const unsigned ByteSize = 1U << Idx;
@@ -744,7 +772,9 @@ bool ThreadSanitizer::instrumentAtomic(Instruction *I, const DataLayout &DL) {
     Type *PtrTy = Ty->getPointerTo();
     Value *Args[] = {IRB.CreatePointerCast(Addr, PtrTy),
                      IRB.CreateIntCast(RMWI->getValOperand(), Ty, false),
-                     createOrdering(&IRB, RMWI->getOrdering())};
+                     createOrdering(&IRB, RMWI->getOrdering()),
+                     LineValue,
+                     FilenamePtr};
     CallInst *C = CallInst::Create(F, Args);
     ReplaceInstWithInst(I, C);
   } else if (AtomicCmpXchgInst *CASI = dyn_cast<AtomicCmpXchgInst>(I)) {
