@@ -39,15 +39,15 @@ void __tsan_line_read1(void *addr, unsigned int line, const char *file){
 }
 
 void __tsan_line_read2(void *addr, unsigned int line, const char *file){
-  MemoryReadLine(cur_thread(), CALLERPC, (uptr)addr, kSizeLog1, (u32)line, (char *)file);
+  MemoryReadLine(cur_thread(), CALLERPC, (uptr)addr, kSizeLog2, (u32)line, (char *)file);
 }
 
 void __tsan_line_read4(void *addr, unsigned int line, const char *file){
-  MemoryReadLine(cur_thread(), CALLERPC, (uptr)addr, kSizeLog1, (u32)line, (char *)file);
+  MemoryReadLine(cur_thread(), CALLERPC, (uptr)addr, kSizeLog4, (u32)line, (char *)file);
 }
 
 void __tsan_line_read8(void *addr, unsigned int line, const char *file){
-  MemoryReadLine(cur_thread(), CALLERPC, (uptr)addr, kSizeLog1, (u32)line, (char *)file);
+  MemoryReadLine(cur_thread(), CALLERPC, (uptr)addr, kSizeLog8, (u32)line, (char *)file);
 }
 
 void __tsan_write1(void *addr) {
