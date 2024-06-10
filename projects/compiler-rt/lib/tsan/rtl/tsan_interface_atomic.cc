@@ -811,17 +811,17 @@ a8 __tsan_line_atomic8_load(const volatile a8 *a, morder mo, unsigned int line, 
 }
 
 SANITIZER_INTERFACE_ATTRIBUTE
-a16 __tsan_line__atomic16_load(const volatile a16 *a, morder mo, unsigned int line, const char *file) {
+a16 __tsan_line_atomic16_load(const volatile a16 *a, morder mo, unsigned int line, const char *file) {
   SCOPED_ATOMIC_LINE(Load, a, mo, line, file);
 }
 
 SANITIZER_INTERFACE_ATTRIBUTE
-a32 __tsan_line__atomic32_load(const volatile a32 *a, morder mo, unsigned int line, const char *file) {
+a32 __tsan_line_atomic32_load(const volatile a32 *a, morder mo, unsigned int line, const char *file) {
   SCOPED_ATOMIC_LINE(Load, a, mo, line, file);
 }
 
 SANITIZER_INTERFACE_ATTRIBUTE
-a64 __tsan_line__atomic64_load(const volatile a64 *a, morder mo, unsigned int line, const char *file) {
+a64 __tsan_line_atomic64_load(const volatile a64 *a, morder mo, unsigned int line, const char *file) {
   SCOPED_ATOMIC_LINE(Load, a, mo, line, file);
 }
 
