@@ -96,6 +96,10 @@ SANITIZER_INTERFACE_ATTRIBUTE void __tsan_vptr_read(void **vptr_p);
 SANITIZER_INTERFACE_ATTRIBUTE
 void __tsan_vptr_update(void **vptr_p, void *new_val);
 
+SANITIZER_INTERFACE_ATTRIBUTE void __tsan_line_vptr_read(void **vptr_p, unsigned int line, const char *file);
+SANITIZER_INTERFACE_ATTRIBUTE
+void __tsan_line_vptr_update(void **vptr_p, void *new_val, unsigned int line, const char *file);
+
 SANITIZER_INTERFACE_ATTRIBUTE void __tsan_func_entry(void *call_pc);
 SANITIZER_INTERFACE_ATTRIBUTE void __tsan_func_exit();
 

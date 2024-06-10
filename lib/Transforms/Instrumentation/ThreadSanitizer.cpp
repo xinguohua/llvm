@@ -140,6 +140,8 @@ struct ThreadSanitizer : public FunctionPass {
   Function *TsanAtomicLineStore[kNumberOfAccessSizes];
   Function *TsanAtomicLineRMW[AtomicRMWInst::LAST_BINOP + 1][kNumberOfAccessSizes];
   Function *TsanAtomicLineCAS[kNumberOfAccessSizes];
+  Function *TsanVptrUpdateLine;
+  Function *TsanVptrLoadLine;
 
 };
 }  // namespace
@@ -305,6 +307,13 @@ void ThreadSanitizer::initializeCallbacks(Module &M) {
                             IRB.getInt8PtrTy(), IRB.getInt8PtrTy()));
   TsanVptrLoad = checkSanitizerInterfaceFunction(M.getOrInsertFunction(
       "__tsan_vptr_read", Attr, IRB.getVoidTy(), IRB.getInt8PtrTy()));
+
+  TsanVptrUpdateLine = checkSanitizerInterfaceFunction(
+      M.getOrInsertFunction("__tsan_line_vptr_update", Attr, IRB.getVoidTy(),
+                            IRB.getInt8PtrTy(), IRB.getInt8PtrTy(), IRB.getInt32Ty(), IRB.getInt8PtrTy(), IRB.getInt32Ty(), IRB.getInt8PtrTy()));
+  TsanVptrLoadLine = checkSanitizerInterfaceFunction(M.getOrInsertFunction(
+      "__tsan_line_vptr_read", Attr, IRB.getVoidTy(), IRB.getInt8PtrTy(), IRB.getInt32Ty(), IRB.getInt8PtrTy()));
+
   TsanAtomicThreadFence = checkSanitizerInterfaceFunction(M.getOrInsertFunction(
       "__tsan_atomic_thread_fence", Attr, IRB.getVoidTy(), OrdTy));
   TsanAtomicSignalFence = checkSanitizerInterfaceFunction(M.getOrInsertFunction(
@@ -586,6 +595,10 @@ bool ThreadSanitizer::instrumentLoadOrStore(Instruction *I,
   }
   //IRBuilder<> IRB(I);
   IRBuilder<> IRB(I->getNextNode());
+  LLVMContext &Context = IRB.getContext();
+  Value *LineValue = ConstantInt::get(Type::getInt32Ty(Context), line);
+  Value *FilenamePtr = IRB.CreateGlobalStringPtr(filename, "filename");
+
   bool IsWrite = isa<StoreInst>(*I);
   Value *Addr = IsWrite
       ? cast<StoreInst>(I)->getPointerOperand()
@@ -612,16 +625,24 @@ bool ThreadSanitizer::instrumentLoadOrStore(Instruction *I,
     if (StoredValue->getType()->isIntegerTy())
       StoredValue = IRB.CreateIntToPtr(StoredValue, IRB.getInt8PtrTy());
     // Call TsanVptrUpdate.
-    IRB.CreateCall(TsanVptrUpdate,
+//    IRB.CreateCall(TsanVptrUpdate,
+//                   {IRB.CreatePointerCast(Addr, IRB.getInt8PtrTy()),
+//                    IRB.CreatePointerCast(StoredValue, IRB.getInt8PtrTy())});
+    IRB.CreateCall(TsanVptrUpdateLine,
                    {IRB.CreatePointerCast(Addr, IRB.getInt8PtrTy()),
-                    IRB.CreatePointerCast(StoredValue, IRB.getInt8PtrTy())});
+                    IRB.CreatePointerCast(StoredValue, IRB.getInt8PtrTy()),
+                    LineValue,
+                    FilenamePtr});
     NumInstrumentedVtableWrites++;
     return true;
   }
   if (!IsWrite && isVtableAccess(I)) {
-    IRB.CreateCall(TsanVptrLoad,
-                   IRB.CreatePointerCast(Addr, IRB.getInt8PtrTy()));
-    NumInstrumentedVtableReads++;
+//    IRB.CreateCall(TsanVptrLoad,
+//                   IRB.CreatePointerCast(Addr, IRB.getInt8PtrTy()));
+IRB.CreateCall(
+    TsanVptrLoadLine,
+    {IRB.CreatePointerCast(Addr, IRB.getInt8PtrTy()), LineValue, FilenamePtr});
+NumInstrumentedVtableReads++;
     return true;
   }
   const unsigned Alignment = IsWrite
@@ -642,9 +663,6 @@ bool ThreadSanitizer::instrumentLoadOrStore(Instruction *I,
     lineFlag = true;
   }
   if (lineFlag) {
-    LLVMContext &Context = IRB.getContext();
-    Value *LineValue = ConstantInt::get(Type::getInt32Ty(Context), line);
-    Value *FilenamePtr = IRB.CreateGlobalStringPtr(filename, "filename");
     IRB.CreateCall(OnAccessFunc,
                    {IRB.CreatePointerCast(Addr, IRB.getInt8PtrTy()), LineValue,
                     FilenamePtr});

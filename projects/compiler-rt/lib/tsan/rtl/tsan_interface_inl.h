@@ -132,6 +132,24 @@ void __tsan_vptr_read(void **vptr_p) {
   thr->is_vptr_access = false;
 }
 
+void __tsan_line_vptr_update(void **vptr_p, void *new_val, unsigned int line, const char *file) {
+  CHECK_EQ(sizeof(vptr_p), 8);
+  if (*vptr_p != new_val) {
+    ThreadState *thr = cur_thread();
+    thr->is_vptr_access = true;
+    MemoryWriteLine(thr, CALLERPC, (uptr)vptr_p, kSizeLog8, (u32)line, (char *)file);
+    thr->is_vptr_access = false;
+  }
+}
+
+void __tsan_line_vptr_read(void **vptr_p, unsigned int line, const char *file) {
+  CHECK_EQ(sizeof(vptr_p), 8);
+  ThreadState *thr = cur_thread();
+  thr->is_vptr_access = true;
+  MemoryReadLine(thr, CALLERPC, (uptr)vptr_p, kSizeLog8, (u32)line, (char *)file);
+  thr->is_vptr_access = false;
+}
+
 void __tsan_func_entry(void *pc) {
   FuncEntry(cur_thread(), (uptr)pc);
 }
