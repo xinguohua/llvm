@@ -950,12 +950,13 @@ void FuncEntry(ThreadState *thr, uptr pc) {
 #endif
   thr->shadow_stack_pos[0] = pc;
   thr->shadow_stack_pos++;
-    
-
-    //return;    //JEFF faster
-
-    aser::ufo::enter_func(thr, pc); //JEFF enter function
+  aser::ufo::enter_func(thr, pc); //JEFF enter function
 }
+
+ALWAYS_INLINE USED void OrderFunc(ThreadState *thr, uptr pc, u32 orderType,  u32 line, char* file){
+  aser::ufo::order_func(thr, pc, orderType, line, file);
+}
+
 
 ALWAYS_INLINE USED
 void FuncExit(ThreadState *thr) {

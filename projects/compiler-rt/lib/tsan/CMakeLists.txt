@@ -51,13 +51,13 @@ set(TSAN_SOURCES
   rtl/tsan_suppressions.cc
   rtl/tsan_symbolize.cc
   rtl/tsan_sync.cc
-        rtl/ufo/io_queue.cc
-        rtl/ufo/report.cc
-        rtl/ufo/ufo_interface.cc
-        rtl/ufo/tlbuffer.cc
-        rtl/ufo/ufo.cc
-        rtl/ufo/ufo_stat.cc
-        rtl/ufo/snappy/snappy.cc)
+        rtl/reorder/io_queue.cc
+        rtl/reorder/report.cc
+        rtl/reorder/reorder_record.cc
+        rtl/reorder/tlbuffer.cc
+        rtl/reorder/reorder.cc
+        rtl/reorder/reorder_stat.cc
+        rtl/reorder/snappy/snappy.cc)
 
 set(TSAN_CXX_SOURCES
   rtl/tsan_new_delete.cc)
@@ -102,17 +102,17 @@ set(TSAN_HEADERS
   rtl/tsan_trace.h
   rtl/tsan_update_shadow_word_inl.h
   rtl/tsan_vector.h
-        rtl/ufo/defs.h
-        rtl/ufo/dummy_rtl.h
-        rtl/ufo/io_queue.h
-        rtl/ufo/report.h
-        rtl/ufo/rtl_impl.h
-        rtl/ufo/ufo_interface.h
-        rtl/ufo/tlbuffer.h
-        rtl/ufo/ufo.h
-        rtl/ufo/ufo_stat.h
-        rtl/ufo/snappy/snappy.h
-        rtl/ufo/snappy/compat.h)
+        rtl/reorder/defs.h
+        rtl/reorder/dummy_rtl.h
+        rtl/reorder/io_queue.h
+        rtl/reorder/report.h
+        rtl/reorder/rtl_impl.h
+        rtl/reorder/reorder_record.h
+        rtl/reorder/tlbuffer.h
+        rtl/reorder/reorder.h
+        rtl/reorder/reorder_stat.h
+        rtl/reorder/snappy/snappy.h
+        rtl/reorder/snappy/compat.h)
 
 set(TSAN_RUNTIME_LIBRARIES)
 add_compiler_rt_component(tsan)

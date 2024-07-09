@@ -55,6 +55,10 @@ static bool IsAcqRelOrder(morder mo) {
   return mo == mo_acq_rel || mo == mo_seq_cst;
 }
 
+static unsigned int morder_to_int(morder order) {
+  return (unsigned int)order;
+}
+
 template<typename T> T func_xchg(volatile T *v, T op) {
   T res = __sync_lock_test_and_set(v, op);
   // __sync_lock_test_and_set does not contain full barrier.
@@ -259,9 +263,11 @@ static T AtomicLoad(ThreadState *thr, uptr pc, const volatile T *a, morder mo) {
 template<typename T>
 static T AtomicLineLoad(ThreadState *thr, uptr pc, const volatile T *a, morder mo, unsigned int line, const char *file) {
   CHECK(IsLoadOrder(mo));
+  unsigned int orderType = morder_to_int(mo);
   // This fast-path is critical for performance.
   // Assume the access is atomic.
   if (!IsAcquireOrder(mo)) {
+    OrderLine(thr, pc, (u32)orderType, (u32)line, (char*)file);
     MemoryReadAtomicLine(thr, pc, (uptr)a, SizeLog<T>(), (u32)line, (char *)file);
     return NoTsanAtomicLoad(a, mo);
   }
@@ -276,6 +282,7 @@ static T AtomicLineLoad(ThreadState *thr, uptr pc, const volatile T *a, morder m
     v = NoTsanAtomicLoad(a, mo);
     s->mtx.ReadUnlock();
   }
+  OrderLine(thr, pc, (u32)orderType, (u32)line, (char*)file);
   MemoryReadAtomicLine(thr, pc, (uptr)a, SizeLog<T>(), (u32)line, (char *)file);
   return v;
 }
@@ -335,6 +342,7 @@ template<typename T>
 static void AtomicLineStore(ThreadState *thr, uptr pc, volatile T *a, T v,
                         morder mo, unsigned int line, const char *file) {
   CHECK(IsStoreOrder(mo));
+  unsigned int orderType = morder_to_int(mo);
   // This fast-path is critical for performance.
   // Assume the access is atomic.
   // Strictly saying even relaxed store cuts off release sequence,
@@ -342,6 +350,7 @@ static void AtomicLineStore(ThreadState *thr, uptr pc, volatile T *a, T v,
   if (!IsReleaseOrder(mo)) {
     NoTsanAtomicStore(a, v, mo);
     DPrintf5("IsReleaseOrder store>>> #%d addr val:%p   pc:%p\r\n", a, v);
+    OrderLine(thr, pc, (u32)orderType, (u32)line, (char*)file);
     MemoryWriteAtomicLine(thr, pc, (uptr)a, SizeLog<T>(),(u32)line, (char *)file);
     return;
   }
@@ -353,6 +362,7 @@ static void AtomicLineStore(ThreadState *thr, uptr pc, volatile T *a, T v,
   ReleaseStoreImpl(thr, pc, &s->clock);
   NoTsanAtomicStore(a, v, mo);
   DPrintf5("UFO>>>AtomicLineStore>>> #%d addr val:%p   pc:%p\r\n", a, v);
+  OrderLine(thr, pc, (u32)orderType, (u32)line, (char*)file);
   MemoryWriteAtomicLine(thr, pc, (uptr)a, SizeLog<T>(),(u32)line, (char *)file);
   s->mtx.Unlock();
 }
@@ -382,6 +392,7 @@ static T AtomicRMW(ThreadState *thr, uptr pc, volatile T *a, T v, morder mo) {
 template<typename T, T (*F)(volatile T *v, T op)>
 static T AtomicLineRMW(ThreadState *thr, uptr pc, volatile T *a, T v, morder mo, unsigned int line, const char *file) {
   SyncVar *s = 0;
+  unsigned int orderType = morder_to_int(mo);
   if (mo != mo_relaxed) {
     s = ctx->metamap.GetOrCreateAndLock(thr, pc, (uptr)a, true);
     thr->fast_state.IncrementEpoch();
@@ -395,6 +406,7 @@ static T AtomicLineRMW(ThreadState *thr, uptr pc, volatile T *a, T v, morder mo,
       AcquireImpl(thr, pc, &s->clock);
   }
   v = F(a, v);
+  OrderLine(thr, pc, (u32)orderType, (u32)line, (char*)file);
   MemoryWriteAtomicLine(thr, pc, (uptr)a, SizeLog<T>(), (u32)line, (char *)file);
   if (s)
     s->mtx.Unlock();
@@ -640,6 +652,8 @@ template<typename T>
 static bool AtomicLineCAS(ThreadState *thr, uptr pc,
                       volatile T *a, T *c, T v, morder mo, morder fmo, unsigned int line, const char *file) {
   (void)fmo;  // Unused because llvm does not pass it yet.
+  unsigned int orderType = morder_to_int(mo);
+
   SyncVar *s = 0;
   bool write_lock = mo != mo_acquire && mo != mo_consume;
   if (mo != mo_relaxed) {
@@ -662,6 +676,7 @@ static bool AtomicLineCAS(ThreadState *thr, uptr pc,
     else
       s->mtx.ReadUnlock();
   }
+  OrderLine(thr, pc, (u32)orderType, (u32)line, (char*)file);
   MemoryWriteAtomicLine(thr, pc, (uptr)a, SizeLog<T>(), (u32)line, (char*)file);
   if (pr == cc)
     return true;
@@ -679,6 +694,8 @@ static T AtomicCAS(ThreadState *thr, uptr pc,
 template<typename T>
 static T AtomicLineCAS(ThreadState *thr, uptr pc,
                    volatile T *a, T c, T v, morder mo, morder fmo, unsigned int line, const char *file) {
+  unsigned int orderType = morder_to_int(mo);
+  OrderLine(thr, pc, (u32)orderType, (u32)line, (char*)file);
   AtomicLineCAS(thr, pc, a, &c, v, mo, fmo, line, file);
   return c;
 }

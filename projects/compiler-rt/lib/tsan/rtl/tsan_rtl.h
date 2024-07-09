@@ -725,6 +725,8 @@ void MemoryAccess(ThreadState *thr, uptr pc, uptr addr,
     int kAccessSizeLog, bool kAccessIsWrite, bool kIsAtomic);
 void MemoryAccessLine(ThreadState *thr, uptr pc, uptr addr,
                   int kAccessSizeLog, bool kAccessIsWrite, bool kIsAtomic, u32 line, char *file);
+void OrderFunc(ThreadState *thr, uptr pc, u32 orderType,  u32 line, char* file);
+
 
 void MemoryAccessImpl(ThreadState *thr, uptr addr,
     int kAccessSizeLog, bool kAccessIsWrite, bool kIsAtomic,
@@ -789,6 +791,11 @@ void ALWAYS_INLINE MemoryWriteAtomicLine(ThreadState *thr, uptr pc,
   MemoryAccessLine(thr, pc, addr, kAccessSizeLog, true, true, line, file);
 }
 
+void ALWAYS_INLINE OrderLine(ThreadState *thr, uptr pc,
+                             u32 order, u32 line, char* file) {
+  OrderFunc(thr, pc, order, line, file);
+}
+
 void MemoryResetRange(ThreadState *thr, uptr pc, uptr addr, uptr size);
 void MemoryRangeFreed(ThreadState *thr, uptr pc, uptr addr, uptr size);
 void MemoryRangeImitateWrite(ThreadState *thr, uptr pc, uptr addr, uptr size);
@@ -800,6 +807,7 @@ void ThreadIgnoreSyncEnd(ThreadState *thr, uptr pc);
 
 void FuncEntry(ThreadState *thr, uptr pc);
 void FuncExit(ThreadState *thr);
+
 
 int ThreadCreate(ThreadState *thr, uptr pc, uptr uid, bool detached);
 void ThreadStart(ThreadState *thr, int tid, tid_t os_id, bool workerthread);
