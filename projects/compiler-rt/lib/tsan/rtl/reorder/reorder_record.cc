@@ -70,11 +70,6 @@ bool init_ufo() {
 
   uctx = (ReorderContext *)internal_alloc(MBlockScopedBuf, sizeof(ReorderContext));
   uctx->init_start();
-
-    //JEFF: BAD -- this only work for normal termination
-    //setup an exit handler to save module info
-//    global_trace_dir = uctx->trace_dir;
-//    atexit(exit_save_module_info_jeff);//JEFF
     
   g_started = true;
   return true;
@@ -110,9 +105,6 @@ void child_after_fork() {
   uctx->child_after_fork();
   g_started = true;
 }
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////
 
 void on_mtx_lock(__tsan::ThreadState *thr, uptr pc, u64 mutex_id) {
   (*ReorderContext::fn_mtx_lock)(thr, pc, mutex_id);
